@@ -49,6 +49,19 @@
   }
   function byId(id) { return BOOKS.find(function (b) { return b.id === id; }); }
 
+  /* ---------- direct download via the Cloudflare Worker ----------
+     archive.org links go through the Worker, which returns the file with
+     Content-Disposition: attachment — so tapping Download saves the file
+     instead of opening archive.org. Other sources stay direct. */
+  var WORKER = "https://mdl-download.hosenrobiul43.workers.dev/";
+  function dlUrl(b) {
+    var u = b.downloadUrl || "";
+    if (u.indexOf("https://archive.org/download/") === 0) {
+      return WORKER + "?u=" + encodeURIComponent(u);
+    }
+    return u;
+  }
+
   /* ---------- share (no account needed) ----------
      Phone: the native share sheet (Facebook, Instagram, WhatsApp and
      everything installed). Desktop/other browsers: a small panel with
@@ -490,7 +503,7 @@
       '<div class="actions">' +
       '<a class="btn btn-navy" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">অনলাইনে পড়ুন ↗</a>' +
       (b.downloadUrl
-        ? '<a class="btn btn-primary" href="' + esc(b.downloadUrl) + '" download>' + esc(dlLabel(b)) + "</a>"
+        ? '<a class="btn btn-primary" href="' + esc(dlUrl(b)) + '" download>' + esc(dlLabel(b)) + "</a>"
         : "") +
       '<a class="btn btn-ghost" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">মূল উৎস দেখুন ↗</a>' +
       '<button class="btn btn-ghost" id="shareBtn" type="button">শেয়ার করুন ↗</button>' +
