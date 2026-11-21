@@ -13,6 +13,19 @@
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0B2447">
 <link rel="apple-touch-icon" href="icon-192.png">
+<!-- OneSignal (free web push): the worker lives in /push/ so it does not
+     fight the PWA worker (sw.js) that owns the site root. -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function (OneSignal) {
+    await OneSignal.init({
+      appId: "2ed1c8db-8eca-4519-8fa2-0ddfb58dbb76",
+      serviceWorkerPath: "push/OneSignalSDKWorker.js",
+      serviceWorkerParam: { scope: "/my-digital-library/push/" },
+    });
+  });
+</script>
 </head>
 <body>
 <header class="topbar">

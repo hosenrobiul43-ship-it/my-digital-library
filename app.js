@@ -165,7 +165,8 @@
       '<form class="search-big" id="heroSearch">' +
       '<input id="heroQ" type="search" placeholder="বইয়ের নাম, লেখক বা বিষয় লিখুন..." autocomplete="off">' +
       '<button class="btn btn-primary" type="submit">খুঁজুন</button></form>' +
-      '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">লাইব্রেরি শেয়ার করুন ↗</button></div>' +
+      '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">লাইব্রেরি শেয়ার করুন ↗</button>' +
+      ' <button class="btn btn-ghost" id="followBtn" type="button">🔔 নতুন বইয়ের খবর পান</button></div>' +
       '<div id="siteSharePanel"></div>' +
       '<button class="adv-toggle" id="advToggle" type="button">উন্নত অনুসন্ধান (Advanced Search) ⌄</button>' +
       '<div class="filters adv-panel" id="advPanel">' +
@@ -258,6 +259,27 @@
       shareBox.innerHTML = sharePanelHtml("ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", "বাংলা ও বিশ্বের বই — ফ্রি পড়ুন ও ডাউনলোড করুন", siteUrl());
       shareBtn.addEventListener("click", function () {
         doShare("ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", "বাংলা ও বিশ্বের বই — ফ্রি পড়ুন ও ডাউনলোড করুন", siteUrl(), shareBox.querySelector(".share-panel"));
+      });
+    }
+    /* Follow button: the prompt appears ONLY when the visitor taps it —
+       never automatically, so readers are not annoyed. */
+    if (window.OneSignalDeferred) {
+      window.OneSignalDeferred.push(async function (OneSignal) {
+        var fb = document.getElementById("followBtn");
+        if (!fb) return;
+        function refreshFollow() {
+          var on = false;
+          try { on = OneSignal.User.PushSubscription.optedIn; } catch (e) {}
+          fb.textContent = on ? "🔔 ফলো করা হয়েছে ✓ — বন্ধ করতে চাপুন" : "🔔 নতুন বইয়ের খবর পান";
+        }
+        refreshFollow();
+        fb.addEventListener("click", async function () {
+          try {
+            if (OneSignal.User.PushSubscription.optedIn) await OneSignal.User.PushSubscription.optOut();
+            else await OneSignal.Slidedown.promptPush();
+          } catch (e) {}
+          setTimeout(refreshFollow, 800);
+        });
       });
     }
     var t = document.getElementById("advToggle");
