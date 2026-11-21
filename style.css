@@ -120,6 +120,7 @@ html[data-theme="dark"] .stat b { color: var(--gold); }
 .book-body { padding: 12px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
 .book-body h3 { font-size: 1rem; margin: 0; }
 .book-body .author { color: var(--muted); font-size: .88rem; margin: 0; }
+.book-body .price { color: var(--gold-dark); font-weight: 700; font-size: .92rem; margin: 0; }
 .book-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-top: auto; padding-top: 8px; }
 .tag {
   font-size: .72rem; background: var(--surface-2); border: 1px solid var(--border);

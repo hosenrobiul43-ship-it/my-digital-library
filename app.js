@@ -17,6 +17,32 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
+  /* Download-button label from the real file type + size. Plain .txt
+     files open inside the browser instead of downloading, so they are
+     honestly labelled "টেক্সট পড়ুন", not "ডাউনলোড". */
+  function fmtSize(bytes) {
+    if (!bytes) return "";
+    var mb = bytes / 1048576;
+    var txt = mb >= 1
+      ? mb.toLocaleString("bn-BD", { maximumFractionDigits: 1 }) + " MB"
+      : Math.max(1, Math.round(bytes / 1024)).toLocaleString("bn-BD") + " KB";
+    return " (" + txt + ")";
+  }
+  function dlLabel(b) {
+    var fmt = b.downloadFormat || "";
+    if (fmt === "PDF") return "PDF ডাউনলোড ⬇" + fmtSize(b.downloadSize);
+    if (fmt === "EPUB") return "EPUB ডাউনলোড ⬇" + fmtSize(b.downloadSize);
+    if (fmt === "TXT") return "টেক্সট পড়ুন ↗";
+    return "PDF / টেক্সট ডাউনলোড ⬇";
+  }
+  /* Card price: the printed cover price, only when one is really known.
+     Books without one show no price line at all (never "তথ্য নেই" on a card). */
+  function cardPrice(b) {
+    if (!b.price) return "";
+    var t = b.price;
+    if (b.priceCurrency && t.indexOf(b.priceCurrency) === -1) t += " " + b.priceCurrency;
+    return '<p class="price">দাম: ' + esc(t) + "</p>";
+  }
   function firstLetter(t) {
     t = (t || "").trim();
     return t ? t.charAt(0) : "?";
@@ -78,6 +104,7 @@
       coverHtml(b) +
       '<div class="book-body"><h3>' + esc(b.title) + "</h3>" +
       '<p class="author">' + esc(b.author || NA) + "</p>" +
+      cardPrice(b) +
       '<div class="book-meta">' + tags + "</div></div></article>";
   }
   function gridHtml(list) {
@@ -360,7 +387,7 @@
       '<div class="actions">' +
       '<a class="btn btn-navy" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">অনলাইনে পড়ুন ↗</a>' +
       (b.downloadUrl
-        ? '<a class="btn btn-primary" href="' + esc(b.downloadUrl) + '" target="_blank" rel="noopener">PDF / টেক্সট ডাউনলোড ⬇</a>'
+        ? '<a class="btn btn-primary" href="' + esc(b.downloadUrl) + '" target="_blank" rel="noopener">' + esc(dlLabel(b)) + "</a>"
         : "") +
       '<a class="btn btn-ghost" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">মূল উৎস দেখুন ↗</a>' +
       "</div>" +
