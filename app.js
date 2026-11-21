@@ -387,7 +387,7 @@
       '<div class="actions">' +
       '<a class="btn btn-navy" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">অনলাইনে পড়ুন ↗</a>' +
       (b.downloadUrl
-        ? '<a class="btn btn-primary" href="' + esc(b.downloadUrl) + '" target="_blank" rel="noopener">' + esc(dlLabel(b)) + "</a>"
+        ? '<a class="btn btn-primary" href="' + esc(b.downloadUrl) + '" download>' + esc(dlLabel(b)) + "</a>"
         : "") +
       '<a class="btn btn-ghost" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">মূল উৎস দেখুন ↗</a>' +
       "</div>" +
