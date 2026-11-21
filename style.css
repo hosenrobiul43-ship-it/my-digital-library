@@ -79,6 +79,10 @@ p { margin: 0 0 12px; }
   background: transparent; border: 1px solid var(--border); color: var(--text);
 }
 .btn-ghost:hover { border-color: var(--gold); }
+/* Ghost buttons on the navy header/hero: dark text on navy is invisible,
+   so they always use white text and a light border there. */
+.topbar .btn-ghost, .hero .btn-ghost { color: #fff; border-color: rgba(255,255,255,.55); }
+.topbar .btn-ghost:hover, .hero .btn-ghost:hover { border-color: var(--gold); color: #fff; }
 .btn-sm { padding: 8px 14px; font-size: .9rem; }
 .adv-toggle { background: none; border: 0; color: #9db4d0; cursor: pointer; font-family: var(--font); margin-top: 10px; text-decoration: underline; }
 
