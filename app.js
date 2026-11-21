@@ -110,8 +110,11 @@
     return '<div class="book-grid">' + list.map(cardHtml).join("") + "</div>";
   }
   function adSlotHtml() {
-    return '<div class="ad-slot"><span>ADVERTISEMENT</span>' +
-      "<p>বিজ্ঞাপনের স্থান — AdSense অনুমোদনের পর এখানে বিজ্ঞাপন আসবে।</p></div>";
+    return '<div class="ad-slot ad-tib"><span>ADVERTISEMENT</span>' +
+      '<a href="https://www.facebook.com/61560391032591" target="_blank" rel="noopener">' +
+      '<img src="assets/tib-perfumes-logo.png" alt="Tīb Perfumes">' +
+      '<span class="ad-tib-text"><b>খাঁটি আতর — Tīb Perfumes</b>' +
+      '<br>৩ মিলি আতর মাত্র ১২০৳ থেকে · অর্ডার করতে ক্লিক করুন</span></a></div>';
   }
   function heroHtml() {
     return '<section class="hero" style="margin:0 -16px;padding-left:16px;padding-right:16px;">' +

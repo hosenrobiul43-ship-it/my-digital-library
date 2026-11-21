@@ -89,6 +89,15 @@ p { margin: 0 0 12px; }
 }
 .ad-slot span { font-size: .7rem; letter-spacing: .2em; font-weight: 700; }
 
+/* ---------- Tīb Perfumes house ad ---------- */
+.ad-tib { background: #0b0b0b; border: 2px solid var(--gold); padding: 14px; }
+.ad-tib > span { color: #c9a227; }
+.ad-tib a { display: flex; align-items: center; justify-content: center; gap: 16px;
+  text-decoration: none; margin-top: 8px; flex-wrap: wrap; }
+.ad-tib img { width: 84px; height: 84px; object-fit: cover; border-radius: 10px; }
+.ad-tib-text { color: #f4f6f8; font-size: 1rem; line-height: 1.5; letter-spacing: normal; font-weight: 400; text-align: left; }
+.ad-tib-text b { color: #c9a227; font-size: 1.1rem; }
+
 /* ---------- sections ---------- */
 section.block { padding: 26px 0 6px; }
 .section-head { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
