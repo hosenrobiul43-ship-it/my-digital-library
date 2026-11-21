@@ -98,6 +98,7 @@
         ? '<span class="tag free">ফ্রি ডাউনলোড</span>'
         : '<span class="tag nodl">শুধু অনলাইনে পড়ুন</span>');
     return '<article class="book-card" data-book="' + esc(b.id) + '">' +
+      (b.topRank ? '<span class="rank-badge">' + b.topRank.toLocaleString("bn-BD") + "</span>" : "") +
       coverHtml(b) +
       '<div class="book-body"><h3>' + esc(b.title) + "</h3>" +
       '<p class="author">' + esc(b.author || NA) + "</p>" +
@@ -137,6 +138,7 @@
     var bn = BOOKS.filter(function (b) { return b.language === "Bengali"; }).length;
     var en = BOOKS.filter(function (b) { return b.language === "English"; }).length;
     var free = BOOKS.filter(function (b) { return b.downloadUrl; }).length;
+    var top = BOOKS.filter(function (b) { return b.topRank; }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 12);
     var featured = BOOKS.filter(function (b) { return b.featured; }).slice(0, 12);
     var recent = BOOKS.slice().sort(function (a, b) { return b.addedOrder - a.addedOrder; }).slice(0, 12);
     var counts = {};
@@ -155,6 +157,7 @@
       '<div class="stat"><b>' + free.toLocaleString("bn-BD") + '</b><span>ফ্রি ডাউনলোডযোগ্য</span></div>' +
       "</div></section>";
 
+    h += '<section class="block"><div class="section-head"><h2>টপ বই</h2><a class="link" href="#/books?sort=top">সব দেখুন →</a></div><p class="muted">সবচেয়ে বেশি ডাউনলোড হওয়া বই — ১ নম্বর সবচেয়ে জনপ্রিয়।</p>' + gridHtml(top) + "</section>";
     h += '<section class="block"><div class="section-head"><h2>বিশেষভাবে নির্বাচিত বই</h2><a class="link" href="#/books">সব বই দেখুন →</a></div>' + gridHtml(featured) + "</section>";
     h += '<section class="block"><div class="section-head"><h2>সম্প্রতি যুক্ত বই</h2><a class="link" href="#/books?sort=newest">সব দেখুন →</a></div>' + gridHtml(recent) + "</section>";
     h += '<section class="block"><div class="section-head"><h2>জনপ্রিয় লেখক</h2><a class="link" href="#/authors">সব লেখক →</a></div><div class="author-list">' +
@@ -243,6 +246,7 @@
       if (s === "newest") return (b.year || 0) - (a.year || 0) || (b.addedOrder - a.addedOrder);
       if (s === "oldest") return (a.year || 99999) - (b.year || 99999) || (a.addedOrder - b.addedOrder);
       if (s === "author") return (a.author || "").localeCompare(b.author || "", "bn");
+      if (s === "top") return (a.topRank || 999) - (b.topRank || 999) || (a.title || "").localeCompare(b.title || "", "bn");
       if (s === "language") return (a.language || "").localeCompare(b.language || "");
       if (s === "category") return (a.category || "").localeCompare(b.category || "", "bn");
       return 0;
@@ -269,6 +273,7 @@
         '<option value="newest">নতুন আগে</option>' +
         '<option value="oldest">পুরনো আগে</option>' +
         '<option value="author">লেখক অনুযায়ী</option>' +
+        '<option value="top">টপ র‍্যাংকিং অনুযায়ী</option>' +
         '<option value="language">ভাষা অনুযায়ী</option>' +
         '<option value="category">বিভাগ অনুযায়ী</option>' +
       "</select></div>" +
