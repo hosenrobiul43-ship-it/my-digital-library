@@ -151,6 +151,8 @@ html[data-theme="dark"] .stat b { color: var(--gold); }
 .tag.free { background: #e6f4ea; color: #137333; border-color: #b9dfc4; }
 html[data-theme="dark"] .tag.free { background: #14301d; color: #7ddb9a; }
 .tag.nodl { background: #fdf3e3; color: #8a5a00; border-color: #f0d9a8; }
+.tag.buy { background: #fff7d6; color: #7a5c00; border-color: #e3c878; }
+html[data-theme="dark"] .tag.buy { background: #3a2f00; color: #ffd95e; }
 
 /* ---------- chips / categories ---------- */
 .chip-grid { display: flex; flex-wrap: wrap; gap: 8px; }

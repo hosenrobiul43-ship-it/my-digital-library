@@ -230,9 +230,11 @@
   function cardHtml(b) {
     var tags = '<span class="tag">' + esc(langLabel(b.language)) + "</span>" +
       '<span class="tag">' + esc(b.category || "অন্যান্য") + "</span>" +
-      (b.downloadUrl
-        ? '<span class="tag free">ফ্রি ডাউনলোড</span>'
-        : '<span class="tag nodl">শুধু অনলাইনে পড়ুন</span>');
+      (b.buyLink
+        ? '<span class="tag buy">কিনে পড়ুন</span>'
+        : (b.downloadUrl
+          ? '<span class="tag free">ফ্রি ডাউনলোড</span>'
+          : '<span class="tag nodl">শুধু অনলাইনে পড়ুন</span>'));
     return '<article class="book-card" data-book="' + esc(b.id) + '">' +
       (b.topRank ? '<span class="rank-badge">' + b.topRank.toLocaleString("bn-BD") + "</span>" : "") +
       '<button class="fav-btn' + (isFav(b.id) ? " on" : "") + '" data-fav="' + esc(b.id) + '" aria-label="পছন্দের বই">' + (isFav(b.id) ? "★" : "☆") + "</button>" +
@@ -461,6 +463,7 @@
 
   function renderBooks() {
     var list = applyFilters();
+    if (state.q && !list.length) logMissedSearch(state.q);
     var pages = Math.max(1, Math.ceil(list.length / PER_PAGE));
     if (state.page > pages) state.page = pages;
     var slice = list.slice((state.page - 1) * PER_PAGE, state.page * PER_PAGE);
@@ -512,6 +515,29 @@
     var pv = document.getElementById("prevPg"), nx = document.getElementById("nextPg");
     if (pv) pv.addEventListener("click", function () { if (state.page > 1) { state.page--; renderBooks(); window.scrollTo(0, 0); } });
     if (nx) nx.addEventListener("click", function () { state.page++; renderBooks(); window.scrollTo(0, 0); });
+  }
+
+  /* ---------- missed searches ----------
+     A visitor searched for a book we don't have: save the query in
+     Firestore (collection "missed_searches") so the owner can see what
+     readers want and add those books as buy-only listings with details.
+     Once per query per visit, so one person can't flood the list.
+     Rules (published in the Firebase console): anyone may create a
+     {q, createdAt} doc; nobody may read/update/delete from the site —
+     the owner reads them in the console. */
+  var loggedMisses = {};
+  function logMissedSearch(q) {
+    q = (q || "").trim();
+    if (!q || q.length < 2 || q.length > 100 || loggedMisses[q]) return;
+    loggedMisses[q] = true;
+    var db = fsdb();
+    if (!db) return;
+    try {
+      db.collection("missed_searches").add({
+        q: q,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+      }).catch(function () {});
+    } catch (e) {}
   }
 
   /* ---------- reviews + likes (Firebase Firestore) ----------
@@ -678,7 +704,9 @@
     }
     var avail = b.availability === "free-download"
       ? "অনলাইনে পড়া ও ফ্রি ডাউনলোড করা যায়"
-      : "অনলাইনে পড়া যায় (উৎসের নিয়ম অনুযায়ী)";
+      : (b.availability === "buy-only"
+        ? "এই বইয়ের ফ্রি PDF নেই — কিনে পড়া যায় (নিচে কেনার লিংক দেওয়া আছে)"
+        : "অনলাইনে পড়া যায় (উৎসের নিয়ম অনুযায়ী)");
     /* Full A–Z details. Every value is real data from the source; anything
        unknown shows "তথ্য নেই" — nothing is guessed. No price is shown:
        the OCR-extracted printed prices were mostly wrong, so prices were
@@ -727,13 +755,18 @@
       (b.downloadUrl
         ? '<a class="btn btn-primary" href="' + esc(dlUrl(b)) + '" download>' + esc(dlLabel(b)) + "</a>"
         : "") +
+      (b.buyLink
+        ? '<a class="btn btn-primary" href="' + esc(b.buyLink) + '" target="_blank" rel="noopener">কিনুন ↗</a>'
+        : "") +
       '<a class="btn btn-ghost" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">মূল উৎস দেখুন ↗</a>' +
       '<button class="btn btn-ghost" id="shareBtn" type="button">শেয়ার করুন ↗</button>' +
       '<button class="btn btn-ghost" id="favBtn" data-fav="' + esc(b.id) + '" type="button">' + (isFav(b.id) ? "★ পছন্দের বইয়ে আছে" : "☆ পছন্দের বইয়ে রাখুন") + "</button>" +
       "</div>" +
       sharePanelHtml(b.title, "ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", bookUrl(b)) +
-      (b.downloadUrl ? "" :
-        '<div class="notice">এই বইয়ের ফ্রি ডাউনলোড ফাইল এই মুহূর্তে যাচাই করা যায়নি, তাই ডাউনলোড বোতাম দেখানো হয়নি। উপরের “অনলাইনে পড়ুন” লিংক থেকে উৎসের নিয়ম অনুযায়ী পড়তে পারবেন।</div>') +
+      (b.buyLink
+        ? '<div class="notice">এই বইটি নতুন ও কপিরাইটযুক্ত, তাই এর ফ্রি PDF এখানে দেওয়া হয় না। উপরের “কিনুন” বোতাম থেকে আসল বইটি কিনে পড়তে পারবেন।</div>'
+        : (b.downloadUrl ? "" :
+        '<div class="notice">এই বইয়ের ফ্রি ডাউনলোড ফাইল এই মুহূর্তে যাচাই করা যায়নি, তাই ডাউনলোড বোতাম দেখানো হয়নি। উপরের “অনলাইনে পড়ুন” লিংক থেকে উৎসের নিয়ম অনুযায়ী পড়তে পারবেন।</div>')) +
       '<div class="reviews"><h3>পাঠকের মতামত (রিভিউ)</h3>' +
       '<p class="small muted">রিভিউ লিখতে ও লাইক দিতে Google দিয়ে লগইন করুন। আপনার নাম ও মতামত সবার দেখার জন্য প্রকাশ্যে থাকবে।</p>' +
       '<div id="reviewAvg"></div><div id="reviewForm"></div><div id="reviewsBox"></div></div>' +
