@@ -35,13 +35,10 @@
     if (fmt === "TXT") return "টেক্সট পড়ুন ↗";
     return "PDF / টেক্সট ডাউনলোড ⬇";
   }
-  /* Card price: the printed cover price, only when one is really known.
-     Books without one show no price line at all (never "তথ্য নেই" on a card). */
+  /* Card price: removed 2026-11-21 at the owner's request — the OCR-extracted
+     printed prices were mostly wrong, so no price is shown anywhere. */
   function cardPrice(b) {
-    if (!b.price) return "";
-    var t = b.price;
-    if (b.priceCurrency && t.indexOf(b.priceCurrency) === -1) t += " " + b.priceCurrency;
-    return '<p class="price">দাম: ' + esc(t) + "</p>";
+    return "";
   }
   function firstLetter(t) {
     t = (t || "").trim();
@@ -348,9 +345,9 @@
       ? "অনলাইনে পড়া ও ফ্রি ডাউনলোড করা যায়"
       : "অনলাইনে পড়া যায় (উৎসের নিয়ম অনুযায়ী)";
     /* Full A–Z details. Every value is real data from the source; anything
-       unknown shows "তথ্য নেই" — nothing is guessed. The price is the
-       printed cover price (গায়ের মূল্য) read from the book's own scanned
-       title page; books without one show "তথ্য নেই". */
+       unknown shows "তথ্য নেই" — nothing is guessed. No price is shown:
+       the OCR-extracted printed prices were mostly wrong, so prices were
+       removed entirely on 2026-11-21. */
     var rows = [
       ["বইয়ের আইডি", esc(b.sourceId || b.id)],
       ["বইয়ের নাম", esc(b.title)],
@@ -374,8 +371,7 @@
       ["ডাউনলোড লিংক", b.downloadUrl ? linkOrNA(b.downloadUrl, "ডাউনলোড করুন ⬇") : "ফ্রি ডাউনলোড ফাইল যাচাই করা যায়নি"],
       ["কেনার লিংক", b.buyLink ? linkOrNA(b.buyLink, "কিনুন ↗") : NA],
       ["কপিরাইট অবস্থা", b.copyright === "public-domain" ? "পাবলিক ডোমেইন / বিনামূল্যে পাওয়া যায়" : NA],
-      ["প্রাপ্যতা", avail],
-      ["দাম (গায়ের মূল্য)", b.price ? esc(b.price) : NA]
+      ["প্রাপ্যতা", avail]
     ];
     var h = '<button class="back-link" id="backBtn">← ফিরে যান</button>' +
       '<div class="details">' + coverHtml(b, true) +
