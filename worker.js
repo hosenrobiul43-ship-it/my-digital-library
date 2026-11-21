@@ -43,12 +43,15 @@ export default {
       return new Response("Only archive.org download links are allowed", { status: 403 });
     }
     const rawName = decodeURIComponent(targetUrl.pathname.split("/").pop() || "book");
-    const res = await fetch(targetUrl.toString(), {
-      headers: {
-        "User-Agent":
-          "MyDigitalLibrary-Download/1.0 (free public library; contact: hosenrobiul43@gmail.com)",
-      },
-    });
+    // Forward the browser's Range header so big downloads can RESUME after
+    // a dropped mobile connection instead of restarting from zero.
+    const fetchHeaders = {
+      "User-Agent":
+        "MyDigitalLibrary-Download/1.0 (free public library; contact: hosenrobiul43@gmail.com)",
+    };
+    const range = request.headers.get("Range");
+    if (range) fetchHeaders["Range"] = range;
+    const res = await fetch(targetUrl.toString(), { headers: fetchHeaders });
     if (!res.ok) {
       return new Response("archive.org returned " + res.status, { status: 502 });
     }
@@ -61,6 +64,6 @@ export default {
       `attachment; filename="${asciiName(rawName)}"; filename*=UTF-8''${encoded}`
     );
     headers.set("Cache-Control", "public, max-age=86400");
-    return new Response(res.body, { status: 200, headers });
+    return new Response(res.body, { status: res.status, headers });
   },
 };
