@@ -105,6 +105,41 @@
     return i === -1;
   }
 
+  /* ---------- install (Add to Home Screen) ----------
+     Android/PC Chrome: beforeinstallprompt gives a one-tap install.
+     iPhone Safari: Apple allows no install button — show the manual
+     Share → Add to Home Screen steps instead. Already installed: the
+     button stays hidden. */
+  var deferredInstall = null;
+  var isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent || "");
+  var isInstalled = (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone;
+  window.addEventListener("beforeinstallprompt", function (e) {
+    e.preventDefault();
+    deferredInstall = e;
+    var b = document.getElementById("installBtn");
+    if (b) b.hidden = false;
+  });
+  window.addEventListener("appinstalled", function () {
+    deferredInstall = null;
+    var b = document.getElementById("installBtn");
+    if (b) b.hidden = true;
+  });
+  function onInstallClick() {
+    var panel = document.getElementById("installPanel");
+    if (deferredInstall) {
+      deferredInstall.prompt();
+      deferredInstall.userChoice.then(function () { deferredInstall = null; });
+      return;
+    }
+    if (!panel) return;
+    if (isIOS) {
+      panel.innerHTML = "<p><b>iPhone-এ অ্যাপ বসাতে:</b><br>১. নিচের Share (⬆️) বোতামে চাপ দিন<br>২. “Add to Home Screen” বেছে নিন<br>৩. Add চাপ দিন — অ্যাপ হোম স্ক্রিনে চলে আসবে।</p>";
+    } else {
+      panel.innerHTML = "<p><b>অ্যাপ বসাতে:</b><br>Chrome মেনু (⋮) → “Add to Home screen” / “Install app” চাপ দিন।</p>";
+    }
+    panel.hidden = !panel.hidden;
+  }
+
   /* ---------- theme ---------- */
   var themeBtn = document.getElementById("themeBtn");
   function setTheme(t) {
@@ -220,8 +255,10 @@
       '<input id="heroQ" type="search" placeholder="বইয়ের নাম, লেখক বা বিষয় লিখুন..." autocomplete="off">' +
       '<button class="btn btn-primary" type="submit">খুঁজুন</button></form>' +
       '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">লাইব্রেরি শেয়ার করুন ↗</button>' +
-      ' <button class="btn btn-ghost" id="followBtn" type="button">🔔 নতুন বইয়ের খবর পান</button></div>' +
+      ' <button class="btn btn-ghost" id="followBtn" type="button">🔔 নতুন বইয়ের খবর পান</button>' +
+      ' <button class="btn btn-ghost" id="installBtn" type="button" hidden>📲 অ্যাপ ইনস্টল করুন</button></div>' +
       '<div id="siteSharePanel"></div>' +
+      '<div id="installPanel" class="share-panel" hidden></div>' +
       '<button class="adv-toggle" id="advToggle" type="button">উন্নত অনুসন্ধান (Advanced Search) ⌄</button>' +
       '<div class="filters adv-panel" id="advPanel">' +
       '<div><label>বইয়ের নাম</label><input id="fTitle" type="text" placeholder="শিরোনাম"></div>' +
@@ -356,6 +393,12 @@
           setTimeout(refreshFollow, 800);
         });
       });
+    }
+    var ib = document.getElementById("installBtn");
+    if (ib) {
+      if (isInstalled) ib.hidden = true;
+      else if (deferredInstall || isIOS) ib.hidden = false;
+      ib.addEventListener("click", onInstallClick);
     }
     var t = document.getElementById("advToggle");
     var p = document.getElementById("advPanel");
