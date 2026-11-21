@@ -172,7 +172,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/mareful",
   "featured": false,
-  "addedOrder": 4
+  "addedOrder": 4,
+  "editorsChoice": true
  },
  {
   "id": "ia-jalalain",
@@ -207,7 +208,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/jalalain",
   "featured": false,
-  "addedOrder": 5
+  "addedOrder": 5,
+  "editorsChoice": true
  },
  {
   "id": "ia-hayatesahabah",
@@ -382,7 +384,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/Rana326ShornoKhoniPartI",
   "featured": false,
-  "addedOrder": 10
+  "addedOrder": 10,
+  "series": "মাসুদ রানা"
  },
  {
   "id": "ia-bukhari-ifb",
@@ -5072,7 +5075,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ByomkeshSomogroSaradinduBandopadhyay1007Pages77MBAmarboi.com",
   "featured": false,
-  "addedOrder": 144
+  "addedOrder": 144,
+  "series": "ব্যোমকেশ"
  },
  {
   "id": "ia-kothao-kew-nei-pdf-boi",
@@ -12457,7 +12461,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/masud-rana-series",
   "featured": false,
-  "addedOrder": 355
+  "addedOrder": 355,
+  "series": "মাসুদ রানা"
  },
  {
   "id": "ia-in.ernet.dli.2015.266549",
@@ -18547,7 +18552,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/mishkatulanwar_201508",
   "featured": false,
-  "addedOrder": 529
+  "addedOrder": 529,
+  "series": "মিশকাত শরীফ"
  },
  {
   "id": "ia-in.ernet.dli.2015.265936",
@@ -24777,7 +24783,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ExileNotes1",
   "featured": false,
-  "addedOrder": 707
+  "addedOrder": 707,
+  "series": "আরব্য রজনী"
  },
  {
   "id": "ia-in.ernet.dli.2015.456338",
@@ -43957,7 +43964,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.3651",
   "featured": false,
-  "addedOrder": 1255
+  "addedOrder": 1255,
+  "series": "আরব্য রজনী"
  },
  {
   "id": "ia-in.ernet.dli.2015.456154",
@@ -50747,7 +50755,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/feluda-comics-books",
   "featured": false,
-  "addedOrder": 1449
+  "addedOrder": 1449,
+  "series": "ফেলুদা"
  },
  {
   "id": "ia-dli.language.0019",
@@ -51902,7 +51911,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/AnwarulMishkatShorheMishkatulMasabihBangla",
   "featured": false,
-  "addedOrder": 1482
+  "addedOrder": 1482,
+  "series": "মিশকাত শরীফ"
  },
  {
   "id": "ia-in.ernet.dli.2015.454274",
@@ -217452,7 +217462,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ExileNotes2",
   "featured": false,
-  "addedOrder": 6212
+  "addedOrder": 6212,
+  "series": "আরব্য রজনী"
  },
  {
   "id": "ia-gopichandrabenga00send",
@@ -337957,7 +337968,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/by_20250522",
   "featured": true,
-  "addedOrder": 9655
+  "addedOrder": 9655,
+  "editorsChoice": true
  },
  {
   "id": "ia-by_20250523",
@@ -338832,7 +338844,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/prasenjit-das",
   "featured": true,
-  "addedOrder": 9680
+  "addedOrder": 9680,
+  "series": "মিসির আলি"
  },
  {
   "id": "ia-anumaan",
@@ -345342,7 +345355,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20250905_20250905_1525",
   "featured": true,
-  "addedOrder": 9866
+  "addedOrder": 9866,
+  "series": "ব্যোমকেশ"
  },
  {
   "id": "ia-dli.bengal.10689.10774",
@@ -353392,7 +353406,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/pather-panchali",
   "featured": true,
-  "addedOrder": 10096
+  "addedOrder": 10096,
+  "editorsChoice": true
  },
  {
   "id": "ia-20260131_20260131_0452",
@@ -353532,7 +353547,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.ministry.25783",
   "featured": true,
-  "addedOrder": 10100
+  "addedOrder": 10100,
+  "editorsChoice": true
  },
  {
   "id": "ia-dli.bengal.10689.6665",
@@ -353637,7 +353653,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.ministry.26880",
   "featured": true,
-  "addedOrder": 10103
+  "addedOrder": 10103,
+  "editorsChoice": true
  },
  {
   "id": "ia-dli.ministry.26882",
@@ -363787,7 +363804,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.451478",
   "featured": true,
-  "addedOrder": 10393
+  "addedOrder": 10393,
+  "editorsChoice": true
  },
  {
   "id": "ia-by_20250225_20250225_0857",
@@ -363822,7 +363840,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/by_20250225_20250225_0857",
   "featured": true,
-  "addedOrder": 10394
+  "addedOrder": 10394,
+  "editorsChoice": true
  },
  {
   "id": "ia-by_20241109_20241109_0443",
@@ -363857,7 +363876,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/by_20241109_20241109_0443",
   "featured": true,
-  "addedOrder": 10395
+  "addedOrder": 10395,
+  "editorsChoice": true
  },
  {
   "id": "ia-by_20241113_202411",
@@ -363892,7 +363912,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/by_20241113_202411",
   "featured": true,
-  "addedOrder": 10396
+  "addedOrder": 10396,
+  "editorsChoice": true
  },
  {
   "id": "ia-20230529_20230529_0606",
@@ -364032,7 +364053,8 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/by_20250221_202502",
   "featured": true,
-  "addedOrder": 10400
+  "addedOrder": 10400,
+  "editorsChoice": true
  },
  {
   "id": "ia-by_20250430_20250430_1504",
