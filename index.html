@@ -43,6 +43,7 @@
       <a href="#/about" data-nav="about">আমাদের সম্পর্কে</a>
     </nav>
     <button class="icon-btn" id="themeBtn" aria-label="ডার্ক মোড">🌙 ডার্ক</button>
+    <span id="authBox"><button class="btn btn-ghost btn-sm" id="loginBtn" type="button">Google দিয়ে লগইন</button></span>
   </div>
 </header>
 
@@ -80,6 +81,26 @@
     <p class="copy">© <span id="year"></span> My Digital Library by Robiul Hosen. বইয়ের তথ্য ও ডাউনলোডের শর্ত সংশ্লিষ্ট উৎসে (Internet Archive / Standard Ebooks) যাচাই করুন।</p>
   </div>
 </footer>
+<!-- Firebase (free Spark plan): optional Google login + Analytics user counting.
+     Reading/downloading never needs login. The apiKey is a public client key. -->
+<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics-compat.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyBpqzbxVueKQ7Y86W3lPWACmmx5DwLT__Y",
+    authDomain: "my-digital-library-e1a15.firebaseapp.com",
+    projectId: "my-digital-library-e1a15",
+    storageBucket: "my-digital-library-e1a15.firebasestorage.app",
+    messagingSenderId: "246938667729",
+    appId: "1:246938667729:web:64f82214b6587ab7f9d3f0",
+    measurementId: "G-CV3FHHDGL4"
+  };
+  try {
+    firebase.initializeApp(firebaseConfig);
+    if (typeof firebase.analytics === "function") firebase.analytics();
+  } catch (e) {}
+</script>
 <script src="app.js"></script>
 <script>
 if ("serviceWorker" in navigator) {

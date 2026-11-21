@@ -106,6 +106,28 @@
   document.getElementById("menuBtn").addEventListener("click", function () {
     document.getElementById("topnav").classList.toggle("open");
   });
+
+  /* ---------- optional Google login (never gates content) ---------- */
+  function setupAuth() {
+    var box = document.getElementById("authBox");
+    if (!box || typeof firebase === "undefined" || !firebase.auth) return;
+    var auth = firebase.auth();
+    var provider = new firebase.auth.GoogleAuthProvider();
+    function renderUser(user) {
+      if (user) {
+        var name = user.displayName || user.email || "ব্যবহারকারী";
+        box.innerHTML = '<span class="auth-name">' + esc(name) + '</span> <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">লগআউট</button>';
+        var lo = document.getElementById("logoutBtn");
+        if (lo) lo.addEventListener("click", function () { auth.signOut(); });
+      } else {
+        box.innerHTML = '<button class="btn btn-ghost btn-sm" id="loginBtn" type="button">Google দিয়ে লগইন</button>';
+        var li = document.getElementById("loginBtn");
+        if (li) li.addEventListener("click", function () { auth.signInWithPopup(provider).catch(function () {}); });
+      }
+    }
+    auth.onAuthStateChanged(renderUser);
+  }
+  setupAuth();
   document.getElementById("year").textContent = new Date().getFullYear();
 
   /* ---------- data ---------- */

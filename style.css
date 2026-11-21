@@ -257,3 +257,7 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 }
 .share-opt:hover { border-color: var(--gold); }
 .share-panel p { width: 100%; margin: 4px 0 0; }
+
+/* ---------- optional login ---------- */
+#authBox { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.auth-name { color: #fff; font-size: .9rem; }
