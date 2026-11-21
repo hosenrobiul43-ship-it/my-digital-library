@@ -127,15 +127,22 @@
   function onInstallClick() {
     var panel = document.getElementById("installPanel");
     if (deferredInstall) {
-      deferredInstall.prompt();
-      deferredInstall.userChoice.then(function () { deferredInstall = null; });
+      var p = deferredInstall;
+      deferredInstall = null;
+      p.prompt();
+      p.userChoice.then(function (choice) {
+        if (choice && choice.outcome === "dismissed" && panel) {
+          panel.innerHTML = "<p>আপনি ইনস্টল বাতিল করেছেন, তাই Chrome সরাসরি বোতাম আর দেখাবে না। মেনু (⋮) → “Add to Home screen” চাপ দিয়ে বসান।</p>";
+          panel.hidden = false;
+        }
+      });
       return;
     }
     if (!panel) return;
     if (isIOS) {
       panel.innerHTML = "<p><b>iPhone-এ অ্যাপ বসাতে:</b><br>১. নিচের Share (⬆️) বোতামে চাপ দিন<br>২. “Add to Home Screen” বেছে নিন<br>৩. Add চাপ দিন — অ্যাপ হোম স্ক্রিনে চলে আসবে।</p>";
     } else {
-      panel.innerHTML = "<p><b>অ্যাপ বসাতে:</b><br>Chrome মেনু (⋮) → “Add to Home screen” / “Install app” চাপ দিন।</p>";
+      panel.innerHTML = "<p><b>সরাসরি ইনস্টল বোতাম না এলে</b> (আগে বসানো থাকলে বা একবার বাতিল করলে Chrome আর দেখায় না):<br>Chrome মেনু (⋮) → “Add to Home screen” / “Install app” চাপ দিন।</p>";
     }
     panel.hidden = !panel.hidden;
   }
