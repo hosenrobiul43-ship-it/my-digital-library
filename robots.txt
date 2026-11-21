@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hosenrobiul43-ship-it.github.io/my-digital-library/sitemap.xml
