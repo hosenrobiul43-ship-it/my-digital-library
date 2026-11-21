@@ -234,3 +234,26 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
   .details dt { font-weight: 700; }
   footer .cols { grid-template-columns: 1fr; }
 }
+
+/* ---------- share & bookmarks ---------- */
+.hero-share { margin-top: 10px; }
+.fav-btn {
+  position: absolute; top: 8px; right: 8px; z-index: 3;
+  width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--border);
+  background: rgba(255,255,255,.92); color: var(--navy); font-size: 1.1rem; line-height: 1;
+  cursor: pointer; box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+.fav-btn.on { color: var(--gold-dark); background: #fff8e1; }
+.share-panel {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--surface); padding: 12px; margin: 12px 0;
+  display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+}
+.share-panel[hidden] { display: none; }
+.share-opt {
+  border: 1px solid var(--border); border-radius: 20px; padding: 8px 14px;
+  background: var(--surface); color: var(--text); text-decoration: none;
+  font-size: .92rem; cursor: pointer; font-family: inherit;
+}
+.share-opt:hover { border-color: var(--gold); }
+.share-panel p { width: 100%; margin: 4px 0 0; }

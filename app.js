@@ -49,6 +49,46 @@
   }
   function byId(id) { return BOOKS.find(function (b) { return b.id === id; }); }
 
+  /* ---------- share (no account needed) ----------
+     Phone: the native share sheet (Facebook, Instagram, WhatsApp and
+     everything installed). Desktop/other browsers: a small panel with
+     direct share links + copy link. Instagram has no web share link,
+     so it is reached through the phone's native sheet or copy link. */
+  function siteUrl() { return location.origin + location.pathname + "#/"; }
+  function bookUrl(b) { return location.origin + location.pathname + "#/book/" + encodeURIComponent(b.id); }
+  function sharePanelHtml(title, text, url) {
+    var u = encodeURIComponent(url);
+    var t = encodeURIComponent(title + " — " + text);
+    return '<div class="share-panel" hidden>' +
+      '<a class="share-opt" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '" target="_blank" rel="noopener">ফেসবুক</a>' +
+      '<a class="share-opt" href="https://wa.me/?text=' + t + "%20" + u + '" target="_blank" rel="noopener">হোয়াটসঅ্যাপ</a>' +
+      '<a class="share-opt" href="https://t.me/share/url?url=' + u + "&text=" + t + '" target="_blank" rel="noopener">টেলিগ্রাম</a>' +
+      '<a class="share-opt" href="https://twitter.com/intent/tweet?text=' + t + "&url=" + u + '" target="_blank" rel="noopener">এক্স (X)</a>' +
+      '<button class="share-opt" type="button" data-copy="' + esc(url) + '">লিংক কপি করুন</button>' +
+      '<p class="small muted">ইনস্টাগ্রামে শেয়ার করতে লিংক কপি করে ইনস্টাগ্রাম অ্যাপে পেস্ট করুন, অথবা ফোনের শেয়ার মেনু থেকে ইনস্টাগ্রাম বেছে নিন।</p></div>';
+  }
+  function doShare(title, text, url, panel) {
+    if (navigator.share) {
+      navigator.share({ title: title, text: text, url: url }).catch(function () {});
+    } else if (panel) {
+      panel.hidden = !panel.hidden;
+    }
+  }
+
+  /* ---------- bookmarks (saved on the phone, no login) ---------- */
+  var FAV_KEY = "mdl-favs";
+  function getFavs() {
+    try { return JSON.parse(localStorage.getItem(FAV_KEY) || "[]"); } catch (e) { return []; }
+  }
+  function isFav(id) { return getFavs().indexOf(id) !== -1; }
+  function toggleFav(id) {
+    var favs = getFavs();
+    var i = favs.indexOf(id);
+    if (i === -1) favs.push(id); else favs.splice(i, 1);
+    try { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); } catch (e) {}
+    return i === -1;
+  }
+
   /* ---------- theme ---------- */
   var themeBtn = document.getElementById("themeBtn");
   function setTheme(t) {
@@ -99,6 +139,7 @@
         : '<span class="tag nodl">শুধু অনলাইনে পড়ুন</span>');
     return '<article class="book-card" data-book="' + esc(b.id) + '">' +
       (b.topRank ? '<span class="rank-badge">' + b.topRank.toLocaleString("bn-BD") + "</span>" : "") +
+      '<button class="fav-btn' + (isFav(b.id) ? " on" : "") + '" data-fav="' + esc(b.id) + '" aria-label="পছন্দের বই">' + (isFav(b.id) ? "★" : "☆") + "</button>" +
       coverHtml(b) +
       '<div class="book-body"><h3>' + esc(b.title) + "</h3>" +
       '<p class="author">' + esc(b.author || NA) + "</p>" +
@@ -124,6 +165,8 @@
       '<form class="search-big" id="heroSearch">' +
       '<input id="heroQ" type="search" placeholder="বইয়ের নাম, লেখক বা বিষয় লিখুন..." autocomplete="off">' +
       '<button class="btn btn-primary" type="submit">খুঁজুন</button></form>' +
+      '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">লাইব্রেরি শেয়ার করুন ↗</button></div>' +
+      '<div id="siteSharePanel"></div>' +
       '<button class="adv-toggle" id="advToggle" type="button">উন্নত অনুসন্ধান (Advanced Search) ⌄</button>' +
       '<div class="filters adv-panel" id="advPanel">' +
       '<div><label>বইয়ের নাম</label><input id="fTitle" type="text" placeholder="শিরোনাম"></div>' +
@@ -163,6 +206,10 @@
     h += '<section class="block"><div class="section-head"><h2>টপ বই</h2><a class="link" href="#/books?sort=top">সব দেখুন →</a></div><p class="muted">সবচেয়ে বেশি ডাউনলোড হওয়া বই — ১ নম্বর সবচেয়ে জনপ্রিয়।</p>' + gridHtml(top) + "</section>";
     h += '<section class="block"><div class="section-head"><h2>বিশেষভাবে নির্বাচিত বই</h2><a class="link" href="#/books">সব বই দেখুন →</a></div>' + gridHtml(featured) + "</section>";
     h += '<section class="block"><div class="section-head"><h2>সম্প্রতি যুক্ত বই</h2><a class="link" href="#/books?sort=newest">সব দেখুন →</a></div>' + gridHtml(recent) + "</section>";
+    var favs = BOOKS.filter(function (b) { return isFav(b.id); });
+    if (favs.length) {
+      h += '<section class="block"><div class="section-head"><h2>পছন্দের বই</h2></div><p class="muted">আপনার ফোনে সংরক্ষিত — লগইন লাগে না।</p>' + gridHtml(favs) + "</section>";
+    }
     h += '<section class="block"><div class="section-head"><h2>জনপ্রিয় লেখক</h2><a class="link" href="#/authors">সব লেখক →</a></div><div class="author-list">' +
       authors.map(function (a) {
         return '<div class="author-item" data-author="' + esc(a) + '"><b>' + esc(a) + "</b><span>" + counts[a].toLocaleString("bn-BD") + "টি বই</span></div>";
@@ -205,6 +252,14 @@
                 category: "", language: "", year: "", sort: "az", page: 1 };
       location.hash = "#/books";
     });
+    var shareBtn = document.getElementById("shareSiteBtn");
+    var shareBox = document.getElementById("siteSharePanel");
+    if (shareBtn && shareBox) {
+      shareBox.innerHTML = sharePanelHtml("ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", "বাংলা ও বিশ্বের বই — ফ্রি পড়ুন ও ডাউনলোড করুন", siteUrl());
+      shareBtn.addEventListener("click", function () {
+        doShare("ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", "বাংলা ও বিশ্বের বই — ফ্রি পড়ুন ও ডাউনলোড করুন", siteUrl(), shareBox.querySelector(".share-panel"));
+      });
+    }
     var t = document.getElementById("advToggle");
     var p = document.getElementById("advPanel");
     if (t && p) {
@@ -394,7 +449,10 @@
         ? '<a class="btn btn-primary" href="' + esc(b.downloadUrl) + '" download>' + esc(dlLabel(b)) + "</a>"
         : "") +
       '<a class="btn btn-ghost" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">মূল উৎস দেখুন ↗</a>' +
+      '<button class="btn btn-ghost" id="shareBtn" type="button">শেয়ার করুন ↗</button>' +
+      '<button class="btn btn-ghost" id="favBtn" data-fav="' + esc(b.id) + '" type="button">' + (isFav(b.id) ? "★ পছন্দের বইয়ে আছে" : "☆ পছন্দের বইয়ে রাখুন") + "</button>" +
       "</div>" +
+      sharePanelHtml(b.title, "ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", bookUrl(b)) +
       (b.downloadUrl ? "" :
         '<div class="notice">এই বইয়ের ফ্রি ডাউনলোড ফাইল এই মুহূর্তে যাচাই করা যায়নি, তাই ডাউনলোড বোতাম দেখানো হয়নি। উপরের “অনলাইনে পড়ুন” লিংক থেকে উৎসের নিয়ম অনুযায়ী পড়তে পারবেন।</div>') +
       '<div class="reviews"><h3>পাঠকের মতামত (রিভিউ)</h3>' +
@@ -402,6 +460,10 @@
       '<div class="giscus"></div></div></div>';
     view.innerHTML = h;
     document.getElementById("backBtn").addEventListener("click", function () { history.back(); });
+    var dShareBtn = document.getElementById("shareBtn");
+    if (dShareBtn) dShareBtn.addEventListener("click", function () {
+      doShare(b.title, "ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন — " + (b.author || ""), bookUrl(b), document.querySelector(".share-panel"));
+    });
     loadGiscus(b.id);
     window.scrollTo(0, 0);
   }
@@ -499,6 +561,29 @@
 
   /* ---------- global clicks (delegation) ---------- */
   document.addEventListener("click", function (e) {
+    var cp = e.target.closest("[data-copy]");
+    if (cp) {
+      var url = cp.getAttribute("data-copy");
+      var done = function () {
+        cp.textContent = "কপি হয়েছে ✓";
+        setTimeout(function () { cp.textContent = "লিংক কপি করুন"; }, 2000);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
+      else {
+        var ta = document.createElement("textarea");
+        ta.value = url; document.body.appendChild(ta); ta.select();
+        try { document.execCommand("copy"); } catch (err) {}
+        document.body.removeChild(ta); done();
+      }
+      return;
+    }
+    var fv = e.target.closest("[data-fav]");
+    if (fv) {
+      var added = toggleFav(fv.getAttribute("data-fav"));
+      if (fv.id === "favBtn") fv.textContent = added ? "★ পছন্দের বইয়ে আছে" : "☆ পছন্দের বইয়ে রাখুন";
+      else { fv.textContent = added ? "★" : "☆"; fv.classList.toggle("on", added); }
+      return;
+    }
     var card = e.target.closest("[data-book]");
     if (card) { location.hash = "#/book/" + encodeURIComponent(card.getAttribute("data-book")); return; }
     var cat = e.target.closest("[data-cat]");
