@@ -202,7 +202,18 @@ html[data-theme="dark"] .notice { background: #2b2305; color: #f0d9a8; border-co
 
 /* ---------- reviews ---------- */
 .reviews { margin-top: 24px; border-top: 1px solid var(--border); padding-top: 18px; }
-.giscus { margin-top: 12px; }
+.rev-stars { color: #C9A227; letter-spacing: 1px; }
+.rev-ava { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; background: var(--navy); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; flex: none; }
+.review { border: 1px solid var(--border); border-radius: 10px; padding: 12px; margin: 10px 0; background: var(--surface); }
+.rev-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.rev-text { margin: 8px 0; white-space: pre-wrap; }
+.rev-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.rev-actions .liked { border-color: #C9A227; color: #8a6d1b; }
+.rev-replies { margin-left: 18px; border-left: 2px solid var(--border); padding-left: 10px; }
+.rev-replies .review { border: none; padding: 8px 0; margin: 4px 0; }
+.rev-form textarea, .rev-reply-form textarea { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid var(--border); border-radius: 8px; font: inherit; background: var(--surface); color: var(--text); margin: 8px 0; }
+.star-pick { background: none; border: none; font-size: 26px; color: #bbb; cursor: pointer; padding: 0 2px; }
+.star-pick.on { color: #C9A227; }
 
 /* ---------- info pages / footer ---------- */
 .info-page { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; margin: 18px 0; }

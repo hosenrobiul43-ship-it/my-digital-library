@@ -1,8 +1,9 @@
 // Service worker for My Digital Library by Robiul Hosen.
 // Purpose: make the site installable (Add to Home screen) and usable
-// offline for the app shell. Book data (data/books.json) is always
-// fetched fresh from the network; the shell falls back to cache.
-const CACHE = "mdl-shell-v2";
+// offline for the app shell. The light book index (data/index.json) is
+// stale-while-revalidate; detail chunks (data/chunks/*.json) are cached
+// on first use so repeat visits open fast on mobile data.
+const CACHE = "mdl-shell-v3";
 const SHELL = [
   "./",
   "index.html",
@@ -36,7 +37,7 @@ self.addEventListener("fetch", (event) => {
   }
   // Book data: stale-while-revalidate — show the saved copy instantly,
   // refresh it in the background, so repeat visits open fast on mobile data.
-  if (url.pathname.endsWith("books.json")) {
+  if (url.pathname.endsWith("index.json") || url.pathname.includes("/data/chunks/")) {
     event.respondWith(
       caches.open(CACHE).then((cache) =>
         cache.match(event.request).then((cached) => {

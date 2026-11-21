@@ -1,12 +1,15 @@
 /* My Digital Library by Robiul Hosen — Phase 1
-   Client-side only. All book data comes from data/books.json (real catalog).
-   No fake data: missing fields show "তথ্য নেই". Reviews are public via
-   GitHub Discussions (Giscus) — one discussion thread per book. */
+   Client-side only. Book lists/search/home come from data/index.json
+   (light records, fast on phones); a book's full A–Z details load from
+   data/chunks/part-NNN.json only when its page opens. Reviews + likes
+   are public via Firebase Firestore (Google login) — one thread per book. */
 (function () {
   "use strict";
 
   var view = document.getElementById("view");
-  var BOOKS = [];
+  var BOOKS = [];   /* light index records */
+  var FULL = {};    /* full book records by id, loaded from chunks */
+  var currentUser = null;  /* Firebase user, set by setupAuth */
   var PER_PAGE = 12;
   var state = { q: "", title: "", author: "", category: "", language: "", year: "",
                 sort: "az", page: 1 };
@@ -127,6 +130,7 @@
     var auth = firebase.auth();
     var provider = new firebase.auth.GoogleAuthProvider();
     function renderUser(user) {
+      currentUser = user || null;
       if (user) {
         var name = user.displayName || user.email || "ব্যবহারকারী";
         box.innerHTML = '<span class="auth-name">' + esc(name) + '</span> <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">লগআউট</button>';
@@ -143,10 +147,10 @@
   setupAuth();
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  /* ---------- data ---------- */
+  /* ---------- data (light index + on-demand full chunks) ---------- */
   function loadBooks() {
-    return fetch("data/books.json").then(function (r) {
-      if (!r.ok) throw new Error("books.json লোড হয়নি");
+    return fetch("data/index.json").then(function (r) {
+      if (!r.ok) throw new Error("index.json লোড হয়নি");
       return r.json();
     }).then(function (data) {
       BOOKS = data;
@@ -154,6 +158,21 @@
     }).catch(function () {
       view.innerHTML = '<p class="empty">দুঃখিত, বইয়ের তালিকা লোড করা যায়নি। পরে আবার চেষ্টা করুন।</p>';
     });
+  }
+  /* Full A–Z record for one book: from the chunk file its index record
+     points to (rec.ci). Chunk files are cached by the service worker. */
+  function getFull(id) {
+    if (FULL[id]) return Promise.resolve(FULL[id]);
+    var rec = byId(id);
+    if (!rec) return Promise.resolve(null);
+    var part = "data/chunks/part-" + String(rec.ci || 0).padStart(3, "0") + ".json";
+    return fetch(part).then(function (r) {
+      if (!r.ok) throw new Error("chunk লোড হয়নি");
+      return r.json();
+    }).then(function (list) {
+      list.forEach(function (b) { FULL[b.id] = b; });
+      return FULL[id] || rec;
+    }).catch(function () { return rec; });
   }
 
   /* ---------- shared pieces ---------- */
@@ -240,6 +259,17 @@
       "</div></section>";
 
     h += '<section class="block"><div class="section-head"><h2>টপ বই</h2><a class="link" href="#/books?sort=top">সব দেখুন →</a></div><p class="muted">সবচেয়ে বেশি ডাউনলোড হওয়া বই — ১ নম্বর সবচেয়ে জনপ্রিয়।</p>' + gridHtml(top) + "</section>";
+    var editors = BOOKS.filter(function (b) { return b.editorsChoice; }).slice(0, 12);
+    if (editors.length) {
+      h += '<section class="block"><div class="section-head"><h2>সম্পাদকের পছন্দ</h2><a class="link" href="#/books">সব বই দেখুন →</a></div><p class="muted">লাইব্রেরির পক্ষ থেকে বাছাই করা সেরা বই।</p>' + gridHtml(editors) + "</section>";
+    }
+    var series = seriesCounts();
+    if (series.length) {
+      h += '<section class="block"><div class="section-head"><h2>সিরিজ</h2></div><p class="muted">একই সিরিজের বইগুলো একসাথে — একটা পড়লে বাকিগুলোও পাবেন।</p><div class="chip-grid">' +
+        series.map(function (s) {
+          return '<button class="chip" data-series="' + esc(s.name) + '">' + esc(s.name) + " <small>(" + s.n.toLocaleString("bn-BD") + ")</small></button>";
+        }).join("") + "</div></section>";
+    }
     h += '<section class="block"><div class="section-head"><h2>বিশেষভাবে নির্বাচিত বই</h2><a class="link" href="#/books">সব বই দেখুন →</a></div>' + gridHtml(featured) + "</section>";
     h += '<section class="block"><div class="section-head"><h2>সম্প্রতি যুক্ত বই</h2><a class="link" href="#/books?sort=newest">সব দেখুন →</a></div>' + gridHtml(recent) + "</section>";
     var favs = BOOKS.filter(function (b) { return isFav(b.id); });
@@ -263,6 +293,16 @@
 
     view.innerHTML = h;
     bindHome();
+  }
+
+  function seriesCounts() {
+    var counts = {};
+    BOOKS.forEach(function (b) {
+      if (b.series) counts[b.series] = (counts[b.series] || 0) + 1;
+    });
+    return Object.keys(counts).filter(function (s) { return counts[s] >= 2; })
+      .map(function (s) { return { name: s, n: counts[s] }; })
+      .sort(function (a, b) { return b.n - a.n; });
   }
 
   function categoryCounts() {
@@ -424,38 +464,163 @@
     if (nx) nx.addEventListener("click", function () { state.page++; renderBooks(); window.scrollTo(0, 0); });
   }
 
-  /* Giscus (GitHub Discussions) config for public per-book reviews. */
-  var GISCUS = {
-    repo: "hosenrobiul43-ship-it/my-digital-library",
-    repoId: "R_kgDOV2avLg",
-    category: "General",
-    categoryId: "DIC_kwDOV2avLs4DLo87"
-  };
-  function loadGiscus(bookId) {
-    var box = document.querySelector(".giscus");
+  /* ---------- reviews + likes (Firebase Firestore) ----------
+     Google login (already on the site) is enough — no GitHub account.
+     Reviews live in the "reviews" collection:
+     {bookId, uid, name, photo, text, rating 1-5, likes:[uid...],
+      parentId (null = top-level review, else a reply), createdAt}.
+     Firestore rules (published in the Firebase console) let anyone read,
+     signed-in users create their own, anyone signed-in toggle a like,
+     and only the author edit/delete their own. */
+  function fsdb() {
+    if (typeof firebase === "undefined" || !firebase.firestore) return null;
+    try { return firebase.firestore(); } catch (e) { return null; }
+  }
+  function starsHtml(n) {
+    n = Math.max(0, Math.min(5, Math.round(n || 0)));
+    return "★★★★★".slice(0, n) + "☆☆☆☆☆".slice(0, 5 - n);
+  }
+  function reviewTime(ts) {
+    if (!ts || !ts.toDate) return "এখনই";
+    try { return ts.toDate().toLocaleDateString("bn-BD", { day: "numeric", month: "long", year: "numeric" }); }
+    catch (e) { return ""; }
+  }
+  function reviewAvatar(r) {
+    if (r.photo) return '<img class="rev-ava" src="' + esc(r.photo) + '" alt="">';
+    return '<span class="rev-ava">' + esc((r.name || "?").charAt(0)) + "</span>";
+  }
+  var reviewState = { bookId: null, list: [], replyTo: null, rating: 5 };
+  function loadReviews(bookId) {
+    reviewState.bookId = bookId;
+    reviewState.list = [];
+    reviewState.replyTo = null;
+    var box = document.getElementById("reviewsBox");
+    var db = fsdb();
     if (!box) return;
-    var s = document.createElement("script");
-    s.src = "https://giscus.app/client.js";
-    s.setAttribute("data-repo", GISCUS.repo);
-    s.setAttribute("data-repo-id", GISCUS.repoId);
-    s.setAttribute("data-category", GISCUS.category);
-    s.setAttribute("data-category-id", GISCUS.categoryId);
-    s.setAttribute("data-mapping", "specific");
-    s.setAttribute("data-term", "book-" + bookId);
-    s.setAttribute("data-strict", "0");
-    s.setAttribute("data-reactions-enabled", "1");
-    s.setAttribute("data-emit-metadata", "0");
-    s.setAttribute("data-input-position", "bottom");
-    s.setAttribute("data-theme", "preferred_color_scheme");
-    s.setAttribute("data-lang", "bn");
-    s.setAttribute("crossorigin", "anonymous");
-    s.async = true;
-    box.appendChild(s);
+    if (!db) {
+      box.innerHTML = '<p class="muted">রিভিউ লোড করা যায়নি — ইন্টারনেট চেক করে পেজটি রিফ্রেশ করুন।</p>';
+      return;
+    }
+    box.innerHTML = '<p class="muted">রিভিউ লোড হচ্ছে…</p>';
+    db.collection("reviews").where("bookId", "==", bookId).get()
+      .then(function (snap) {
+        var list = [];
+        snap.forEach(function (d) {
+          var r = d.data(); r._id = d.id; list.push(r);
+        });
+        list.sort(function (a, b) {
+          var ta = a.createdAt && a.createdAt.toMillis ? a.createdAt.toMillis() : 0;
+          var tb = b.createdAt && b.createdAt.toMillis ? b.createdAt.toMillis() : 0;
+          return tb - ta;
+        });
+        reviewState.list = list;
+        renderReviews();
+      })
+      .catch(function () {
+        box.innerHTML = '<p class="muted">রিভিউ লোড করা যায়নি — পরে আবার চেষ্টা করুন।</p>';
+      });
+  }
+  function renderReviews() {
+    var box = document.getElementById("reviewsBox");
+    var avg = document.getElementById("reviewAvg");
+    if (!box) return;
+    var top = reviewState.list.filter(function (r) { return !r.parentId; });
+    if (avg) {
+      var rated = top.filter(function (r) { return r.rating; });
+      if (rated.length) {
+        var mean = rated.reduce(function (s, r) { return s + r.rating; }, 0) / rated.length;
+        avg.innerHTML = '<span class="rev-stars">' + starsHtml(mean) + '</span> <b>' +
+          mean.toLocaleString("bn-BD", { maximumFractionDigits: 1 }) + "</b> (" +
+          rated.length.toLocaleString("bn-BD") + "টি রেটিং)";
+      } else {
+        avg.innerHTML = '<span class="muted">এখনো কেউ রেটিং দেয়নি — প্রথম রেটিং আপনিই দিন।</span>';
+      }
+    }
+    if (!reviewState.list.length) {
+      box.innerHTML = '<p class="muted">এই বইয়ে এখনো কোনো রিভিউ নেই — প্রথম রিভিউ আপনিই লিখুন।</p>';
+    } else {
+      box.innerHTML = top.map(reviewHtml).join("");
+    }
+    renderReviewForm();
+  }
+  function reviewHtml(r) {
+    var me = currentUser && currentUser.uid === r.uid;
+    var liked = currentUser && (r.likes || []).indexOf(currentUser.uid) !== -1;
+    var n = (r.likes || []).length;
+    var replies = reviewState.list.filter(function (x) { return x.parentId === r._id; });
+    var h = '<div class="review" data-rev="' + esc(r._id) + '">' +
+      '<div class="rev-head">' + reviewAvatar(r) +
+      '<b>' + esc(r.name || "পাঠক") + "</b>" +
+      (r.rating ? '<span class="rev-stars">' + starsHtml(r.rating) + "</span>" : "") +
+      '<span class="muted small">' + esc(reviewTime(r.createdAt)) + "</span></div>" +
+      '<p class="rev-text">' + esc(r.text) + "</p>" +
+      '<div class="rev-actions">' +
+      '<button class="btn btn-ghost btn-sm' + (liked ? " liked" : "") + '" data-like="' + esc(r._id) + '" type="button">' +
+      (liked ? "❤️" : "🤍") + " " + n.toLocaleString("bn-BD") + "</button>" +
+      '<button class="btn btn-ghost btn-sm" data-reply="' + esc(r._id) + '" type="button">উত্তর দিন</button>' +
+      (me ? '<button class="btn btn-ghost btn-sm" data-del-review="' + esc(r._id) + '" type="button">মুছুন</button>' : "") +
+      "</div>";
+    if (reviewState.replyTo === r._id) {
+      h += '<div class="rev-reply-form"><textarea id="replyText" rows="2" placeholder="উত্তর লিখুন..."></textarea>' +
+        '<button class="btn btn-navy btn-sm" id="replySend" type="button">উত্তর পাঠান</button></div>';
+    }
+    if (replies.length) {
+      h += '<div class="rev-replies">' + replies.map(reviewHtml).join("") + "</div>";
+    }
+    return h + "</div>";
+  }
+  function renderReviewForm() {
+    var f = document.getElementById("reviewForm");
+    if (!f) return;
+    if (!currentUser) {
+      f.innerHTML = '<p class="muted">রিভিউ লিখতে Google দিয়ে লগইন করুন — উপরের "Google দিয়ে লগইন" বোতামে চাপ দিন।</p>';
+      return;
+    }
+    f.innerHTML = '<div class="rev-form"><div class="rev-stars-pick">' +
+      [1, 2, 3, 4, 5].map(function (n) {
+        return '<button class="star-pick' + (n <= reviewState.rating ? " on" : "") + '" data-star="' + n + '" type="button">★</button>';
+      }).join("") + '</div>' +
+      '<textarea id="reviewText" rows="3" placeholder="বইটি কেমন লেগেছে? আপনার মতামত লিখুন..."></textarea>' +
+      '<button class="btn btn-primary btn-sm" id="reviewSend" type="button">রিভিউ পাঠান</button></div>';
+    var send = document.getElementById("reviewSend");
+    if (send) send.addEventListener("click", function () { submitReview(null); });
+    var rs = document.getElementById("replySend");
+    if (rs) rs.addEventListener("click", function () { submitReview(reviewState.replyTo); });
+  }
+  function submitReview(parentId) {
+    var db = fsdb();
+    if (!db || !currentUser) return;
+    var ta = document.getElementById(parentId ? "replyText" : "reviewText");
+    if (!ta) return;
+    var text = ta.value.trim();
+    if (!text) { ta.focus(); return; }
+    var data = {
+      bookId: reviewState.bookId,
+      uid: currentUser.uid,
+      name: currentUser.displayName || currentUser.email || "পাঠক",
+      photo: currentUser.photoURL || "",
+      text: text,
+      rating: parentId ? 0 : (reviewState.rating || 5),
+      likes: [],
+      parentId: parentId || null,
+      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    };
+    db.collection("reviews").add(data).then(function () {
+      reviewState.replyTo = null;
+      loadReviews(reviewState.bookId);
+    }).catch(function () {
+      alert("রিভিউ পাঠানো যায়নি — পরে আবার চেষ্টা করুন।");
+    });
   }
 
   function renderBook(id) {
-    var b = byId(id);
-    if (!b) { view.innerHTML = '<p class="empty">এই বইটি পাওয়া যায়নি।</p>'; return; }
+    var light = byId(id);
+    if (!light) { view.innerHTML = '<p class="empty">এই বইটি পাওয়া যায়নি।</p>'; return; }
+    view.innerHTML = '<p class="empty">বইয়ের বিস্তারিত তথ্য লোড হচ্ছে…</p>';
+    window.scrollTo(0, 0);
+    getFull(id).then(function (b) { renderBookFull(b || light); });
+  }
+  function renderBookFull(b) {
     function linkOrNA(url, label) {
       return url
         ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(label || url) + "</a>"
@@ -493,6 +658,13 @@
       ["কপিরাইট অবস্থা", b.copyright === "public-domain" ? "পাবলিক ডোমেইন / বিনামূল্যে পাওয়া যায়" : NA],
       ["প্রাপ্যতা", avail]
     ];
+    var seriesHtml = "";
+    if (b.series) {
+      var sibs = BOOKS.filter(function (x) { return x.series === b.series && x.id !== b.id; });
+      if (sibs.length) {
+        seriesHtml = '<div class="reviews"><h3>' + esc(b.series) + ' সিরিজের আরও বই</h3>' + gridHtml(sibs.slice(0, 12)) + "</div>";
+      }
+    }
     var h = '<button class="back-link" id="backBtn">← ফিরে যান</button>' +
       '<div class="details">' + coverHtml(b, true) +
       "<h2>" + esc(b.title) + "</h2>" +
@@ -513,15 +685,22 @@
       (b.downloadUrl ? "" :
         '<div class="notice">এই বইয়ের ফ্রি ডাউনলোড ফাইল এই মুহূর্তে যাচাই করা যায়নি, তাই ডাউনলোড বোতাম দেখানো হয়নি। উপরের “অনলাইনে পড়ুন” লিংক থেকে উৎসের নিয়ম অনুযায়ী পড়তে পারবেন।</div>') +
       '<div class="reviews"><h3>পাঠকের মতামত (রিভিউ)</h3>' +
-      '<p class="small muted">এখানে লেখা মতামত সবার দেখার জন্য প্রকাশ্যে থাকবে (GitHub Discussions)। রিভিউ দিতে একটি GitHub অ্যাকাউন্ট লাগবে।</p>' +
-      '<div class="giscus"></div></div></div>';
+      '<p class="small muted">রিভিউ লিখতে ও লাইক দিতে Google দিয়ে লগইন করুন। আপনার নাম ও মতামত সবার দেখার জন্য প্রকাশ্যে থাকবে।</p>' +
+      '<div id="reviewAvg"></div><div id="reviewForm"></div><div id="reviewsBox"></div></div>' +
+      seriesHtml + "</div>";
     view.innerHTML = h;
     document.getElementById("backBtn").addEventListener("click", function () { history.back(); });
     var dShareBtn = document.getElementById("shareBtn");
     if (dShareBtn) dShareBtn.addEventListener("click", function () {
       doShare(b.title, "ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন — " + (b.author || ""), bookUrl(b), document.querySelector(".share-panel"));
     });
-    loadGiscus(b.id);
+    loadReviews(b.id);
+  }
+
+  function renderSeries(name) {
+    var list = BOOKS.filter(function (b) { return b.series === name; });
+    view.innerHTML = '<section class="block"><h2>' + esc(name) + ' সিরিজ</h2>' +
+      '<p class="muted">' + list.length.toLocaleString("bn-BD") + 'টি বই</p>' + gridHtml(list) + "</section>";
     window.scrollTo(0, 0);
   }
 
@@ -558,7 +737,7 @@
   function renderPrivacy() {
     infoPage("গোপনীয়তা নীতি",
       "<p>এই ওয়েবসাইট আপনার কোনো অ্যাকাউন্ট, পাসওয়ার্ড বা ব্যক্তিগত তথ্য সংগ্রহ করে না।</p>" +
-      "<p>রিভিউ লেখার সময় আপনি যে নাম ও মতামত দেন, তা GitHub Discussions-এর মাধ্যমে সবার দেখার জন্য প্রকাশ্যে থাকে। রিভিউ দিতে একটি GitHub অ্যাকাউন্ট লাগবে।</p>");
+      "<p>রিভিউ লেখার সময় আপনি যে নাম ও মতামত দেন, তা সবার দেখার জন্য প্রকাশ্যে থাকে। রিভিউ দিতে Google দিয়ে লগইন করতে হয় — আপনার Gmail ঠিকানা অন্য পাঠকদের দেখানো হয় না, শুধু আপনার নাম ও ছবি দেখা যায়।</p>");
   }
   function renderTerms() {
     infoPage("ব্যবহারের শর্তাবলি",
@@ -594,6 +773,7 @@
       renderBooks();
     }
     else if (page === "book") renderBook(decodeURIComponent(parts[1] || ""));
+    else if (page === "series") renderSeries(decodeURIComponent(parts[1] || ""));
     else if (page === "category") {
       state = { q: "", title: "", author: "", category: decodeURIComponent(parts[1] || ""),
                 language: "", year: "", sort: "az", page: 1 };
@@ -651,6 +831,52 @@
     if (lg) {
       state = { q: "", title: "", author: "", category: "", language: lg.getAttribute("data-lang"), year: "", sort: "az", page: 1 };
       location.hash = "#/books";
+      return;
+    }
+    var sr = e.target.closest("[data-series]");
+    if (sr) { location.hash = "#/series/" + encodeURIComponent(sr.getAttribute("data-series")); return; }
+    var st = e.target.closest("[data-star]");
+    if (st) {
+      reviewState.rating = parseInt(st.getAttribute("data-star"), 10) || 5;
+      renderReviewForm();
+      return;
+    }
+    var lk = e.target.closest("[data-like]");
+    if (lk) {
+      if (!currentUser) { alert("লাইক দিতে Google দিয়ে লগইন করুন।"); return; }
+      var db = fsdb();
+      if (!db) return;
+      var rid = lk.getAttribute("data-like");
+      var ref = db.collection("reviews").doc(rid);
+      ref.get().then(function (d) {
+        if (!d.exists) return;
+        var likes = d.data().likes || [];
+        var has = likes.indexOf(currentUser.uid) !== -1;
+        var op = has
+          ? firebase.firestore.FieldValue.arrayRemove(currentUser.uid)
+          : firebase.firestore.FieldValue.arrayUnion(currentUser.uid);
+        return ref.update({ likes: op });
+      }).then(function () { loadReviews(reviewState.bookId); })
+      .catch(function () {});
+      return;
+    }
+    var rp = e.target.closest("[data-reply]");
+    if (rp) {
+      if (!currentUser) { alert("উত্তর দিতে Google দিয়ে লগইন করুন।"); return; }
+      reviewState.replyTo = rp.getAttribute("data-reply");
+      renderReviews();
+      var rt = document.getElementById("replyText");
+      if (rt) rt.focus();
+      return;
+    }
+    var dl = e.target.closest("[data-del-review]");
+    if (dl) {
+      var db2 = fsdb();
+      if (!db2 || !currentUser) return;
+      if (!confirm("এই রিভিউটি মুছে ফেলবেন?")) return;
+      db2.collection("reviews").doc(dl.getAttribute("data-del-review")).delete()
+        .then(function () { loadReviews(reviewState.bookId); })
+        .catch(function () {});
       return;
     }
   });
