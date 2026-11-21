@@ -434,12 +434,49 @@
       }).join("");
   }
 
+  /* ---------- Banglish search: many visitors type Roman Bangla
+     ("poddoja", "hamlet", "tirmizi"). normQ folds the query the same way
+     the generator folded each book's Roman title/author (rt/ra): ph->f,
+     q->k, z->j, v->b, doubled letters collapsed, spaces dropped. skel()
+     compares consonant skeletons (vowels stripped) for looser matches. */
+  function normQ(s) {
+    s = (s || "").toLowerCase().replace(/ph/g, "f").replace(/q/g, "k").replace(/z/g, "j").replace(/v/g, "b");
+    var out = "", prev = "";
+    for (var i = 0; i < s.length; i++) {
+      var ch = s[i];
+      if (!/[a-z0-9]/.test(ch)) continue;
+      if (ch === prev) continue;
+      out += ch; prev = ch;
+    }
+    return out;
+  }
+  function skel(s) { return (s || "").replace(/[aeiou]/g, ""); }
+
   /* ---------- browse ---------- */
   function applyFilters() {
     var list = BOOKS.slice();
     var q = state.q.toLowerCase();
+    var qn = normQ(state.q);
     if (q) list = list.filter(function (b) {
-      return ((b.title || "") + " " + (b.author || "") + " " + (b.category || "")).toLowerCase().indexOf(q) !== -1;
+      var hay = ((b.title || "") + " " + (b.author || "") + " " + (b.category || "")).toLowerCase();
+      if (hay.indexOf(q) !== -1) { b._m = 0; b._c = 1; return true; }
+      if (!qn) return false;
+      var rhay = ((b.rt || "") + " " + (b.ra || "")).toLowerCase();
+      if (rhay.indexOf(qn) !== -1) { b._m = 1; b._c = 1; return true; }
+      if (qn.length >= 3) {
+        var qs = skel(qn);
+        // Skeleton match per field (not across the title+author boundary,
+        // which joins unrelated letters into false positives). _c is the
+        // coverage (query skeleton / field skeleton): a short title that
+        // is mostly the query (e.g. আমি পদ্মজা for "poddoja") outranks a
+        // long title that merely contains the same consonants.
+        if (qs.length >= 3) {
+          var ct = skel(b.rt || ""), ca = skel(b.ra || "");
+          if (ct.indexOf(qs) !== -1) { b._m = 2; b._c = qs.length / Math.max(1, ct.length); return true; }
+          if (ca.indexOf(qs) !== -1) { b._m = 2; b._c = qs.length / Math.max(1, ca.length); return true; }
+        }
+      }
+      return false;
     });
     if (state.title) list = list.filter(function (b) { return (b.title || "").toLowerCase().indexOf(state.title.toLowerCase()) !== -1; });
     if (state.author) list = list.filter(function (b) { return (b.author || "").toLowerCase().indexOf(state.author.toLowerCase()) !== -1; });
@@ -458,6 +495,11 @@
       if (s === "category") return (a.category || "").localeCompare(b.category || "", "bn");
       return 0;
     });
+    // Best matches first when searching: direct hits, then Roman (Banglish)
+    // hits, then loose skeleton hits (best coverage first). sort() is
+    // stable, so the chosen order (A-Z, top-ranked, ...) is kept inside
+    // each group.
+    if (q) list.sort(function (a, b) { return (a._m || 0) - (b._m || 0) || (b._c || 0) - (a._c || 0); });
     return list;
   }
 
@@ -468,11 +510,17 @@
     if (state.page > pages) state.page = pages;
     var slice = list.slice((state.page - 1) * PER_PAGE, state.page * PER_PAGE);
     var cats = categoryCounts();
+    // No results: recommend the top books instead of leaving an empty page.
+    var recHtml = "";
+    if (state.q && !list.length) {
+      var recs = BOOKS.filter(function (b) { return b.topRank; }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 6);
+      if (recs.length) recHtml = '<div class="block"><h3>খুঁজে পাওয়া যায়নি — এই জনপ্রিয় বইগুলো দেখতে পারেন</h3><p class="muted">নামটি বাংলায় বা Banglish-এ লিখে আবার চেষ্টা করুন (যেমন: poddoja, hamlet, tirmizi)।</p>' + gridHtml(recs) + "</div>";
+    }
 
     var h = '<section class="block"><h2>সব বই</h2>' +
       '<p class="muted">মোট ' + BOOKS.length.toLocaleString("bn-BD") + 'টি বই — নাম, লেখক, বিভাগ, ভাষা বা বছর দিয়ে খুঁজুন।</p>' +
       '<div class="filters">' +
-      '<div class="full"><label>খুঁজুন (নাম / লেখক / বিষয়)</label><input id="bQ" type="search" value="' + esc(state.q) + '" placeholder="যেমন: রবীন্দ্রনাথ, কুরআন, ইতিহাস"></div>' +
+      '<div class="full"><label>খুঁজুন (নাম / লেখক / বিষয় — বাংলায় বা Banglish-এ)</label><input id="bQ" type="search" value="' + esc(state.q) + '" placeholder="যেমন: রবীন্দ্রনাথ, কুরআন — বা Banglish-এ: poddoja, hamlet"></div>' +
       '<div><label>বিভাগ</label><select id="bCat"></select></div>' +
       '<div><label>ভাষা</label><select id="bLang"></select></div>' +
       '<div><label>সাজান</label><select id="bSort">' +
@@ -489,6 +537,7 @@
       "</div>" +
       '<p class="result-info">' + list.length.toLocaleString("bn-BD") + 'টি বই পাওয়া গেছে · পৃষ্ঠা ' + state.page.toLocaleString("bn-BD") + " / " + pages.toLocaleString("bn-BD") + "</p>" +
       gridHtml(slice) +
+      recHtml +
       '<div class="pagination">' +
       '<button class="btn btn-ghost btn-sm" id="prevPg" ' + (state.page <= 1 ? "disabled" : "") + ">← আগের পৃষ্ঠা</button>" +
       "<span>পৃষ্ঠা " + state.page + " / " + pages + "</span>" +
