@@ -1,7 +1,7 @@
 /* My Digital Library by Robiul Hosen — Phase 1
    Client-side only. All book data comes from data/books.json (real catalog).
-   No fake data: missing fields show "তথ্য নেই". Reviews are stored in the
-   visitor's own browser (localStorage) for now. */
+   No fake data: missing fields show "তথ্য নেই". Reviews are public via
+   GitHub Discussions (Giscus) — one discussion thread per book. */
 (function () {
   "use strict";
 
@@ -280,16 +280,33 @@
     if (nx) nx.addEventListener("click", function () { state.page++; renderBooks(); window.scrollTo(0, 0); });
   }
 
-  /* ---------- details + reviews ---------- */
-  function reviewKey(id) { return "mdl-reviews-" + id; }
-  function getReviews(id) {
-    try { return JSON.parse(localStorage.getItem(reviewKey(id)) || "[]"); } catch (e) { return []; }
-  }
-  function saveReview(id, name, text) {
-    var list = getReviews(id);
-    list.push({ name: name, text: text, when: new Date().toISOString().slice(0, 10) });
-    try { localStorage.setItem(reviewKey(id), JSON.stringify(list)); } catch (e) {}
-    return list;
+  /* Giscus (GitHub Discussions) config for public per-book reviews. */
+  var GISCUS = {
+    repo: "hosenrobiul43-ship-it/my-digital-library",
+    repoId: "R_kgDOV2avLg",
+    category: "General",
+    categoryId: "DIC_kwDOV2avLs4DLo87"
+  };
+  function loadGiscus(bookId) {
+    var box = document.querySelector(".giscus");
+    if (!box) return;
+    var s = document.createElement("script");
+    s.src = "https://giscus.app/client.js";
+    s.setAttribute("data-repo", GISCUS.repo);
+    s.setAttribute("data-repo-id", GISCUS.repoId);
+    s.setAttribute("data-category", GISCUS.category);
+    s.setAttribute("data-category-id", GISCUS.categoryId);
+    s.setAttribute("data-mapping", "specific");
+    s.setAttribute("data-term", "book-" + bookId);
+    s.setAttribute("data-strict", "0");
+    s.setAttribute("data-reactions-enabled", "1");
+    s.setAttribute("data-emit-metadata", "0");
+    s.setAttribute("data-input-position", "bottom");
+    s.setAttribute("data-theme", "preferred_color_scheme");
+    s.setAttribute("data-lang", "bn");
+    s.setAttribute("crossorigin", "anonymous");
+    s.async = true;
+    box.appendChild(s);
   }
 
   function renderBook(id) {
@@ -304,8 +321,9 @@
       ? "অনলাইনে পড়া ও ফ্রি ডাউনলোড করা যায়"
       : "অনলাইনে পড়া যায় (উৎসের নিয়ম অনুযায়ী)";
     /* Full A–Z details. Every value is real data from the source; anything
-       unknown shows "তথ্য নেই" — nothing is guessed. Price has no source
-       yet, so it is always "তথ্য নেই". */
+       unknown shows "তথ্য নেই" — nothing is guessed. The price is the
+       printed cover price (গায়ের মূল্য) read from the book's own scanned
+       title page; books without one show "তথ্য নেই". */
     var rows = [
       ["বইয়ের আইডি", esc(b.sourceId || b.id)],
       ["বইয়ের নাম", esc(b.title)],
@@ -330,7 +348,7 @@
       ["কেনার লিংক", b.buyLink ? linkOrNA(b.buyLink, "কিনুন ↗") : NA],
       ["কপিরাইট অবস্থা", b.copyright === "public-domain" ? "পাবলিক ডোমেইন / বিনামূল্যে পাওয়া যায়" : NA],
       ["প্রাপ্যতা", avail],
-      ["দাম", NA]
+      ["দাম (গায়ের মূল্য)", b.price ? esc(b.price) : NA]
     ];
     var h = '<button class="back-link" id="backBtn">← ফিরে যান</button>' +
       '<div class="details">' + coverHtml(b, true) +
@@ -349,36 +367,12 @@
       (b.downloadUrl ? "" :
         '<div class="notice">এই বইয়ের ফ্রি ডাউনলোড ফাইল এই মুহূর্তে যাচাই করা যায়নি, তাই ডাউনলোড বোতাম দেখানো হয়নি। উপরের “অনলাইনে পড়ুন” লিংক থেকে উৎসের নিয়ম অনুযায়ী পড়তে পারবেন।</div>') +
       '<div class="reviews"><h3>পাঠকের মতামত (রিভিউ)</h3>' +
-      '<p class="small muted">এই রিভিউ এখন শুধু আপনার নিজের ব্রাউজারে সংরক্ষিত হচ্ছে। পরের ধাপে GitHub Discussions যুক্ত হলে সবার রিভিউ সবাই দেখতে পারবেন।</p>' +
-      '<form class="review-form" id="reviewForm">' +
-      '<input id="rvName" type="text" maxlength="60" placeholder="আপনার নাম" required>' +
-      '<textarea id="rvText" rows="3" maxlength="500" placeholder="বইটি সম্পর্কে আপনার মতামত লিখুন…" required></textarea>' +
-      '<div><button class="btn btn-navy btn-sm" type="submit">রিভিউ জমা দিন</button></div></form>' +
-      '<div id="reviewList"></div></div></div>';
+      '<p class="small muted">এখানে লেখা মতামত সবার দেখার জন্য প্রকাশ্যে থাকবে (GitHub Discussions)। রিভিউ দিতে একটি GitHub অ্যাকাউন্ট লাগবে।</p>' +
+      '<div class="giscus"></div></div></div>';
     view.innerHTML = h;
     document.getElementById("backBtn").addEventListener("click", function () { history.back(); });
-    renderReviewList(b.id);
-    document.getElementById("reviewForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      var name = document.getElementById("rvName").value.trim();
-      var text = document.getElementById("rvText").value.trim();
-      if (!name || !text) return;
-      saveReview(b.id, name, text);
-      document.getElementById("rvName").value = "";
-      document.getElementById("rvText").value = "";
-      renderReviewList(b.id);
-    });
+    loadGiscus(b.id);
     window.scrollTo(0, 0);
-  }
-  function renderReviewList(id) {
-    var list = getReviews(id);
-    var box = document.getElementById("reviewList");
-    if (!box) return;
-    box.innerHTML = list.length
-      ? list.map(function (r) {
-          return '<div class="review-item"><b>' + esc(r.name) + '</b><span class="when">' + esc(r.when) + "</span><p>" + esc(r.text) + "</p></div>";
-        }).join("")
-      : '<p class="muted small">এখনো কোনো রিভিউ নেই — প্রথম মতামতটি আপনিই দিন।</p>';
   }
 
   /* ---------- simple pages ---------- */
@@ -414,8 +408,7 @@
   function renderPrivacy() {
     infoPage("গোপনীয়তা নীতি",
       "<p>এই ওয়েবসাইট আপনার কোনো অ্যাকাউন্ট, পাসওয়ার্ড বা ব্যক্তিগত তথ্য সংগ্রহ করে না।</p>" +
-      "<p>রিভিউ লেখার সময় আপনি যে নাম ও মতামত দেন, তা এই মুহূর্তে শুধু আপনার নিজের ব্রাউজারে (localStorage) সংরক্ষিত হয় — আমাদের কোনো সার্ভারে পাঠানো হয় না।</p>" +
-      "<p>ভবিষ্যতে GitHub Discussions-ভিত্তিক রিভিউ যুক্ত হলে, সেই মতামত সবার দেখার জন্য প্রকাশ্যে থাকবে — তখন নীতিমালা আপডেট করা হবে।</p>");
+      "<p>রিভিউ লেখার সময় আপনি যে নাম ও মতামত দেন, তা GitHub Discussions-এর মাধ্যমে সবার দেখার জন্য প্রকাশ্যে থাকে। রিভিউ দিতে একটি GitHub অ্যাকাউন্ট লাগবে।</p>");
   }
   function renderTerms() {
     infoPage("ব্যবহারের শর্তাবলি",

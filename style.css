@@ -179,14 +179,7 @@ html[data-theme="dark"] .notice { background: #2b2305; color: #f0d9a8; border-co
 
 /* ---------- reviews ---------- */
 .reviews { margin-top: 24px; border-top: 1px solid var(--border); padding-top: 18px; }
-.review-form { display: grid; gap: 8px; margin: 12px 0; }
-.review-form input, .review-form textarea {
-  padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px;
-  font-family: var(--font); background: var(--surface); color: var(--text); font-size: .95rem;
-}
-.review-item { background: var(--surface-2); border-radius: 10px; padding: 12px 14px; margin: 8px 0; }
-.review-item b { display: block; }
-.review-item .when { color: var(--muted); font-size: .8rem; }
+.giscus { margin-top: 12px; }
 
 /* ---------- info pages / footer ---------- */
 .info-page { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; margin: 18px 0; }
