@@ -71,7 +71,7 @@
  },
  {
   "id": "ia-ar-raheeq-al-makhtum_1",
-  "title": "Ar-Raheeq Al-Makhtum / আর রাহিকুল মাখতুম",
+  "title": "আর রাহিকুল মাখতুম",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -101,6 +101,7 @@
   "downloadSize": 18867289,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ar-raheeq-al-makhtum_1",
+  "origTitle": "Ar-Raheeq Al-Makhtum / আর রাহিকুল মাখতুম",
   "featured": true,
   "addedOrder": 10502
  },
@@ -176,7 +177,7 @@
  },
  {
   "id": "ia-2015.456977.-sirate-rasul",
-  "title": "সীরাত রসূলুল্লাহ (সা:)-ইবনে ইসহাক , শহীদ আখন্দ (অনুবাদক),sirate-rasulullah",
+  "title": "সীরাত রসূলুল্লাহ সা ইবনে ইসহাক শহীদ আখন্দ অনুবাদক",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Environment",
@@ -206,6 +207,7 @@
   "downloadSize": 26673451,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/2015.456977.-sirate-rasul",
+  "origTitle": "সীরাত রসূলুল্লাহ (সা:)-ইবনে ইসহাক , শহীদ আখন্দ (অনুবাদক),sirate-rasulullah",
   "featured": true,
   "addedOrder": 10505
  },
@@ -281,7 +283,7 @@
  },
  {
   "id": "ia-moha-mad-normal",
-  "title": "Moha-Mad-Normal",
+  "title": "মোহা মাদ নোর্মাল",
   "author": "Annonymous",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -311,6 +313,7 @@
   "downloadSize": 11263557,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/moha-mad-normal",
+  "origTitle": "Moha-Mad-Normal",
   "featured": true,
   "addedOrder": 10508
  },
@@ -351,7 +354,7 @@
  },
  {
   "id": "ia-islamer-ojana-oddhay-part-04",
-  "title": "Islamer Ojana Oddhay Part 04",
+  "title": "ইসলামের ওজানা ওদ্ধয় খণ্ড ০৪",
   "author": "NoroSundor Manush",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -381,12 +384,13 @@
   "downloadSize": 4909919,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/islamer-ojana-oddhay-part-04",
+  "origTitle": "Islamer Ojana Oddhay Part 04",
   "featured": true,
   "addedOrder": 10510
  },
  {
   "id": "ia-je-sathya-bola-hoyni-akash-malik-v3.1",
-  "title": "Je Sathya Bola Hoyni Akash Malik. V 3.1",
+  "title": "জে সাথ্য বোলা হোয়নি আকাশ মালিক ব ৩ ১",
   "author": "NoroSundor Manush",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -416,6 +420,7 @@
   "downloadSize": 2752610,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/je-sathya-bola-hoyni-akash-malik-v3.1",
+  "origTitle": "Je Sathya Bola Hoyni Akash Malik. V 3.1",
   "featured": true,
   "addedOrder": 10511
  },
@@ -526,7 +531,7 @@
  },
  {
   "id": "ia-tawhid-o-aqida-shikkha-salman-bin-mostak",
-  "title": "প্রাথমিক তাওহীদ ও আকিদা শিক্ষা | Salman Bin Mostak",
+  "title": "প্রাথমিক তাওহীদ ও আকিদা শিক্ষা",
   "author": "Salman Bin Mostak",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -556,6 +561,7 @@
   "downloadSize": 2195374,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tawhid-o-aqida-shikkha-salman-bin-mostak",
+  "origTitle": "প্রাথমিক তাওহীদ ও আকিদা শিক্ষা | Salman Bin Mostak",
   "featured": true,
   "addedOrder": 10515
  },
@@ -666,7 +672,7 @@
  },
  {
   "id": "ia-bn-compressed",
-  "title": "Bn Compressed",
+  "title": "বন কোম্প্রেস্সেদ",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -696,6 +702,7 @@
   "downloadSize": 7899924,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/bn-compressed",
+  "origTitle": "Bn Compressed",
   "featured": true,
   "addedOrder": 10519
  },
@@ -736,7 +743,7 @@
  },
  {
   "id": "ia-MahzarnamaTheMemorandum",
-  "title": "মাহযার নামা (স্মারকলিপি) Mahzarnama The Memorandum",
+  "title": "মাহযার নামা স্মারকলিপি",
   "author": "আহমদীয়া মুসলিম জামা'ত, বাংলাদেশ।",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -766,6 +773,7 @@
   "downloadSize": 11022064,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/MahzarnamaTheMemorandum",
+  "origTitle": "মাহযার নামা (স্মারকলিপি) Mahzarnama The Memorandum",
   "featured": true,
   "addedOrder": 10521
  },
@@ -1016,7 +1024,7 @@
  },
  {
   "id": "ia-islami-akida",
-  "title": "Islami Akida. ইসলামি আকিদা সমূহ",
+  "title": "ইসলামি আকিদা সমূহ",
   "author": "md. mahfujur rahman",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1046,6 +1054,7 @@
   "downloadSize": 4413420,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/islami-akida",
+  "origTitle": "Islami Akida. ইসলামি আকিদা সমূহ",
   "featured": true,
   "addedOrder": 10529
  },
@@ -1156,7 +1165,7 @@
  },
  {
   "id": "ia-20251115_20251115_1057",
-  "title": "ফেরকাতোন নাজিন (Firqatun Najin)",
+  "title": "ফেরকাতোন নাজিন",
   "author": "আল্লামা রুহুল আমিন বসিরহাটি (Allama Ruhul Amin Boshirhati)",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1186,6 +1195,7 @@
   "downloadSize": 11240983,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20251115_20251115_1057",
+  "origTitle": "ফেরকাতোন নাজিন (Firqatun Najin)",
   "featured": true,
   "addedOrder": 10533
  },
@@ -1716,7 +1726,7 @@
  },
  {
   "id": "ia-finishing",
-  "title": "মহাসমাবেশ বিজয় ফাইনাল Finishing",
+  "title": "মহাসমাবেশ বিজয় ফাইনাল",
   "author": "ইসলামী মনোভাবনা ও চিন্তাধারা ফিরিয়ে আনা। এবং মসজিদে আল আকসা পুনরুদ্ধারের জন্য সামনে এগিয়ে চলা",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1746,6 +1756,7 @@
   "downloadSize": 6273254,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/finishing",
+  "origTitle": "মহাসমাবেশ বিজয় ফাইনাল Finishing",
   "featured": true,
   "addedOrder": 10549
  },
@@ -1961,7 +1972,7 @@
  },
  {
   "id": "ia-1st-para",
-  "title": "Kanzul Iman o Khazainul Irfan Bangla Tarjuma o Tafsir",
+  "title": "কানজুল ইমান ও খাজৈনুল ইর্ফান বাংলা তারজুমা ও তাফসির",
   "author": "Imam Ahmad Reza Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1991,6 +2002,7 @@
   "downloadSize": 7975131,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/1st-para",
+  "origTitle": "Kanzul Iman o Khazainul Irfan Bangla Tarjuma o Tafsir",
   "featured": true,
   "addedOrder": 10556
  },
@@ -2015,7 +2027,7 @@
   "country": null,
   "subject": "North",
   "subcategory": "North",
-  "description": "Book Source: Digital Library of India Item 2015.451478 dc.contributor.author: Sarma, Sailenjeet dc.date.accessioned: 2015-09-22T12:29:24Z dc.date.available: 2015-09-22T12:29:24Z dc.date.copyrightexpirydate: 2006/00/00 dc.date.digitalpublicationdate: 2014/12/09 dc.date.citation: 2008 dc.identifier.barcode: 07019990351044 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/451478 dc.description.scannerno: SC-1 dc.description.scanningcentre: North Eastern States Libraries dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 112 dc.language.iso: Assamese dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Chandra Prakash, Guwahati dc.rights: In Public Domain dc.source.library: DIRECTORATE OF LIBRARY SERVICES, GUWAHATI,…",
+  "description": "রবীন্দ্রনাথ ঠাকুরের উপন্যাস — নিখিলেশ, বিমলা ও সন্দীপের ত্রিকোণ গল্প।",
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2051,7 +2063,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "ঘরে বাইরে by রবীন্দ্রনাথ ঠাকুর",
+  "description": "মীর মশাররফ হোসেনের উপন্যাস — কারবালার করুণ ইতিহাস।",
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2087,7 +2099,7 @@
   "country": null,
   "subject": "জীবনানন্দ দাশ; কবিতা",
   "subcategory": "জীবনানন্দ দাশ; কবিতা",
-  "description": "বনলতা সেন By জীবনানন্দ দাশ",
+  "description": "জীবনানন্দ দাশের কবিতার বই — বনলতা সেনসহ তাঁর বিখ্যাত কবিতা।",
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2123,7 +2135,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "বিষাদ সিন্ধু By মীর মশাররফ হোসেন",
+  "description": "রবীন্দ্রনাথ ঠাকুরের উপন্যাস — অমিত ও লাবণ্যের প্রেমের গল্প।",
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2175,7 +2187,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.336569",
-  "title": "Upanyas",
+  "title": "উপন্যাস",
   "author": "Tagore,  Rabindranath",
   "language": "Bengali",
   "category": "Literature",
@@ -2194,7 +2206,7 @@
   "country": null,
   "subject": "C-DAK",
   "subcategory": "C-DAK",
-  "description": "Book Source: Digital Library of India Item 2015.336569 dc.contributor.author: Tagore, Rabindranath dc.date.accessioned: 2015-08-12T20:59:08Z dc.date.available: 2015-08-12T20:59:08Z dc.date.digitalpublicationdate: 2005/12/03 dc.date.citation: 1985 dc.identifier.barcode: 04990010212396 dc.identifier.origpath: /data3/upload/0066/548 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/336569 dc.description.scannerno: OS5000 dc.description.scanningcentre: C-DAK, Kolkata dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 963 dc.format.mimetype: application/pdf dc.language.iso: Bengali dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: W.b.govt, Kolkata dc.rights: In Public Domain dc.source.library: Central Library,…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2205,6 +2217,7 @@
   "downloadSize": 117219273,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.336569",
+  "origTitle": "Upanyas",
   "featured": true,
   "addedOrder": 10562
  },
@@ -2245,7 +2258,7 @@
  },
  {
   "id": "ia-shaeik-e-katia-jiboner-shesh-koti-din-o-omrito-bani",
-  "title": "Shaeik E Katia Jiboner Shesh Koti Din O Omrito Bani",
+  "title": "শাএইক এ কাতিয়া জিবোনের শেশ কোতি দিন ও ওমৃতো বাণী",
   "author": "Engineer Azizul Bari, ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2275,12 +2288,13 @@
   "downloadSize": 946845,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shaeik-e-katia-jiboner-shesh-koti-din-o-omrito-bani",
+  "origTitle": "Shaeik E Katia Jiboner Shesh Koti Din O Omrito Bani",
   "featured": false,
   "addedOrder": 10564
  },
  {
   "id": "ia-mystic-poet-khoda-baksha-sai-life-and-songs",
-  "title": "MARAMI KOBI KhodaBaksha Sai : JIBAN O SONGIT [Mystic Poet KhodaBaksha Sai Life And Songs] খোদাবক্স শাহ জীবন ও সংগীত",
+  "title": "খোদাবক্স শাহ জীবন ও সংগীত",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Environment",
@@ -2310,12 +2324,13 @@
   "downloadSize": 220673141,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/mystic-poet-khoda-baksha-sai-life-and-songs",
+  "origTitle": "MARAMI KOBI KhodaBaksha Sai : JIBAN O SONGIT [Mystic Poet KhodaBaksha Sai Life And Songs] খোদাবক্স শাহ জীবন ও সংগীত",
   "featured": false,
   "addedOrder": 10565
  },
  {
   "id": "ia-aulia-e-qadiri",
-  "title": "Aulia E Qadiri",
+  "title": "ঔলিয়া এ কাদিরি",
   "author": "Engineer Azizul Bari, ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2345,6 +2360,7 @@
   "downloadSize": 3363430,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/aulia-e-qadiri",
+  "origTitle": "Aulia E Qadiri",
   "featured": false,
   "addedOrder": 10566
  },
@@ -2385,7 +2401,7 @@
  },
  {
   "id": "ia-auliaeqadiri",
-  "title": "Aulia E Qadiri",
+  "title": "ঔলিয়া এ কাদিরি",
   "author": "Engineer Azizul Bari, ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2415,12 +2431,13 @@
   "downloadSize": 5072043,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/auliaeqadiri",
+  "origTitle": "Aulia E Qadiri",
   "featured": false,
   "addedOrder": 10568
  },
  {
   "id": "ia-sufi-srories",
-  "title": "Sufi Srories - সুফিদের গল্পসমগ্র",
+  "title": "সুফিদের গল্পসমগ্র",
   "author": "Engineer Azizul Bari - ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2450,12 +2467,13 @@
   "downloadSize": 1824342,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sufi-srories",
+  "origTitle": "Sufi Srories - সুফিদের গল্পসমগ্র",
   "featured": false,
   "addedOrder": 10569
  },
  {
   "id": "ia-aulia-e-suhrawardia",
-  "title": "Aulia E Suhrawardia",
+  "title": "ঔলিয়া এ সুহরাওার্দিয়া",
   "author": "Engineer Azizul Bari, ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "World History",
@@ -2485,12 +2503,13 @@
   "downloadSize": 6633412,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/aulia-e-suhrawardia",
+  "origTitle": "Aulia E Suhrawardia",
   "featured": false,
   "addedOrder": 10570
  },
  {
   "id": "ia-bengali-translation-ar-risalatul-qushairi-r-part-2",
-  "title": "Bengali Translation Ar Risalatul Qushairi ( R) Part 2",
+  "title": "বাংলা অনুবাদ আর ঋসালাতুল কুশৈরি র খণ্ড ২",
   "author": "Engineer Aziziul Bari, ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2520,6 +2539,7 @@
   "downloadSize": 3518391,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/bengali-translation-ar-risalatul-qushairi-r-part-2",
+  "origTitle": "Bengali Translation Ar Risalatul Qushairi ( R) Part 2",
   "featured": false,
   "addedOrder": 10571
  },
@@ -2560,7 +2580,7 @@
  },
  {
   "id": "ia-auliaenaqshbandbanglainternetedition",
-  "title": "Aulia E Naqshband Bangla Internet Edition",
+  "title": "ঔলিয়া এ নাকশবান্দ বাংলা ইন্তের্নেত সংস্করণ",
   "author": "ইঞ্জিনিয়ার আজিজুল বারী, Engineer Azizul Bari",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2590,12 +2610,13 @@
   "downloadSize": 4414926,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/auliaenaqshbandbanglainternetedition",
+  "origTitle": "Aulia E Naqshband Bangla Internet Edition",
   "featured": false,
   "addedOrder": 10573
  },
  {
   "id": "ia-bengali-translation-ar-risalatul-qushairi-r-part-1",
-  "title": "Bengali Translation Ar Risalatul Qushairi ( R) Part 1",
+  "title": "বাংলা অনুবাদ আর ঋসালাতুল কুশৈরি র খণ্ড ১",
   "author": "Engineer Azizul Bari - ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2625,6 +2646,7 @@
   "downloadSize": 4005268,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/bengali-translation-ar-risalatul-qushairi-r-part-1",
+  "origTitle": "Bengali Translation Ar Risalatul Qushairi ( R) Part 1",
   "featured": false,
   "addedOrder": 10574
  },
@@ -2665,7 +2687,7 @@
  },
  {
   "id": "ia-awlia-e-chisht",
-  "title": "Awlia E Chisht",
+  "title": "আওলিয়া এ চিশত",
   "author": "Engineer Azizul Bari",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2695,12 +2717,13 @@
   "downloadSize": 10277770,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/awlia-e-chisht",
+  "origTitle": "Awlia E Chisht",
   "featured": false,
   "addedOrder": 10576
  },
  {
   "id": "ia-CryOfSoftHearts",
-  "title": "Cry Of Soft Hearts ইবনে আবিদ্ দুন্‌ইয়া অনুবাদ সৈয়দ মাহমুদুল হাসান",
+  "title": "ইবনে আবিদ্ দুন্ ইয়া অনুবাদ সৈয়দ মাহমুদুল হাসান",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Environment",
@@ -2730,6 +2753,7 @@
   "downloadSize": 51489767,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/CryOfSoftHearts",
+  "origTitle": "Cry Of Soft Hearts ইবনে আবিদ্ দুন্‌ইয়া অনুবাদ সৈয়দ মাহমুদুল হাসান",
   "featured": false,
   "addedOrder": 10577
  },
@@ -2770,7 +2794,7 @@
  },
  {
   "id": "ia-AuliaEChishtEngineerAzizulBari",
-  "title": "আউলিয়ায়ে চিশত ইঞ্জিনিয়ার আজিজুল বারী Aulia E Chisht Engineer Azizul Bari",
+  "title": "আউলিয়ায়ে চিশত ইঞ্জিনিয়ার আজিজুল বারী",
   "author": "Engineer Azizul Bari (Author), ইঞ্জিনিয়ার আজিজুল বারী (লেখক)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2800,6 +2824,7 @@
   "downloadSize": 487486669,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/AuliaEChishtEngineerAzizulBari",
+  "origTitle": "আউলিয়ায়ে চিশত ইঞ্জিনিয়ার আজিজুল বারী Aulia E Chisht Engineer Azizul Bari",
   "featured": false,
   "addedOrder": 10579
  },
@@ -2840,7 +2865,7 @@
  },
  {
   "id": "ia-lataif_202506",
-  "title": "Lataif লাতাইফ",
+  "title": "লাতাইফ",
   "author": "ইঞ্জিনিয়ার আজিজুল বারী Engineer Azizul Bari",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2870,12 +2895,13 @@
   "downloadSize": 2448437,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/lataif_202506",
+  "origTitle": "Lataif লাতাইফ",
   "featured": false,
   "addedOrder": 10581
  },
  {
   "id": "ia-karamatul-aulia",
-  "title": "Karamatul Aulia",
+  "title": "কারামাতুল ঔলিয়া",
   "author": "ইঞ্জিনিয়ার আজিজুল বারী, Engineer Azizul Bari",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2905,12 +2931,13 @@
   "downloadSize": 743885,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/karamatul-aulia",
+  "origTitle": "Karamatul Aulia",
   "featured": false,
   "addedOrder": 10582
  },
  {
   "id": "ia-loving-allah",
-  "title": "Loving Allah",
+  "title": "লোবিং আল্লহ",
   "author": "Engineer Azizul Bari - ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2940,6 +2967,7 @@
   "downloadSize": 288598,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/loving-allah",
+  "origTitle": "Loving Allah",
   "featured": false,
   "addedOrder": 10583
  },
@@ -3190,7 +3218,7 @@
  },
  {
   "id": "ia-1_20251114_20251114_0951",
-  "title": "তাসাউফের মর্মকথা (Tasaufer mormokotha)",
+  "title": "তাসাউফের মর্মকথা",
   "author": "আল্লামা গিয়াস উদ্দিন চৌধুরী",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -3220,6 +3248,7 @@
   "downloadSize": 15115794,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/1_20251114_20251114_0951",
+  "origTitle": "তাসাউফের মর্মকথা (Tasaufer mormokotha)",
   "featured": false,
   "addedOrder": 10591
  },
@@ -3295,7 +3324,7 @@
  },
  {
   "id": "ia-asbakul-marifat",
-  "title": "Asbakul Ma'rifat",
+  "title": "আসবাকুল ma'rifat",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3325,12 +3354,13 @@
   "downloadSize": 645202,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/asbakul-marifat",
+  "origTitle": "Asbakul Ma'rifat",
   "featured": false,
   "addedOrder": 10594
  },
  {
   "id": "ia-marefater-gopon-kotha-baba-jahangir",
-  "title": "Baba Jahangir- Marefater Gopon Kotha (মারেফতের গোপন কথা)",
+  "title": "মারেফতের গোপন কথা",
   "author": "Qalandar Baba Jahangir Ba-Iman Al surreswary",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -3360,6 +3390,7 @@
   "downloadSize": 1392763,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/marefater-gopon-kotha-baba-jahangir",
+  "origTitle": "Baba Jahangir- Marefater Gopon Kotha (মারেফতের গোপন কথা)",
   "featured": false,
   "addedOrder": 10595
  },
@@ -4590,7 +4621,7 @@
  },
  {
   "id": "ia-20260101_20260101_0743",
-  "title": "হজরত বড় পীর ছাহেবের জীবনী (Hazrot Boro Pir Saheber Jiboni)",
+  "title": "হজরত বড় পীর ছাহেবের জীবনী",
   "author": "আল্লামা রহুল আমিন (Allama Ruhul Amin)",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4620,6 +4651,7 @@
   "downloadSize": 9624601,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20260101_20260101_0743",
+  "origTitle": "হজরত বড় পীর ছাহেবের জীবনী (Hazrot Boro Pir Saheber Jiboni)",
   "featured": false,
   "addedOrder": 10631
  },
@@ -4660,7 +4692,7 @@
  },
  {
   "id": "ia-20251130_20251130_1302",
-  "title": "কামেল পীরের আলামত (Kamil pirer alamot)",
+  "title": "কামেল পীরের আলামত",
   "author": "আবু জাফর সিদ্দিকী (Abu Jafor Siddiqui)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4690,6 +4722,7 @@
   "downloadSize": 7631567,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20251130_20251130_1302",
+  "origTitle": "কামেল পীরের আলামত (Kamil pirer alamot)",
   "featured": false,
   "addedOrder": 10633
  },
@@ -4765,7 +4798,7 @@
  },
  {
   "id": "ia-20251012_20251012_1734",
-  "title": "হজরত আল্লামা রুহল আমিন (রহঃ) বিস্তারিত জীবনী, Allama ruhul Amin boshirhatir bistarito jiboni, the biography of maulana ruhul amin",
+  "title": "হজরত আল্লামা রুহল আমিন রহঃ বিস্তারিত জীবনী",
   "author": "মোহাম্মদ আবদুল মাজেদ",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4795,6 +4828,7 @@
   "downloadSize": 40284569,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20251012_20251012_1734",
+  "origTitle": "হজরত আল্লামা রুহল আমিন (রহঃ) বিস্তারিত জীবনী, Allama ruhul Amin boshirhatir bistarito jiboni, the biography of maulana ruhul amin",
   "featured": false,
   "addedOrder": 10636
  },
@@ -4835,7 +4869,7 @@
  },
  {
   "id": "ia-20191127_20191127_1234",
-  "title": "Pir hoyar sorto পীর হওয়ার শর্ত",
+  "title": "পীর হওয়ার শর্ত",
   "author": "মইদুল ইসলাম",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4865,6 +4899,7 @@
   "downloadSize": 367935,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20191127_20191127_1234",
+  "origTitle": "Pir hoyar sorto পীর হওয়ার শর্ত",
   "featured": false,
   "addedOrder": 10638
  },
@@ -4940,7 +4975,7 @@
  },
  {
   "id": "ia-20251127_20251127_1537",
-  "title": "ফুরফুরার চাঁদ (Furfurar Chad)",
+  "title": "ফুরফুরার চাঁদ",
   "author": "হাসান আবদুল কাইয়ূম (Hasan Abdul Kaiyum)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4970,6 +5005,7 @@
   "downloadSize": 21816049,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20251127_20251127_1537",
+  "origTitle": "ফুরফুরার চাঁদ (Furfurar Chad)",
   "featured": false,
   "addedOrder": 10641
  },
@@ -5764,7 +5800,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "العقيدة",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -8354,7 +8390,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "العقيدة",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -8739,7 +8775,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "354",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,

@@ -106,7 +106,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.4581",
-  "title": "Bharatbarsher Sangkhipta Itihas ভারতবর্ষের সংক্ষিপ্ত ইতিহাস",
+  "title": "ভারতবর্ষের সংক্ষিপ্ত ইতিহাস",
   "author": "Bandyopadhyaya, Kedar Nath",
   "language": "Bengali",
   "category": "World History",
@@ -125,7 +125,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/4581 Field Value Lang dc.contributor.author Bandyopadhyaya, Kedar Nath - dc.date.accessioned 2010-02-11T07:44:13Z - dc.date.available 2010-02-11T07:44:13Z - dc.date.issued 1858 - dc.identifier.uri http://hdl.handle.net/10689/4581 - dc.language.iso bn en_US dc.publisher Bidyaratna Jantra, Kolkata en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject HISTORY en_US dc.subject INDIA - HISTORY en_US dc.title Bharatbarsher Sangkhipta Itihas ভারতবর্ষের সংক্ষিপ্ত ইতিহাস en_US dc.title.alternative History of British India en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL02 en_US dc.scl.digitalrepublisher DteLS en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -136,6 +136,7 @@
   "downloadSize": 3142198,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4581",
+  "origTitle": "Bharatbarsher Sangkhipta Itihas ভারতবর্ষের সংক্ষিপ্ত ইতিহাস",
   "featured": true,
   "addedOrder": 10003
  },
@@ -211,7 +212,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.4586",
-  "title": "Bhugol Brittanta - Vol.1 ভূগোল বৃত্তান্ত - খন্ড ১",
+  "title": "ভূগোল বৃত্তান্ত খন্ড ১",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Geography",
@@ -230,7 +231,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/4586 Field Value Lang dc.date.accessioned 2010-02-11T07:55:26Z - dc.date.available 2010-02-11T07:55:26Z - dc.date.issued 1839 - dc.identifier.uri http://hdl.handle.net/10689/4586 - dc.description By The Order Of The Principal Of Hindu Collage en_US dc.language.iso bn en_US dc.publisher Hindu Collage, Calcutta en_US dc.subject GEOGRAPHY en_US dc.title Bhugol Brittanta - Vol.1 ভূগোল বৃত্তান্ত - খন্ড ১ en_US dc.title.alternative Shishu Sebodhi en_US dc.title.alternative Asia Khanda en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL_02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2005-07-26 - dc.scl.totalpages V1(156p.) en_US",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -241,12 +242,13 @@
   "downloadSize": 8073163,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4586",
+  "origTitle": "Bhugol Brittanta - Vol.1 ভূগোল বৃত্তান্ত - খন্ড ১",
   "featured": true,
   "addedOrder": 10006
  },
  {
   "id": "ia-earth-and-sky-prithibi-o-akash-alexander-volkov_202512",
-  "title": "পৃথিবী ও আকাশ - ভূগোল ও জ্যোতির্বিজ্ঞানের কথা (Earth and Sky in Bengali)",
+  "title": "পৃথিবী ও আকাশ ভূগোল ও জ্যোতির্বিজ্ঞানের কথা",
   "author": "আ.ভলকভ (Alexander Volkov)",
   "language": "Bengali",
   "category": "Science",
@@ -276,12 +278,13 @@
   "downloadSize": 13060778,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/earth-and-sky-prithibi-o-akash-alexander-volkov_202512",
+  "origTitle": "পৃথিবী ও আকাশ - ভূগোল ও জ্যোতির্বিজ্ঞানের কথা (Earth and Sky in Bengali)",
   "featured": true,
   "addedOrder": 10007
  },
  {
   "id": "ia-dli.bengal.10689.4874",
-  "title": "Bhugol Brittanta - Vol.1 ভূগোল বৃত্তান্ত - খন্ড ১",
+  "title": "ভূগোল বৃত্তান্ত খন্ড ১",
   "author": "Bandyopadhyaya, Krishna Mohan ed.",
   "language": "Bengali",
   "category": "Geography",
@@ -300,7 +303,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/4874 Field Value Lang dc.contributor.author Bandyopadhyaya, Krishna Mohan ed. - dc.date.accessioned 2010-02-15T09:12:09Z - dc.date.available 2010-02-15T09:12:09Z - dc.date.issued 1848 - dc.identifier.uri http://hdl.handle.net/10689/4874 - dc.description This Bi-lingual Book Also Consists The English Version en_US dc.language.iso bn en_US dc.publisher Kalikata Samachar Chandrika Jantra, Calcutta en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject VOYAGES AND TRAVELS en_US dc.subject GEOGRAPHY en_US dc.title Bhugol Brittanta - Vol.1 ভূগোল বৃত্তান্ত - খন্ড ১ en_US dc.title.alternative Bidyakalpadrum vol.8 en_US dc.title.alternative Geography vol.1 en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -311,12 +314,13 @@
   "downloadSize": 21598174,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4874",
+  "origTitle": "Bhugol Brittanta - Vol.1 ভূগোল বৃত্তান্ত - খন্ড ১",
   "featured": true,
   "addedOrder": 10008
  },
  {
   "id": "ia-dli.bengal.10689.3056",
-  "title": "Bhugol Ebong Jyotish - Vol.3 ভূগোল এবং জ্যোতিষ - খন্ড ৩",
+  "title": "ভূগোল এবং জ্যোতিষ খন্ড ৩",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Geography",
@@ -335,7 +339,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/3056 Field Value Lang dc.date.accessioned 2010-01-14T07:04:13Z - dc.date.available 2010-01-14T07:04:13Z - dc.date.issued 0001 - dc.identifier.uri http://hdl.handle.net/10689/3056 - dc.language.iso bn en_US dc.rights In Public Domain en_US dc.source UJPL en_US dc.subject GEOGRAPHY en_US dc.subject ASTROLOGY en_US dc.title Bhugol Ebong Jyotish - Vol.3 ভূগোল এবং জ্যোতিষ - খন্ড ৩ en_US dc.title.alternative Ityadi Bishayak Kathopokathan en_US dc.title.alternative Dialogues On Geography, Astronomy en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL 02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2005-08-19 - dc.scl.totalpages V2(66p.) en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -346,6 +350,7 @@
   "downloadSize": 3369799,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.3056",
+  "origTitle": "Bhugol Ebong Jyotish - Vol.3 ভূগোল এবং জ্যোতিষ - খন্ড ৩",
   "featured": true,
   "addedOrder": 10009
  },
@@ -386,7 +391,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.10240",
-  "title": "Prakritik Bhugol - 13th ed.প্রাকৃতিক ভূগোল - ১৩শ সং",
+  "title": "প্রাকৃতিক ভূগোল ১৩শ সং",
   "author": "Mukhopadhyay, Radhika Pra",
   "language": "Bengali",
   "category": "Geography",
@@ -405,7 +410,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/10240 Field Value Lang dc.contributor.author Mukhopadhyay, Radhika Pra - dc.date.accessioned 2010-06-29T09:18:36Z - dc.date.available 2010-06-29T09:18:36Z - dc.date.issued 1878 - dc.identifier.uri http://hdl.handle.net/10689/10240 - dc.language.iso bn en_US dc.publisher Sanskrit Press Depository, Ko en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject GEOGRAPHY en_US dc.title Prakritik Bhugol - 13th ed.প্রাকৃতিক ভূগোল - ১৩শ সং en_US dc.title.alternative Bhubidya Bishyak Path en_US dc.title.alternative Introduction To Physical Geography en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL02 en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -416,12 +421,13 @@
   "downloadSize": 6939905,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.10240",
+  "origTitle": "Prakritik Bhugol - 13th ed.প্রাকৃতিক ভূগোল - ১৩শ সং",
   "featured": true,
   "addedOrder": 10011
  },
  {
   "id": "ia-dli.bengal.10689.10241",
-  "title": "Prakritik Bhugol (Jyotirbigyan) প্রাকৃতিক ভূগোল(জ্যোতির্বিজ্ঞান)",
+  "title": "প্রাকৃতিক ভূগোল জ্যোতির্বিজ্ঞান",
   "author": "Mukhopadhyay, Nrisingha Chandra",
   "language": "Bengali",
   "category": "Science",
@@ -440,7 +446,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/10241 Field Value Lang dc.contributor.author Mukhopadhyay, Nrisingha Chandra - dc.date.accessioned 2010-06-29T09:21:35Z - dc.date.available 2010-06-29T09:21:35Z - dc.date.issued 1878 - dc.identifier.uri http://hdl.handle.net/10689/10241 - dc.language.iso bn en_US dc.publisher New School Book Press, Kolkata en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject GEOGRAPHY en_US dc.subject ASTRONOMY en_US dc.title Prakritik Bhugol (Jyotirbigyan) প্রাকৃতিক ভূগোল(জ্যোতির্বিজ্ঞান) en_US dc.title.alternative Elements Of Physical Geography en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL02 en_US dc.scl.digitalrepublisher…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -451,12 +457,13 @@
   "downloadSize": 14358334,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.10241",
+  "origTitle": "Prakritik Bhugol (Jyotirbigyan) প্রাকৃতিক ভূগোল(জ্যোতির্বিজ্ঞান)",
   "featured": true,
   "addedOrder": 10012
  },
  {
   "id": "ia-dli.bengal.10689.4588",
-  "title": "Bhugol Ebong Jyotish - Vol.6 ভূগোল এবং জ্যোতিষ - খন্ড ৬",
+  "title": "ভূগোল এবং জ্যোতিষ খন্ড ৬",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Geography",
@@ -475,7 +482,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/4588 Field Value Lang dc.date.accessioned 2010-02-11T07:58:19Z - dc.date.available 2010-02-11T07:58:19Z - dc.date.issued 0001 - dc.identifier.uri http://hdl.handle.net/10689/4588 - dc.description This Bi-lingual book also consists of the English version en_US dc.language.iso bn en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject GEOGRAPHY en_US dc.title Bhugol Ebong Jyotish - Vol.6 ভূগোল এবং জ্যোতিষ - খন্ড ৬ en_US dc.title.alternative Ityadi Bishayak Kothopakathan en_US dc.title.alternative Dialogues On Geography, Astronomy, etc. vol.6 en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL_02 en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -486,12 +493,13 @@
   "downloadSize": 2988083,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4588",
+  "origTitle": "Bhugol Ebong Jyotish - Vol.6 ভূগোল এবং জ্যোতিষ - খন্ড ৬",
   "featured": true,
   "addedOrder": 10013
  },
  {
   "id": "ia-nctb_2010_class-9-10_secondary-geography",
-  "title": "Secondary Geography",
+  "title": "সেকোন্দর্য গেওগ্রফ্য",
   "author": "NCTB",
   "language": "Bengali",
   "category": "Geography",
@@ -521,12 +529,13 @@
   "downloadSize": 9060823,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/nctb_2010_class-9-10_secondary-geography",
+  "origTitle": "Secondary Geography",
   "featured": true,
   "addedOrder": 10014
  },
  {
   "id": "ia-galina-ganeizer-geography-in-pictures-in-bengali-chhobite-bhugol-progress-1978",
-  "title": "কোবিটস ভুগোল Geography In Pictures In Bengali)",
+  "title": "কোবিটস ভুগোল",
   "author": "গালিনা গ্যানেইজার (Galina Ganeizer)",
   "language": "Bengali",
   "category": "Geography",
@@ -556,12 +565,13 @@
   "downloadSize": 3335806,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/galina-ganeizer-geography-in-pictures-in-bengali-chhobite-bhugol-progress-1978",
+  "origTitle": "কোবিটস ভুগোল Geography In Pictures In Bengali)",
   "featured": true,
   "addedOrder": 10015
  },
  {
   "id": "ia-dli.bengal.10689.4875",
-  "title": "Bhugol Ebong Jyotish ভূগোল ও জ্যোতিষ",
+  "title": "ভূগোল ও জ্যোতিষ",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Geography",
@@ -580,7 +590,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/4875 Field Value Lang dc.date.accessioned 2010-02-15T09:13:17Z - dc.date.available 2010-02-15T09:13:17Z - dc.date.issued 1824 - dc.identifier.uri http://hdl.handle.net/10689/4875 - dc.language.iso bn en_US dc.publisher Calcutta School-Book Society’s Press, Calcutta en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject GEOGRAPHY en_US dc.subject ASTROLOGY en_US dc.title Bhugol Ebong Jyotish ভূগোল ও জ্যোতিষ en_US dc.title.alternative Ityadi Bishayak Kathopakathan en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL_02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2005-07-25 -…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -591,12 +601,13 @@
   "downloadSize": 28378639,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4875",
+  "origTitle": "Bhugol Ebong Jyotish ভূগোল ও জ্যোতিষ",
   "featured": true,
   "addedOrder": 10016
  },
  {
   "id": "ia-dli.bengal.10689.4583",
-  "title": "Bhugol Brittanta ভূগোল বৃত্তান্ত",
+  "title": "ভূগোল বৃত্তান্ত",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Geography",
@@ -615,7 +626,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/4583 Field Value Lang dc.date.accessioned 2010-02-11T07:49:56Z - dc.date.available 2010-02-11T07:49:56Z - dc.date.issued 1855 - dc.identifier.uri http://hdl.handle.net/10689/4583 - dc.description Compiled for the use of Girls School of Barasat en_US dc.language.iso bn en_US dc.publisher G.P.Roy And Co, Calcutta en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject GEOGRAPHY en_US dc.title Bhugol Brittanta ভূগোল বৃত্তান্ত en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL_02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2005-07-26 - dc.scl.totalpages 172p. en_US",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -626,6 +637,7 @@
   "downloadSize": 5481036,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4583",
+  "origTitle": "Bhugol Brittanta ভূগোল বৃত্তান্ত",
   "featured": true,
   "addedOrder": 10017
  },
@@ -666,7 +678,7 @@
  },
  {
   "id": "ia-patanjal-darshan-kalibar-vedantabagish",
-  "title": "Patanjal Darshan পাতঞ্জল দর্শন",
+  "title": "পাতঞ্জল দর্শন",
   "author": "Kalibar Vedanatabagish কালীবর বেদান্তবাগীশ",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -696,12 +708,13 @@
   "downloadSize": 18984247,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/patanjal-darshan-kalibar-vedantabagish",
+  "origTitle": "Patanjal Darshan পাতঞ্জল দর্শন",
   "featured": true,
   "addedOrder": 10019
  },
  {
   "id": "ia-deykrajay",
-  "title": "Sadhyasadhan Tattba O Prembilasbibarta",
+  "title": "সাধ্যসাধান তাত্তবা ও প্রেমবিলাসবিবার্তা",
   "author": "Ajay Kumar Dey",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -731,12 +744,13 @@
   "downloadSize": 3105521,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/deykrajay",
+  "origTitle": "Sadhyasadhan Tattba O Prembilasbibarta",
   "featured": true,
   "addedOrder": 10020
  },
  {
   "id": "ia-dli.bengal.10689.6841",
-  "title": "Silpik-Darshan শিল্পিক-দর্শন",
+  "title": "শিল্পিক দর্শন",
   "author": "Mitra, Rajendralal",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -755,7 +769,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/6841 Field Value Lang dc.contributor.author Mitra, Rajendralal - dc.date.accessioned 2010-03-06T07:55:19Z - dc.date.available 2010-03-06T07:55:19Z - dc.date.issued 1860 - dc.identifier.uri http://hdl.handle.net/10689/6841 - dc.language.iso bn en_US dc.publisher Bidyaratna Press, Kolkata en_US dc.rights In Public Domain en_US dc.source UJPL en_US dc.subject TECHNOLOGY en_US dc.title Silpik-Darshan শিল্পিক-দর্শন en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2005-08-23 - dc.scl.totalpages 170p. en_US dc.scl.Keywords Paper en_US dc.scl.Keywords Leather en_US dc.scl.Keywords Tobacco en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -766,12 +780,13 @@
   "downloadSize": 10065765,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.6841",
+  "origTitle": "Silpik-Darshan শিল্পিক-দর্শন",
   "featured": true,
   "addedOrder": 10021
  },
  {
   "id": "ia-mahabharater-chhay-prabin",
-  "title": "মহাভারতের ছয় প্রবীণ | Mahabharater Chhay Prabin",
+  "title": "মহাভারতের ছয় প্রবীণ",
   "author": "নৃসিংহপ্রসাদ ভাদুড়ী | Nrisinghaprasad Bhaduri",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -801,12 +816,13 @@
   "downloadSize": 6315005,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/mahabharater-chhay-prabin",
+  "origTitle": "মহাভারতের ছয় প্রবীণ | Mahabharater Chhay Prabin",
   "featured": true,
   "addedOrder": 10022
  },
  {
   "id": "ia-upanisad-ed-1",
-  "title": "উপনিষদ (Upanisad)",
+  "title": "উপনিষদ",
   "author": "সীতানাথ তত্ত্বভূষণ (Sitanath Tattvabhushan)",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -836,6 +852,7 @@
   "downloadSize": 4057936,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/upanisad-ed-1",
+  "origTitle": "উপনিষদ (Upanisad)",
   "featured": true,
   "addedOrder": 10023
  },
@@ -1262,7 +1279,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.10774",
-  "title": "Adhunik Europio Darshan আধুনিক য়ুরোপীয় দর্শন",
+  "title": "আধুনিক য়ুরোপীয় দর্শন",
   "author": "Chattopadhyay, Debi Prasad",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -1281,7 +1298,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/10774 Field Value Lang dc.contributor.author Chattopadhyay, Debi Prasad - dc.date.accessioned 2010-08-16T08:17:20Z - dc.date.available 2010-08-16T08:17:20Z - dc.date.issued 1946 - dc.identifier.uri http://hdl.handle.net/10689/10774 - dc.language.iso bn en_US dc.publisher Pulin Bihari Sen, Kolkata en_US dc.rights In Public Domain en_US dc.source NORTH BENGAL STATE LIBRARY, COOCHBEHAR en_US dc.subject PHILOSOPHY en_US dc.title Adhunik Europio Darshan আধুনিক য়ুরোপীয় দর্শন en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber NBSL/CDAC/KOL/06-07/001 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2006-06-27 - dc.scl.totalpages 74p. en_US dc.scl.Keywords…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1292,12 +1309,13 @@
   "downloadSize": 5198388,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.10774",
+  "origTitle": "Adhunik Europio Darshan আধুনিক য়ুরোপীয় দর্শন",
   "featured": true,
   "addedOrder": 10036
  },
  {
   "id": "ia-dli.bengal.10689.1249",
-  "title": "Patanjal Darshan পাতঞ্জল দর্শন",
+  "title": "পাতঞ্জল দর্শন",
   "author": "Shankaracharjya",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -1316,7 +1334,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/1249 Field Value Lang dc.contributor.author Patanjal - dc.contributor.author Shankaracharjya - dc.date.accessioned 2009-12-19T06:51:43Z - dc.date.available 2009-12-19T06:51:43Z - dc.date.issued 1890 - dc.identifier.uri http://hdl.handle.net/10689/1249 - dc.language.iso bn en_US dc.publisher Mukhopadhyay, Upendranath, Kolkata - dc.rights In Public Domain en_US dc.source STATE CENTRAL LIBRARY, KOLKATA en_US dc.subject PHILOSOPHY en_US dc.subject HINDU PHILOSOPHY en_US dc.title Patanjal Darshan পাতঞ্জল দর্শন en_US dc.title.alternative O Maniratnamala ও মনিরত্নমালা en_US dc.type Book en_US dc.scl.scanningcentre C-DAC Kolkata en_US dc.scl.scanningnumber SCL_02 en_US dc.scl.digitalrepublisher DteLS en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1327,12 +1345,13 @@
   "downloadSize": 1879439,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.1249",
+  "origTitle": "Patanjal Darshan পাতঞ্জল দর্শন",
   "featured": true,
   "addedOrder": 10037
  },
  {
   "id": "ia-wps-office_202412",
-  "title": "Maa Narmada Parikrama Details",
+  "title": "মা নার্মাদা পরিক্রমা দেতৈলস",
   "author": "PRONAY SEN",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1362,6 +1381,7 @@
   "downloadSize": 2319507,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/wps-office_202412",
+  "origTitle": "Maa Narmada Parikrama Details",
   "featured": true,
   "addedOrder": 10038
  },
@@ -1402,7 +1422,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.2801",
-  "title": "Tirtha Darshan - Pt.3 তীর্থ দর্শন - ভাগ ৩",
+  "title": "তীর্থ দর্শন ভাগ ৩",
   "author": "Basu, Haricharan, ed.",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -1421,7 +1441,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/2801 Field Value Lang dc.contributor.author Basu, Baradaprasad, comp. - dc.contributor.author Basu, Haricharan, ed. - dc.date.accessioned 2010-01-06T11:53:25Z - dc.date.available 2010-01-06T11:53:25Z - dc.date.issued 1892 - dc.identifier.uri http://hdl.handle.net/10689/2801 - dc.language.iso bn en_US dc.publisher Kaliprasanna Basu, Kolkata en_US dc.rights In Public Domain en_US dc.source BAGBAZAR READING LIBRARY, KOLKATA en_US dc.subject GEOGRAPHY en_US dc.subject TRAVEL en_US dc.title Tirtha Darshan - Pt.3 তীর্থ দর্শন - ভাগ ৩ en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber SCL_02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2006-09-13 -…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1432,6 +1452,7 @@
   "downloadSize": 9838697,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.2801",
+  "origTitle": "Tirtha Darshan - Pt.3 তীর্থ দর্শন - ভাগ ৩",
   "featured": true,
   "addedOrder": 10040
  },
@@ -1472,7 +1493,7 @@
  },
  {
   "id": "ia-compressed-1_202502",
-  "title": "অবিশ্বাসের ভাঙ্গা দেয়াল লেখক সাজ্জাতুল মওলা শান্ত । obisshaser vanga deyal by sazzatul mowla shanto.",
+  "title": "অবিশ্বাসের ভাঙ্গা দেয়াল লেখক সাজ্জাতুল মওলা শান্ত",
   "author": "sazzatul mowla shanto.",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1502,6 +1523,7 @@
   "downloadSize": 29195363,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/compressed-1_202502",
+  "origTitle": "অবিশ্বাসের ভাঙ্গা দেয়াল লেখক সাজ্জাতুল মওলা শান্ত । obisshaser vanga deyal by sazzatul mowla shanto.",
   "featured": true,
   "addedOrder": 10042
  },
@@ -1857,7 +1879,7 @@
  },
  {
   "id": "ia-marutirtha-hinglaj-abadhut",
-  "title": "মরুতীর্থ হিংলাজ | Marutirtha Hinglaj",
+  "title": "মরুতীর্থ হিংলাজ",
   "author": "অবধূত ; Abadhut",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1887,12 +1909,13 @@
   "downloadSize": 2212167,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/marutirtha-hinglaj-abadhut",
+  "origTitle": "মরুতীর্থ হিংলাজ | Marutirtha Hinglaj",
   "featured": true,
   "addedOrder": 10053
  },
  {
   "id": "ia-to-children-i-give-my-heart-shikkha-amar-brata-vasily-sukhomlinsky-1982",
-  "title": "শিক্ষা আমার ব্রত(To Children i Give my Heart in Bengali)",
+  "title": "শিক্ষা আমার ব্রত",
   "author": "ভাসিলি সুখলঙ্কি (Vasily Sukhomlinsky)",
   "language": "Bengali",
   "category": "Education",
@@ -1922,6 +1945,7 @@
   "downloadSize": 7533368,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/to-children-i-give-my-heart-shikkha-amar-brata-vasily-sukhomlinsky-1982",
+  "origTitle": "শিক্ষা আমার ব্রত(To Children i Give my Heart in Bengali)",
   "featured": true,
   "addedOrder": 10054
  },
@@ -2067,7 +2091,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.1684",
-  "title": "Chikitsa Darshan - 9th ed. চিকিৎসা দর্শন - ৯ম সং",
+  "title": "চিকিৎসা দর্শন ৯ম সং",
   "author": "Mukhopadhyay, Bholanath",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -2086,7 +2110,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/1684 Field Value Lang dc.contributor.author Mukhopadhyay, Bholanath - dc.date.accessioned 2009-12-22T06:32:02Z - dc.date.available 2009-12-22T06:32:02Z - dc.date.issued 1910 - dc.identifier.uri http://hdl.handle.net/10689/1684 - dc.language.iso bn en_US dc.publisher Ananta Lal Laha, Kolkata en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject MEDICINE en_US dc.title Chikitsa Darshan - 9th ed. চিকিৎসা দর্শন - ৯ম সং en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber Os 5000 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2006-05-24 - dc.scl.totalpages 459p. en_US dc.scl.Keywords Homeopathy en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2097,6 +2121,7 @@
   "downloadSize": 24019940,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.1684",
+  "origTitle": "Chikitsa Darshan - 9th ed. চিকিৎসা দর্শন - ৯ম সং",
   "featured": true,
   "addedOrder": 10059
  },
@@ -3642,7 +3667,7 @@
  },
  {
   "id": "ia-fascism-and-mass-psychology",
-  "title": "Fascism And Mass Psychology",
+  "title": "ফাসকিস্ম আন্দ মাস্স পস্যচোলোজ্ঞ",
   "author": "writermiltonbiswascreations",
   "language": "Bengali",
   "category": "Psychology",
@@ -3672,6 +3697,7 @@
   "downloadSize": 15251061,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/fascism-and-mass-psychology",
+  "origTitle": "Fascism And Mass Psychology",
   "featured": true,
   "addedOrder": 10104
  },
@@ -3782,7 +3808,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.2370",
-  "title": "Monobigyan মনোবিজ্ঞান",
+  "title": "মনোবিজ্ঞান",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Science",
@@ -3801,7 +3827,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/2370 Field Value Lang dc.date.accessioned 2010-01-05T08:39:45Z - dc.date.available 2010-01-05T08:39:45Z - dc.date.issued 0001 - dc.identifier.uri http://hdl.handle.net/10689/2370 - dc.language.iso bn en_US dc.publisher Gurudas Chatterjee and Sons, Kolkata en_US dc.rights In Public Domain en_US dc.source MOHEARY PUBLIC LIBRARY, HOWRAH en_US dc.subject PHILOSOPHY en_US dc.subject PSYCHOLOGY en_US dc.title Monobigyan মনোবিজ্ঞান en_US dc.title.alternative Psychology en_US dc.title.alternative Monobignan en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber SCL_02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2007-05-10 - dc.scl.totalpages 484p. en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -3812,12 +3838,13 @@
   "downloadSize": 18141707,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.2370",
+  "origTitle": "Monobigyan মনোবিজ্ঞান",
   "featured": true,
   "addedOrder": 10108
  },
  {
   "id": "ia-dli.bengal.10689.8770",
-  "title": "Byabaharik Monobignan ব্যাবহারিক মনোবিজ্ঞান",
+  "title": "ব্যাবহারিক মনোবিজ্ঞান",
   "author": "Brahmachary, Sarat Chandra",
   "language": "Bengali",
   "category": "Science",
@@ -3836,7 +3863,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/8770 Field Value Lang dc.contributor.author Brahmachary, Sarat Chandra - dc.date.accessioned 2010-04-28T07:12:20Z - dc.date.available 2010-04-28T07:12:20Z - dc.date.issued 1917 - dc.identifier.uri http://hdl.handle.net/10689/8770 - dc.language.iso bn en_US dc.publisher Mukherji Bose and Co., Kolkata en_US dc.rights In Public Domain en_US dc.source NORTH BENGAL STATE LIBRARY, COOCHBEHAR en_US dc.subject PSYCHOLOGY en_US dc.subject APPLIED PSYCHOLOGY en_US dc.title Byabaharik Monobignan ব্যাবহারিক মনোবিজ্ঞান en_US dc.title.alternative Practical Phychology en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber NBSL/CDAC/KOL/05-06/001 en_US dc.scl.digitalrepublisher DteLS en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -3847,6 +3874,7 @@
   "downloadSize": 14482388,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8770",
+  "origTitle": "Byabaharik Monobignan ব্যাবহারিক মনোবিজ্ঞান",
   "featured": true,
   "addedOrder": 10109
  },
@@ -3922,7 +3950,7 @@
  },
  {
   "id": "ia-human-races-manob-shomaj-projati-jati-progoti-mikhail-nesturkh_202512",
-  "title": ": মানব সমাজ, প্রজাতি, জাতি, প্রগতি (Human Races in Bengali)",
+  "title": "মানব সমাজ প্রজাতি জাতি প্রগতি",
   "author": "সের্গেই আন্তোনভ (Mikhail Nesturkh)",
   "language": "Bengali",
   "category": "Sociology",
@@ -3952,6 +3980,7 @@
   "downloadSize": 9352935,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/human-races-manob-shomaj-projati-jati-progoti-mikhail-nesturkh_202512",
+  "origTitle": ": মানব সমাজ, প্রজাতি, জাতি, প্রগতি (Human Races in Bengali)",
   "featured": true,
   "addedOrder": 10112
  },
@@ -4062,7 +4091,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.7905",
-  "title": "Ayin আইন",
+  "title": "আইন",
   "author": "Shakespeare, Henry, comp.",
   "language": "Bengali",
   "category": "Law",
@@ -4081,7 +4110,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/7905 Field Value Lang dc.contributor.author Blant, William, comp. - dc.contributor.author Shakespeare, Henry, comp. - dc.date.accessioned 2010-03-23T08:09:30Z - dc.date.available 2010-03-23T08:09:30Z - dc.date.issued 1828 - dc.identifier.uri http://hdl.handle.net/10689/7905 - dc.language.iso bn en_US dc.rights In Public Domain en_US dc.source NORTH BENGAL STATE LIBRARY,COOCHBEHAR en_US dc.subject LAW en_US dc.subject SOCIAL SCIENCES en_US dc.title Ayin আইন en_US dc.title.alternative 1793 - 1824 en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber NBSL/CDAC/KOL/06-07/001 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2006-04-12 - dc.scl.totalpages 210p.…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -4092,6 +4121,7 @@
   "downloadSize": 13760876,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.7905",
+  "origTitle": "Ayin আইন",
   "featured": true,
   "addedOrder": 10116
  },
@@ -4132,7 +4162,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.8435",
-  "title": "Istamp Aain ইষ্ট্যাম্প আইন",
+  "title": "ইষ্ট্যাম্প আইন",
   "author": "Bhaduri, Harachandra, comp.",
   "language": "Bengali",
   "category": "Law",
@@ -4151,7 +4181,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/8435 Field Value Lang dc.contributor.author Bhaduri, Harachandra, comp. - dc.date.accessioned 2010-04-03T09:04:04Z - dc.date.available 2010-04-03T09:04:04Z - dc.date.issued 1867 - dc.identifier.uri http://hdl.handle.net/10689/8435 - dc.language.iso bn en_US dc.publisher Bidyaratna Press, Kolkata en_US dc.rights In Public Domain en_US dc.source MOHEARY PUBLIC LIBRARY, HOWRAH en_US dc.subject LAW en_US dc.title Istamp Aain ইষ্ট্যাম্প আইন en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber SCL_01 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2007-02-15 - dc.scl.totalpages 122p. en_US dc.scl.Keywords Stamp Act en_US",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -4162,12 +4192,13 @@
   "downloadSize": 5559202,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8435",
+  "origTitle": "Istamp Aain ইষ্ট্যাম্প আইন",
   "featured": true,
   "addedOrder": 10118
  },
  {
   "id": "ia-dli.bengal.10689.8703",
-  "title": "Alpamulyer Mokaddamar Adalater Aain অল্পমূল্যের মোকদ্দমার আদালতের আইন",
+  "title": "অল্পমূল্যের মোকদ্দমার আদালতের আইন",
   "author": "Marshman, John C., tr",
   "language": "Bengali",
   "category": "Law",
@@ -4186,7 +4217,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/8703 Field Value Lang dc.contributor.author Marshman, John C., tr - dc.date.accessioned 2010-04-19T12:14:52Z - dc.date.available 2010-04-19T12:14:52Z - dc.date.issued 1850 - dc.identifier.uri http://hdl.handle.net/10689/8703 - dc.language.iso bn en_US dc.publisher Munshi Kamaruddin, Battala(Shovabazar), Kolkata en_US dc.rights In Public Domain en_US dc.source UJPL en_US dc.subject LAW en_US dc.subject SOCIAL SCIENCES en_US dc.title Alpamulyer Mokaddamar Adalater Aain অল্পমূল্যের মোকদ্দমার আদালতের আইন en_US dc.title.alternative Choto Adalater Nutan Aain en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL_02 en_US dc.scl.digitalrepublisher DteLS en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -4197,6 +4228,7 @@
   "downloadSize": 3506536,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8703",
+  "origTitle": "Alpamulyer Mokaddamar Adalater Aain অল্পমূল্যের মোকদ্দমার আদালতের আইন",
   "featured": true,
   "addedOrder": 10119
  },
@@ -4447,7 +4479,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.8706",
-  "title": "Bharatbarsher Dandabidhir Aain ভারতবর্ষের দন্ডবিধির আইন",
+  "title": "ভারতবর্ষের দন্ডবিধির আইন",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Law",
@@ -4466,7 +4498,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/8706 Field Value Lang dc.date.accessioned 2010-04-19T12:21:13Z - dc.date.available 2010-04-19T12:21:13Z - dc.date.issued 0001 - dc.identifier.uri http://hdl.handle.net/10689/8706 - dc.description THE YEAR OF PUBLICATION - NOT FOUND en_US dc.language.iso bn en_US dc.rights In Public Domain en_US dc.source UJPL en_US dc.subject LAW en_US dc.subject SOCIAL SCIENCES en_US dc.title Bharatbarsher Dandabidhir Aain ভারতবর্ষের দন্ডবিধির আইন en_US dc.title.alternative 1860, Act 45 en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber UJPL_02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2005-08-25 - dc.scl.totalpages 216p. en_US dc.scl.Keywords Indian law en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -4477,6 +4509,7 @@
   "downloadSize": 20586590,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8706",
+  "origTitle": "Bharatbarsher Dandabidhir Aain ভারতবর্ষের দন্ডবিধির আইন",
   "featured": true,
   "addedOrder": 10127
  },
@@ -4797,7 +4830,7 @@
  },
  {
   "id": "ia-meritocratic_state_structure_260901_001707",
-  "title": "meritocratic_state_structure_260901_001707",
+  "title": "meritocratic_state_structure_২৬০৯০১_০০১৭০৭",
   "author": "Md. Anisur Rahman",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4827,6 +4860,7 @@
   "downloadSize": 70112,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/meritocratic_state_structure_260901_001707",
+  "origTitle": "meritocratic_state_structure_260901_001707",
   "featured": true,
   "addedOrder": 10137
  },
@@ -4867,7 +4901,7 @@
  },
  {
   "id": "ia-20251121",
-  "title": "কেরাত শিক্ষা (Qirat Sikkha)",
+  "title": "কেরাত শিক্ষা",
   "author": "আল্লামা রুহুল আমিন বসিরহাটি ( Allama Ruhul Amin Boshirhati )",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4897,6 +4931,7 @@
   "downloadSize": 19371794,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20251121",
+  "origTitle": "কেরাত শিক্ষা (Qirat Sikkha)",
   "featured": true,
   "addedOrder": 10139
  },
@@ -5007,7 +5042,7 @@
  },
  {
   "id": "ia-haram-relationship",
-  "title": "Haram Relationship",
+  "title": "হারাম রেলাতিওনশিপ",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5037,6 +5072,7 @@
   "downloadSize": 642177,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/haram-relationship",
+  "origTitle": "Haram Relationship",
   "featured": true,
   "addedOrder": 10143
  },
@@ -5392,7 +5428,7 @@
  },
  {
   "id": "ia-Judge-52-foundation-course",
-  "title": "Ministry of Law Notification Regarding the Nomination of 69 Judges for the 52nd Foundation Training Course. ৫২তম বুনিয়াদ প্রশিক্ষণ কোর্সে ৬৯ জন বিচারকের মনোনয়ন সংক্রান্ত আইন ও বিচার বিভাগের প্রজ্ঞাপন।",
+  "title": "৫২তম বুনিয়াদ প্রশিক্ষণ কোর্সে ৬৯ জন বিচারকের মনোনয়ন সংক্রান্ত আইন ও বিচার বিভাগের প্রজ্ঞাপন",
   "author": "Bangladesh law ministry",
   "language": "Bengali",
   "category": "Bangladesh Studies",
@@ -5422,6 +5458,7 @@
   "downloadSize": 763767,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/Judge-52-foundation-course",
+  "origTitle": "Ministry of Law Notification Regarding the Nomination of 69 Judges for the 52nd Foundation Training Course. ৫২তম বুনিয়াদ প্রশিক্ষণ কোর্সে ৬৯ জন বিচারকের মনোনয়ন সংক্রান্ত আইন ও বিচার বিভাগের প্রজ্ঞাপন।",
   "featured": true,
   "addedOrder": 10154
  },
@@ -5497,7 +5534,7 @@
  },
  {
   "id": "ia-gunjan-may-2020-pc-version_202102",
-  "title": "Gunjan May 2020 PC Version",
+  "title": "গুঞ্জন মায় ২০২০ পক বের্সিওন",
   "author": "P. K. Chatterjee (P. K.)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5527,6 +5564,7 @@
   "downloadSize": 14839806,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/gunjan-may-2020-pc-version_202102",
+  "origTitle": "Gunjan May 2020 PC Version",
   "featured": true,
   "addedOrder": 10157
  },
@@ -5567,7 +5605,7 @@
  },
  {
   "id": "ia-ten-novels-by-writers-of-soviet-east-soviet-praccher-dashti-galpa_202309",
-  "title": "সোভিয়েত প্র্যাচার দস্তি গালপা (Ten Novels by Writers of Soviet East in Bengali)",
+  "title": "সোভিয়েত প্র্যাচার দস্তি গালপা",
   "author": "সের্গেই আন্তোনভ (Sergei Antonov)",
   "language": "Bengali",
   "category": "Novels",
@@ -5597,12 +5635,13 @@
   "downloadSize": 3469429,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ten-novels-by-writers-of-soviet-east-soviet-praccher-dashti-galpa_202309",
+  "origTitle": "সোভিয়েত প্র্যাচার দস্তি গালপা (Ten Novels by Writers of Soviet East in Bengali)",
   "featured": true,
   "addedOrder": 10159
  },
  {
   "id": "ia-gunjan-october-2024-pc-version",
-  "title": "Gunjan October 2024 PC Version",
+  "title": "গুঞ্জন ওকতোবের ২০২৪ পক বের্সিওন",
   "author": "P. K. Chatterjee",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5632,12 +5671,13 @@
   "downloadSize": 5741428,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/gunjan-october-2024-pc-version",
+  "origTitle": "Gunjan October 2024 PC Version",
   "featured": true,
   "addedOrder": 10160
  },
  {
   "id": "ia-gunjan-july-2022-pc-version",
-  "title": "Gunjan July 2022 PC Version",
+  "title": "গুঞ্জন জুল্য ২০২২ পক বের্সিওন",
   "author": "Prasanta Kumar Chatterjee",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5667,12 +5707,13 @@
   "downloadSize": 13829547,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/gunjan-july-2022-pc-version",
+  "origTitle": "Gunjan July 2022 PC Version",
   "featured": true,
   "addedOrder": 10161
  },
  {
   "id": "ia-pantry-of-the-sun-shurjer-dhanagar-mikhail-prishvin_202309",
-  "title": "শুরজার ধানগর (Pantry of the Sun in Bengali)",
+  "title": "শুরজার ধানগর",
   "author": "মিখাইল প্রিশভিন (Mikhail Prishvin)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5702,12 +5743,13 @@
   "downloadSize": 2326086,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/pantry-of-the-sun-shurjer-dhanagar-mikhail-prishvin_202309",
+  "origTitle": "শুরজার ধানগর (Pantry of the Sun in Bengali)",
   "featured": true,
   "addedOrder": 10162
  },
  {
   "id": "ia-how-to-strengthen-the-heart-sabal-hritpinder-janyo-v.-f.-jelenin_202309",
-  "title": "সাবাল হৃদপিন্দর জানিয়ো (How to Strengthen the Hearth in Bengali)",
+  "title": "সাবাল হৃদপিন্দর জানিয়ো",
   "author": "ভি. এফ. জেলেনিন (V. F. Jelenin)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5737,12 +5779,13 @@
   "downloadSize": 2195862,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/how-to-strengthen-the-heart-sabal-hritpinder-janyo-v.-f.-jelenin_202309",
+  "origTitle": "সাবাল হৃদপিন্দর জানিয়ো (How to Strengthen the Hearth in Bengali)",
   "featured": true,
   "addedOrder": 10163
  },
  {
   "id": "ia-hridbangla-2020",
-  "title": "Hridbangla 2020",
+  "title": "হৃদবাংলা ২০২০",
   "author": "North America Bengali Literature Society",
   "language": "Bengali",
   "category": "Literature",
@@ -5772,12 +5815,13 @@
   "downloadSize": 15045214,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/hridbangla-2020",
+  "origTitle": "Hridbangla 2020",
   "featured": true,
   "addedOrder": 10164
  },
  {
   "id": "ia-bishwasahityaosharatchandra",
-  "title": "Bishwa Sahitya O Sharatchandra বিশ্বসাহিত্য ও শরৎচন্দ্র",
+  "title": "বিশ্বসাহিত্য ও শরৎচন্দ্র",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Literature",
@@ -5807,6 +5851,7 @@
   "downloadSize": 53438560,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/bishwasahityaosharatchandra",
+  "origTitle": "Bishwa Sahitya O Sharatchandra বিশ্বসাহিত্য ও শরৎচন্দ্র",
   "featured": true,
   "addedOrder": 10165
  },
@@ -5847,7 +5892,7 @@
  },
  {
   "id": "ia-Adhunik-Robinhood-Hemendra-Kumar-Roy",
-  "title": "Adhunik Robinhood- Hemendra Kumar Roy / আধুনিক রবিন্‌হুড - শ্রীহেমেন্দ্রকুমার রায়",
+  "title": "আধুনিক রবিন্ হুড শ্রীহেমেন্দ্রকুমার রায়",
   "author": "Bangla Rare Books",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5877,12 +5922,13 @@
   "downloadSize": 8272813,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/Adhunik-Robinhood-Hemendra-Kumar-Roy",
+  "origTitle": "Adhunik Robinhood- Hemendra Kumar Roy / আধুনিক রবিন্‌হুড - শ্রীহেমেন্দ্রকুমার রায়",
   "featured": true,
   "addedOrder": 10167
  },
  {
   "id": "ia-gunjan-february-2022-pc-version",
-  "title": "Gunjan February 2022 PC Version",
+  "title": "গুঞ্জন ফেব্রুয়ার্য ২০২২ পক বের্সিওন",
   "author": "P. K. Chatterjee",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5912,12 +5958,13 @@
   "downloadSize": 15502702,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/gunjan-february-2022-pc-version",
+  "origTitle": "Gunjan February 2022 PC Version",
   "featured": true,
   "addedOrder": 10168
  },
  {
   "id": "ia-lion-and-dog-shingha-aar-kukur-lev-tolstoy_202309",
-  "title": "সিংহ এবং কুকুর (Lion and Dog in Bengali)",
+  "title": "সিংহ এবং কুকুর",
   "author": "লেভ টলস্টয় (Lev Tolstoy)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5947,6 +5994,7 @@
   "downloadSize": 2112651,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/lion-and-dog-shingha-aar-kukur-lev-tolstoy_202309",
+  "origTitle": "সিংহ এবং কুকুর (Lion and Dog in Bengali)",
   "featured": true,
   "addedOrder": 10169
  },
@@ -5987,7 +6035,7 @@
  },
  {
   "id": "ia-volokolamsk-highway-volokolamskoe-sorok-alexander-bek_202412",
-  "title": "ভোলোকোলামস্ক সারাক (Volokolamsk Highway in Bengali)",
+  "title": "ভোলোকোলামস্ক সারাক",
   "author": "ভোলোকোলামস্ক সারাক (Alexander Bek)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6017,6 +6065,7 @@
   "downloadSize": 6276235,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/volokolamsk-highway-volokolamskoe-sorok-alexander-bek_202412",
+  "origTitle": "ভোলোকোলামস্ক সারাক (Volokolamsk Highway in Bengali)",
   "featured": true,
   "addedOrder": 10171
  },
@@ -6092,7 +6141,7 @@
  },
  {
   "id": "ia-20250329_20250329_0924",
-  "title": "Vuter Shohor Dekha ভূতের শহর দেখা",
+  "title": "ভূতের শহর দেখা",
   "author": "Bablu Bhanja Chowdhury বাবলু ভঞ্জ চৌধুরী",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6122,12 +6171,13 @@
   "downloadSize": 29465010,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20250329_20250329_0924",
+  "origTitle": "Vuter Shohor Dekha ভূতের শহর দেখা",
   "featured": true,
   "addedOrder": 10174
  },
  {
   "id": "ia-tajik-folktales-tajik-lokkahini_202309",
-  "title": "তাজিক লোককাহিনী (Tajik Folktales in Bengali)",
+  "title": "তাজিক লোককাহিনী",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6157,12 +6207,13 @@
   "downloadSize": 2368099,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tajik-folktales-tajik-lokkahini_202309",
+  "origTitle": "তাজিক লোককাহিনী (Tajik Folktales in Bengali)",
   "featured": true,
   "addedOrder": 10175
  },
  {
   "id": "ia-why-thupa-does-not-catch-keno-tupa-pakhi-dhare-na-yevgeny-charushin_202308",
-  "title": "কেনো তুপা পাখিধারা না ( Keno Tupa Pakhi Dhare Na Why Tippy Doesn't Chase Birds in Bengali)",
+  "title": "কেনো তুপা পাখিধারা না",
   "author": "ইয়েভগেনি চারুশিন (Yevgeny Charushin)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6192,12 +6243,13 @@
   "downloadSize": 1276887,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/why-thupa-does-not-catch-keno-tupa-pakhi-dhare-na-yevgeny-charushin_202308",
+  "origTitle": "কেনো তুপা পাখিধারা না ( Keno Tupa Pakhi Dhare Na Why Tippy Doesn't Chase Birds in Bengali)",
   "featured": true,
   "addedOrder": 10176
  },
  {
   "id": "ia-choto-golpo-atawr-rahman-kawsar",
-  "title": "Choto Golpo ছোট গল্প",
+  "title": "ছোট গল্প",
   "author": "Atawr Rahman Kawsar |আতাউর রহমান কাওছার",
   "language": "Bengali",
   "category": "Short Stories",
@@ -6227,12 +6279,13 @@
   "downloadSize": 1596386,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/choto-golpo-atawr-rahman-kawsar",
+  "origTitle": "Choto Golpo ছোট গল্প",
   "featured": true,
   "addedOrder": 10177
  },
  {
   "id": "ia-do-you-want-the-sun-tor-ki-surja-aachhe-yuri-averenkov_202309",
-  "title": "টর কি সুরজা আচে (Do you Want the Sun in Bengali)",
+  "title": "টর কি সুরজা আচে",
   "author": "ইউরি আভারেনকভ (Yuri Averenkov)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6262,6 +6315,7 @@
   "downloadSize": 1493334,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/do-you-want-the-sun-tor-ki-surja-aachhe-yuri-averenkov_202309",
+  "origTitle": "টর কি সুরজা আচে (Do you Want the Sun in Bengali)",
   "featured": true,
   "addedOrder": 10178
  },
@@ -6372,7 +6426,7 @@
  },
  {
   "id": "ia-very-scary-story-bhayankar-romoharshak-ghatona-anatoly-aleksin_202309",
-  "title": "ভয়ানকর রোমোহর্শক ঘাটোনা (Very Scary Story in Bengali)",
+  "title": "ভয়ানকর রোমোহর্শক ঘাটোনা",
   "author": "আনাতোলি আলেক্সিন (Anatoly Aleksin)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6402,6 +6456,7 @@
   "downloadSize": 2268147,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/very-scary-story-bhayankar-romoharshak-ghatona-anatoly-aleksin_202309",
+  "origTitle": "ভয়ানকর রোমোহর্শক ঘাটোনা (Very Scary Story in Bengali)",
   "featured": true,
   "addedOrder": 10182
  },
@@ -6442,7 +6497,7 @@
  },
  {
   "id": "ia-gunjan-june-2022-pc-version",
-  "title": "Gunjan June 2022 PC Version",
+  "title": "গুঞ্জন জুনে ২০২২ পক বের্সিওন",
   "author": "Prasanta Kumar Chatterjee",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6472,6 +6527,7 @@
   "downloadSize": 19506844,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/gunjan-june-2022-pc-version",
+  "origTitle": "Gunjan June 2022 PC Version",
   "featured": true,
   "addedOrder": 10184
  },
@@ -6512,7 +6568,7 @@
  },
  {
   "id": "ia-mobile-phone-version",
-  "title": "গুঞ্জন সেপ্টেম্বর ২০২০ Mobile Phone Version",
+  "title": "গুঞ্জন সেপ্টেম্বর ২০২০",
   "author": "Pandulipi",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6542,12 +6598,13 @@
   "downloadSize": 2820409,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/mobile-phone-version",
+  "origTitle": "গুঞ্জন সেপ্টেম্বর ২০২০ Mobile Phone Version",
   "featured": true,
   "addedOrder": 10186
  },
  {
   "id": "ia-dli.bengal.10689.5406",
-  "title": "Bangala Bhasha O Bangala Sahitya Bishayak Prastab - 2nd ed.বাংলা ভাষা ও বাংলা সাহিত্য বিষয়ক প্রস্তাব - ২য় সং",
+  "title": "বাংলা ভাষা ও বাংলা সাহিত্য বিষয়ক প্রস্তাব ২য় সং",
   "author": "Nyayaratna, Ramgati",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -6566,7 +6623,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/5406 Field Value Lang dc.contributor.author Nyayaratna, Ramgati - dc.date.accessioned 2010-02-22T08:46:30Z - dc.date.available 2010-02-22T08:46:30Z - dc.date.issued 1887 - dc.identifier.uri http://hdl.handle.net/10689/5406 - dc.description (Bikhyato banglagranthakarganer sankhipto jibanibritto o tahader rachito granthasakaler kinchitsamalochana samet) en_US dc.language.iso bn en_US dc.publisher Girindranath Bandyopadhyaya (printer), Chunchura en_US dc.rights In Public Domain en_US dc.source NORTH BENGAL STATE LIBRARY, COOCHBEHAR en_US dc.subject LITERATURE en_US dc.title Bangala Bhasha O Bangala Sahitya Bishayak Prastab - 2nd ed.বাংলা ভাষা ও বাংলা সাহিত্য বিষয়ক প্রস্তাব - ২য় সং en_US dc.title.alternative A…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -6577,12 +6634,13 @@
   "downloadSize": 17484789,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.5406",
+  "origTitle": "Bangala Bhasha O Bangala Sahitya Bishayak Prastab - 2nd ed.বাংলা ভাষা ও বাংলা সাহিত্য বিষয়ক প্রস্তাব - ২য় সং",
   "featured": true,
   "addedOrder": 10187
  },
  {
   "id": "ia-gunjan-march-2022-pc-version",
-  "title": "Gunjan March 2022 PC Version",
+  "title": "গুঞ্জন মার্ছ ২০২২ পক বের্সিওন",
   "author": "P. K. Chatterjee",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6612,12 +6670,13 @@
   "downloadSize": 19844896,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/gunjan-march-2022-pc-version",
+  "origTitle": "Gunjan March 2022 PC Version",
   "featured": true,
   "addedOrder": 10188
  },
  {
   "id": "ia-gunjan-october-2020-pc-version",
-  "title": "Gunjan October 2020 PC Version",
+  "title": "গুঞ্জন ওকতোবের ২০২০ পক বের্সিওন",
   "author": "Prasanta Kumar Chatterjee (P. K.)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6647,12 +6706,13 @@
   "downloadSize": 27853201,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/gunjan-october-2020-pc-version",
+  "origTitle": "Gunjan October 2020 PC Version",
   "featured": true,
   "addedOrder": 10189
  },
  {
   "id": "ia-hakikatul-wahi",
-  "title": "Hakikatul Wahi",
+  "title": "হাকিকাতুল ওাহি",
   "author": "Ahmadi Art Press",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6682,12 +6742,13 @@
   "downloadSize": 6448774,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/hakikatul-wahi",
+  "origTitle": "Hakikatul Wahi",
   "featured": true,
   "addedOrder": 10190
  },
  {
   "id": "ia-oporadh-o-shasti-arun-some-1",
-  "title": "Oporadh O Shasti Arun Some ( 1)",
+  "title": "ওপোরাধ ও শাস্তি অরুণ সোমে ১",
   "author": "ফিওদোর দস্তয়েভস্কির",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6717,6 +6778,7 @@
   "downloadSize": 28931848,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/oporadh-o-shasti-arun-some-1",
+  "origTitle": "Oporadh O Shasti Arun Some ( 1)",
   "featured": true,
   "addedOrder": 10191
  },
@@ -6757,7 +6819,7 @@
  },
  {
   "id": "ia-ujs-app",
-  "title": "বাংলাদেশের অর্থনৈতিক সমীক্ষা ২০২২ UJS App",
+  "title": "বাংলাদেশের অর্থনৈতিক সমীক্ষা ২০২২",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "চাকরির প্রস্তুতি",
@@ -6787,6 +6849,7 @@
   "downloadSize": 24041056,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ujs-app",
+  "origTitle": "বাংলাদেশের অর্থনৈতিক সমীক্ষা ২০২২ UJS App",
   "featured": true,
   "addedOrder": 10193
  },
@@ -6967,7 +7030,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.8299",
-  "title": "Janakir Agni-Pariksha জানকীর অগ্নি-পরীক্ষা",
+  "title": "জানকীর অগ্নি পরীক্ষা",
   "author": "Ghosh, Kaliprasanna",
   "language": "Bengali",
   "category": "Education",
@@ -6986,7 +7049,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/8299 Field Value Lang dc.contributor.author Ghosh, Kaliprasanna - dc.date.accessioned 2010-03-30T09:55:54Z - dc.date.available 2010-03-30T09:55:54Z - dc.date.issued 1904 - dc.identifier.uri http://hdl.handle.net/10689/8299 - dc.language.iso bn en_US dc.publisher Metcalfe Press, Kolkata en_US dc.rights In Public Domain en_US dc.source MOHEARY PUBLIC LIBRARY, HOWRAH en_US dc.subject BENGALI LITERATURE en_US dc.subject LITERATURE en_US dc.title Janakir Agni-Pariksha জানকীর অগ্নি-পরীক্ষা en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber SCL_02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2007-03-23 - dc.scl.totalpages 150p. en_US dc.scl.Keywords Hindu…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -6997,6 +7060,7 @@
   "downloadSize": 5592664,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8299",
+  "origTitle": "Janakir Agni-Pariksha জানকীর অগ্নি-পরীক্ষা",
   "featured": true,
   "addedOrder": 10199
  },
@@ -7072,7 +7136,7 @@
  },
  {
   "id": "ia-amara-kalpanaya-oi-ami",
-  "title": "Amara Kalpanaya Oi Ami",
+  "title": "আমারা কালপানায়া ওই আমি",
   "author": "Tajul Isalm Apurbo",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -7102,12 +7166,13 @@
   "downloadSize": 287106,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/amara-kalpanaya-oi-ami",
+  "origTitle": "Amara Kalpanaya Oi Ami",
   "featured": true,
   "addedOrder": 10202
  },
  {
   "id": "ia-story-of-a-naturalist-prokritibider-kahini-piotr-manteifel_202512",
-  "title": "প্রকৃতিবিদের কাহিনি (Tales of a Naturalist in Bengali)",
+  "title": "প্রকৃতিবিদের কাহিনি",
   "author": "সের্গেই আন্তোনভ (Piotr Manteifel)",
   "language": "Bengali",
   "category": "Environment",
@@ -7137,6 +7202,7 @@
   "downloadSize": 12578909,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/story-of-a-naturalist-prokritibider-kahini-piotr-manteifel_202512",
+  "origTitle": "প্রকৃতিবিদের কাহিনি (Tales of a Naturalist in Bengali)",
   "featured": true,
   "addedOrder": 10203
  },
@@ -7177,7 +7243,7 @@
  },
  {
   "id": "ia-upbringing-of-children-in-the-ussr-soviet-sishujagat-amar-abhigyota-jai-prakash-bharti-1989",
-  "title": "সোভিয়েত শিশুজগৎ: আমার অভিজ্ঞতা (Upbringing of Children in The USSR in Bengali)",
+  "title": "সোভিয়েত শিশুজগৎ আমার অভিজ্ঞতা",
   "author": "জয়প্রকাশ ভারতী (Jai Prakash Bharati)",
   "language": "Bengali",
   "category": "Children's Books",
@@ -7207,6 +7273,7 @@
   "downloadSize": 7722705,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/upbringing-of-children-in-the-ussr-soviet-sishujagat-amar-abhigyota-jai-prakash-bharti-1989",
+  "origTitle": "সোভিয়েত শিশুজগৎ: আমার অভিজ্ঞতা (Upbringing of Children in The USSR in Bengali)",
   "featured": true,
   "addedOrder": 10205
  },
@@ -7247,7 +7314,7 @@
  },
  {
   "id": "ia-manners_202306",
-  "title": "🐢ముస్లిం;శీలం;గుణం;أخلٰاق;నడత🐜,अखलाक,Manners;मुस्लिम;চরিত্র;ಖದೀಜ;चरित्रा;ಮುಸ್ಲಿಂ",
+  "title": "চরিত্র",
   "author": "Khadija🌴Kristina",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -7277,6 +7344,7 @@
   "downloadSize": 19199528,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/manners_202306",
+  "origTitle": "🐢ముస్లిం;శీలం;గుణం;أخلٰاق;నడత🐜,अखलाक,Manners;मुस्लिम;চরিত্র;ಖದೀಜ;चरित्रा;ಮುಸ್ಲಿಂ",
   "featured": true,
   "addedOrder": 10207
  },
@@ -7317,7 +7385,7 @@
  },
  {
   "id": "ia-dli.bengal.10689.5330",
-  "title": "Data Pariksha Natak দাতা পরীক্ষা নাটক",
+  "title": "দাতা পরীক্ষা নাটক",
   "author": "Mitra, Bhubankrishna",
   "language": "Bengali",
   "category": "Education",
@@ -7336,7 +7404,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/5330 Field Value Lang dc.contributor.author Mitra, Bhubankrishna - dc.date.accessioned 2010-02-20T08:47:01Z - dc.date.available 2010-02-20T08:47:01Z - dc.date.issued 1889 - dc.identifier.uri http://hdl.handle.net/10689/5330 - dc.language.iso bn en_US dc.publisher Bhubankrishna Mitra, Kolkata en_US dc.rights In Public Domain en_US dc.source BAGBAZAR READING LIBRARY, KOLKATA en_US dc.subject LITERATURE en_US dc.subject BENGALI DRAMA en_US dc.title Data Pariksha Natak দাতা পরীক্ষা নাটক en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber CDAC_02 en_US dc.scl.digitalrepublisher DteLS en_US dc.scl.digitalpublicationdate 2006-10-13 - dc.scl.totalpages 102p. en_US dc.scl.Keywords Plays…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -7347,12 +7415,13 @@
   "downloadSize": 2221576,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.5330",
+  "origTitle": "Data Pariksha Natak দাতা পরীক্ষা নাটক",
   "featured": true,
   "addedOrder": 10209
  },
  {
   "id": "ia-dli.bengal.10689.4102",
-  "title": "Dharma-Pariksha ধর্ম্ম-পরীক্ষা",
+  "title": "ধর্ম্ম পরীক্ষা",
   "author": "Mitra, Bhubankrishna",
   "language": "Bengali",
   "category": "Religion & Philosophy",
@@ -7371,7 +7440,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/4102 Field Value Lang dc.contributor.author Mitra, Bhubankrishna - dc.date.accessioned 2010-02-01T09:08:37Z - dc.date.available 2010-02-01T09:08:37Z - dc.date.issued 1886 - dc.identifier.uri http://hdl.handle.net/10689/4102 - dc.language.iso bn en_US dc.publisher Great Edin Press, Kolkata en_US dc.rights In Public Domain en_US dc.source BAGBAZAR READING LIBRARY, KOLKATA en_US dc.subject LITERATURE en_US dc.subject BENGALI DRAMA en_US dc.title Dharma-Pariksha ধর্ম্ম-পরীক্ষা en_US dc.title.alternative Pouranik Itibritta Mulak Natak en_US dc.title.alternative Drishya Kabya en_US dc.type Book en_US dc.scl.scanningcentre C-DAC, Kolkata en_US dc.scl.scanningnumber SCL_02 en_US dc.scl.digitalrepublisher DteLS en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -7382,6 +7451,7 @@
   "downloadSize": 3011361,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4102",
+  "origTitle": "Dharma-Pariksha ধর্ম্ম-পরীক্ষা",
   "featured": true,
   "addedOrder": 10210
  },
@@ -7422,7 +7492,7 @@
  },
  {
   "id": "ia-tahrid3",
-  "title": "tahrid3",
+  "title": "তাহৃদ৩",
   "author": "মুস‘আব ইলদিরিম",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -7452,6 +7522,7 @@
   "downloadSize": 1814865,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tahrid3",
+  "origTitle": "tahrid3",
   "featured": true,
   "addedOrder": 10212
  },
@@ -7492,7 +7563,7 @@
  },
  {
   "id": "ia-dimensional-analysis-systemic-reception-bengali-installments-1-70-combined",
-  "title": "Dimensional Analysis Systemic Reception Bengali",
+  "title": "দিমেনসিওনাল আনাল্যসিস স্যস্তেমিক রেকেপতিওন",
   "author": "Ryan-John-Posedel Anthony-Brezakolesar Smokosuchabokybellonovich",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -7522,12 +7593,13 @@
   "downloadSize": 16893316,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dimensional-analysis-systemic-reception-bengali-installments-1-70-combined",
+  "origTitle": "Dimensional Analysis Systemic Reception Bengali",
   "featured": true,
   "addedOrder": 10214
  },
  {
   "id": "ia-humiliated-and-offended-bonchito-lanchhito-fyodor-dostoyevsky_202512",
-  "title": "বঞ্চিত লাঞ্চিতো (The Insulated and The Humiliated in Bengali)",
+  "title": "বঞ্চিত লাঞ্চিতো",
   "author": "ফিওদর দস্তয়েভস্কি (Fyodor Dostoyevsky)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -7557,12 +7629,13 @@
   "downloadSize": 24883196,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/humiliated-and-offended-bonchito-lanchhito-fyodor-dostoyevsky_202512",
+  "origTitle": "বঞ্চিত লাঞ্চিতো (The Insulated and The Humiliated in Bengali)",
   "featured": true,
   "addedOrder": 10215
  },
  {
   "id": "ia-computer-hardware-problems-solution",
-  "title": "Computer Hardware কম্পিউটার হার্ডওয়্যার সমস্যা সমাধান (সাজেশন)",
+  "title": "কম্পিউটার হার্ডওয়্যার সমস্যা সমাধান সাজেশন",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "World History",
@@ -7592,12 +7665,13 @@
   "downloadSize": 22124150,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/computer-hardware-problems-solution",
+  "origTitle": "Computer Hardware কম্পিউটার হার্ডওয়্যার সমস্যা সমাধান (সাজেশন)",
   "featured": true,
   "addedOrder": 10216
  },
  {
   "id": "ia-20250530_20250530_1850",
-  "title": "Metaria Medica - 2nd Year - মেটেরিয়া মেডিকা - ২য় বর্ষ",
+  "title": "মেটেরিয়া মেডিকা ২য় বর্ষ",
   "author": "Dr. Nurul Haq - ডাঃ নুরুল হক",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -7627,12 +7701,13 @@
   "downloadSize": 31525906,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20250530_20250530_1850",
+  "origTitle": "Metaria Medica - 2nd Year - মেটেরিয়া মেডিকা - ২য় বর্ষ",
   "featured": true,
   "addedOrder": 10217
  },
  {
   "id": "ia-youtube-automation-guide_202608",
-  "title": "Youtube Automation Guide ইউটিউব অটোমেশন গাইড",
+  "title": "ইউটিউব অটোমেশন গাইড",
   "author": "Chuggi Master",
   "language": "Bengali",
   "category": "Education",
@@ -7662,12 +7737,13 @@
   "downloadSize": 1645030,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/youtube-automation-guide_202608",
+  "origTitle": "Youtube Automation Guide ইউটিউব অটোমেশন গাইড",
   "featured": true,
   "addedOrder": 10218
  },
  {
   "id": "ia-dli.bengal.10689.10234",
-  "title": "Panchayet Guide Act - No.6 পঞ্চায়েত গাইড - সংখ্যা ৬",
+  "title": "পঞ্চায়েত গাইড সংখ্যা ৬",
   "author": "Biswas, Rasbihari",
   "language": "Bengali",
   "category": "Education",
@@ -7686,7 +7762,7 @@
   "country": null,
   "subject": "West Bengal Public Library",
   "subcategory": "West Bengal Public Library",
-  "description": "Source: West Bengal Public Library Network Source Identifier: handle/10689/10234 Field Value Lang dc.contributor.author Biswas, Rasbihari - dc.date.accessioned 2010-06-29T09:06:39Z - dc.date.available 2010-06-29T09:06:39Z - dc.date.issued 1879 - dc.identifier.uri http://hdl.handle.net/10689/10234 - dc.language.iso bn en_US dc.publisher Kashi Khanda Press, Kolkata en_US dc.rights In Public Domain en_US dc.source UTTARPARA JAYKRISHNA PUBLIC LIBRARY, HOOGHLY en_US dc.subject LAW en_US dc.title Panchayet Guide Act - No.6 পঞ্চায়েত গাইড - সংখ্যা ৬ en_US dc.title.alternative Gramya Choukidari Tax Sammandhiya en_US dc.title.alternative Bengal Council-er 1870 Saaler 6 Aain en_US dc.title.alternative Act No.6 (B.C.) Of 1870 en_US dc.type Other en_US dc.scl.scanningcentre C-DAC, Kolkata en_US…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -7697,6 +7773,7 @@
   "downloadSize": 4038428,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.10234",
+  "origTitle": "Panchayet Guide Act - No.6 পঞ্চায়েত গাইড - সংখ্যা ৬",
   "featured": true,
   "addedOrder": 10219
  },
@@ -7877,7 +7954,7 @@
  },
  {
   "id": "ia-updated_202508",
-  "title": "কুরবানি গাইড ও মাসায়েল Updated",
+  "title": "কুরবানি গাইড ও মাসায়েল",
   "author": "md. mahfujur rahman",
   "language": "Bengali",
   "category": "Education",
@@ -7907,6 +7984,7 @@
   "downloadSize": 565398,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/updated_202508",
+  "origTitle": "কুরবানি গাইড ও মাসায়েল Updated",
   "featured": true,
   "addedOrder": 10225
  },
@@ -8052,7 +8130,7 @@
  },
  {
   "id": "ia-2_20261106_20261106_1248",
-  "title": "طرق التدريس - তুরুকুত তাদরিস (Turukut Tadris)",
+  "title": "তুরুকুত তাদরিস",
   "author": "Maruf",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -8082,6 +8160,7 @@
   "downloadSize": 1651138,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/2_20261106_20261106_1248",
+  "origTitle": "طرق التدريس - তুরুকুত তাদরিস (Turukut Tadris)",
   "featured": true,
   "addedOrder": 10230
  },
@@ -8157,7 +8236,7 @@
  },
  {
   "id": "ia-20250530_20250530_1847",
-  "title": "Anatomy - 2nd Year - এনাটমী - ২য় বর্ষ",
+  "title": "এনাটমী ২য় বর্ষ",
   "author": "Dr. Nurul Haq - ডাঃ নুরুল হক",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -8187,6 +8266,7 @@
   "downloadSize": 28380414,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20250530_20250530_1847",
+  "origTitle": "Anatomy - 2nd Year - এনাটমী - ২য় বর্ষ",
   "featured": true,
   "addedOrder": 10233
  },
@@ -8227,7 +8307,7 @@
  },
  {
   "id": "ia-20250530_20250530_1841",
-  "title": "Organon - 2nd Year Guide - অর্গানন - ২য় বর্ষ গাইড",
+  "title": "অর্গানন ২য় বর্ষ গাইড",
   "author": "Dr. Nurul Haq - ডাঃ নুরুল হক",
   "language": "Bengali",
   "category": "Education",
@@ -8257,12 +8337,13 @@
   "downloadSize": 55702062,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20250530_20250530_1841",
+  "origTitle": "Organon - 2nd Year Guide - অর্গানন - ২য় বর্ষ গাইড",
   "featured": true,
   "addedOrder": 10235
  },
  {
   "id": "ia-SovvotarSonkot",
-  "title": "সভ্যতার সংকট pdf download",
+  "title": "সভ্যতার সংকট",
   "author": "ড আবু আমীনাহ বিলাল ফিলিপস",
   "language": "Bengali",
   "category": "World History",
@@ -8292,12 +8373,13 @@
   "downloadSize": 5116446,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/SovvotarSonkot",
+  "origTitle": "সভ্যতার সংকট pdf download",
   "featured": true,
   "addedOrder": 10236
  },
  {
   "id": "ia-Prepping-book-bangla",
-  "title": "Prepping জীবন রক্ষাকারী প্রস্তুতি",
+  "title": "জীবন রক্ষাকারী প্রস্তুতি",
   "author": "Abdur Rahman Shaown",
   "language": "Bengali",
   "category": "Environment",
@@ -8327,6 +8409,7 @@
   "downloadSize": 847260,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/Prepping-book-bangla",
+  "origTitle": "Prepping জীবন রক্ষাকারী প্রস্তুতি",
   "featured": true,
   "addedOrder": 10237
  },
@@ -8367,7 +8450,7 @@
  },
  {
   "id": "ia-20250530_20250530_1856",
-  "title": "Physiology - 2nd Year - ফিজিওলজি - ২য় বর্ষ",
+  "title": "ফিজিওলজি ২য় বর্ষ",
   "author": "Dr. Nurul Haq - ডাঃ নুরুল হক",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -8397,12 +8480,13 @@
   "downloadSize": 29616050,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20250530_20250530_1856",
+  "origTitle": "Physiology - 2nd Year - ফিজিওলজি - ২য় বর্ষ",
   "featured": true,
   "addedOrder": 10239
  },
  {
   "id": "ia-20250530_20250530_1929",
-  "title": "Pharmacy and Pharmacopia - 2nd Year - ফার্মেসী ও ফার্মাকোপিয়া - ২য় বর্ষ",
+  "title": "ফার্মেসী ও ফার্মাকোপিয়া ২য় বর্ষ",
   "author": "Dr. Nurul Haq - ডাঃ নুরুল হক",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -8432,12 +8516,13 @@
   "downloadSize": 43709148,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20250530_20250530_1929",
+  "origTitle": "Pharmacy and Pharmacopia - 2nd Year - ফার্মেসী ও ফার্মাকোপিয়া - ২য় বর্ষ",
   "featured": true,
   "addedOrder": 10240
  },
  {
   "id": "ia-20250530_20250530_1859",
-  "title": "Hygin and Public Health - 2nd Year - হাইজিন & পাবলিক হেলথ - ২য় বর্ষ",
+  "title": "হাইজিন পাবলিক হেলথ ২য় বর্ষ",
   "author": "Dr. Nurul Haq - ডাঃ নুরুল হক",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -8467,6 +8552,7 @@
   "downloadSize": 49269149,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20250530_20250530_1859",
+  "origTitle": "Hygin and Public Health - 2nd Year - হাইজিন & পাবলিক হেলথ - ২য় বর্ষ",
   "featured": true,
   "addedOrder": 10241
  },
@@ -8507,7 +8593,7 @@
  },
  {
   "id": "ia-awarifulmaariftuhfatussalikeen",
-  "title": "Awariful Ma'arif Tuhfatus Salikeen",
+  "title": "আওারিফুল ma'arif তুহফাতুস সালিকীন",
   "author": "Engineer Azizul Bari, ইঞ্জিনিয়ার আজিজুল বারী",
   "language": "Bengali",
   "category": "World History",
@@ -8537,6 +8623,7 @@
   "downloadSize": 14214171,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/awarifulmaariftuhfatussalikeen",
+  "origTitle": "Awariful Ma'arif Tuhfatus Salikeen",
   "featured": true,
   "addedOrder": 10243
  },
@@ -8682,7 +8769,7 @@
  },
  {
   "id": "ia-bn-All-Hajj-Umrah-Guides-v2023",
-  "title": "bn-All-Hajj-Umrah-Guides-v2023",
+  "title": "বন সমস্ত হাজ্জ উমরাহ গুইদেস ব২০২৩",
   "author": "Saudi & BD Religious Authority",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -8712,12 +8799,13 @@
   "downloadSize": 4651516,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/bn-All-Hajj-Umrah-Guides-v2023",
+  "origTitle": "bn-All-Hajj-Umrah-Guides-v2023",
   "featured": true,
   "addedOrder": 10248
  },
  {
   "id": "ia-BnIslamErSochitroGuideToUnderstandingIslam",
-  "title": "Bn Islam Er Sochitro Guide To Understanding Islam",
+  "title": "বন ইসলাম এর সোচিত্রো গাইড উন্দের্স্তন্দিং ইসলাম",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -8747,6 +8835,7 @@
   "downloadSize": 1657444,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/BnIslamErSochitroGuideToUnderstandingIslam",
+  "origTitle": "Bn Islam Er Sochitro Guide To Understanding Islam",
   "featured": true,
   "addedOrder": 10249
  }

@@ -141,7 +141,7 @@
  },
  {
   "id": "ia-BelayetEMutlakaEnglish_201811",
-  "title": "Belayet E Mutlaka ( English)",
+  "title": "বেলায়েত এ মুতলাকা ইংরেজি",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -171,12 +171,13 @@
   "downloadSize": 2690194,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/BelayetEMutlakaEnglish_201811",
+  "origTitle": "Belayet E Mutlaka ( English)",
   "featured": false,
   "addedOrder": 11004
  },
  {
   "id": "ia-BelayetEMutlakaEnglish",
-  "title": "Belayet E Mutlaka ( English)",
+  "title": "বেলায়েত এ মুতলাকা ইংরেজি",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -206,12 +207,13 @@
   "downloadSize": 2690194,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/BelayetEMutlakaEnglish",
+  "origTitle": "Belayet E Mutlaka ( English)",
   "featured": false,
   "addedOrder": 11005
  },
  {
   "id": "ia-BiographyOfShahenshahHazratSyedZiaulHaqMaizbhandari",
-  "title": "Biography Of Shahenshah Hazrat Syed Ziaul Haq Maizbhandari",
+  "title": "বিওগ্রফ্য শাহেনশাহ হজরত সৈয়দ জিঔল হাক মৈজভান্দরি",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -241,12 +243,13 @@
   "downloadSize": 2144331,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/BiographyOfShahenshahHazratSyedZiaulHaqMaizbhandari",
+  "origTitle": "Biography Of Shahenshah Hazrat Syed Ziaul Haq Maizbhandari",
   "featured": false,
   "addedOrder": 11006
  },
  {
   "id": "ia-ShanEGauseMaizbhandar",
-  "title": "Shan E Gause Maizbhandar",
+  "title": "শান এ গৌসে মৈজভান্দর",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -265,7 +268,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Sear",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -276,12 +279,13 @@
   "downloadSize": 3642462,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ShanEGauseMaizbhandar",
+  "origTitle": "Shan E Gause Maizbhandar",
   "featured": false,
   "addedOrder": 11007
  },
  {
   "id": "ia-AlokdharaNov2017",
-  "title": "Alokdhara Nov 2017",
+  "title": "আলোকধারা নোব ২০১৭",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -311,12 +315,13 @@
   "downloadSize": 14686886,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/AlokdharaNov2017",
+  "origTitle": "Alokdhara Nov 2017",
   "featured": false,
   "addedOrder": 11008
  },
  {
   "id": "ia-RatnaBhandar1st",
-  "title": "Ratna Bhandar 1st",
+  "title": "রত্ন ভান্দর ১ম",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -346,12 +351,13 @@
   "downloadSize": 3831200,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/RatnaBhandar1st",
+  "origTitle": "Ratna Bhandar 1st",
   "featured": false,
   "addedOrder": 11009
  },
  {
   "id": "ia-shajra-sharif-chistiya-sabriya._202103",
-  "title": "Shajra Sharif Chistiya Sabriya.",
+  "title": "শাজরা শরীফ চিস্তিয়া সাবৃয়া",
   "author": "Sardar Taimur Hyat-Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -381,12 +387,13 @@
   "downloadSize": 367822,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-chistiya-sabriya._202103",
+  "origTitle": "Shajra Sharif Chistiya Sabriya.",
   "featured": false,
   "addedOrder": 11010
  },
  {
   "id": "ia-shajra-sharif-sillsila-e-aaliya-chistiya-qalandariya",
-  "title": "Shajra Sharif Sillsila E Aaliya Chistiya Qalandariya",
+  "title": "শাজরা শরীফ সিল্লসিলা এ আলিয়া চিস্তিয়া কালান্দরিয়া",
   "author": "Sardar Taimur Hyat-Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -416,6 +423,7 @@
   "downloadSize": 664127,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-sillsila-e-aaliya-chistiya-qalandariya",
+  "origTitle": "Shajra Sharif Sillsila E Aaliya Chistiya Qalandariya",
   "featured": false,
   "addedOrder": 11011
  },
@@ -456,7 +464,7 @@
  },
  {
   "id": "ia-shajra-sharif-qalandariya.",
-  "title": "Shajra Sharif Qalandariya.",
+  "title": "শাজরা শরীফ কালান্দরিয়া",
   "author": "Sardar Taimur Hyat-Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -486,12 +494,13 @@
   "downloadSize": 544179,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-qalandariya.",
+  "origTitle": "Shajra Sharif Qalandariya.",
   "featured": false,
   "addedOrder": 11013
  },
  {
   "id": "ia-shajra-sharif-chistiya-nizamiya._202103",
-  "title": "Shajra Sharif Chistiya Nizamiya.",
+  "title": "শাজরা শরীফ চিস্তিয়া নিজামিয়া",
   "author": "Sardar Taimur Hyat-Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -521,12 +530,13 @@
   "downloadSize": 429667,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-chistiya-nizamiya._202103",
+  "origTitle": "Shajra Sharif Chistiya Nizamiya.",
   "featured": false,
   "addedOrder": 11014
  },
  {
   "id": "ia-shajra-sharif-firdausiya-sillsila-awwal-nisbat._202103",
-  "title": "Shajra Sharif Firdausiya Sillsila ( Awwal Nisbat).",
+  "title": "শাজরা শরীফ ফির্দৌসিয়া সিল্লসিলা আও্বল নিসবাত",
   "author": "Sardar Taimur Hyat-Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -556,12 +566,13 @@
   "downloadSize": 744031,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-firdausiya-sillsila-awwal-nisbat._202103",
+  "origTitle": "Shajra Sharif Firdausiya Sillsila ( Awwal Nisbat).",
   "featured": false,
   "addedOrder": 11015
  },
  {
   "id": "ia-shajra-sharif-qalandariya._202208",
-  "title": "Shajra Sharif Qalandariya.",
+  "title": "শাজরা শরীফ কালান্দরিয়া",
   "author": "Sardar Taimur Hyat Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -591,12 +602,13 @@
   "downloadSize": 544231,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-qalandariya._202208",
+  "origTitle": "Shajra Sharif Qalandariya.",
   "featured": false,
   "addedOrder": 11016
  },
  {
   "id": "ia-shajra-sharif-firdausiya-sillsila-daum-nisbat._202103",
-  "title": "Shajra Sharif Firdausiya Sillsila Daum Nisbat.",
+  "title": "শাজরা শরীফ ফির্দৌসিয়া সিল্লসিলা দৌম নিসবাত",
   "author": "Sardar Taimur Hyat-Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -626,12 +638,13 @@
   "downloadSize": 749197,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-firdausiya-sillsila-daum-nisbat._202103",
+  "origTitle": "Shajra Sharif Firdausiya Sillsila Daum Nisbat.",
   "featured": false,
   "addedOrder": 11017
  },
  {
   "id": "ia-shajra-sharif-qadriya-razzaqiya._202103",
-  "title": "Shajra Sharif Qadriya Razzaqiya.",
+  "title": "শাজরা শরীফ কাদৃয়া রাজজাকিয়া",
   "author": "Sardar Taimur Hyat-Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -661,12 +674,13 @@
   "downloadSize": 267076,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-qadriya-razzaqiya._202103",
+  "origTitle": "Shajra Sharif Qadriya Razzaqiya.",
   "featured": false,
   "addedOrder": 11018
  },
  {
   "id": "ia-SajrahTayyabah",
-  "title": "Sajrah Tayyabah",
+  "title": "সাজরাহ তায়য়াবাহ",
   "author": "Daiye Islam Sheikh Abu Saeed",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -696,12 +710,13 @@
   "downloadSize": 1118912,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/SajrahTayyabah",
+  "origTitle": "Sajrah Tayyabah",
   "featured": false,
   "addedOrder": 11019
  },
  {
   "id": "ia-shajra-sharif-qadriya-shurwardiya._20210308",
-  "title": "Shajra Sharif Qadriya Shurwardīya.",
+  "title": "শাজরা শরীফ কাদৃয়া shurwardīya",
   "author": "Sardar Taimur Hyat-Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -731,6 +746,7 @@
   "downloadSize": 193341,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajra-sharif-qadriya-shurwardiya._20210308",
+  "origTitle": "Shajra Sharif Qadriya Shurwardīya.",
   "featured": false,
   "addedOrder": 11020
  },
@@ -771,7 +787,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.375747",
-  "title": "Shajra Sharif Hazrat Sharif Sahib Qibla Wa Hazrat Syed Abdul Latif",
+  "title": "শাজরা শরীফ হজরত শরীফ সাহিব কিবলা ওা হজরত সৈয়দ আবদুল লাতিফ",
   "author": "Moin E Deccan Press Hyderabad",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -790,7 +806,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.375747 dc.contributor.author: Moin E Deccan Press Hyderabad dc.contributor.other: Kitabkhana Umumi Hazrat Ayatullah Marashi Najafi Qum dc.date.accessioned: 2015-09-07T22:22:04Z dc.date.available: 2015-09-07T22:22:04Z dc.date.citation: 1960 dc.identifier.barcode: 2020050054912 dc.identifier.origpath: /data7/upload/0197/186 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/375747 dc.description.scanningcentre: RMSC, IIIT-H dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 58 dc.format.mimetype: application/pdf dc.language.iso: Urdu dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Kareemi Press Lahore dc.rights: OUT_OF_COPYRIGHT dc.subject.classification:…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -801,12 +817,13 @@
   "downloadSize": 2346348,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.375747",
+  "origTitle": "Shajra Sharif Hazrat Sharif Sahib Qibla Wa Hazrat Syed Abdul Latif",
   "featured": false,
   "addedOrder": 11022
  },
  {
   "id": "ia-Lunisharifshajra",
-  "title": "Shajra Sharif (Luni Sharif)",
+  "title": "শাজরা শরীফ লুনি শরীফ",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -836,6 +853,7 @@
   "downloadSize": 1023751,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/Lunisharifshajra",
+  "origTitle": "Shajra Sharif (Luni Sharif)",
   "featured": false,
   "addedOrder": 11023
  },
@@ -876,7 +894,7 @@
  },
  {
   "id": "ia-shajarashahbapudhoraji",
-  "title": "shajara shah bapu dhoraji",
+  "title": "শাজরা শাহ বাপু ধোরাজি",
   "author": "SAIYAD GUL MUHAMMAD SHAH BAPU SHAHEB BUKHARI RAHAMATULLAH T ALA ALAYH.",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -906,12 +924,13 @@
   "downloadSize": 2595602,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajarashahbapudhoraji",
+  "origTitle": "shajara shah bapu dhoraji",
   "featured": false,
   "addedOrder": 11025
  },
  {
   "id": "ia-shajara-sharif-taj-ush-shariah",
-  "title": "Shajara Sharif - Taj Ush Shariah",
+  "title": "শাজরা শরীফ তাজ উশ শারিয়াহ",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -941,12 +960,13 @@
   "downloadSize": 2127404,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajara-sharif-taj-ush-shariah",
+  "origTitle": "Shajara Sharif - Taj Ush Shariah",
   "featured": false,
   "addedOrder": 11026
  },
  {
   "id": "ia-shajara-sharif-urdu",
-  "title": "Shajara Sharif Urdu",
+  "title": "শাজরা শরীফ উর্দু",
   "author": "mindroastermir",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -976,12 +996,13 @@
   "downloadSize": 5961327,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shajara-sharif-urdu",
+  "origTitle": "Shajara Sharif Urdu",
   "featured": false,
   "addedOrder": 11027
  },
  {
   "id": "ia-SufiismmuslimMysticism",
-  "title": "Sufiism (MUSLIM MYSTICISM)",
+  "title": "সুফিস্ম মুসলিম ম্যস্তিকিস্ম",
   "author": "Muhammad Hassan Ali Teepu",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1011,12 +1032,13 @@
   "downloadSize": null,
   "downloadFormat": null,
   "coverUrl": "https://archive.org/services/img/SufiismmuslimMysticism",
+  "origTitle": "Sufiism (MUSLIM MYSTICISM)",
   "featured": false,
   "addedOrder": 11028
  },
  {
   "id": "ia-gov.uscourts.casb.433606",
-  "title": "Muhidin Sufi Ali",
+  "title": "মুহিদিন সুফি আলী",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1046,12 +1068,13 @@
   "downloadSize": null,
   "downloadFormat": null,
   "coverUrl": "https://archive.org/services/img/gov.uscourts.casb.433606",
+  "origTitle": "Muhidin Sufi Ali",
   "featured": false,
   "addedOrder": 11029
  },
  {
   "id": "ia-gov.uscourts.cafc.14-5033",
-  "title": "gov.uscourts.cafc.14-5033",
+  "title": "গোব উসকৌর্তস কাফক ১৪-৫০৩৩",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1081,6 +1104,7 @@
   "downloadSize": null,
   "downloadFormat": null,
   "coverUrl": "https://archive.org/services/img/gov.uscourts.cafc.14-5033",
+  "origTitle": "gov.uscourts.cafc.14-5033",
   "featured": false,
   "addedOrder": 11030
  },
@@ -1156,7 +1180,7 @@
  },
  {
   "id": "ia-genclerle_hasbihal-ebu_hanzala_halis_hoca_244_mu_343",
-  "title": "Gençlerle Hasbihal",
+  "title": "gençlerle হাসবিহাল",
   "author": "Halis BAYANCUK ( Ebu HANZALA )",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1186,6 +1210,7 @@
   "downloadSize": 3478854,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/genclerle_hasbihal-ebu_hanzala_halis_hoca_244_mu_343",
+  "origTitle": "Gençlerle Hasbihal",
   "featured": false,
   "addedOrder": 11033
  },
@@ -1226,7 +1251,7 @@
  },
  {
   "id": "ia-targeted-individual-handbook-berserker-books",
-  "title": "Targeted Individual Handbook (Berserker Books)",
+  "title": "তারগেতেদ ইন্দিবিদুয়াল হান্দবূক বের্সের্কের",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1256,6 +1281,7 @@
   "downloadSize": 3798541,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/targeted-individual-handbook-berserker-books",
+  "origTitle": "Targeted Individual Handbook (Berserker Books)",
   "featured": false,
   "addedOrder": 11035
  },
@@ -1296,7 +1322,7 @@
  },
  {
   "id": "ia-grey-wolves-huseyin-nihal-atsiz-berserker-books",
-  "title": "Grey Wolves (Hüseyin Nihal Atsız_Berserker Books)",
+  "title": "গ্রেয় ওোলবেস hüseyin নিহাল atsız_berserker",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1326,6 +1352,7 @@
   "downloadSize": 1539798,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/grey-wolves-huseyin-nihal-atsiz-berserker-books",
+  "origTitle": "Grey Wolves (Hüseyin Nihal Atsız_Berserker Books)",
   "featured": false,
   "addedOrder": 11037
  },
@@ -1366,7 +1393,7 @@
  },
  {
   "id": "ia-metaphysics-of-sex-title-page",
-  "title": "Metaphysics Of Sex (Julius Evola)",
+  "title": "মেতাফ্যসিকস সেক্স জুলিউস এবোলা",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Science",
@@ -1396,6 +1423,7 @@
   "downloadSize": 48492721,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/metaphysics-of-sex-title-page",
+  "origTitle": "Metaphysics Of Sex (Julius Evola)",
   "featured": false,
   "addedOrder": 11039
  },
@@ -1471,7 +1499,7 @@
  },
  {
   "id": "ia-httpsal-marjan.com.pkindex.phpjournalarticleview135",
-  "title": "21.صوفیانہ شاعری میں حکایت نگاری کی روایت Compressed Compressed",
+  "title": "২১ صوفیانہ شاعری میں حکایت نگاری کی روایت কোম্প্রেস্সেদ কোম্প্রেস্সেদ",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1501,12 +1529,13 @@
   "downloadSize": 810063,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/httpsal-marjan.com.pkindex.phpjournalarticleview135",
+  "origTitle": "21.صوفیانہ شاعری میں حکایت نگاری کی روایت Compressed Compressed",
   "featured": false,
   "addedOrder": 11042
  },
  {
   "id": "ia-imam-e-zamana_202408",
-  "title": "Imam-e-Zamana (امامِ زمانہ)",
+  "title": "ইমাম এ জামানা امامِ زمانہ",
   "author": "Syed Ahmed Hasan Qadri",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1536,12 +1565,13 @@
   "downloadSize": 13359882,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/imam-e-zamana_202408",
+  "origTitle": "Imam-e-Zamana (امامِ زمانہ)",
   "featured": false,
   "addedOrder": 11043
  },
  {
   "id": "ia-qasis-ul-anbiya-sufi-marthi.",
-  "title": "Qasis Ul Anbiya Sufi Marthi.",
+  "title": "কাসিস উল আনবিয়া সুফি মার্থি",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1560,7 +1590,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "qasis",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1571,6 +1601,7 @@
   "downloadSize": 34338933,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/qasis-ul-anbiya-sufi-marthi.",
+  "origTitle": "Qasis Ul Anbiya Sufi Marthi.",
   "featured": false,
   "addedOrder": 11044
  },
@@ -1630,7 +1661,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.141847 dc.contributor.author: Baijnath Singh dc.date.accessioned: 2015-07-04T04:02:00Z dc.date.available: 2015-07-04T04:02:00Z dc.date.digitalpublicationdate: 2012-03-01 dc.date.citation: 1867 dc.identifier.barcode: 99999990282367 dc.identifier.origpath: /data9/upload/0280/283 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/141847 dc.description.scanningcentre: Banasthali University dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 133 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: London, Theosophical Publishing Society dc.rights: Out_of_copyright dc.source.library: Acharya Shri Vinaychandra Gyan…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1646,7 +1677,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.234407",
-  "title": "Studies In Tasawwuf(1923)",
+  "title": "স্তুদিএস তাসাও্বুফ ১৯২৩",
   "author": "Khan Khan Sahib Khaja",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1665,7 +1696,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.234407 dc.contributor.author: Khan Khan Sahib Khaja dc.date.accessioned: 2015-07-10T19:04:59Z dc.date.available: 2015-07-10T19:04:59Z dc.date.digitalpublicationdate: 2006-03-02 dc.date.citation: 1923 dc.identifier.barcode: 99999990131685 dc.identifier.origpath: /rawdataupload1/upload/0130/347 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/234407 dc.description.scanningcentre: C-DAC, Noida dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 276 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Idarah-i Adabiyat-i Delli dc.rights: Not Available dc.source.library: Central Library, University Delhi…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1676,6 +1707,7 @@
   "downloadSize": 17940819,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.234407",
+  "origTitle": "Studies In Tasawwuf(1923)",
   "featured": false,
   "addedOrder": 11047
  },
@@ -1700,7 +1732,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.217731 dc.contributor.author: Kismet dc.date.accessioned: 2015-07-09T20:26:23Z dc.date.available: 2015-07-09T20:26:23Z dc.date.digitalpublicationdate: 2005-02-19 dc.identifier: Librarian, SJM dc.identifier.barcode: 2990150058732 dc.identifier.origpath: /data_copy/upload/0058/737 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/217731 dc.description.scannerno: 50014 dc.description.scanningcentre: Salar Jung Museum dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 92 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Luzac And Co dc.source.library: Salar Jung Museum, Hyderabad dc.subject.classification:…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1716,7 +1748,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.269259",
-  "title": "Sufi Kavya Me Prauket Prayao Ka Anushelan",
+  "title": "সুফি কাভ্য মে প্রৌকেত প্রয়াও কা আনুশেলান",
   "author": "Ramadheen",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -1735,7 +1767,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.269259 dc.contributor.author: Ramadheen dc.date.accessioned: 2015-07-27T20:29:18Z dc.date.available: 2015-07-27T20:29:18Z dc.date.citation: 2002 dc.identifier.barcode: 05990010890033 dc.identifier.origpath: /data58/upload/0091/750 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/269259 dc.description.scannerno: 20003265 dc.description.scanningcentre: IIIT, Allahabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 296 dc.format.mimetype: application/pdf dc.language.iso: Hindi dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Bundelkhand Uni. Jhansi dc.source.library: Bundelkhand Uni. Jhansi dc.subject.classification: Hindi dc.title: Sufi Kavya Me Prauket Prayao…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1746,12 +1778,13 @@
   "downloadSize": 151758565,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.269259",
+  "origTitle": "Sufi Kavya Me Prauket Prayao Ka Anushelan",
   "featured": false,
   "addedOrder": 11049
  },
  {
   "id": "ia-huseyin-nihal-atsiz-biography-berserker-books-fin",
-  "title": "Nihal Atsız: Biography (Berserker Books)",
+  "title": "নিহাল atsız বিওগ্রফ্য বের্সের্কের",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Biography & Autobiography",
@@ -1781,12 +1814,13 @@
   "downloadSize": 43103100,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/huseyin-nihal-atsiz-biography-berserker-books-fin",
+  "origTitle": "Nihal Atsız: Biography (Berserker Books)",
   "featured": false,
   "addedOrder": 11050
  },
  {
   "id": "ia-rozeishq",
-  "title": "Roz-e-Ishq",
+  "title": "রোজ এ ইশক",
   "author": "Mirza Fateh Ali Beg Shahid",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1816,12 +1850,13 @@
   "downloadSize": 12344413,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/rozeishq",
+  "origTitle": "Roz-e-Ishq",
   "featured": false,
   "addedOrder": 11051
  },
  {
   "id": "ia-in.gov.andhra.goir.2013-11-13.E-296623",
-  "title": "Andhra Pradesh Government Order, 2013-11-13, Ytc01 - Youth Advancement Tourism And Culture, Routine, Number 878",
+  "title": "আন্ধরা প্রদেশ সরকারি ওর্দের ২০১৩-১১ ১৩ যতক০১ যৌথ আদবানকেমেন্ত তৌরিস্ম আন্দ কুলতুরে রৌতিনে সংখ্যা ৮৭৮",
   "author": "Government of Andhra Pradesh",
   "language": "Bengali",
   "category": "Arts & Culture",
@@ -1851,12 +1886,13 @@
   "downloadSize": 60649,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.gov.andhra.goir.2013-11-13.E-296623",
+  "origTitle": "Andhra Pradesh Government Order, 2013-11-13, Ytc01 - Youth Advancement Tourism And Culture, Routine, Number 878",
   "featured": false,
   "addedOrder": 11052
  },
  {
   "id": "ia-yigit-muvahhidlerin-oykusu-ebu_hanzala_halis_hoca_244_mu_343",
-  "title": "Muvahhidlerin Öyküsü",
+  "title": "মুবাহহিদলেরিন öyküsü",
   "author": "Anonim",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1886,12 +1922,13 @@
   "downloadSize": 2481397,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/yigit-muvahhidlerin-oykusu-ebu_hanzala_halis_hoca_244_mu_343",
+  "origTitle": "Muvahhidlerin Öyküsü",
   "featured": false,
   "addedOrder": 11053
  },
  {
   "id": "ia-yasar-nuri-tarih-boyunca-tasavvufi-dusunce-1974",
-  "title": "Yasar Nuri TARIH BOYUNCA TASAVVUFi DUSUNCE 1974",
+  "title": "যাসার নুরি তারিহ বোয়ুনকা তাসাববুফি দুসুনকে ১৯৭৪",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1921,12 +1958,13 @@
   "downloadSize": 7542344,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/yasar-nuri-tarih-boyunca-tasavvufi-dusunce-1974",
+  "origTitle": "Yasar Nuri TARIH BOYUNCA TASAVVUFi DUSUNCE 1974",
   "featured": false,
   "addedOrder": 11054
  },
  {
   "id": "ia-primordial-gnosis-2",
-  "title": "Primordial Gnosis",
+  "title": "প্রিমোর্দিয়াল গনোসিস",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1956,12 +1994,13 @@
   "downloadSize": 673835,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/primordial-gnosis-2",
+  "origTitle": "Primordial Gnosis",
   "featured": false,
   "addedOrder": 11055
  },
  {
   "id": "ia-in.ernet.dli.2015.356587",
-  "title": "Uttarsuri Barsha.26, No. 1, 2",
+  "title": "উত্তরসূরি বর্ষা ২৬ নং ১ ২",
   "author": "Bhattacharjya, Arun, Ed",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1980,7 +2019,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.356587 dc.contributor.author: Bhattacharjya, Arun, Ed dc.date.accessioned: 2015-08-27T19:15:30Z dc.date.available: 2015-08-27T19:15:30Z dc.date.digitalpublicationdate: 2011/07/22 dc.date.citation: 1978 dc.identifier.barcode: 04990010057537 dc.identifier.origpath: /data8/upload/0254/820 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/356587 dc.description.scannerno: UJPL_01 dc.description.scanningcentre: C-DAK, Kolkata dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 138 dc.format.mimetype: application/pdf dc.language.iso: Bengali dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Arun Bhattacharjya, Calcutta dc.rights: In Public Domain dc.source.library:…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -1991,12 +2030,13 @@
   "downloadSize": 7366773,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356587",
+  "origTitle": "Uttarsuri Barsha.26, No. 1, 2",
   "featured": false,
   "addedOrder": 11056
  },
  {
   "id": "ia-in.ernet.dli.2015.55386",
-  "title": "Islamic Sufism",
+  "title": "ইসলামিক সুফিস্ম",
   "author": "Shah,sirdar Ikbal Ali",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2015,7 +2055,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.55386 dc.contributor.author: Shah,sirdar Ikbal Ali dc.date.accessioned: 2015-06-29T15:05:31Z dc.date.available: 2015-06-29T15:05:31Z dc.date.copyrightexpirydate: 0000-00-00 dc.date.digitalpublicationdate: 2009-10-15 dc.date.citation: 1933 dc.identifier: V B Librarian dc.identifier.barcode: 4990010254299 dc.identifier.origpath: /data4/upload/0107/103 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/55386 dc.description.scanningcentre: C-DAK, Kolkata dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 306 dc.format.mimetype: application/pdf dc.language.iso: English dc.publisher.digitalrepublisher: Digital Library Of India dc.publisher: Idarah-i Adabiyat-i Delli , Delhi dc.rights: In…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2026,12 +2066,13 @@
   "downloadSize": 23181311,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.55386",
+  "origTitle": "Islamic Sufism",
   "featured": false,
   "addedOrder": 11057
  },
  {
   "id": "ia-in.ernet.dli.2015.396607",
-  "title": "Halathi Hazrath Hussain Shah Vali Khuddus",
+  "title": "হালাথি হাজরাথ হুস্সৈন শাহ বালি খুড্ডুস",
   "author": "Syed Shah Ahmed Ali Sufi",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2050,7 +2091,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.396607 dc.contributor.author: Syed Shah Ahmed Ali Sufi dc.date.accessioned: 2015-09-09T17:07:15Z dc.date.available: 2015-09-09T17:07:15Z dc.date.digitalpublicationdate: 4-1-2003 dc.date.citation: 1999 dc.identifier.barcode: 02020120011325 dc.identifier.origpath: /data/upload/0011/330 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/396607 dc.description.scanningcentre: City Central Library, Hyderabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 51 dc.format.mimetype: application/pdf dc.language.iso: Urdu dc.publisher.digitalrepublisher: PAR INFORMATICS HYDERABAD dc.publisher: - dc.source.library: Rop Hyderabad dc.subject.classification: Enter Subject Of The Book dc.title:…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2061,12 +2102,13 @@
   "downloadSize": 3242586,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.396607",
+  "origTitle": "Halathi Hazrath Hussain Shah Vali Khuddus",
   "featured": false,
   "addedOrder": 11058
  },
  {
   "id": "ia-in.ernet.dli.2015.396803",
-  "title": "Savane Umri Sufi Aurangabadhi",
+  "title": "সাবানে উমৃ সুফি ঔরাঙাবাধি",
   "author": "Md.nooruddin Khan",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2085,7 +2127,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Book Source: Digital Library of India Item 2015.396803 dc.contributor.author: Md.nooruddin Khan dc.date.accessioned: 2015-09-09T17:08:51Z dc.date.available: 2015-09-09T17:08:51Z dc.date.digitalpublicationdate: 30-1-2003 dc.date.citation: 1989 dc.identifier.barcode: 02020120011505 dc.identifier.origpath: /data/upload/0011/510 dc.identifier.copyno: 1 dc.identifier.uri: http://www.new.dli.ernet.in/handle/2015/396803 dc.description.scanningcentre: City Central Library, Hyderabad dc.description.main: 1 dc.description.tagged: 0 dc.description.totalpages: 148 dc.format.mimetype: application/pdf dc.language.iso: Urdu dc.publisher.digitalrepublisher: PAR INFORMATICS,HYDERABAD dc.publisher: - dc.source.library: Rop Hyderabad dc.subject.classification: - dc.title: Savane Umri Sufi Aurangabadhi…",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2096,6 +2138,7 @@
   "downloadSize": 21772158,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.396803",
+  "origTitle": "Savane Umri Sufi Aurangabadhi",
   "featured": false,
   "addedOrder": 11059
  },
@@ -2136,7 +2179,7 @@
  },
  {
   "id": "ia-miguel-serrano_202309",
-  "title": "Miguel Serrano: Collected Works (English)",
+  "title": "মিগুএল সের্রানো কোল্লেকতেদ ওোর্কস ইংরেজি",
   "author": "Miguel Serrano",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2166,12 +2209,13 @@
   "downloadSize": 5006332,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/miguel-serrano_202309",
+  "origTitle": "Miguel Serrano: Collected Works (English)",
   "featured": false,
   "addedOrder": 11061
  },
  {
   "id": "ia-verk-og-samlinger-av-mr.-adel-ali-orfi-pa-arabisk",
-  "title": "Verk Og Samlinger Av Mr. ( Adel Ali Orfi) (på Arabisk))",
+  "title": "বের্ক ওগ সামলিঙের আব মর আদেল আলী ওর্ফি på আরাবিস্ক",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2190,7 +2234,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "41",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2201,6 +2245,7 @@
   "downloadSize": 451143,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/verk-og-samlinger-av-mr.-adel-ali-orfi-pa-arabisk",
+  "origTitle": "Verk Og Samlinger Av Mr. ( Adel Ali Orfi) (på Arabisk))",
   "featured": false,
   "addedOrder": 11062
  },
@@ -2241,7 +2286,7 @@
  },
  {
   "id": "ia-oapen-20.500.12657-24224",
-  "title": "Indian Sufism since the Seventeenth Century",
+  "title": "ভারতীয় সুফিস্ম সিনকে সেবেন্তীন্তহ কেন্তুর্য",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2271,6 +2316,7 @@
   "downloadSize": 2884088,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/oapen-20.500.12657-24224",
+  "origTitle": "Indian Sufism since the Seventeenth Century",
   "featured": false,
   "addedOrder": 11064
  },
@@ -2311,7 +2357,7 @@
  },
  {
   "id": "ia-noor-ahmad-khel",
-  "title": "Noor Ahmad Khel by Noman Nayyir Kulachvi",
+  "title": "নূর আহমাদ খেল",
   "author": "NNK",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2341,12 +2387,13 @@
   "downloadSize": 3657095,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/noor-ahmad-khel",
+  "origTitle": "Noor Ahmad Khel by Noman Nayyir Kulachvi",
   "featured": false,
   "addedOrder": 11066
  },
  {
   "id": "ia-non-duality-the-final-teaching",
-  "title": "Non Duality-The Final Teaching",
+  "title": "নোন দুয়ালিত্য ফিনাল তেয়াচিং",
   "author": "Anthony Alvarez",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2376,12 +2423,13 @@
   "downloadSize": 50204,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/non-duality-the-final-teaching",
+  "origTitle": "Non Duality-The Final Teaching",
   "featured": false,
   "addedOrder": 11067
  },
  {
   "id": "ia-namaz-kay-masail-ka-encyclopaed-vol-01-to-4-complete",
-  "title": "NAMAZ KAY MASAIL KA ENCYCLOPAED(4 جلدیں) نماز کے مسائل کا انسائیکلوپیڈیا",
+  "title": "নামাজ কায় মাসৈল কা এনক্যকলোপাএদ ৪ جلدیں نماز کے مسائل کا انسائیکلوپیڈیا",
   "author": "Sufi Abu Usman Ghani",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2411,12 +2459,13 @@
   "downloadSize": 5994906,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/namaz-kay-masail-ka-encyclopaed-vol-01-to-4-complete",
+  "origTitle": "NAMAZ KAY MASAIL KA ENCYCLOPAED(4 جلدیں) نماز کے مسائل کا انسائیکلوپیڈیا",
   "featured": false,
   "addedOrder": 11068
  },
  {
   "id": "ia-nanak-my-discovery",
-  "title": "Nanak My Discovery",
+  "title": "নানাক ম্য দিসকোবের্য",
   "author": "Hardev Singh Shergill",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2446,12 +2495,13 @@
   "downloadSize": 2015166,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/nanak-my-discovery",
+  "origTitle": "Nanak My Discovery",
   "featured": false,
   "addedOrder": 11069
  },
  {
   "id": "ia-kamil-tareeqa-e-namaz-by-shaykh-abdur-rauf-sakharvi",
-  "title": "Kamil Tareeqa E Namaz کامل طریقۂ نماز By Shaykh Abdur Rauf Sakharvi",
+  "title": "কামেল তারীকা এ নামাজ کامل طریقۂ نماز",
   "author": "Sufi Abu Usman Ghani",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2481,12 +2531,13 @@
   "downloadSize": 4283235,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/kamil-tareeqa-e-namaz-by-shaykh-abdur-rauf-sakharvi",
+  "origTitle": "Kamil Tareeqa E Namaz کامل طریقۂ نماز By Shaykh Abdur Rauf Sakharvi",
   "featured": false,
   "addedOrder": 11070
  },
  {
   "id": "ia-ishq-aasu-khe-rang-men-rangyo-kawish-dunya-mag-28-09-2025",
-  "title": "Ishq Aasu'a Khe Rang Men Rangyo - Kawish Dunya Mag 28-09-2025",
+  "title": "ইশক aasu'a খে রাং মেন রাং্যো কাওিশ দুন্য মাগ ২৮-০৯ ২০২৫",
   "author": "Muhammad Usman Junejo",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2516,12 +2567,13 @@
   "downloadSize": 1400965,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ishq-aasu-khe-rang-men-rangyo-kawish-dunya-mag-28-09-2025",
+  "origTitle": "Ishq Aasu'a Khe Rang Men Rangyo - Kawish Dunya Mag 28-09-2025",
   "featured": false,
   "addedOrder": 11071
  },
  {
   "id": "ia-optimal-survival-handbook-6x-9_202501",
-  "title": "Optimal Survival Handbook (Berserker Books)",
+  "title": "ওপতিমাল সুর্বিবাল হান্দবূক বের্সের্কের",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2551,6 +2603,7 @@
   "downloadSize": 1404283,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/optimal-survival-handbook-6x-9_202501",
+  "origTitle": "Optimal Survival Handbook (Berserker Books)",
   "featured": false,
   "addedOrder": 11072
  },
@@ -2591,7 +2644,7 @@
  },
  {
   "id": "ia-hyperborean-wisdom-commentary",
-  "title": "Hyperborean Wisdom Commentary",
+  "title": "হ্যপের্বোরেয়ান ওিসদোম কোম্মেন্তর্য",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2621,6 +2674,7 @@
   "downloadSize": 27638200,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/hyperborean-wisdom-commentary",
+  "origTitle": "Hyperborean Wisdom Commentary",
   "featured": false,
   "addedOrder": 11074
  },
@@ -2661,7 +2715,7 @@
  },
  {
   "id": "ia-woman-problems-sieg-grun-berserker-books",
-  "title": "Woman Problems (Sieg Grun_Berserker Books)",
+  "title": "ওোমান প্রোবলেমস সিএগ grun_berserker",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2691,12 +2745,13 @@
   "downloadSize": 1142863,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/woman-problems-sieg-grun-berserker-books",
+  "origTitle": "Woman Problems (Sieg Grun_Berserker Books)",
   "featured": false,
   "addedOrder": 11076
  },
  {
   "id": "ia-usul-ad-din-abdul-qahir-al-baghdadi",
-  "title": "اصول الدين,أصول الدين,الامام الاستاذ ابي منصور عبدالقاهر بن طاهر التميمي البغدادي, usul ad-din - abdu'l qahir al-baghdadi",
+  "title": "اصول الدين أصول الدين الامام الاستاذ ابي منصور عبدالقاهر بن طاهر التميمي البغدادي উসুল আদ দিন abdu'l কাহির আল বাঘদাদি",
   "author": "islam",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2726,12 +2781,13 @@
   "downloadSize": 7693154,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/usul-ad-din-abdul-qahir-al-baghdadi",
+  "origTitle": "اصول الدين,أصول الدين,الامام الاستاذ ابي منصور عبدالقاهر بن طاهر التميمي البغدادي, usul ad-din - abdu'l qahir al-baghdadi",
   "featured": false,
   "addedOrder": 11077
  },
  {
   "id": "ia-sultan-bahoo-books",
-  "title": "Sultan Bahoo Books",
+  "title": "সুলতান বাহূ",
   "author": "Sultan Bahoo",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2761,6 +2817,7 @@
   "downloadSize": 3802624,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sultan-bahoo-books",
+  "origTitle": "Sultan Bahoo Books",
   "featured": false,
   "addedOrder": 11078
  },
@@ -2801,7 +2858,7 @@
  },
  {
   "id": "ia-sufi-hazrath-kahiri",
-  "title": "Sufi Hazrath Kahiri",
+  "title": "সুফি হাজরাথ কাহিরি",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2831,6 +2888,7 @@
   "downloadSize": 10084024,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sufi-hazrath-kahiri",
+  "origTitle": "Sufi Hazrath Kahiri",
   "featured": false,
   "addedOrder": 11080
  },
@@ -2855,7 +2913,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Sufism",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -2871,7 +2929,7 @@
  },
  {
   "id": "ia-tafseeretasawwufbypirsahabdewalshareef",
-  "title": "Tafseer E Tasawwuf By Pir Sahab Dewal Shareef",
+  "title": "তাফসির এ তাসাও্বুফ",
   "author": "پیر صاحب دیول شریف،، Pir sahab dewal shareef,",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2901,12 +2959,13 @@
   "downloadSize": 38806382,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tafseeretasawwufbypirsahabdewalshareef",
+  "origTitle": "Tafseer E Tasawwuf By Pir Sahab Dewal Shareef",
   "featured": false,
   "addedOrder": 11082
  },
  {
   "id": "ia-tasawuf_202307",
-  "title": "tasawuf",
+  "title": "তাসাওুফ",
   "author": "Bakhtiar Hussain Jamati",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -2936,12 +2995,13 @@
   "downloadSize": 25761788,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tasawuf_202307",
+  "origTitle": "tasawuf",
   "featured": false,
   "addedOrder": 11083
  },
  {
   "id": "ia-tasawwuf-library-9-books-ilsah-wo-tazakiya",
-  "title": "Tasawwuf Library 9 Books تصوف لائبریری",
+  "title": "তাসাও্বুফ লাইব্রেরি ৯ تصوف لائبریری",
   "author": "Sufi Abu USman Ghani",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -2971,12 +3031,13 @@
   "downloadSize": 2364236,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tasawwuf-library-9-books-ilsah-wo-tazakiya",
+  "origTitle": "Tasawwuf Library 9 Books تصوف لائبریری",
   "featured": false,
   "addedOrder": 11084
  },
  {
   "id": "ia-taskeen-e-quloob",
-  "title": "TASKEEN E QULOOB by Hazrat Taskeen-ul-Mashaikh (RA)",
+  "title": "তাস্কীন এ কুলূব",
   "author": "Naseer Quadri Taskeeni",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3006,12 +3067,13 @@
   "downloadSize": 12977541,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/taskeen-e-quloob",
+  "origTitle": "TASKEEN E QULOOB by Hazrat Taskeen-ul-Mashaikh (RA)",
   "featured": false,
   "addedOrder": 11085
  },
  {
   "id": "ia-tazkeyanafskanabvitareeq",
-  "title": "Tazkiya Nafs Ka Nabvi Tareeq (Second Edition)",
+  "title": "তাজকিয়া নাফস কা নাববি তারীক সেকোন্দ সংস্করণ",
   "author": "Sultan ul Ashiqeen Hazrat Sakhi Sultan Mohammad Najib ur Rehman",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3041,12 +3103,13 @@
   "downloadSize": 3142334,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tazkeyanafskanabvitareeq",
+  "origTitle": "Tazkiya Nafs Ka Nabvi Tareeq (Second Edition)",
   "featured": false,
   "addedOrder": 11086
  },
  {
   "id": "ia-tanwirulmaali",
-  "title": "tanwirulmaali",
+  "title": "তান্বিরুলমালি",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3076,6 +3139,7 @@
   "downloadSize": 24081191,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tanwirulmaali",
+  "origTitle": "tanwirulmaali",
   "featured": false,
   "addedOrder": 11087
  },
@@ -3100,7 +3164,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "sUFISM",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -3116,7 +3180,7 @@
  },
  {
   "id": "ia-00569gulzariabrarur",
-  "title": "Gulzar e Abrar - Urdu translation",
+  "title": "গুলজার এ আব্রর উর্দু অনুবাদ",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3146,12 +3210,13 @@
   "downloadSize": 132648871,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/00569gulzariabrarur",
+  "origTitle": "Gulzar e Abrar - Urdu translation",
   "featured": false,
   "addedOrder": 11089
  },
  {
   "id": "ia-tenezzulatul-mevsiliyye-ibn-arabi-mansub",
-  "title": "Tenezzulatu'l-Mevsiliyye-ibn Arabi (Mansub)",
+  "title": "tenezzulatu'l মেবসিলিয়য়ে ইবনে আরাবি মানসুব",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3181,12 +3246,13 @@
   "downloadSize": 8325319,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tenezzulatul-mevsiliyye-ibn-arabi-mansub",
+  "origTitle": "Tenezzulatu'l-Mevsiliyye-ibn Arabi (Mansub)",
   "featured": false,
   "addedOrder": 11090
  },
  {
   "id": "ia-sirat-fakhre-millat",
-  "title": "Sirat Fakhre Millat",
+  "title": "সিরাত ফাখ্রে মিল্লত",
   "author": "Bakhtiar Hussain Jamati",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3216,6 +3282,7 @@
   "downloadSize": 78991719,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sirat-fakhre-millat",
+  "origTitle": "Sirat Fakhre Millat",
   "featured": false,
   "addedOrder": 11091
  },
@@ -3256,7 +3323,7 @@
  },
  {
   "id": "ia-1950-februay",
-  "title": "Anwar us Sufia 1950 Februay",
+  "title": "আন্বর উস সুফিয়া ১৯৫০ ফেব্রুয়ায়",
   "author": "Bakhtiar Hussain Jamati",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -3286,6 +3353,7 @@
   "downloadSize": 10825649,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/1950-februay",
+  "origTitle": "Anwar us Sufia 1950 Februay",
   "featured": false,
   "addedOrder": 11093
  },
@@ -3326,7 +3394,7 @@
  },
  {
   "id": "ia-20220824_20220824_1108",
-  "title": "نقاء السلافة في احكام البيعة والخلافة بیعت وخلافت از اعلیٰ حضرت مولانا شاہ احمد رضا خاں فاضل بریلوی قدس سرہ Bait o Khilafat by Ala Hazrat مکتبہ مھریہ رضویہ،ڈسکہ",
+  "title": "نقاء السلافة في احكام البيعة والخلافة بیعت وخلافت از اعلیٰ حضرت مولانا شاہ احمد رضا خاں فاضل بریلوی قدس سرہ বৈত ও খিলাফাত",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3356,6 +3424,7 @@
   "downloadSize": 2302280,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20220824_20220824_1108",
+  "origTitle": "نقاء السلافة في احكام البيعة والخلافة بیعت وخلافت از اعلیٰ حضرت مولانا شاہ احمد رضا خاں فاضل بریلوی قدس سرہ Bait o Khilafat by Ala Hazrat مکتبہ مھریہ رضویہ،ڈسکہ",
   "featured": false,
   "addedOrder": 11095
  },
@@ -3396,7 +3465,7 @@
  },
  {
   "id": "ia-1950-march",
-  "title": "pir syed jamat ali shah 1950 March",
+  "title": "পীর সৈয়দ জামাত আলী শাহ ১৯৫০ মার্ছ",
   "author": "Bakhtiar Hussain Jamati",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3426,6 +3495,7 @@
   "downloadSize": 12099148,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/1950-march",
+  "origTitle": "pir syed jamat ali shah 1950 March",
   "featured": false,
   "addedOrder": 11097
  },
@@ -3536,7 +3606,7 @@
  },
  {
   "id": "ia-risala_ibn_abi_zayd_201603",
-  "title": "risala of ibn abi zayd",
+  "title": "ঋসালা ইবনে আবি জায়দ",
   "author": "Shaykh Ibn abi zayd",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3566,6 +3636,7 @@
   "downloadSize": 3473742,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/risala_ibn_abi_zayd_201603",
+  "origTitle": "risala of ibn abi zayd",
   "featured": false,
   "addedOrder": 11101
  },
@@ -3606,7 +3677,7 @@
  },
  {
   "id": "ia-UshturNama-SheikhFareeduddinAttarNishaburiFarsi",
-  "title": "Ushtur Nama - Sheikh Fareeduddin Attar Nishaburi (Farsi)",
+  "title": "উশতুর নামা শেইখ ফারীদুড্ডিন আত্তর নিশাবুরি ফার্সি",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -3636,12 +3707,13 @@
   "downloadSize": 3873970,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/UshturNama-SheikhFareeduddinAttarNishaburiFarsi",
+  "origTitle": "Ushtur Nama - Sheikh Fareeduddin Attar Nishaburi (Farsi)",
   "featured": false,
   "addedOrder": 11103
  },
  {
   "id": "ia-TilaawatiQuraan",
-  "title": "Urdu Books Collection",
+  "title": "উর্দু সংগ্রহ",
   "author": "Shaah Waswiyullaah Allaahabaadee (R'A)",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3671,12 +3743,13 @@
   "downloadSize": 2037816,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/TilaawatiQuraan",
+  "origTitle": "Urdu Books Collection",
   "featured": false,
   "addedOrder": 11104
  },
  {
   "id": "ia-Umdat-ul-Sulook",
-  "title": "Umdat-ul-Sulook",
+  "title": "উমদাত উল সুলূক",
   "author": "Hazrat Maulana Syed Zawar Husain Shah Saheb(DB)",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -3706,6 +3779,7 @@
   "downloadSize": 154513047,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/Umdat-ul-Sulook",
+  "origTitle": "Umdat-ul-Sulook",
   "featured": false,
   "addedOrder": 11105
  },
@@ -3730,7 +3804,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Tasawwuf",
+  "description": null,
   "pageCount": 37,
   "edition": null,
   "price": null,
@@ -3746,7 +3820,7 @@
  },
  {
   "id": "ia-sharh-e-jaame-e-masnavi-e-manavi",
-  "title": "Sharh e Jaame' e Masnavi e Ma'navi",
+  "title": "শার্হ এ জামে এ মাস্নবি এ ma'navi",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3776,12 +3850,13 @@
   "downloadSize": 22870991,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sharh-e-jaame-e-masnavi-e-manavi",
+  "origTitle": "Sharh e Jaame' e Masnavi e Ma'navi",
   "featured": false,
   "addedOrder": 11107
  },
  {
   "id": "ia-shams-ul-fuqara_202203",
-  "title": "Shams Ul Fuqara",
+  "title": "শামস উল ফুকারা",
   "author": "Author: Sultan ul Ashiqeen Sultan Mohammad Najib ur Rehman",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3811,12 +3886,13 @@
   "downloadSize": 151245194,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/shams-ul-fuqara_202203",
+  "origTitle": "Shams Ul Fuqara",
   "featured": false,
   "addedOrder": 11108
  },
  {
   "id": "ia-syedabdullahshah",
-  "title": "Swaneh Hayat Sultan ul Tarikeen Hazrat Sakhi Sultan Syed Mohammad Abdullah Shah Madni Jilani",
+  "title": "স্বনেহ হায়াত সুলতান উল তারিকীন হজরত সাখি সুলতান সৈয়দ মোহাম্মদ আবদুল্লহ শাহ মাদনি জিলানি",
   "author": "Sultan ul Ashiqeen Hazrat Sakhi Sultan Mohammad Najib ur Rehman",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3846,12 +3922,13 @@
   "downloadSize": 7705758,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/syedabdullahshah",
+  "origTitle": "Swaneh Hayat Sultan ul Tarikeen Hazrat Sakhi Sultan Syed Mohammad Abdullah Shah Madni Jilani",
   "featured": false,
   "addedOrder": 11109
  },
  {
   "id": "ia-sultanulashiqeen_202004",
-  "title": "Sultan ul Ashiqeen",
+  "title": "সুলতান উল আশিকীন",
   "author": "Sultan ul Faqr Publications",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -3881,12 +3958,13 @@
   "downloadSize": 104971440,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sultanulashiqeen_202004",
+  "origTitle": "Sultan ul Ashiqeen",
   "featured": false,
   "addedOrder": 11110
  },
  {
   "id": "ia-tahqiq-al-maqam-sh.-kifayatul-awam-bayjuri",
-  "title": "تحقيق المقام على كفاية العوام في علم الكلام، محمد الفضالي، ابراهيم البيجوري ، البيجوري، تحقيق المقام علي كفاية العوام،,tahqiq al-maqam sh. kifayatu'l awam – bayjuri,",
+  "title": "تحقيق المقام على كفاية العوام في علم الكلام، محمد الفضالي، ابراهيم البيجوري ، البيجوري، تحقيق المقام علي كفاية العوام، তাহকিক আল মাকাম শ kifayatu'l আওাম বায়জুরি",
   "author": "islamislamislamquran",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -3916,6 +3994,7 @@
   "downloadSize": 8037994,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tahqiq-al-maqam-sh.-kifayatul-awam-bayjuri",
+  "origTitle": "تحقيق المقام على كفاية العوام في علم الكلام، محمد الفضالي، ابراهيم البيجوري ، البيجوري، تحقيق المقام علي كفاية العوام،,tahqiq al-maqam sh. kifayatu'l awam – bayjuri,",
   "featured": false,
   "addedOrder": 11111
  },
@@ -3991,7 +4070,7 @@
  },
  {
   "id": "ia-the-sufi-message-of-hazrat-inayat-khan-volume-6",
-  "title": "The Sufi Messageof Hazrat Inayat Khan, Volume 6",
+  "title": "সুফি মেস্সগেওফ হজরত ইনায়াত খান খণ্ড ৬",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4021,6 +4100,7 @@
   "downloadSize": 10702855,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/the-sufi-message-of-hazrat-inayat-khan-volume-6",
+  "origTitle": "The Sufi Messageof Hazrat Inayat Khan, Volume 6",
   "featured": false,
   "addedOrder": 11114
  },
@@ -4096,7 +4176,7 @@
  },
  {
   "id": "ia-20230615_20230615_1137",
-  "title": "Hikayaat e Usmani Pashto",
+  "title": "হিকায়ায়াত এ উসমানি পাশতো",
   "author": "Malik Muhammad Usman",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4126,12 +4206,13 @@
   "downloadSize": 24401202,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20230615_20230615_1137",
+  "origTitle": "Hikayaat e Usmani Pashto",
   "featured": false,
   "addedOrder": 11117
  },
  {
   "id": "ia-sufism-and-marifa-2020",
-  "title": "Sufism And Marifa",
+  "title": "সুফিস্ম আন্দ মারিফা",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4161,6 +4242,7 @@
   "downloadSize": 21401353,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sufism-and-marifa-2020",
+  "origTitle": "Sufism And Marifa",
   "featured": false,
   "addedOrder": 11118
  },
@@ -4341,7 +4423,7 @@
  },
  {
   "id": "ia-NasrOSharhEMasnaviESharifJildEDuvum-AbdulBaqiGolpinarliFarsiTarjuma_201803",
-  "title": "Nasr o Sharh e Masnavi e Sharif: Jild e Duvum - Abdul Baqi Golpinarli (Farsi Tarjuma)",
+  "title": "নাসর ও শার্হ এ মাস্নবি এ শরীফ জিলদ এ দুবুম আবদুল বাকি গোল্পিনার্লি ফার্সি তারজুমা",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4371,12 +4453,13 @@
   "downloadSize": 13814201,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/NasrOSharhEMasnaviESharifJildEDuvum-AbdulBaqiGolpinarliFarsiTarjuma_201803",
+  "origTitle": "Nasr o Sharh e Masnavi e Sharif: Jild e Duvum - Abdul Baqi Golpinarli (Farsi Tarjuma)",
   "featured": false,
   "addedOrder": 11124
  },
  {
   "id": "ia-NigaarEYazdaan",
-  "title": "Nigaar E Yazdaan",
+  "title": "নিগার এ যাজদান",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4406,6 +4489,7 @@
   "downloadSize": 83606730,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/NigaarEYazdaan",
+  "origTitle": "Nigaar E Yazdaan",
   "featured": false,
   "addedOrder": 11125
  },
@@ -4446,7 +4530,7 @@
  },
  {
   "id": "ia-northern-mythology-vol-3-b-thorpe_202501",
-  "title": "Northern Mythology (Vol 3, B Thorpe)",
+  "title": "নোর্থের্ন ম্যথোলোজ্ঞ খণ্ড ৩ ব থোর্পে",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4476,12 +4560,13 @@
   "downloadSize": 53189033,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/northern-mythology-vol-3-b-thorpe_202501",
+  "origTitle": "Northern Mythology (Vol 3, B Thorpe)",
   "featured": false,
   "addedOrder": 11127
  },
  {
   "id": "ia-oswald-spengler-heraclitus_202505",
-  "title": "Heraclitus (Oswald Spengler_Berserker Books)",
+  "title": "হেরাকলিতুস ওস্বলদ spengler_berserker",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4511,12 +4596,13 @@
   "downloadSize": 2360586,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/oswald-spengler-heraclitus_202505",
+  "origTitle": "Heraclitus (Oswald Spengler_Berserker Books)",
   "featured": false,
   "addedOrder": 11128
  },
  {
   "id": "ia-our-sun-god-christianity-before-christ-by-john-parsons",
-  "title": "Our Sun God Christianity Before Christ By John Parsons",
+  "title": "ঔর সুন গোদ চৃস্তিয়ানিত্য বেফোরে চৃস্ত",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4546,6 +4632,7 @@
   "downloadSize": 4139216,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/our-sun-god-christianity-before-christ-by-john-parsons",
+  "origTitle": "Our Sun God Christianity Before Christ By John Parsons",
   "featured": false,
   "addedOrder": 11129
  },
@@ -4621,7 +4708,7 @@
  },
  {
   "id": "ia-irshadmedia-de-islamrechtliche-widerlegung-von-terroranschlaegen",
-  "title": "Islāmrechtliche Widerlegung von Terroranschlägen im Westen",
+  "title": "islāmrechtliche ওিদের্লেগুং বোন terroranschlägen ইম ওেস্তেন",
   "author": "Irshād Media",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4651,12 +4738,13 @@
   "downloadSize": 324548,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/irshadmedia-de-islamrechtliche-widerlegung-von-terroranschlaegen",
+  "origTitle": "Islāmrechtliche Widerlegung von Terroranschlägen im Westen",
   "featured": false,
   "addedOrder": 11132
  },
  {
   "id": "ia-irshadmedia-de-islamrechtliche-widerlegung-von-terroranschlaegen-2",
-  "title": "Islāmrechtliche Widerlegung von Terroranschlägen im Westen",
+  "title": "islāmrechtliche ওিদের্লেগুং বোন terroranschlägen ইম ওেস্তেন",
   "author": "Admin",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4686,12 +4774,13 @@
   "downloadSize": 324548,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/irshadmedia-de-islamrechtliche-widerlegung-von-terroranschlaegen-2",
+  "origTitle": "Islāmrechtliche Widerlegung von Terroranschlägen im Westen",
   "featured": false,
   "addedOrder": 11133
  },
  {
   "id": "ia-ishqkayamizharsindhi",
-  "title": "Ishq Kayam Izhar ( Sindhi)",
+  "title": "ইশক কায়াম ইজহার সিন্ধি",
   "author": "Dr. Kaleemullah Lashari",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4721,12 +4810,13 @@
   "downloadSize": 29592387,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ishqkayamizharsindhi",
+  "origTitle": "Ishq Kayam Izhar ( Sindhi)",
   "featured": false,
   "addedOrder": 11134
  },
  {
   "id": "ia-islambriefhistor0000sonn",
-  "title": "Islam : a brief history",
+  "title": "ইসলাম বৃএফ ইতিহাস",
   "author": "Sonn, Tamara, 1949-",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -4756,12 +4846,13 @@
   "downloadSize": 12795786,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/islambriefhistor0000sonn",
+  "origTitle": "Islam : a brief history",
   "featured": false,
   "addedOrder": 11135
  },
  {
   "id": "ia-irshadmedia-de-aussagen-ueber-die-endzeit-die-auf-unsere-zeit-zutreffen-2",
-  "title": "Aussagen über die Endzeit, die auf unsere Zeit zutreffen",
+  "title": "ঔস্সগেন über দিএ এন্দজেইত দিএ ঔফ উনসেরে জেইত জুত্রেফফেন",
   "author": "Admin",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4791,6 +4882,7 @@
   "downloadSize": 920693,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/irshadmedia-de-aussagen-ueber-die-endzeit-die-auf-unsere-zeit-zutreffen-2",
+  "origTitle": "Aussagen über die Endzeit, die auf unsere Zeit zutreffen",
   "featured": false,
   "addedOrder": 11136
  },
@@ -4831,7 +4923,7 @@
  },
  {
   "id": "ia-irshadmedia-de-scheinargument-der-mann-der-sich-verbrennen-liess",
-  "title": "Scheinargument: Der Mann der sich verbrennen ließ",
+  "title": "সচেইনার্গুমেন্ত দের মান্ন দের সিছ বের্ব্রেন্নেন ließ",
   "author": "Irshād Media",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4861,12 +4953,13 @@
   "downloadSize": 489531,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/irshadmedia-de-scheinargument-der-mann-der-sich-verbrennen-liess",
+  "origTitle": "Scheinargument: Der Mann der sich verbrennen ließ",
   "featured": false,
   "addedOrder": 11138
  },
  {
   "id": "ia-irshadmedia-de-die-taeschungen-unserer-zeit-2",
-  "title": "Die Täuschungen unserer Zeit",
+  "title": "দিএ täuschungen উনসেরের জেইত",
   "author": "Admin",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4896,12 +4989,13 @@
   "downloadSize": 306007,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/irshadmedia-de-die-taeschungen-unserer-zeit-2",
+  "origTitle": "Die Täuschungen unserer Zeit",
   "featured": false,
   "addedOrder": 11139
  },
  {
   "id": "ia-irshadmedia-de-die-realitaet-von-ibn-taymiyya",
-  "title": "Die Realität von Ibn Taymīyya",
+  "title": "দিএ realität বোন ইবনে taymīyya",
   "author": "Irshād Media",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4931,12 +5025,13 @@
   "downloadSize": 399441,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/irshadmedia-de-die-realitaet-von-ibn-taymiyya",
+  "origTitle": "Die Realität von Ibn Taymīyya",
   "featured": false,
   "addedOrder": 11140
  },
  {
   "id": "ia-yunus-emre-divani_20230102",
-  "title": "Yûnus Emre Dîvânı",
+  "title": "yûnus এমরে dîvânı",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -4966,6 +5061,7 @@
   "downloadSize": 4328208,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/yunus-emre-divani_20230102",
+  "origTitle": "Yûnus Emre Dîvânı",
   "featured": false,
   "addedOrder": 11141
  },
@@ -4990,7 +5086,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "Hi",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
@@ -5006,7 +5102,7 @@
  },
  {
   "id": "ia-kulliyat-misri-shah-imam",
-  "title": "Kulliyat Misri Shah Imam",
+  "title": "কুল্লিয়াত মিসৃ শাহ ইমাম",
   "author": "Maqbool Ahmed Bhatti",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -5036,12 +5132,13 @@
   "downloadSize": 21080728,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/kulliyat-misri-shah-imam",
+  "origTitle": "Kulliyat Misri Shah Imam",
   "featured": false,
   "addedOrder": 11143
  },
  {
   "id": "ia-voyagesavecunmai0000derv",
-  "title": "Voyages avec un maitre soufi",
+  "title": "বোয়াগেস আবেক উন মৈত্রে সৌফি",
   "author": "Dervish, H. Bashir M",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5071,6 +5168,7 @@
   "downloadSize": 13639527,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/voyagesavecunmai0000derv",
+  "origTitle": "Voyages avec un maitre soufi",
   "featured": false,
   "addedOrder": 11144
  },
@@ -5111,7 +5209,7 @@
  },
  {
   "id": "ia-tazkirat-ul-murad",
-  "title": "Tazkirat Ul Murad",
+  "title": "তাজকিরাত উল মুরাদ",
   "author": "Hasnain Raza al-Sindi, Rozay Dhani Publications",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5141,12 +5239,13 @@
   "downloadSize": 2322727,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tazkirat-ul-murad",
+  "origTitle": "Tazkirat Ul Murad",
   "featured": false,
   "addedOrder": 11146
  },
  {
   "id": "ia-understanding-diwan-i-farid",
-  "title": "Understanding Diwan I Farid",
+  "title": "উন্দের্স্তন্দিং দিওান ই ফারিদ",
   "author": "Dr. Shahzad Qaiser",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5176,12 +5275,13 @@
   "downloadSize": 9151430,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/understanding-diwan-i-farid",
+  "origTitle": "Understanding Diwan I Farid",
   "featured": false,
   "addedOrder": 11147
  },
  {
   "id": "ia-sukhan-e-aijaz_202604",
-  "title": "Sukhan-e-Aijaz",
+  "title": "সুখান এ ঐজাজ",
   "author": "Ustad Sahib Dino Memon",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5211,6 +5311,7 @@
   "downloadSize": 22950457,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sukhan-e-aijaz_202604",
+  "origTitle": "Sukhan-e-Aijaz",
   "featured": false,
   "addedOrder": 11148
  },
@@ -5286,7 +5387,7 @@
  },
  {
   "id": "ia-ushaqnamasheikhfakhruddiniraqi",
-  "title": "Ushaq Nama by Sheikh Fakhruddin Iraqi",
+  "title": "উশাক নামা",
   "author": "A. J. Arberry",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5316,12 +5417,13 @@
   "downloadSize": 8146339,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/ushaqnamasheikhfakhruddiniraqi",
+  "origTitle": "Ushaq Nama by Sheikh Fakhruddin Iraqi",
   "featured": false,
   "addedOrder": 11151
  },
  {
   "id": "ia-dew-syntelpathy",
-  "title": "Synthetic Telepathy Mind Control Collection Compilation Springmeier mkultra monarch dew nwo illuminati freemasons",
+  "title": "স্যন্তহেতিক তেলেপাথ্য মিন্দ কোন্ত্রোল সংগ্রহ কোম্পিলাতিওন স্প্রিংমেইএর মকুলত্র মনার্ছ দেও ন্বো ইল্লুমিনাতি ফরীমাসোনস",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5340,7 +5442,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "asdf",
+  "description": null,
   "pageCount": 59,
   "edition": null,
   "price": null,
@@ -5351,12 +5453,13 @@
   "downloadSize": 593473,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dew-syntelpathy",
+  "origTitle": "Synthetic Telepathy Mind Control Collection Compilation Springmeier mkultra monarch dew nwo illuminati freemasons",
   "featured": false,
   "addedOrder": 11152
  },
  {
   "id": "ia-nov-2000_202511",
-  "title": "Falah-e-Aadmiat, Volume 2, Issue 9, November 2000",
+  "title": "ফালাহ এ আদমিয়াত খণ্ড ২ সংখ্যা ৯ নোবেম্বের ২০০০",
   "author": "Markaz Taameer i millat Gujranwala, Pakistan",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5386,6 +5489,7 @@
   "downloadSize": 34779820,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/nov-2000_202511",
+  "origTitle": "Falah-e-Aadmiat, Volume 2, Issue 9, November 2000",
   "featured": false,
   "addedOrder": 11153
  },
@@ -5461,7 +5565,7 @@
  },
  {
   "id": "ia-mysticaldimensio00schi",
-  "title": "Mystical dimensions of Islam",
+  "title": "ম্যস্তিকাল দিমেনসিওনস ইসলাম",
   "author": "Schimmel, Annemarie",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -5491,12 +5595,13 @@
   "downloadSize": 35822543,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/mysticaldimensio00schi",
+  "origTitle": "Mystical dimensions of Islam",
   "featured": false,
   "addedOrder": 11156
  },
  {
   "id": "ia-tradition-books",
-  "title": "Tradition Publishing",
+  "title": "ত্রদিতিওন পুবলিশিং",
   "author": "Tradio Thule",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5526,6 +5631,7 @@
   "downloadSize": 51380817,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/tradition-books",
+  "origTitle": "Tradition Publishing",
   "featured": false,
   "addedOrder": 11157
  },
@@ -5566,7 +5672,7 @@
  },
  {
   "id": "ia-december-2003",
-  "title": "Falah-e-Aadmiat, Volume 5, Issue 10, December 2003",
+  "title": "ফালাহ এ আদমিয়াত খণ্ড ৫ সংখ্যা ১০ দেকেম্বের ২০০৩",
   "author": "Markaz Taameer i millat Gujranwala, Pakistan",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5596,6 +5702,7 @@
   "downloadSize": 11889601,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/december-2003",
+  "origTitle": "Falah-e-Aadmiat, Volume 5, Issue 10, December 2003",
   "featured": false,
   "addedOrder": 11159
  },
@@ -5671,7 +5778,7 @@
  },
  {
   "id": "ia-stolypin-russias-last-great-reformer-aleksandr-vasilevic-zenkovskij-berserker-books",
-  "title": "Stolypin Russia's Last Great Reformer (Aleksandr Vasil'evič Zen'kovskij_Berserker Books)",
+  "title": "স্তোল্যপিন russia's লাস্ত গ্রেয়াত রেফোর্মের আলেকসান্দ্র vasil'evič zen'kovskij_berserker",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5701,12 +5808,13 @@
   "downloadSize": 37805724,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/stolypin-russias-last-great-reformer-aleksandr-vasilevic-zenkovskij-berserker-books",
+  "origTitle": "Stolypin Russia's Last Great Reformer (Aleksandr Vasil'evič Zen'kovskij_Berserker Books)",
   "featured": false,
   "addedOrder": 11162
  },
  {
   "id": "ia-sufi-verse-saintly-life",
-  "title": "Sufi Verse Saintly Life",
+  "title": "সুফি বের্সে সৈন্তল্য লিফে",
   "author": "archegos",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -5736,6 +5844,7 @@
   "downloadSize": 8646238,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sufi-verse-saintly-life",
+  "origTitle": "Sufi Verse Saintly Life",
   "featured": false,
   "addedOrder": 11163
  },
@@ -5846,7 +5955,7 @@
  },
  {
   "id": "ia-sufismitssaintsa029513mbp",
-  "title": "Sufism Its Saints And Shrines",
+  "title": "সুফিস্ম ইতস সৈন্তস আন্দ শ্রীনেস",
   "author": "Subhan,John A.",
   "language": "Bengali",
   "category": "Islamic Studies",
@@ -5876,6 +5985,7 @@
   "downloadSize": 19734029,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/sufismitssaintsa029513mbp",
+  "origTitle": "Sufism Its Saints And Shrines",
   "featured": false,
   "addedOrder": 11167
  },
@@ -5986,7 +6096,7 @@
  },
  {
   "id": "ia-january-2001_202401",
-  "title": "Falah-e-Aadmiat, Volume 2, Issue 11, January 2001",
+  "title": "ফালাহ এ আদমিয়াত খণ্ড ২ সংখ্যা ১১ জানুয়ার্য ২০০১",
   "author": "Markaz Taameer i millat Gujranwala, Pakistan",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6016,6 +6126,7 @@
   "downloadSize": 9873320,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/january-2001_202401",
+  "origTitle": "Falah-e-Aadmiat, Volume 2, Issue 11, January 2001",
   "featured": false,
   "addedOrder": 11171
  },
@@ -6056,7 +6167,7 @@
  },
  {
   "id": "ia-divan-e-ashkar-jild-awwal",
-  "title": "Divan E Ashkar Jild Awwal دیوان آشکارـ جلد اول",
+  "title": "দিবান এ আশকার জিলদ আও্বল دیوان آشکارـ جلد اول",
   "author": "Ali Akbar Darazi",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6086,12 +6197,13 @@
   "downloadSize": 4009077,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/divan-e-ashkar-jild-awwal",
+  "origTitle": "Divan E Ashkar Jild Awwal دیوان آشکارـ جلد اول",
   "featured": false,
   "addedOrder": 11173
  },
  {
   "id": "ia-divan-molana-badruddin-hilali-estarabadi-ki-tanqidi-ashaat",
-  "title": "Divan Molana Badruddin Hilali Estarabadi Ki Tanqidi Asha'at",
+  "title": "দিবান মোলানা বাদ্রুড্ডিন হিলালি এস্তরাবাদি কি তানকিদি asha'at",
   "author": "Afrin Bano",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6121,12 +6233,13 @@
   "downloadSize": 21943305,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/divan-molana-badruddin-hilali-estarabadi-ki-tanqidi-ashaat",
+  "origTitle": "Divan Molana Badruddin Hilali Estarabadi Ki Tanqidi Asha'at",
   "featured": false,
   "addedOrder": 11174
  },
  {
   "id": "ia-divaneqalandar_202003",
-  "title": "Divan-e-Qalandar",
+  "title": "দিবান এ কালান্দর",
   "author": "Illahi Bux Sheikh",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6156,6 +6269,7 @@
   "downloadSize": 28190048,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/divaneqalandar_202003",
+  "origTitle": "Divan-e-Qalandar",
   "featured": false,
   "addedOrder": 11175
  },
@@ -6215,7 +6329,7 @@
   "country": null,
   "subject": null,
   "subcategory": null,
-  "description": "کشف المحجوب",
+  "description": null,
   "pageCount": null,
   "edition": null,
   "price": null,
