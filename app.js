@@ -452,17 +452,84 @@
   }
   function skel(s) { return (s || "").replace(/[aeiou]/g, ""); }
 
+  /* romanizeBn(): Bangla query -> Latin letters, mirroring the generator's
+     romanize() (same char map and conjunct rules). Lets a Bangla query find
+     books whose title/author are in Roman letters ("রমেশ শিল" finds
+     "Ganakabiyal Ramesh Shil O Tanr Gaan"; "শাজরা" finds "Shajra Sharif").
+     Without this, Bangla queries only matched Bangla-script titles, so the
+     8,733 Roman-titled Bengali books were invisible to Bangla search. */
+  var ROMAN_CONJ = {"ক্ষ": "kh", "জ্ঞ": "gg", "দ্ম": "dd", "হ্ম": "hm", "ঙ্ক": "nk", "ঙ্গ": "ng", "স্ব": "sh"};
+  var ROMAN_CHAR = {
+    "অ": "o", "আ": "a", "ই": "i", "ঈ": "i", "উ": "u", "ঊ": "u", "ঋ": "ri", "এ": "e",
+    "ঐ": "oi", "ও": "o", "ঔ": "ou", "ক": "k", "খ": "kh", "গ": "g", "ঘ": "gh", "ঙ": "ng",
+    "চ": "ch", "ছ": "ch", "জ": "j", "ঝ": "jh", "ঞ": "n", "ট": "t", "ঠ": "th", "ড": "d",
+    "ঢ": "dh", "ণ": "n", "ত": "t", "থ": "th", "দ": "d", "ধ": "dh", "ন": "n", "প": "p",
+    "ফ": "ph", "ব": "b", "ভ": "bh", "ম": "m", "য": "j", "র": "r", "ল": "l", "শ": "sh",
+    "ষ": "sh", "স": "s", "হ": "h", "ড়": "r", "ঢ়": "rh", "য়": "y", "ৎ": "t", "ং": "ng",
+    "ঃ": "h", "ঁ": "n", "়": "", "া": "a", "ি": "i", "ী": "i", "ু": "u", "ূ": "u",
+    "ৃ": "ri", "ে": "e", "ৈ": "oi", "ো": "o", "ৌ": "ou", "্": "", "ৰ": "r", "ৠ": "ri",
+    "ৡ": "li", "ৢ": "ri", "ৣ": "ri", "ৱ": "w", "ঽ": "", "০": "0", "১": "1", "২": "2",
+    "৩": "3", "৪": "4", "৫": "5", "৬": "6", "৭": "7", "৮": "8", "৯": "9"
+  };
+  /* A Bangla consonant letter (not a vowel, vowel sign, hasanta or
+     other mark). Used for the inherent-"a" rule below. */
+  var BN_VOWELS = "অআইঈউঊঋএঐওঔ";
+  var BN_SIGNS = "ািীুূৃেৈোৌ";
+  var BN_MARKS = "ংঃঁ়্ঽ";
+  function isConsBn(ch) {
+    if (!ch) return false;
+    if (BN_VOWELS.indexOf(ch) !== -1) return false;
+    if (BN_SIGNS.indexOf(ch) !== -1) return false;
+    if (BN_MARKS.indexOf(ch) !== -1) return false;
+    if (ch >= "০" && ch <= "৯") return false;
+    return ROMAN_CHAR[ch] !== undefined;
+  }
+  function romanizeBn(text) {
+    if (!text) return "";
+    /* Two-codepoint nukta forms (য+়, ড+়, ঢ+়) -> single codepoints,
+       same trap as the Devdas filename bug. */
+    text = text.split("য়").join("য়").split("ড়").join("ড়").split("ঢ়").join("ঢ়");
+    var out = "", i = 0;
+    while (i < text.length) {
+      var hit = null, conj;
+      for (conj in ROMAN_CONJ) {
+        if (text.indexOf(conj, i) === i) { hit = ROMAN_CONJ[conj]; i += conj.length; break; }
+      }
+      if (hit !== null) { out += hit; if (isConsBn(text[i])) out += "a"; continue; }
+      var ch = text[i];
+      /* য-ফলা (consonant + ্ + য) is "y", not "j" (বিদ্যা = "bidya"). */
+      if (ch === "্" && i + 1 < text.length && text[i + 1] === "য") { out += "y"; i += 2; continue; }
+      out += (ROMAN_CHAR[ch] !== undefined ? ROMAN_CHAR[ch] : ch);
+      /* Inherent "a": রমেশ -> "ramesh" (not "rmesh"), so the query matches
+         English-style transliterations in Roman titles. */
+      if (isConsBn(ch) && isConsBn(text[i + 1])) out += "a";
+      i += 1;
+    }
+    return out;
+  }
+
   /* ---------- browse ---------- */
   function applyFilters() {
     var list = BOOKS.slice();
     var q = state.q.toLowerCase();
     var qn = normQ(state.q);
+    /* Bangla query romanized ("রমেশ শিল" -> "rameshshil"). For a Latin
+       query this equals qn, so the extra level below is harmless. */
+    var qr = normQ(romanizeBn(state.q));
     if (q) list = list.filter(function (b) {
       var hay = ((b.title || "") + " " + (b.author || "") + " " + (b.category || "")).toLowerCase();
       if (hay.indexOf(q) !== -1) { b._m = 0; b._c = 1; return true; }
-      if (!qn) return false;
-      var rhay = ((b.rt || "") + " " + (b.ra || "")).toLowerCase();
-      if (rhay.indexOf(qn) !== -1) { b._m = 1; b._c = 1; return true; }
+      if (!qn && !qr) return false;
+      if (qn) {
+        var rhay = ((b.rt || "") + " " + (b.ra || "")).toLowerCase();
+        if (rhay.indexOf(qn) !== -1) { b._m = 1; b._c = 1; return true; }
+      }
+      /* Bangla query, Roman-titled book: match the romanized query against
+         the book's own Latin title/author (normalized once, cached). */
+      if (qr) {
+        if (b._lt === undefined) b._lt = normQ((b.title || "") + " " + (b.author || ""));
+        if (b._lt.indexOf(qr) !== -1) { b._m = 1; b._c = 1; return true; }
+      }
       if (qn.length >= 3) {
         var qs = skel(qn);
         // Skeleton match per field (not across the title+author boundary,
@@ -474,6 +541,16 @@
           var ct = skel(b.rt || ""), ca = skel(b.ra || "");
           if (ct.indexOf(qs) !== -1) { b._m = 2; b._c = qs.length / Math.max(1, ct.length); return true; }
           if (ca.indexOf(qs) !== -1) { b._m = 2; b._c = qs.length / Math.max(1, ca.length); return true; }
+        }
+      }
+      if (qr && qr.length >= 3) {
+        var qs2 = skel(qr);
+        if (qs2.length >= 3) {
+          if (b._ltT === undefined) b._ltT = normQ(b.title || "");
+          if (b._ltA === undefined) b._ltA = normQ(b.author || "");
+          var ct2 = skel(b._ltT), ca2 = skel(b._ltA);
+          if (ct2.indexOf(qs2) !== -1) { b._m = 2; b._c = qs2.length / Math.max(1, ct2.length); return true; }
+          if (ca2.indexOf(qs2) !== -1) { b._m = 2; b._c = qs2.length / Math.max(1, ca2.length); return true; }
         }
       }
       return false;
