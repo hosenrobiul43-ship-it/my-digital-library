@@ -580,21 +580,8 @@
     return list;
   }
 
-  function renderBooks() {
-    var list = applyFilters();
-    if (state.q && !list.length) logMissedSearch(state.q);
-    var pages = Math.max(1, Math.ceil(list.length / PER_PAGE));
-    if (state.page > pages) state.page = pages;
-    var slice = list.slice((state.page - 1) * PER_PAGE, state.page * PER_PAGE);
-    var cats = categoryCounts();
-    // No results: recommend the top books instead of leaving an empty page.
-    var recHtml = "";
-    if (state.q && !list.length) {
-      var recs = BOOKS.filter(function (b) { return b.topRank; }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 6);
-      if (recs.length) recHtml = '<div class="block"><h3>খুঁজে পাওয়া যায়নি — এই জনপ্রিয় বইগুলো দেখতে পারেন</h3><p class="muted">নামটি বাংলায় বা Banglish-এ লিখে আবার চেষ্টা করুন (যেমন: poddoja, hamlet, tirmizi)।</p>' + gridHtml(recs) + "</div>";
-    }
-
-    var h = '<section class="block"><h2>সব বই</h2>' +
+  function booksShellHtml() {
+    return '<section class="block"><h2>সব বই</h2>' +
       '<p class="muted">মোট ' + BOOKS.length.toLocaleString("bn-BD") + 'টি বই — নাম, লেখক, বিভাগ, ভাষা বা বছর দিয়ে খুঁজুন।</p>' +
       '<div class="filters">' +
       '<div class="full"><label>খুঁজুন (নাম / লেখক / বিষয় — বাংলায় বা Banglish-এ)</label><input id="bQ" type="search" value="' + esc(state.q) + '" placeholder="যেমন: রবীন্দ্রনাথ, কুরআন — বা Banglish-এ: poddoja, hamlet"></div>' +
@@ -612,7 +599,58 @@
       "</select></div>" +
       '<div><label>বছর</label><input id="bYear" type="number" min="1000" max="2026" value="' + esc(state.year) + '" placeholder="যেমন ১৯৪১"></div>' +
       "</div>" +
-      '<p class="result-info">' + list.length.toLocaleString("bn-BD") + 'টি বই পাওয়া গেছে · পৃষ্ঠা ' + state.page.toLocaleString("bn-BD") + " / " + pages.toLocaleString("bn-BD") + "</p>" +
+      '<div id="bookResults"></div>' +
+      "</section>";
+  }
+
+  /* The search box + filters are built ONCE (the shell); every keystroke
+     only refreshes #bookResults below. Rebuilding the whole view on each
+     keystroke destroyed the input element, so the phone keyboard closed
+     after every letter and the user had to tap the box again. */
+  function renderBooks() {
+    if (!document.getElementById("bQ")) {
+      view.innerHTML = booksShellHtml();
+      fillSelect(document.getElementById("bCat"), categoryCounts().map(function (c) { return c.name; }), "সব বিভাগ");
+      fillSelect(document.getElementById("bLang"), ["Bengali", "English"], "সব ভাষা");
+      document.getElementById("bCat").value = state.category;
+      document.getElementById("bLang").value = state.language;
+      document.getElementById("bSort").value = state.sort;
+      var deb;
+      document.getElementById("bQ").addEventListener("input", function (e) {
+        clearTimeout(deb);
+        deb = setTimeout(function () { state.q = e.target.value.trim(); state.page = 1; updateBookResults(); }, 300);
+      });
+      document.getElementById("bCat").addEventListener("change", function (e) { state.category = e.target.value; state.page = 1; updateBookResults(); });
+      document.getElementById("bLang").addEventListener("change", function (e) { state.language = e.target.value; state.page = 1; updateBookResults(); });
+      document.getElementById("bSort").addEventListener("change", function (e) { state.sort = e.target.value; state.page = 1; updateBookResults(); });
+      document.getElementById("bYear").addEventListener("change", function (e) { state.year = e.target.value.trim(); state.page = 1; updateBookResults(); });
+    } else {
+      /* Route changed the state (e.g. #/category/...) while the shell was
+         already on screen: sync the control values without rebuilding
+         them — setting .value never steals focus or closes the keyboard. */
+      var qEl = document.getElementById("bQ");
+      if (qEl.value !== state.q) qEl.value = state.q;
+      document.getElementById("bCat").value = state.category;
+      document.getElementById("bLang").value = state.language;
+      document.getElementById("bSort").value = state.sort;
+      document.getElementById("bYear").value = state.year;
+    }
+    updateBookResults();
+  }
+
+  function updateBookResults() {
+    var list = applyFilters();
+    if (state.q && !list.length) logMissedSearch(state.q);
+    var pages = Math.max(1, Math.ceil(list.length / PER_PAGE));
+    if (state.page > pages) state.page = pages;
+    var slice = list.slice((state.page - 1) * PER_PAGE, state.page * PER_PAGE);
+    // No results: recommend the top books instead of leaving an empty page.
+    var recHtml = "";
+    if (state.q && !list.length) {
+      var recs = BOOKS.filter(function (b) { return b.topRank; }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 6);
+      if (recs.length) recHtml = '<div class="block"><h3>খুঁজে পাওয়া যায়নি — এই জনপ্রিয় বইগুলো দেখতে পারেন</h3><p class="muted">নামটি বাংলায় বা Banglish-এ লিখে আবার চেষ্টা করুন (যেমন: poddoja, hamlet, tirmizi)।</p>' + gridHtml(recs) + "</div>";
+    }
+    var h = '<p class="result-info">' + list.length.toLocaleString("bn-BD") + 'টি বই পাওয়া গেছে · পৃষ্ঠা ' + state.page.toLocaleString("bn-BD") + " / " + pages.toLocaleString("bn-BD") + "</p>" +
       gridHtml(slice) +
       recHtml +
       '<div class="pagination">' +
@@ -620,27 +658,12 @@
       "<span>পৃষ্ঠা " + state.page + " / " + pages + "</span>" +
       '<button class="btn btn-ghost btn-sm" id="nextPg" ' + (state.page >= pages ? "disabled" : "") + ">পরের পৃষ্ঠা →</button>" +
       "</div>" +
-      adSlotHtml() +
-      "</section>";
-    view.innerHTML = h;
-
-    fillSelect(document.getElementById("bCat"), cats.map(function (c) { return c.name; }), "সব বিভাগ");
-    fillSelect(document.getElementById("bLang"), ["Bengali", "English"], "সব ভাষা");
-    document.getElementById("bCat").value = state.category;
-    document.getElementById("bLang").value = state.language;
-    document.getElementById("bSort").value = state.sort;
-    var deb;
-    document.getElementById("bQ").addEventListener("input", function (e) {
-      clearTimeout(deb);
-      deb = setTimeout(function () { state.q = e.target.value.trim(); state.page = 1; renderBooks(); }, 300);
-    });
-    document.getElementById("bCat").addEventListener("change", function (e) { state.category = e.target.value; state.page = 1; renderBooks(); });
-    document.getElementById("bLang").addEventListener("change", function (e) { state.language = e.target.value; state.page = 1; renderBooks(); });
-    document.getElementById("bSort").addEventListener("change", function (e) { state.sort = e.target.value; state.page = 1; renderBooks(); });
-    document.getElementById("bYear").addEventListener("change", function (e) { state.year = e.target.value.trim(); state.page = 1; renderBooks(); });
+      adSlotHtml();
+    var box = document.getElementById("bookResults");
+    if (box) box.innerHTML = h;
     var pv = document.getElementById("prevPg"), nx = document.getElementById("nextPg");
-    if (pv) pv.addEventListener("click", function () { if (state.page > 1) { state.page--; renderBooks(); window.scrollTo(0, 0); } });
-    if (nx) nx.addEventListener("click", function () { state.page++; renderBooks(); window.scrollTo(0, 0); });
+    if (pv) pv.addEventListener("click", function () { if (state.page > 1) { state.page--; updateBookResults(); window.scrollTo(0, 0); } });
+    if (nx) nx.addEventListener("click", function () { state.page++; updateBookResults(); window.scrollTo(0, 0); });
   }
 
   /* ---------- missed searches ----------
