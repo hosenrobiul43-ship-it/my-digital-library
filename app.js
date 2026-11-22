@@ -452,6 +452,20 @@
   }
   function skel(s) { return (s || "").replace(/[aeiou]/g, ""); }
 
+  /* Skeleton coverage of the best single word in a field: a short word
+     that is mostly the query outranks a long field that merely contains
+     the same consonants somewhere (an author name, or two titles glued
+     into one search string). Returns 0 when no word matches. */
+  function skelWord(field, qs) {
+    var words = (field || "").split(/[^a-z0-9]+/);
+    var best = 0;
+    for (var i = 0; i < words.length; i++) {
+      var ws = skel(words[i]);
+      if (ws && ws.indexOf(qs) !== -1) best = Math.max(best, qs.length / ws.length);
+    }
+    return best;
+  }
+
   /* romanizeBn(): Bangla query -> Latin letters, mirroring the generator's
      romanize() (same char map and conjunct rules). Lets a Bangla query find
      books whose title/author are in Roman letters ("রমেশ শিল" finds
@@ -520,9 +534,10 @@
       var hay = ((b.title || "") + " " + (b.author || "") + " " + (b.category || "")).toLowerCase();
       if (hay.indexOf(q) !== -1) { b._m = 0; b._c = 1; return true; }
       if (!qn && !qr) return false;
-      if (qn) {
+      if (qn || qr) {
         var rhay = ((b.rt || "") + " " + (b.ra || "")).toLowerCase();
-        if (rhay.indexOf(qn) !== -1) { b._m = 1; b._c = 1; return true; }
+        if (qn && rhay.indexOf(qn) !== -1) { b._m = 1; b._c = 1; return true; }
+        if (qr && rhay.indexOf(qr) !== -1) { b._m = 1; b._c = 1; return true; }
       }
       /* Bangla query, Roman-titled book: match the romanized query against
          the book's own Latin title/author (normalized once, cached). */
@@ -538,9 +553,17 @@
         // is mostly the query (e.g. আমি পদ্মজা for "poddoja") outranks a
         // long title that merely contains the same consonants.
         if (qs.length >= 3) {
-          var ct = skel(b.rt || ""), ca = skel(b.ra || "");
-          if (ct.indexOf(qs) !== -1) { b._m = 2; b._c = qs.length / Math.max(1, ct.length); return true; }
-          if (ca.indexOf(qs) !== -1) { b._m = 2; b._c = qs.length / Math.max(1, ca.length); return true; }
+          var ct = skelWord(b.rt || "", qs), ca = skelWord(b.ra || "", qs);
+          if (ct > 0) { b._m = 2; b._c = ct; return true; }
+          if (ca > 0) { b._m = 2; b._c = ca; return true; }
+        }
+      }
+      if (qr && qr.length >= 3) {
+        var qsR = skel(qr);
+        if (qsR.length >= 3) {
+          var ctR = skelWord(b.rt || "", qsR), caR = skelWord(b.ra || "", qsR);
+          if (ctR > 0) { b._m = 2; b._c = ctR; return true; }
+          if (caR > 0) { b._m = 2; b._c = caR; return true; }
         }
       }
       if (qr && qr.length >= 3) {
