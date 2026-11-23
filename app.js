@@ -198,7 +198,7 @@
       BOOKS = data;
       route();
     }).catch(function () {
-      view.innerHTML = '<p class="empty">দুঃখিত, বইয়ের তালিকা লোড করা যায়নি। পরে আবার চেষ্টা করুন।</p>';
+      view.innerHTML = '<p class="empty">দুঃখিত, বইয়ের তালিকা লোড করা যায়নি।</p><p style="text-align:center"><button class="btn" type="button" data-retry="1">আবার চেষ্টা করুন</button></p>';
     });
   }
   /* Full A–Z record for one book: from the chunk file its index record
@@ -1053,6 +1053,12 @@
 
   /* ---------- global clicks (delegation) ---------- */
   document.addEventListener("click", function (e) {
+    var rt = e.target.closest("[data-retry]");
+    if (rt) {
+      view.innerHTML = '<p class="empty">লাইব্রেরি লোড হচ্ছে…</p>';
+      loadBooks();
+      return;
+    }
     var cp = e.target.closest("[data-copy]");
     if (cp) {
       var url = cp.getAttribute("data-copy");
