@@ -254,6 +254,7 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
   .topnav { display: none; position: absolute; top: 100%; right: 12px; background: var(--navy); flex-direction: column; padding: 8px; border-radius: 10px; box-shadow: var(--shadow); }
   .topnav.open { display: flex; }
   .menu-btn { display: block; margin-left: auto; }
+  .header-controls { margin-left: auto; }
   .topnav { margin-left: 0; }
   .search-big { flex-direction: column; }
   .search-big .btn { width: 100%; }
@@ -326,8 +327,11 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 .fb-msg { margin: 8px 0 0; color: var(--gold); font-weight: 600; }
 
 /* ---------- header stats (follow + visit counts, owner 2026-11-25) ---------- */
-.header-stats { display: flex; gap: 14px; align-items: center; font-size: .85rem; color: #d9c98a; white-space: nowrap; }
+.header-stats { display: flex; gap: 14px; align-items: center; font-size: .85rem; color: #d9c98a; white-space: nowrap; opacity: .7; }
 .header-stats b { color: #fff; }
+/* ---------- header controls: Dark + menu + language + login stay together ---------- */
+.header-controls { display: flex; align-items: center; gap: 8px; }
+.header-controls .menu-btn { margin-left: 0; }
 /* ---------- hero buttons side by side (owner 2026-11-25) ---------- */
 .hero-share { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
 .hero-share .btn { flex: 1 1 auto; text-align: center; }
@@ -338,5 +342,5 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 .search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); pointer-events: none; font-size: 1.1rem; z-index: 1; }
 @media (max-width: 560px) {
   .hero-share .btn { flex: 1 1 calc(50% - 4px); }
-  .header-stats { font-size: .8rem; gap: 10px; }
+  .header-stats { font-size: .8rem; gap: 10px; flex-basis: 100%; order: 10; }
 }
