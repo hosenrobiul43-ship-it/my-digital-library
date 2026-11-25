@@ -219,6 +219,13 @@ html[data-theme="dark"] .notice { background: #2b2305; color: #f0d9a8; border-co
 
 /* ---------- info pages / footer ---------- */
 .info-page { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; margin: 18px 0; }
+.owner-card { display: flex; gap: 20px; align-items: flex-start; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; margin: 18px 0; }
+.owner-photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid var(--gold); flex-shrink: 0; }
+.owner-info h3 { margin: 0 0 4px; color: var(--navy); font-size: 1.4em; }
+html[data-theme="dark"] .owner-info h3 { color: var(--gold); }
+.owner-role { color: var(--muted); margin: 0 0 10px; }
+.owner-info p { margin: 6px 0; }
+@media (max-width: 560px) { .owner-card { flex-direction: column; align-items: center; text-align: center; } .owner-photo { width: 130px; height: 130px; } }
 .info-page h2 { color: var(--navy); }
 html[data-theme="dark"] .info-page h2 { color: var(--gold); }
 footer { background: var(--navy); color: #cdd8e6; margin-top: 40px; padding: 28px 0; }
@@ -241,7 +248,8 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 }
 @media (max-width: 560px) {
   .book-grid { grid-template-columns: repeat(2, 1fr); }
-  .topnav { display: none; position: absolute; top: 62px; right: 12px; background: var(--navy); flex-direction: column; padding: 8px; border-radius: 10px; box-shadow: var(--shadow); }
+  .topbar .container { flex-wrap: wrap; }
+  .topnav { display: none; position: absolute; top: 100%; right: 12px; background: var(--navy); flex-direction: column; padding: 8px; border-radius: 10px; box-shadow: var(--shadow); }
   .topnav.open { display: flex; }
   .menu-btn { display: block; margin-left: auto; }
   .topnav { margin-left: 0; }
@@ -278,3 +286,13 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 /* ---------- optional login ---------- */
 #authBox { margin-left: auto; display: flex; align-items: center; gap: 8px; }
 .auth-name { color: #fff; font-size: .9rem; }
+.auth-avatar { width: 28px; height: 28px; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255,255,255,.45); }
+
+/* ---------- cover viewer (lightbox) ---------- */
+.cover.big[data-cover-view] { cursor: zoom-in; }
+.cover-viewer { position: fixed; inset: 0; z-index: 100; background: rgba(0,0,0,.88); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.cover-viewer[hidden] { display: none; }
+.cover-viewer-box { max-width: 94vw; max-height: 94vh; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.cover-viewer-img { max-width: 94vw; max-height: 76vh; object-fit: contain; border-radius: 8px; background: #fff; }
+.cover-viewer-cap { color: #fff; margin: 0; text-align: center; }
+.cover-hint { margin: 6px 0 0; }

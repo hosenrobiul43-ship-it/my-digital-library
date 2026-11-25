@@ -48,7 +48,7 @@
     return t ? t.charAt(0) : "?";
   }
   function langLabel(l) {
-    return l === "Bengali" ? "বাংলা" : l === "English" ? "English" : (l || NA);
+    return l === "Bengali" ? "বাংলা" : l === "English" ? "English" : l === "Arabic" ? "আরবি" : l === "Urdu" ? "উর্দু" : (l || NA);
   }
   function byId(id) { return BOOKS.find(function (b) { return b.id === id; }); }
 
@@ -175,7 +175,8 @@
       currentUser = user || null;
       if (user) {
         var name = user.displayName || user.email || "ব্যবহারকারী";
-        box.innerHTML = '<span class="auth-name">' + esc(name) + '</span> <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">লগআউট</button>';
+        var photo = user.photoURL ? '<img class="auth-avatar" src="' + esc(user.photoURL) + '" alt="" onerror="this.style.display=\'none\'">' : "";
+        box.innerHTML = photo + '<span class="auth-name">' + esc(name) + '</span> <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">লগআউট</button>';
         var lo = document.getElementById("logoutBtn");
         if (lo) lo.addEventListener("click", function () { auth.signOut(); });
       } else {
@@ -223,10 +224,58 @@
     var img = b.coverUrl
       ? '<img class="cover-img" src="' + esc(b.coverUrl) + '" alt="' + esc(b.title) + ' বইয়ের প্রচ্ছদ" loading="lazy" onerror="this.remove()">'
       : "";
-    return '<div class="' + cls + '">' + img +
+    /* Detail page only: the big cover opens the fullscreen viewer.
+       Card covers stay plain — cards navigate to the detail page. */
+    var viewAttr = (big && b.coverUrl)
+      ? ' data-cover-view="' + esc(b.coverUrl) + '" data-cover-title="' + esc(b.title) + '" role="button" tabindex="0" aria-label="প্রচ্ছদ বড় করে দেখুন" title="বড় করে দেখতে চাপ দিন"'
+      : "";
+    return '<div class="' + cls + '"' + viewAttr + '>' + img +
       '<span class="letter">' + esc(firstLetter(b.title)) + "</span>" +
       '<span class="cover-lang">' + esc(langLabel(b.language)) + "</span></div>";
   }
+
+  /* ---------- cover viewer (lightbox) ----------
+     Detail page only: tapping the big cover shows the full-resolution
+     cover (coverUrl, not a thumbnail) in a fullscreen overlay.
+     Close: ✕ button, tap outside the image, or Esc. Cards keep
+     navigating to the detail page — a viewer on cards would fight
+     the card tap, so cards do not open it. */
+  var coverViewer = null;
+  function openCover(url, title) {
+    if (!coverViewer) {
+      coverViewer = document.createElement("div");
+      coverViewer.className = "cover-viewer";
+      coverViewer.id = "coverViewer";
+      coverViewer.hidden = true;
+      coverViewer.innerHTML = '<div class="cover-viewer-box" role="dialog" aria-modal="true" aria-label="বইয়ের প্রচ্ছদ">' +
+        '<img class="cover-viewer-img" alt="">' +
+        '<p class="cover-viewer-cap"></p>' +
+        '<button class="btn btn-primary cover-viewer-close" type="button">✕ বন্ধ করুন</button></div>';
+      document.body.appendChild(coverViewer);
+      coverViewer.addEventListener("click", function (e) {
+        if (e.target === coverViewer || e.target.closest(".cover-viewer-close")) closeCover();
+      });
+    }
+    var img = coverViewer.querySelector(".cover-viewer-img");
+    img.src = url;
+    img.alt = (title || "") + " বইয়ের প্রচ্ছদ";
+    coverViewer.querySelector(".cover-viewer-cap").textContent = title || "";
+    coverViewer.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+  function closeCover() {
+    if (!coverViewer) return;
+    coverViewer.hidden = true;
+    document.body.style.overflow = "";
+  }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && coverViewer && !coverViewer.hidden) { closeCover(); return; }
+    if ((e.key === "Enter" || e.key === " ") && e.target.closest && e.target.closest("[data-cover-view]")) {
+      e.preventDefault();
+      var cv = e.target.closest("[data-cover-view]");
+      openCover(cv.getAttribute("data-cover-view"), cv.getAttribute("data-cover-title"));
+    }
+  });
   function cardHtml(b) {
     var tags = '<span class="tag">' + esc(langLabel(b.language)) + "</span>" +
       '<span class="tag">' + esc(b.category || "অন্যান্য") + "</span>" +
@@ -284,6 +333,8 @@
     var total = BOOKS.length;
     var bn = BOOKS.filter(function (b) { return b.language === "Bengali"; }).length;
     var en = BOOKS.filter(function (b) { return b.language === "English"; }).length;
+    var ar = BOOKS.filter(function (b) { return b.language === "Arabic"; }).length;
+    var ur = BOOKS.filter(function (b) { return b.language === "Urdu"; }).length;
     var free = BOOKS.filter(function (b) { return b.downloadUrl; }).length;
     var top = BOOKS.filter(function (b) { return b.topRank; }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 12);
     var featured = BOOKS.filter(function (b) { return b.featured; }).slice(0, 12);
@@ -333,6 +384,8 @@
     h += '<section class="block"><div class="section-head"><h2>ভাষা</h2></div><div class="chip-grid">' +
       '<button class="chip" data-lang="Bengali">বাংলা <small>(' + bn.toLocaleString("bn-BD") + ")</small></button>" +
       '<button class="chip" data-lang="English">English <small>(' + en.toLocaleString("bn-BD") + ")</small></button>" +
+      '<button class="chip" data-lang="Arabic">আরবি <small>(' + ar.toLocaleString("bn-BD") + ")</small></button>" +
+      '<button class="chip" data-lang="Urdu">উর্দু <small>(' + ur.toLocaleString("bn-BD") + ")</small></button>" +
       "</div></section>";
     h += '<section class="block"><div class="section-head"><h2>ফ্রি ও বৈধ বই</h2></div>' +
       "<p>এই লাইব্রেরির <b>" + free.toLocaleString("bn-BD") + "টি</b> বই Internet Archive ও Standard Ebooks থেকে বৈধভাবে ফ্রি ডাউনলোড করা যায়। কপিরাইটযুক্ত বইয়ের ক্ষেত্রে শুধু অনুমোদিত পড়া, ধার বা কেনার লিংক দেওয়া হয় — PDF দেওয়া হয় না।</p></section>";
@@ -413,7 +466,7 @@
     var p = document.getElementById("advPanel");
     if (t && p) {
       fillSelect(document.getElementById("fCategory"), categoryCounts().map(function (c) { return c.name; }), "সব বিভাগ");
-      fillSelect(document.getElementById("fLanguage"), ["Bengali", "English"], "সব ভাষা");
+      fillSelect(document.getElementById("fLanguage"), ["Bengali", "English", "Arabic", "Urdu"], "সব ভাষা");
       t.addEventListener("click", function () { p.classList.toggle("open"); });
       document.getElementById("advGo").addEventListener("click", function () {
         state = { q: "", title: document.getElementById("fTitle").value.trim(),
@@ -430,7 +483,7 @@
     if (!sel) return;
     sel.innerHTML = '<option value="">' + esc(allLabel) + "</option>" +
       values.map(function (v) {
-        return '<option value="' + esc(v) + '">' + esc(v === "Bengali" ? "বাংলা" : v) + "</option>";
+        return '<option value="' + esc(v) + '">' + esc(langLabel(v)) + "</option>";
       }).join("");
   }
 
@@ -634,7 +687,7 @@
     if (!document.getElementById("bQ")) {
       view.innerHTML = booksShellHtml();
       fillSelect(document.getElementById("bCat"), categoryCounts().map(function (c) { return c.name; }), "সব বিভাগ");
-      fillSelect(document.getElementById("bLang"), ["Bengali", "English"], "সব ভাষা");
+      fillSelect(document.getElementById("bLang"), ["Bengali", "English", "Arabic", "Urdu"], "সব ভাষা");
       document.getElementById("bCat").value = state.category;
       document.getElementById("bLang").value = state.language;
       document.getElementById("bSort").value = state.sort;
@@ -917,6 +970,7 @@
     }
     var h = '<button class="back-link" id="backBtn">← ফিরে যান</button>' +
       '<div class="details">' + coverHtml(b, true) +
+      (b.coverUrl ? '<p class="small muted cover-hint">বড় করে দেখতে প্রচ্ছদে চাপ দিন</p>' : "") +
       "<h2>" + esc(b.title) + "</h2>" +
       '<p class="muted">লেখক: ' + esc(b.author || NA) + "</p>" +
       "<dl>" + rows.map(function (r) {
@@ -985,6 +1039,12 @@
   }
   function renderAbout() {
     infoPage("আমাদের সম্পর্কে",
+      "<div class=\"owner-card\"><img class=\"owner-photo\" src=\"assets/robiul-hosen.jpg\" alt=\"রবিউল হোসেন\">" +
+      "<div class=\"owner-info\"><h3>রবিউল হোসেন</h3>" +
+      "<p class=\"owner-role\">BSS (Hons.) in Political Science, Chattogram College<br>Instructor, Propel Coaching Center</p>" +
+      "<p>এই ডিজিটাল লাইব্রেরির প্রতিষ্ঠাতা ও সম্পাদক। বই পড়তে ভালোবাসেন এবং শিক্ষার্থীদের কাছে বিনামূল্যে বই পৌঁছে দিতে এই লাইব্রেরি তৈরি করেছেন।</p>" +
+      "<p><b>শিক্ষা:</b> BSS (Hons.) রাষ্ট্রবিজ্ঞান, চট্টগ্রাম কলেজ (চলমান)</p>" +
+      "<p><b>যোগাযোগ:</b> <a href=\"mailto:hosenrobiul43@gmail.com\">hosenrobiul43@gmail.com</a> · <a href=\"https://www.facebook.com/61564301917226\" target=\"_blank\" rel=\"noopener\">Facebook: রবিউল</a> · <a href=\"https://github.com/hosenrobiul43-ship-it\" target=\"_blank\" rel=\"noopener\">GitHub</a></p></div></div>" +
       "<p><b>My Digital Library by Robiul Hosen</b> — সবার জন্য উন্মুক্ত একটি ডিজিটাল লাইব্রেরি। এখানে বাংলা ও বিশ্বের বইয়ের তথ্য, বৈধ পড়া ও ডাউনলোডের লিংক এক জায়গায় পাওয়া যায়।</p>" +
       "<p>আমাদের লক্ষ্য: ধাপে ধাপে বাংলাদেশের নামকরা বই, বিশ্বসাহিত্য, ইতিহাস, দর্শন, বিজ্ঞান, ধর্ম ও গবেষণার বইয়ের একটি বড় সংগ্রহ তৈরি করা — সব বই বাংলায়, যাতে সবাই পড়তে পারে।</p>" +
       "<p>বইয়ের তথ্য সংগ্রহ করা হয় Internet Archive, Project Gutenberg ও Standard Ebooks-এর মতো বৈধ উন্মুক্ত উৎস থেকে। কপিরাইটযুক্ত বইয়ের PDF এখানে দেওয়া হয় না।</p>");
@@ -1082,6 +1142,8 @@
       else { fv.textContent = added ? "★" : "☆"; fv.classList.toggle("on", added); }
       return;
     }
+    var cv = e.target.closest("[data-cover-view]");
+    if (cv) { openCover(cv.getAttribute("data-cover-view"), cv.getAttribute("data-cover-title")); return; }
     var card = e.target.closest("[data-book]");
     if (card) { location.hash = "#/book/" + encodeURIComponent(card.getAttribute("data-book")); return; }
     var cat = e.target.closest("[data-cat]");
