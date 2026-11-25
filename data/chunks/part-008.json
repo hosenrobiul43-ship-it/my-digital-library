@@ -1,367 +1,8 @@
 [
  {
-  "id": "ia-in.ernet.dli.2015.301844",
-  "title": "বাংলা সাহিত্যের চোতাগাল্প ও গল্পকার",
-  "author": "Chowdhuri, Bhudev",
-  "language": "Bengali",
-  "category": "অন্যান্য",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.301844",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.301844/2015.301844.Bangla-Sahityer.pdf",
-  "year": 1957,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.301844",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "North",
-  "subcategory": "North",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 59902280,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.301844",
-  "origTitle": "Bangla Sahityer Chotagalpa O Galpakar",
-  "featured": false,
-  "addedOrder": 2000
- },
- {
-  "id": "ia-in.ernet.dli.2015.299070",
-  "title": "ইতিহাস ও সংস্কৃতি",
-  "author": "Dasgupta, Kalyan Kumar",
-  "language": "Bengali",
-  "category": "অন্যান্য",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.299070",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.299070/2015.299070.Itihas-O.pdf",
-  "year": 1960,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.299070",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "North",
-  "subcategory": "North",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 17436815,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299070",
-  "origTitle": "Itihas O Sanskriti",
-  "featured": false,
-  "addedOrder": 2001
- },
- {
-  "id": "ia-in.ernet.dli.2015.265173",
-  "title": "উনিস সাতাকে বাংলাদেশের সংবাদ সামৈকপাত্র ১৮৪৭-১৯০৫ খণ্ড ৯",
-  "author": "Mammoon, Muntassir",
-  "language": "Bengali",
-  "category": "Bangladesh Studies",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.265173",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.265173/2015.265173.Unis-Satake.pdf",
-  "year": 1998,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.265173",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "North",
-  "subcategory": "North",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 44722369,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265173",
-  "origTitle": "Unis Satake Bangladesher Sangbad-samaikpatra(1847-1905) Vol. 9",
-  "featured": false,
-  "addedOrder": 2002
- },
- {
-  "id": "ia-in.ernet.dli.2015.455503",
-  "title": "এনক্যকলোপাএদিয়া ইন্দিকা",
-  "author": "Basu, Nagendranath Ed.",
-  "language": "Bengali",
-  "category": "অন্যান্য",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.455503",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.455503/2015.455503.Encyclopaedia-Indica.pdf",
-  "year": 1911,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.455503",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "North",
-  "subcategory": "North",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 54331800,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455503",
-  "origTitle": "Encyclopaedia Indica",
-  "featured": false,
-  "addedOrder": 2003
- },
- {
-  "id": "ia-in.ernet.dli.2015.265185",
-  "title": "বঙ্গভাঙা ও সমকালীন বঙ্গসমাজ",
-  "author": "Chowdhury, Kamal Ed.",
-  "language": "Bengali",
-  "category": "অন্যান্য",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.265185",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.265185/2015.265185.Bangabhanga-O.pdf",
-  "year": 1999,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.265185",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "North",
-  "subcategory": "North",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 440572133,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265185",
-  "origTitle": "Bangabhanga O Samakalin Bangasamaj",
-  "featured": false,
-  "addedOrder": 2004
- },
- {
-  "id": "ia-in.ernet.dli.2015.299860",
-  "title": "১৭৩২ ব্রহাম বেবাত পুরান",
-  "author": "Sanjuyadar’ Subodha Chandra",
-  "language": "Bengali",
-  "category": "অন্যান্য",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.299860",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.299860/2015.299860.1732-Braham.pdf",
-  "year": null,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.299860",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "Banasthali",
-  "subcategory": "Banasthali",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 29990374,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299860",
-  "origTitle": "1732, Braham Bevat Puraan",
-  "featured": false,
-  "addedOrder": 2005
- },
- {
-  "id": "ia-in.ernet.dli.2015.266119",
-  "title": "বাংলার বৌল গান",
-  "author": "তথ্য নেই",
-  "language": "Bengali",
-  "category": "অন্যান্য",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.266119",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.266119/2015.266119.Banglar-Baul.pdf",
-  "year": 1960,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.266119",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "North",
-  "subcategory": "North",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 7196082,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266119",
-  "origTitle": "Banglar Baul Gan",
-  "featured": false,
-  "addedOrder": 2006
- },
- {
-  "id": "ia-in.ernet.dli.2015.455960",
-  "title": "পাঞ্চশ বাছারের প্রেমের গল্প ২য়",
-  "author": "Raychaudhury, Subir Ed.",
-  "language": "Bengali",
-  "category": "অন্যান্য",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.455960",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.455960/2015.455960.Panchash-Bachharer.pdf",
-  "year": 1960,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.455960",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "North",
-  "subcategory": "North",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 54616703,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455960",
-  "origTitle": "Panchash Bachharer Premer Galpo Ed. 2nd",
-  "featured": false,
-  "addedOrder": 2007
- },
- {
-  "id": "ia-in.ernet.dli.2015.339356",
-  "title": "রেব",
-  "author": "Tagore, Rabindranath",
-  "language": "Bengali",
-  "category": "Literature",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.339356",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.339356/2015.339356.Rev-Ed.pdf",
-  "year": 1948,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.339356",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "C-DAK",
-  "subcategory": "C-DAK",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 23287810,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.339356",
-  "origTitle": "Rev. Ed.",
-  "featured": false,
-  "addedOrder": 2008
- },
- {
-  "id": "ia-dli.ministry.02216",
-  "title": "গীত রত্নমালা",
-  "author": "মুখোপাধ্যায়, অঘোরনাথ",
-  "language": "Bengali",
-  "category": "অন্যান্য",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/dli.ministry.02216",
-  "downloadUrl": "https://archive.org/download/dli.ministry.02216/21177.182.GC.896.1.PDF",
-  "year": 1303,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "dli.ministry.02216",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "Music and literature · MinistryOfCulture",
-  "subcategory": "Music and literature",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 22848700,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/dli.ministry.02216",
-  "featured": false,
-  "addedOrder": 2009
- },
- {
   "id": "ia-in.ernet.dli.2015.266820",
   "title": "ইতিহাস চারচার ধারা",
-  "author": "Ray, Aniruddha Ed.",
+  "author": "আনিরুদ্ধ রায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -391,13 +32,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266820",
   "origTitle": "Itihas Charchar Dhara",
+  "origAuthor": "Aniruddha Ray",
   "featured": false,
-  "addedOrder": 2010
+  "addedOrder": 2000
  },
  {
   "id": "ia-in.ernet.dli.2015.478129",
   "title": "জ্ঞানকাণ্ড ও কার্মাকান্দ",
-  "author": "Ghoshal, Bipinbihari, Comp.",
+  "author": "বিপিনবিহারি ঘোষাল",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -427,13 +69,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.478129",
   "origTitle": "Gyankanda O Karmakanda",
+  "origAuthor": "Bipinbihari Ghoshal",
   "featured": false,
-  "addedOrder": 2011
+  "addedOrder": 2001
  },
  {
   "id": "ia-in.ernet.dli.2015.300515",
   "title": "হরপ্রসাদ শাস্ত্রী ২য়",
-  "author": "Bondhyopadhyay, Brajendranath.",
+  "author": "ব্রজেন্দ্রনাথ বোন্ধ্যোপাধ্যয়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -463,13 +106,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300515",
   "origTitle": "Haraprasad Shastri Ed.2nd",
+  "origAuthor": "Brajendranath Bondhyopadhyay",
   "featured": false,
-  "addedOrder": 2012
+  "addedOrder": 2002
  },
  {
   "id": "ia-in.ernet.dli.2015.302940",
   "title": "সাহিত্যচর্চা ১ম",
-  "author": "Basu, Buddhadeb",
+  "author": "বুদ্ধদেব বসু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -499,13 +143,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302940",
   "origTitle": "Sahityacharcha Ed. 1st",
+  "origAuthor": "Buddhadeb Basu",
   "featured": false,
-  "addedOrder": 2013
+  "addedOrder": 2003
  },
  {
   "id": "ia-in.ernet.dli.2015.300385",
   "title": "গ্রম বাংলার গল্প",
-  "author": "Sen, Kamalesh Ed.",
+  "author": "কামালেশ সেন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -535,8 +180,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300385",
   "origTitle": "Gram Banglar Galpa",
+  "origAuthor": "Kamalesh Sen",
   "featured": false,
-  "addedOrder": 2014
+  "addedOrder": 2004
  },
  {
   "id": "ia-dli.ministry.25309",
@@ -571,12 +217,12 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.ministry.25309",
   "featured": false,
-  "addedOrder": 2015
+  "addedOrder": 2005
  },
  {
   "id": "ia-in.ernet.dli.2015.353741",
   "title": "চতুরঙ্গ বর্ষা ৩৯ সংখ্যা ১-১২",
-  "author": "Kabir, Humayun Ed",
+  "author": "হুমায়ুন কবির",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -606,13 +252,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.353741",
   "origTitle": "Chaturanga  Barsha.39, Sankha. 1-12",
+  "origAuthor": "Humayun Kabir",
   "featured": false,
-  "addedOrder": 2016
+  "addedOrder": 2006
  },
  {
   "id": "ia-in.ernet.dli.2015.316152",
-  "title": "১৩৫৭ ব",
-  "author": "Ghosh, Sagarmay, Ed.",
+  "title": "১৩৫৭ বঙ্গাব্দ",
+  "author": "সাগরময় ঘোষ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -642,13 +289,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.316152",
   "origTitle": "1357 B.",
+  "origAuthor": "Sagarmay Ghosh",
   "featured": false,
-  "addedOrder": 2017
+  "addedOrder": 2007
  },
  {
   "id": "ia-in.ernet.dli.2015.338106",
   "title": "বিবিধা তন্ত্র ও পুরাণাদি নানা শাস্ত্র হৈতে সান্গৃহিতা বাহুতার দেবদেবির স্তব কাবাছ ধ্যন প্রনাম এবং মন্ত্র একাধারে",
-  "author": "Basak, Baishnab Charan, Comp.",
+  "author": "বৈষ্ণবচরণ বসাক",
   "language": "Bengali",
   "category": "Religion & Philosophy",
   "source": "Internet Archive",
@@ -678,13 +326,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.338106",
   "origTitle": "Bibidha Tantra O Puranadi Nana Shastra Haite Sangrihita Bahutar Debdebir Stab, Kabach, Dhyan, Pranam Ebang Mantra Ekadhare",
+  "origAuthor": "Baishnab Charan Basak",
   "featured": false,
-  "addedOrder": 2018
+  "addedOrder": 2008
  },
  {
   "id": "ia-in.ernet.dli.2015.354952",
   "title": "বাংলা উপন্যাসের কালান্তর ১ম",
-  "author": "Bandhopadhyay,saroj",
+  "author": "সারোজ বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -714,13 +363,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.354952",
   "origTitle": "Bangla Upanyaser Kalantar Ed.1st",
+  "origAuthor": "saroj Bandhopadhyay",
   "featured": false,
-  "addedOrder": 2019
+  "addedOrder": 2009
  },
  {
   "id": "ia-in.ernet.dli.2015.299496",
   "title": "সুধিন্দ্রনাথ",
-  "author": "Haldar, Niranjan Ed.",
+  "author": "নিরাঞ্জন হালদার",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -750,13 +400,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299496",
   "origTitle": "Sudhindranath",
+  "origAuthor": "Niranjan Haldar",
   "featured": false,
-  "addedOrder": 2020
+  "addedOrder": 2010
  },
  {
   "id": "ia-in.ernet.dli.2015.457758",
   "title": "মনোবিদ্যা ৩য়",
-  "author": "Chattopadhyay, Pritibhushan",
+  "author": "প্রিতিভুশান চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -786,13 +437,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457758",
   "origTitle": "Monobidya Ed. 3rd",
+  "origAuthor": "Pritibhushan Chattopadhyay",
   "featured": false,
-  "addedOrder": 2021
+  "addedOrder": 2011
  },
  {
   "id": "ia-in.ernet.dli.2015.457887",
   "title": "বাংলার নবজাগৃতি ১ম",
-  "author": "Ghosh, Binay",
+  "author": "বিনয় ঘোষ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -822,8 +474,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457887",
   "origTitle": "Banglar Nabajagriti Ed. 1st",
+  "origAuthor": "Binay Ghosh",
   "featured": false,
-  "addedOrder": 2022
+  "addedOrder": 2012
  },
  {
   "id": "ia-in.ernet.dli.2015.356308",
@@ -859,12 +512,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356308",
   "origTitle": "Kheyal Khushi  Barsha. 4, No. 1",
   "featured": false,
-  "addedOrder": 2023
+  "addedOrder": 2013
  },
  {
   "id": "ia-Witness-to-Surrender-Siddiq-Salik-Bangla-V1",
   "title": "ওিতনেস্স সুর্রেন্দের সিড্ডিক সালিক বাংলা বের্সিওন ১",
-  "author": "Siddiq Salik",
+  "author": "সিড্ডিক সালিক",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -894,13 +547,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/Witness-to-Surrender-Siddiq-Salik-Bangla-V1",
   "origTitle": "Witness To Surrender - Siddiq Salik (Bangla Version-1)",
+  "origAuthor": "Siddiq Salik",
   "featured": false,
-  "addedOrder": 2024
+  "addedOrder": 2014
  },
  {
   "id": "ia-in.ernet.dli.2015.338774",
   "title": "A Short Social History Of Vaishnabs In Bengal",
-  "author": "Tattwabachaspati, Madhusudan",
+  "author": "মধুসূদন তত্ত্ববাচাস্পতি",
   "language": "Bengali",
   "category": "World History",
   "source": "Internet Archive",
@@ -929,13 +583,14 @@
   "downloadSize": 26126150,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.338774",
+  "origAuthor": "Madhusudan Tattwabachaspati",
   "featured": false,
-  "addedOrder": 2025
+  "addedOrder": 2015
  },
  {
   "id": "ia-in.ernet.dli.2015.337597",
   "title": "চিরাঞ্জিব বানৌশাধি খণ্ড ২",
-  "author": "Bhattacharjya, Shibkali",
+  "author": "শিবকালি ভট্টাচার্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -965,13 +620,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.337597",
   "origTitle": "Chiranjib Banoushadhi  Vol. 2",
+  "origAuthor": "Shibkali Bhattacharjya",
   "featured": false,
-  "addedOrder": 2026
+  "addedOrder": 2016
  },
  {
   "id": "ia-in.ernet.dli.2015.455819",
   "title": "এন্গ্রজি সাহিত্যের আলোকধারা খণ্ড ১",
-  "author": "Gangyopadhyay, Shambhunath Ed.",
+  "author": "শাম্বহুনাথ গঙ্গোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1001,13 +657,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455819",
   "origTitle": "Engraji Sahityer Alokdhara Part 1",
+  "origAuthor": "Shambhunath Gangyopadhyay",
   "featured": false,
-  "addedOrder": 2027
+  "addedOrder": 2017
  },
  {
   "id": "ia-in.ernet.dli.2015.454606",
   "title": "সাপতাশাতি সামান্নিত চণ্ডীচিন্তা ৫ম",
-  "author": "Bandyopadhyay, Akshaykumar",
+  "author": "অক্ষয়কুমার বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1037,8 +694,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454606",
   "origTitle": "Saptashati-samannit Chandichinta Ed. 5th",
+  "origAuthor": "Akshaykumar Bandyopadhyay",
   "featured": false,
-  "addedOrder": 2028
+  "addedOrder": 2018
  },
  {
   "id": "ia-dli.ministry.05933",
@@ -1073,12 +731,12 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.ministry.05933",
   "featured": false,
-  "addedOrder": 2029
+  "addedOrder": 2019
  },
  {
   "id": "ia-in.ernet.dli.2015.354472",
-  "title": "রায়গুনাকার ভারতচন্দ্র ১ম",
-  "author": "Goswami,madhanmahon",
+  "title": "রায়গুনাকার ভারতচন্দ্র ১ম",
+  "author": "মাধান্মহোন গোস্বামী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1108,13 +766,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.354472",
   "origTitle": "Raygunakar Bharatchandra  Ed. 1st",
+  "origAuthor": "madhanmahon Goswami",
   "featured": false,
-  "addedOrder": 2030
+  "addedOrder": 2020
  },
  {
   "id": "ia-in.ernet.dli.2015.454445",
-  "title": "শাতাবার্শের শ্রেষ্ঠ ভৌতিক কাহিনী",
-  "author": "Sengupta, Pradyot Ed.",
+  "title": "শতবর্ষের শ্রেষ্ঠ ভৌতিক কাহিনী",
+  "author": "প্রদ্যোত সেনগুপ্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1144,13 +803,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454445",
   "origTitle": "Shatabarsher Shreshtha Bhautik Kahini",
+  "origAuthor": "Pradyot Sengupta",
   "featured": false,
-  "addedOrder": 2031
+  "addedOrder": 2021
  },
  {
   "id": "ia-in.ernet.dli.2015.356319",
   "title": "লীলা মজুমদার রচনাবলী ৩",
-  "author": "Majumdar, Lila",
+  "author": "লীলা মজুমদার",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -1180,13 +840,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356319",
   "origTitle": "Lila Majumdar Rachanabali  3",
+  "origAuthor": "Lila Majumdar",
   "featured": false,
-  "addedOrder": 2032
+  "addedOrder": 2022
  },
  {
   "id": "ia-in.ernet.dli.2015.456901",
   "title": "স্বামী সারদানান্দের স্মৃতিকথা",
-  "author": "Swami Chetanananda Ed.",
+  "author": "স্বামী চেতানানান্দ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1216,13 +877,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456901",
   "origTitle": "Swami Saradanander Smritikatha",
+  "origAuthor": "Swami Chetanananda",
   "featured": false,
-  "addedOrder": 2033
+  "addedOrder": 2023
  },
  {
   "id": "ia-in.ernet.dli.2015.303755",
   "title": "জ্ঞানযোগ ১৭ম",
-  "author": "Swami Vivekananda",
+  "author": "স্বামী বিবেকানন্দ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1252,13 +914,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.303755",
   "origTitle": "Gyanyog, Ed.17th",
+  "origAuthor": "Swami Vivekananda",
   "featured": false,
-  "addedOrder": 2034
+  "addedOrder": 2024
  },
  {
   "id": "ia-in.ernet.dli.2015.266261",
   "title": "দুই বাংলার ছোতোদের শ্রেষ্ঠ গল্প খণ্ড ২",
-  "author": "Ahmad, Ekhlasuddin Ed.",
+  "author": "এখলাসুড্ডিন আহমদ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1288,13 +951,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266261",
   "origTitle": "Dui Banglar Chhotoder Shrestha Galpa Vol. 2",
+  "origAuthor": "Ekhlasuddin Ahmad",
   "featured": false,
-  "addedOrder": 2035
+  "addedOrder": 2025
  },
  {
   "id": "ia-dli.bengal.10689.6265",
   "title": "রাজযোগ ২য় সং",
-  "author": "Swami Bibekananda, Swami Bibekananda",
+  "author": "স্বামী বিবেকানন্দ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1324,13 +988,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.6265",
   "origTitle": "Raj Jog - 2nd ed. রাজযোগ - ২য় সং",
+  "origAuthor": "Swami Bibekananda",
   "featured": false,
-  "addedOrder": 2036
+  "addedOrder": 2026
  },
  {
   "id": "ia-in.ernet.dli.2015.457186",
   "title": "বৃহৎ পাশুপাক্ষি পালান ও চিকিৎসা",
-  "author": "Neogi, H. K.",
+  "author": "এইচ. কে. নেওগি",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1360,13 +1025,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457186",
   "origTitle": "Brihat Pashupakshi Palan O Chikitsa",
+  "origAuthor": "H K Neogi",
   "featured": false,
-  "addedOrder": 2037
+  "addedOrder": 2027
  },
  {
   "id": "ia-revengers400",
-  "title": "revenger’s পদফ আর্চিবে",
-  "author": "Revenger ii",
+  "title": "Revenger’s PDF Archive",
+  "author": "রেবেঙের ঈ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1396,8 +1062,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/revengers400",
   "origTitle": "Revenger’s PDF Archive",
+  "origAuthor": "Revenger ii",
   "featured": false,
-  "addedOrder": 2038
+  "addedOrder": 2028
  },
  {
   "id": "ia-in.ernet.dli.2015.300450",
@@ -1433,12 +1100,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300450",
   "origTitle": "Itihas O Sanskriti",
   "featured": false,
-  "addedOrder": 2039
+  "addedOrder": 2029
  },
  {
   "id": "ia-CCBSSTAdi01",
-  "title": "শ্রী কৈতান্য কারিতামৃতা আদি লীলা আমৃতা প্রবাহা ভাস্য ও আনুভাস্য",
-  "author": "Śrīla Kṛṣṇadāsa Kavirāja Gosvāmī, Śrīla Bhaktivinoda Thākura, Śrīla Bhaktisiddhānta sarasvatī Thākura",
+  "title": "শ্রী কৈতান্য কারিতামৃতা আদি লীলা অমৃতা প্রবাহা ভাস্য ও আনুভাস্য",
+  "author": "শ্রীল কৃষ্ণদাস কবিরাজ গোস্বামী ও শ্রীল ভক্তিবিনোদ ঠাকুর ও শ্রীল ভক্তিসিদ্ধান্ত সরস্বতী ঠাকুর",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1468,13 +1135,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/CCBSSTAdi01",
   "origTitle": "Sri Caitanya Caritamrita (Adi Lila) with Amrita Pravaha Bhasya & Anubhasya",
+  "origAuthor": "Srila Krsnadasa Kaviraja Gosvami Srila Bhaktivinoda Thakura Srila Bhaktisiddhanta sarasvati Thakura",
   "featured": false,
-  "addedOrder": 2040
+  "addedOrder": 2030
  },
  {
   "id": "ia-in.ernet.dli.2015.453106",
-  "title": "দশটি উপন্যাস মাতি নান্দি",
-  "author": "Nandi, Mati",
+  "title": "দশটি উপন্যাস মাতি নন্দী",
+  "author": "মাতি নন্দী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1504,13 +1172,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453106",
   "origTitle": "Dashti Upanyas(mati Nandi)",
+  "origAuthor": "Mati Nandi",
   "featured": false,
-  "addedOrder": 2041
+  "addedOrder": 2031
  },
  {
   "id": "ia-in.ernet.dli.2015.297975",
   "title": "শ্রী রাধার ক্রমাবিকাশ দার্শানে ও সাহিত্যে ২য়",
-  "author": "Dasgupta,shashibhushan",
+  "author": "শশিভূষণ দাশগুপ্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1540,13 +1209,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.297975",
   "origTitle": "Sri Radhar Kramabikash Darshane O Sahitye Ed.2nd",
+  "origAuthor": "shashibhushan Dasgupta",
   "featured": false,
-  "addedOrder": 2042
+  "addedOrder": 2032
  },
  {
   "id": "ia-in.ernet.dli.2015.455477",
   "title": "এনক্যকলোপেদিয়া হিন্দুস্ম",
-  "author": "Bandyopadhyay, Amalkumar",
+  "author": "আমালকুমার বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "Reference Books",
   "source": "Internet Archive",
@@ -1576,13 +1246,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455477",
   "origTitle": "Encyclopedia Hinduism",
+  "origAuthor": "Amalkumar Bandyopadhyay",
   "featured": false,
-  "addedOrder": 2043
+  "addedOrder": 2033
  },
  {
   "id": "ia-dli.bengal.10689.2403",
-  "title": "প্রবাসী খন্ড ২ পর্ব ৩৯",
-  "author": "Chattopadhyay, Ramananda, ed",
+  "title": "প্রবাসী খণ্ড ২ পর্ব ৩৯",
+  "author": "রামানন্দ চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1612,13 +1283,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.2403",
   "origTitle": "Prabasi - Vol.2; Pt.39 প্রবাসী - খন্ড ২; পর্ব ৩৯",
+  "origAuthor": "Ramananda Chattopadhyay",
   "featured": false,
-  "addedOrder": 2044
+  "addedOrder": 2034
  },
  {
   "id": "ia-in.ernet.dli.2015.457770",
-  "title": "শ্রীমাদভাগাবাত ১ম",
-  "author": "Nayatirtha, Srijiba",
+  "title": "শ্রীমদ্ভাগাবাত ১ম",
+  "author": "শ্রীজিবা নায়াতির্থা",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1648,12 +1320,13 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457770",
   "origTitle": "Srimadbhagabat Ed. 1st",
+  "origAuthor": "Srijiba Nayatirtha",
   "featured": false,
-  "addedOrder": 2045
+  "addedOrder": 2035
  },
  {
   "id": "ia-in.ernet.dli.2015.339975",
-  "title": "১৩৪৫ ব কার্ত্তিক চৈত্র",
+  "title": "১৩৪৫ বঙ্গাব্দ কার্ত্তিক চৈত্র",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -1685,12 +1358,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.339975",
   "origTitle": "1345 B. ; (karttik - Chaitra)",
   "featured": false,
-  "addedOrder": 2046
+  "addedOrder": 2036
  },
  {
   "id": "ia-in.ernet.dli.2015.356040",
   "title": "ভারত নাট্যশাস্ত্র ২",
-  "author": "Bandhopadhyay, Sureshchandra Ed.",
+  "author": "সুরেশচন্দ্র বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1720,13 +1393,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356040",
   "origTitle": "Bharat Natyashastra  2",
+  "origAuthor": "Sureshchandra Bandhopadhyay",
   "featured": false,
-  "addedOrder": 2047
+  "addedOrder": 2037
  },
  {
   "id": "ia-in.ernet.dli.2015.453835",
   "title": "হাংসেস্বরি",
-  "author": "Sanyal, Narayan",
+  "author": "নারায়ণ সান্যাল",
   "language": "Bengali",
   "category": "World History",
   "source": "Internet Archive",
@@ -1756,13 +1430,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453835",
   "origTitle": "Hangseswari",
+  "origAuthor": "Narayan Sanyal",
   "featured": false,
-  "addedOrder": 2048
+  "addedOrder": 2038
  },
  {
   "id": "ia-in.ernet.dli.2015.456947",
   "title": "শ্রী চৈতন্য আনান্ত জীবনের সাত্যন্বেশান",
-  "author": "Chattopadhyay, Durgapada",
+  "author": "দুর্গাপাদা চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1792,13 +1467,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456947",
   "origTitle": "Sri Chaitanya Ananta Jibaner Satyanweshan",
+  "origAuthor": "Durgapada Chattopadhyay",
   "featured": false,
-  "addedOrder": 2049
+  "addedOrder": 2039
  },
  {
   "id": "ia-in.ernet.dli.2015.338230",
   "title": "ত্রৈমাসিক",
-  "author": "Ghosh, Tushar Kanti, Ed.",
+  "author": "তুষারকান্তি ঘোষ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1828,13 +1504,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.338230",
   "origTitle": "Traimasik",
+  "origAuthor": "Tushar Kanti Ghosh",
   "featured": false,
-  "addedOrder": 2050
+  "addedOrder": 2040
  },
  {
   "id": "ia-in.ernet.dli.2015.303520",
   "title": "আধুনিক বাংলা কাব্য পর্ব ১ ২য়",
-  "author": "Mukhopadhyay,tarapada",
+  "author": "তারাপদ মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1864,13 +1541,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.303520",
   "origTitle": "Adhunik Bangla Kabya Parba.1 Ed.2nd",
+  "origAuthor": "tarapada Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2051
+  "addedOrder": 2041
  },
  {
   "id": "ia-in.ernet.dli.2015.297719",
   "title": "মহামোহা",
-  "author": "Ray, Pratibha",
+  "author": "প্রতিভা রায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1900,8 +1578,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.297719",
   "origTitle": "Mahamoha",
+  "origAuthor": "Pratibha Ray",
   "featured": false,
-  "addedOrder": 2052
+  "addedOrder": 2042
  },
  {
   "id": "ia-in.ernet.dli.2015.453556",
@@ -1937,12 +1616,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453556",
   "origTitle": "Bishadbriksha",
   "featured": false,
-  "addedOrder": 2053
+  "addedOrder": 2043
  },
  {
   "id": "ia-in.ernet.dli.2015.457408",
   "title": "চাচা কাহিনী ১ম",
-  "author": "Ali, Syed Mujtaba",
+  "author": "সৈয়দ মুজতবা আলী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -1972,13 +1651,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457408",
   "origTitle": "Chacha Kahini Ed. 1st",
+  "origAuthor": "Syed Mujtaba Ali",
   "featured": false,
-  "addedOrder": 2054
+  "addedOrder": 2044
  },
  {
   "id": "ia-in.ernet.dli.2015.453926",
   "title": "ছেলেদের বিশ্বকোষ",
-  "author": "Gupta, Jogendranath Ed.",
+  "author": "যোগেন্দ্রনাথ গুপ্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2008,13 +1688,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453926",
   "origTitle": "Cheleder Bishwakosh",
+  "origAuthor": "Jogendranath Gupta",
   "featured": false,
-  "addedOrder": 2055
+  "addedOrder": 2045
  },
  {
   "id": "ia-in.ernet.dli.2015.298922",
-  "title": "ভারতসিল্পি নান্দলাল খণ্ড ২",
-  "author": "Mandal,panchanan",
+  "title": "ভারতসিল্পি নন্দলাল খণ্ড ২",
+  "author": "পঞ্চানন মণ্ডল",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2044,13 +1725,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298922",
   "origTitle": "Bharatsilpi Nandalal Vol. 2",
+  "origAuthor": "panchanan Mandal",
   "featured": false,
-  "addedOrder": 2056
+  "addedOrder": 2046
  },
  {
   "id": "ia-in.ernet.dli.2015.357309",
   "title": "কুলদার্পানাম খণ্ড ১ ১ম",
-  "author": "Sensharma,tribhangamohan",
+  "author": "তৃভাঙামোহান সেনশর্মা",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2080,13 +1762,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357309",
   "origTitle": "Kuldarpanam  Vol. 1, Ed. 1st",
+  "origAuthor": "tribhangamohan Sensharma",
   "featured": false,
-  "addedOrder": 2057
+  "addedOrder": 2047
  },
  {
   "id": "ia-in.ernet.dli.2015.302485",
   "title": "লোকপুরান ও সংস্কৃতি",
-  "author": "Sengupta, Pallab Ed.",
+  "author": "পাল্লব সেনগুপ্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2116,8 +1799,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302485",
   "origTitle": "Lokpuran O Sanskriti",
+  "origAuthor": "Pallab Sengupta",
   "featured": false,
-  "addedOrder": 2058
+  "addedOrder": 2048
  },
  {
   "id": "ia-in.ernet.dli.2015.266675",
@@ -2153,12 +1837,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266675",
   "origTitle": "Daktar Bidhanchandra Roy - Jiban O Samaykal",
   "featured": false,
-  "addedOrder": 2059
+  "addedOrder": 2049
  },
  {
   "id": "ia-in.ernet.dli.2015.457651",
   "title": "কবিকঙ্কন চণ্ডী খণ্ড ১",
-  "author": "Mukundaram",
+  "author": "মুকুন্দরাম",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2188,8 +1872,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457651",
   "origTitle": "Kabikankan-chandi Part 1",
+  "origAuthor": "Mukundaram",
   "featured": false,
-  "addedOrder": 2060
+  "addedOrder": 2050
  },
  {
   "id": "ia-dli.bengal.10689.6631",
@@ -2225,12 +1910,12 @@
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.6631",
   "origTitle": "Debjan দেবযান",
   "featured": false,
-  "addedOrder": 2061
+  "addedOrder": 2051
  },
  {
   "id": "ia-in.ernet.dli.2015.454554",
   "title": "জাহান্নম হোইতে বিদায়",
-  "author": "Osman, Shaokat",
+  "author": "শাওকাত ওস্মন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2260,13 +1945,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454554",
   "origTitle": "Jahannam Hoite Biday",
+  "origAuthor": "Shaokat Osman",
   "featured": false,
-  "addedOrder": 2062
+  "addedOrder": 2052
  },
  {
   "id": "ia-in.ernet.dli.2015.299671",
   "title": "চন্দ্রগুপ্ত ২৫",
-  "author": "Roy, Dwijendralal",
+  "author": "দ্বিজেন্দ্রলাল রায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2296,13 +1982,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299671",
   "origTitle": "Chandragupta Ed.25",
+  "origAuthor": "Dwijendralal Roy",
   "featured": false,
-  "addedOrder": 2063
+  "addedOrder": 2053
  },
  {
   "id": "ia-in.ernet.dli.2015.354394",
   "title": "প্রোবাদ বাচান",
-  "author": "Chowdhury,  Gopaldas",
+  "author": "গোপালদাস চৌধুরী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2332,13 +2019,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.354394",
   "origTitle": "Probad Bachan",
+  "origAuthor": "Gopaldas Chowdhury",
   "featured": false,
-  "addedOrder": 2064
+  "addedOrder": 2054
  },
  {
   "id": "ia-30.RifleRotiAuratAnwarPasha",
   "title": "ঋফলে রোতি ঔরাত",
-  "author": "ANWAR PASHA",
+  "author": "এএনডব্লিউএআর পিএএসএইচএ",
   "language": "Bengali",
   "category": "World History",
   "source": "Internet Archive",
@@ -2368,13 +2056,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/30.RifleRotiAuratAnwarPasha",
   "origTitle": "Rifle, Roti, Aurat By Anwar Pasha",
+  "origAuthor": "ANWAR PASHA",
   "featured": false,
-  "addedOrder": 2065
+  "addedOrder": 2055
  },
  {
   "id": "ia-alatchakra-taradas-bandyopadhyay",
   "title": "অলাতচক্র",
-  "author": "তারাদাস বন্দ্যোপাধ্যায় | Taradas Bandyopadhyay",
+  "author": "তারাদাস বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "Environment",
   "source": "Internet Archive",
@@ -2404,13 +2093,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/alatchakra-taradas-bandyopadhyay",
   "origTitle": "অলাতচক্র | Alatchakra",
+  "origAuthor": "Taradas Bandyopadhyay",
   "featured": false,
-  "addedOrder": 2066
+  "addedOrder": 2056
  },
  {
   "id": "ia-in.ernet.dli.2015.455193",
-  "title": "পাঞ্চতি উপন্যাস",
-  "author": "Mukhopadhyay, Shirshendu",
+  "title": "পাঁচটি উপন্যাস",
+  "author": "শীর্ষেন্দু মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2440,13 +2130,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455193",
   "origTitle": "Panchti Upanyas",
+  "origAuthor": "Shirshendu Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2067
+  "addedOrder": 2057
  },
  {
   "id": "ia-dli.bengal.10689.1338",
-  "title": "হোমিওপ্যাথিক চিকিৎসা বিধান খন্ড ১",
-  "author": "Kali, Chandra Shekhar",
+  "title": "হোমিওপ্যাথিক চিকিৎসা বিধান খণ্ড ১",
+  "author": "চন্দ্রশেখর কালী",
   "language": "Bengali",
   "category": "Science",
   "source": "Internet Archive",
@@ -2476,13 +2167,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.1338",
   "origTitle": "Homiopyathik Chikitsa Bidhan - Vol. 1 হোমিওপ্যাথিক চিকিৎসা-বিধান - খন্ড ১",
+  "origAuthor": "Chandra Shekhar Kali",
   "featured": false,
-  "addedOrder": 2068
+  "addedOrder": 2058
  },
  {
   "id": "ia-in.ernet.dli.2015.456225",
   "title": "ভারাতে জাতিয়াতা ও আন্তর্জাতিকাতা এবং রবীন্দ্রনাথ খণ্ড ২",
-  "author": "Majumdar, Nepal",
+  "author": "নেপাল মজুমদার",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2512,13 +2204,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456225",
   "origTitle": "Bharate Jatiyata O Antarjatikata Ebang Rabindranath Vol. 2",
+  "origAuthor": "Nepal Majumdar",
   "featured": false,
-  "addedOrder": 2069
+  "addedOrder": 2059
  },
  {
   "id": "ia-in.ernet.dli.2015.356373",
-  "title": "নারায়ণ গানগোপাধ্যয় রচনাবলী খণ্ড ৭",
-  "author": "Gangopadhyay,narayan",
+  "title": "নারায়ণ গঙ্গোপাধ্যায় রচনাবলী খণ্ড ৭",
+  "author": "নারায়ণ গঙ্গোপাধ্যায়",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -2548,13 +2241,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356373",
   "origTitle": "Narayan Gangopadhyay  Rachanabali Vol. 7",
+  "origAuthor": "narayan Gangopadhyay",
   "featured": false,
-  "addedOrder": 2070
+  "addedOrder": 2060
  },
  {
   "id": "ia-in.ernet.dli.2015.456156",
   "title": "আলোক তীর্থ খণ্ড ১ ১ম",
-  "author": "Ghoshal, Shailendra Narayan",
+  "author": "শৈলেন্দ্রনারায়ণ ঘোষাল",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2584,13 +2278,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456156",
   "origTitle": "Aalok Tirtha Vol. 1 Ed. 1st",
+  "origAuthor": "Shailendra Narayan Ghoshal",
   "featured": false,
-  "addedOrder": 2071
+  "addedOrder": 2061
  },
  {
   "id": "ia-brihat-shivarchan-vidhi-a4-size-printable-bengali-version-book-from-issgt_202112",
   "title": "Brihat Shivarchan Vidhi From Shaiva Agama A4 Size Printable bengali Version Book (ISSGT)",
-  "author": "Koushik Roy, Rohit Kumar Choudhury,",
+  "author": "কৌশিক রায় ও রোহিতকুমার চৌধুরী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2619,13 +2314,14 @@
   "downloadSize": 16250035,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/brihat-shivarchan-vidhi-a4-size-printable-bengali-version-book-from-issgt_202112",
+  "origAuthor": "Koushik Roy Rohit Kumar Choudhury",
   "featured": false,
-  "addedOrder": 2072
+  "addedOrder": 2062
  },
  {
   "id": "ia-in.ernet.dli.2015.298339",
-  "title": "আমৃতা কুম্বহের সন্ধানে",
-  "author": "Kalkut",
+  "title": "অমৃতা কুম্বহের সন্ধানে",
+  "author": "কালকুত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2655,13 +2351,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298339",
   "origTitle": "Amrita Kumbher Sandhane",
+  "origAuthor": "Kalkut",
   "featured": false,
-  "addedOrder": 2073
+  "addedOrder": 2063
  },
  {
   "id": "ia-in.ernet.dli.2015.302475",
   "title": "লীলা নাগ",
-  "author": "Ray, Ajay",
+  "author": "আজায় রায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2691,13 +2388,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302475",
   "origTitle": "Lila Nag",
+  "origAuthor": "Ajay Ray",
   "featured": false,
-  "addedOrder": 2074
+  "addedOrder": 2064
  },
  {
   "id": "ia-in.ernet.dli.2015.290661",
   "title": "সান্দেশ ১৯৬৮ বর্ষ ৮ খণ্ড ১",
-  "author": "Ray, Satyajit, Ed.",
+  "author": "সাত্যজিত রায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2727,13 +2425,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.290661",
   "origTitle": "Sandesh (1968, Year 8, Vol. 1)",
+  "origAuthor": "Satyajit Ray",
   "featured": false,
-  "addedOrder": 2075
+  "addedOrder": 2065
  },
  {
   "id": "ia-in.ernet.dli.2015.265297",
   "title": "বাংলা স্থন্নম ১ম",
-  "author": "Sen, Sukumar",
+  "author": "সুকুমার সেন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2763,13 +2462,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265297",
   "origTitle": "Bangla Sthannam Ed. 1st",
+  "origAuthor": "Sukumar Sen",
   "featured": false,
-  "addedOrder": 2076
+  "addedOrder": 2066
  },
  {
   "id": "ia-in.ernet.dli.2015.456719",
   "title": "তান্ত্রিক সাধনা ও সিদ্ধান্তকৌমুদী খণ্ড ২য় ১ম",
-  "author": "Kabiraj, Gopinath",
+  "author": "গোপিনাথ কবিরাজ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2799,13 +2499,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456719",
   "origTitle": "Tantrik Sadhana O Siddhanta Vol. 2nd Ed. 1st",
+  "origAuthor": "Gopinath Kabiraj",
   "featured": false,
-  "addedOrder": 2077
+  "addedOrder": 2067
  },
  {
   "id": "ia-in.ernet.dli.2015.454684",
   "title": "বেদের কবিতা",
-  "author": "Dharmapal, Gouri",
+  "author": "গৌরি ধর্মপাল",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2835,13 +2536,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454684",
   "origTitle": "Beder Kabita",
+  "origAuthor": "Gouri Dharmapal",
   "featured": false,
-  "addedOrder": 2078
+  "addedOrder": 2068
  },
  {
   "id": "ia-in.ernet.dli.2015.457507",
   "title": "চারবাক দর্শন রূপরেখা",
-  "author": "Chattapadhyay, Latika",
+  "author": "লাতিকা চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2871,13 +2573,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457507",
   "origTitle": "Charbak Darshan(ruprekha)",
+  "origAuthor": "Latika Chattapadhyay",
   "featured": false,
-  "addedOrder": 2079
+  "addedOrder": 2069
  },
  {
   "id": "ia-rabindranath-ekhane-kokhono-khete-asen-ni-by-md-nazim-uddin",
   "title": "রবীন্দ্রনাথ এখানে কখনও খেতে আসেননি মোহাম্মদ নাজিম উদ্দিন",
-  "author": "মোহাম্মদ নাজিম উদ্দিন  Mohammad Nazim Uddin",
+  "author": "মোহাম্মদ নাজিম উদ্দিন",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -2907,13 +2610,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/rabindranath-ekhane-kokhono-khete-asen-ni-by-md-nazim-uddin",
   "origTitle": "রবীন্দ্রনাথ এখানে কখনও খেতে আসেননি - মোহাম্মদ নাজিম উদ্দিন | Rabindranath Ekhane Kokhono Khete Asen Ni - Mohammad Nazim Uddin",
+  "origAuthor": "Mohammad Nazim Uddin",
   "featured": false,
-  "addedOrder": 2080
+  "addedOrder": 2070
  },
  {
   "id": "ia-in.ernet.dli.2015.456566",
   "title": "প্রচ্য ও পাশচাত্য দর্শনের ইতিহাস খণ্ড ১ খণ্ড ২ ১ম",
-  "author": "Samaddar, Jogidranath",
+  "author": "জোগিদ্রনাথ সামাড্ডর",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2943,13 +2647,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456566",
   "origTitle": "Prachya O Pashchatya Darshaner Itihas Vol. 1 Part 2 Ed. 1st",
+  "origAuthor": "Jogidranath Samaddar",
   "featured": false,
-  "addedOrder": 2081
+  "addedOrder": 2071
  },
  {
   "id": "ia-in.ernet.dli.2015.454680",
   "title": "নকশালবাদি আন্দোলন ও বাংলা সাহিত্য",
-  "author": "Ghosh, Nirmal",
+  "author": "নির্মাল ঘোষ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -2979,13 +2684,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454680",
   "origTitle": "Nakshalbadi Andolan O Bangla Sahitya",
+  "origAuthor": "Nirmal Ghosh",
   "featured": false,
-  "addedOrder": 2082
+  "addedOrder": 2072
  },
  {
   "id": "ia-in.ernet.dli.2015.267233",
-  "title": "রামমোহান রচনাবলী",
-  "author": "Ghosh, Ajitkumar Ed.",
+  "title": "রামমোহন রচনাবলী",
+  "author": "অজিতকুমার ঘোষ",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -3015,13 +2721,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.267233",
   "origTitle": "Rammohan Rachanabali",
+  "origAuthor": "Ajitkumar Ghosh",
   "featured": false,
-  "addedOrder": 2083
+  "addedOrder": 2073
  },
  {
   "id": "ia-in.ernet.dli.2015.453748",
   "title": "গোসৈবাগানের ভূত",
-  "author": "Mukhopadhyay, Shirshendu",
+  "author": "শীর্ষেন্দু মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3051,13 +2758,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453748",
   "origTitle": "Gosaibaganer Bhoot",
+  "origAuthor": "Shirshendu Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2084
+  "addedOrder": 2074
  },
  {
   "id": "ia-in.ernet.dli.2015.453982",
   "title": "দাবিদ কোপ্পের্ফিএলদ ২য়",
-  "author": "Gangopadhyay, Dinesh Tr.",
+  "author": "দিনেশ গঙ্গোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3087,8 +2795,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453982",
   "origTitle": "David Copperfield Ed. 2nd",
+  "origAuthor": "Dinesh Gangopadhyay",
   "featured": false,
-  "addedOrder": 2085
+  "addedOrder": 2075
  },
  {
   "id": "ia-dli.ministry.29358",
@@ -3123,12 +2832,12 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.ministry.29358",
   "featured": false,
-  "addedOrder": 2086
+  "addedOrder": 2076
  },
  {
   "id": "ia-in.ernet.dli.2015.357000",
   "title": "উচচা মাধ্যমিক রসায়ন খণ্ড ১-৪ ১ম",
-  "author": "Kundu, Priyanath",
+  "author": "প্রিয়ানাথ কুণ্ডু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3158,13 +2867,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357000",
   "origTitle": "Uchcha Madhyamik Rasayan Vol. 1-4,ed.1st",
+  "origAuthor": "Priyanath Kundu",
   "featured": false,
-  "addedOrder": 2087
+  "addedOrder": 2077
  },
  {
   "id": "ia-in.ernet.dli.2015.265519",
   "title": "হরপ্রসাদ শাস্ত্রী রচনা সংগ্রহ খণ্ড ৫",
-  "author": "Bhattacharya, Debprasad Ed.",
+  "author": "দেবপ্রসাদ ভট্টাচার্য",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -3194,8 +2904,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265519",
   "origTitle": "Haraprasad Shastri Rachana-sangraha Vol. 5",
+  "origAuthor": "Debprasad Bhattacharya",
   "featured": false,
-  "addedOrder": 2088
+  "addedOrder": 2078
  },
  {
   "id": "ia-in.ernet.dli.2015.458187",
@@ -3231,12 +2942,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.458187",
   "origTitle": "Chhoto Jiban Baro Jiban",
   "featured": false,
-  "addedOrder": 2089
+  "addedOrder": 2079
  },
  {
   "id": "ia-in.ernet.dli.2015.356021",
   "title": "বাংলার লোক সাহিত্য খণ্ড ৩",
-  "author": "Bhattacharjya,  Ashutosh",
+  "author": "আশুতোষ ভট্টাচার্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3266,13 +2977,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356021",
   "origTitle": "Banglar Lok-sahitya   Vol. 3",
+  "origAuthor": "Ashutosh Bhattacharjya",
   "featured": false,
-  "addedOrder": 2090
+  "addedOrder": 2080
  },
  {
   "id": "ia-in.ernet.dli.2015.297868",
   "title": "রাজেন্দ্রলাল মিত্র",
-  "author": "Ray, Alok",
+  "author": "আলোক রায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3302,13 +3014,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.297868",
   "origTitle": "Rajendralal Mitra",
+  "origAuthor": "Alok Ray",
   "featured": false,
-  "addedOrder": 2091
+  "addedOrder": 2081
  },
  {
   "id": "ia-in.ernet.dli.2015.339653",
   "title": "সংখ্যা দর্শন ২",
-  "author": "Bidyalankar, Umeshchandra",
+  "author": "উমেশচান্দ্র বিদ্যালঙ্কার",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3338,13 +3051,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.339653",
   "origTitle": "Sankhya-darshan  Ed. 2",
+  "origAuthor": "Umeshchandra Bidyalankar",
   "featured": false,
-  "addedOrder": 2092
+  "addedOrder": 2082
  },
  {
   "id": "ia-in.ernet.dli.2015.457953",
   "title": "সুর্জা দিঘাল বারি ১ম",
-  "author": "Ishaq, Abu",
+  "author": "আবু ইশাক",
   "language": "Bengali",
   "category": "Islamic Studies",
   "source": "Internet Archive",
@@ -3374,13 +3088,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457953",
   "origTitle": "Surja-dighal Bari Ed. 1st",
+  "origAuthor": "Abu Ishaq",
   "featured": false,
-  "addedOrder": 2093
+  "addedOrder": 2083
  },
  {
   "id": "ia-in.ernet.dli.2015.266719",
   "title": "একটি নকশাত্র আসে ৩য়",
-  "author": "Basu, Ambuj",
+  "author": "আম্বুজ বসু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3410,13 +3125,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266719",
   "origTitle": "Ekti Nakshatra Aase Ed. 3rd",
+  "origAuthor": "Ambuj Basu",
   "featured": false,
-  "addedOrder": 2094
+  "addedOrder": 2084
  },
  {
   "id": "ia-in.ernet.dli.2015.303512",
   "title": "A Study Of Roman History Ed. 2nd",
-  "author": "Mukherjee, L.",
+  "author": "এল. মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "World History",
   "source": "Internet Archive",
@@ -3445,13 +3161,14 @@
   "downloadSize": 13911310,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.303512",
+  "origAuthor": "L Mukherjee",
   "featured": false,
-  "addedOrder": 2095
+  "addedOrder": 2085
  },
  {
   "id": "ia-in.ernet.dli.2015.290794",
   "title": "আতৃ বিষ্ণু হারিত যাগনাবালক্য উশান আঙির জাম আপস্তম্ব সাম্বর্তা কাত্যয়ান বৃহাস্পতি পারাশার ব্যস শাঙ্কহা লিখিতা দাক্ষা গৌতম শাতাতাপ ও বাসিস্থ সংহিতা",
-  "author": "Tarkaratna, Panchanan, Tr.",
+  "author": "পঞ্চানন তর্করত্ন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3481,13 +3198,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.290794",
   "origTitle": "Atri, Vishnu, Harit, Yagnabalkya, Ushan, Angir, Jam, Apstamba, Sambarta, Katyayan, Brihaspati, Parashar, Byas, Shankha, Likhita, Daksha, Goutam, Shatatap O Basistha-sanghita",
+  "origAuthor": "Panchanan Tarkaratna",
   "featured": false,
-  "addedOrder": 2096
+  "addedOrder": 2086
  },
  {
   "id": "ia-in.ernet.dli.2015.324493",
   "title": "আস্তবাক্র",
-  "author": "Chattopadhyay,ashoke",
+  "author": "আশোকে চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3517,13 +3235,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.324493",
   "origTitle": "Astabakra",
+  "origAuthor": "ashoke Chattopadhyay",
   "featured": false,
-  "addedOrder": 2097
+  "addedOrder": 2087
  },
  {
   "id": "ia-in.ernet.dli.2015.265183",
-  "title": "উনিশ শাতাকে বাঙালি মুসালমানের চিন্তা ও চেতানার ধারা",
-  "author": "Ahamad, Wakil",
+  "title": "উনিশ শতকে বাঙালি মুসালমানের চিন্তা ও চেতনার ধারা",
+  "author": "ওয়াকিল আহমদ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3553,13 +3272,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265183",
   "origTitle": "Unish Shatake Bangali Musalmaner Chinta O Chetanar Dhara",
+  "origAuthor": "Wakil Ahamad",
   "featured": false,
-  "addedOrder": 2098
+  "addedOrder": 2088
  },
  {
   "id": "ia-dli.bengal.10689.4708",
-  "title": "বিশ্বকোষ খন্ড ১২",
-  "author": "Basu, Nagendra Nath, ed.",
+  "title": "বিশ্বকোষ খণ্ড ১২",
+  "author": "নাগেন্দ্রনাথ বসু",
   "language": "Bengali",
   "category": "Reference Books",
   "source": "Internet Archive",
@@ -3589,13 +3309,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4708",
   "origTitle": "BiswaKosh - Vol.12 বিশ্বকোষ - খন্ড ১২",
+  "origAuthor": "Nagendra Nath Basu",
   "featured": false,
-  "addedOrder": 2099
+  "addedOrder": 2089
  },
  {
   "id": "ia-in.ernet.dli.2015.265986",
   "title": "শিল্পরূপামোয় বাঙ্কুরা",
-  "author": "Samanta, Rabindranath",
+  "author": "রবীন্দ্রনাথ সামান্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3625,13 +3346,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265986",
   "origTitle": "Shilparupamoy Bankura",
+  "origAuthor": "Rabindranath Samanta",
   "featured": false,
-  "addedOrder": 2100
+  "addedOrder": 2090
  },
  {
   "id": "ia-in.ernet.dli.2015.265673",
   "title": "আধুনিক বাংলা সাহিত্যে মাহিলা রাচিতা রাচানার ক্রমাবিকাশ ১৮৫০-১৯০০",
-  "author": "Chowdhury, Sanghamitra",
+  "author": "সংঘমিত্র চৌধুরী",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -3661,13 +3383,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265673",
   "origTitle": "Adhunik Bangla Sahitye Mahila Rachita Rachanar Kramabikash 1850-1900",
+  "origAuthor": "Sanghamitra Chowdhury",
   "featured": false,
-  "addedOrder": 2101
+  "addedOrder": 2091
  },
  {
   "id": "ia-in.ernet.dli.2015.297801",
   "title": "প্রবেশিকা সানস্কির্ত ব্যাকরণ ও রচনা ১ম",
-  "author": "Chakraborty, Debkumar",
+  "author": "দেবকুমার চক্রবর্তী",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -3697,13 +3420,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.297801",
   "origTitle": "Prabeshika Sanskirt Byakaran O Rachana Ed.1st",
+  "origAuthor": "Debkumar Chakraborty",
   "featured": false,
-  "addedOrder": 2102
+  "addedOrder": 2092
  },
  {
   "id": "ia-in.ernet.dli.2015.458034",
   "title": "অন্নদাশঙ্কর রোয়ের রচনাবলী খণ্ড ৫",
-  "author": "Roy, Annadashankar",
+  "author": "অন্নদাশঙ্কর রায়",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -3733,13 +3457,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.458034",
   "origTitle": "Annadashankar Royer Rachanabali Vol. 5",
+  "origAuthor": "Annadashankar Roy",
   "featured": false,
-  "addedOrder": 2103
+  "addedOrder": 2093
  },
  {
   "id": "ia-in.ernet.dli.2015.356726",
-  "title": "ছিন্নপাত্র",
-  "author": "Tagore,rabindranath",
+  "title": "ছিন্নপত্র",
+  "author": "রবীন্দ্রনাথ ঠাকুর",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -3769,13 +3494,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356726",
   "origTitle": "Chhinnapatra",
+  "origAuthor": "rabindranath Tagore",
   "featured": false,
-  "addedOrder": 2104
+  "addedOrder": 2094
  },
  {
   "id": "ia-in.ernet.dli.2015.377174",
   "title": "লাল্লেশ্বরি",
-  "author": "B N  Parimoo",
+  "author": "বি এন পারিমূ",
   "language": "Bengali",
   "category": "World History",
   "source": "Internet Archive",
@@ -3805,13 +3531,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.377174",
   "origTitle": "Lalleshwari",
+  "origAuthor": "B N Parimoo",
   "featured": false,
-  "addedOrder": 2105
+  "addedOrder": 2095
  },
  {
   "id": "ia-KaloJaduOTarProtikarMagicAndItsRemediesAlhamdulillahLibrary.blogspot.in",
   "title": "Kalo Jadu O Tar Protikar Magic And Its Remedies Alhamdulillah Library.blogspot.in",
-  "author": "ISLAMIC BENGLA BOOK",
+  "author": "ইসলামিকবিইএনজিএলএ বিওওকে",
   "language": "Bengali",
   "category": "Islamic Studies",
   "source": "Internet Archive",
@@ -3840,13 +3567,14 @@
   "downloadSize": 4103583,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/KaloJaduOTarProtikarMagicAndItsRemediesAlhamdulillahLibrary.blogspot.in",
+  "origAuthor": "ISLAMIC BENGLA BOOK",
   "featured": false,
-  "addedOrder": 2106
+  "addedOrder": 2096
  },
  {
   "id": "ia-dli.bengal.10689.4158",
   "title": "কোষ্ঠী দেখা",
-  "author": "Bachaspati, Jyoti",
+  "author": "জ্যোতি বাচাস্পতি",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3876,13 +3604,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4158",
   "origTitle": "Kosthi-Dekha কোষ্ঠী-দেখা",
+  "origAuthor": "Jyoti Bachaspati",
   "featured": false,
-  "addedOrder": 2107
+  "addedOrder": 2097
  },
  {
   "id": "ia-in.ernet.dli.2015.301138",
   "title": "কালের পুতুল",
-  "author": "Basu, Buddhadeb",
+  "author": "বুদ্ধদেব বসু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3912,13 +3641,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.301138",
   "origTitle": "Kaler Putul",
+  "origAuthor": "Buddhadeb Basu",
   "featured": false,
-  "addedOrder": 2108
+  "addedOrder": 2098
  },
  {
   "id": "ia-in.ernet.dli.2015.266836",
   "title": "লোকাসানস্কৃতির দার্বারে",
-  "author": "Mitra, Sanatkumar Ed.",
+  "author": "সানাতকুমার মিত্র",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3948,13 +3678,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266836",
   "origTitle": "Lokasanskritir Darbare",
+  "origAuthor": "Sanatkumar Mitra",
   "featured": false,
-  "addedOrder": 2109
+  "addedOrder": 2099
  },
  {
   "id": "ia-in.ernet.dli.2015.454496",
-  "title": "ঘোস্ত স্তোরিএস",
-  "author": "Dasgupta, Ajoy Ed.",
+  "title": "ঘোস্ত স্টোরিজ",
+  "author": "আজোয় দাশগুপ্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -3984,13 +3715,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454496",
   "origTitle": "Ghost Stories",
+  "origAuthor": "Ajoy Dasgupta",
   "featured": false,
-  "addedOrder": 2110
+  "addedOrder": 2100
  },
  {
   "id": "ia-in.ernet.dli.2015.357706",
   "title": "বিশ্বভারতী পত্রিকা বর্ষা ১৬ সংখ্যা ১-৪",
-  "author": "Sen,pulinbihari Ed.",
+  "author": "পুলিনবিহারী সেন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4020,13 +3752,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357706",
   "origTitle": "Visvabharati Patrika,barsha.16,sankhya.1-4",
+  "origAuthor": "pulinbihari Sen",
   "featured": false,
-  "addedOrder": 2111
+  "addedOrder": 2101
  },
  {
   "id": "ia-in.ernet.dli.2015.455053",
-  "title": "আশাপুর্না দেবী রচনা সংগ্রহ",
-  "author": "Ashapurna Devi",
+  "title": "আশাপূর্ণা দেবী রচনা সংগ্রহ",
+  "author": "আশাপূর্ণা দেবী",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -4056,13 +3789,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455053",
   "origTitle": "Ashapurna Devi Rachana Sangraha",
+  "origAuthor": "Ashapurna Devi",
   "featured": false,
-  "addedOrder": 2112
+  "addedOrder": 2102
  },
  {
   "id": "ia-arabic-bangla-quran-pdf-bangla-tafsir-quranul-qareem",
   "title": "আরাবিক বাংলা কুরআন পদফ বাংলা তাফসির কুরআনুল কারীম",
-  "author": "Perdu Mate",
+  "author": "পের্দু মাতে",
   "language": "Bengali",
   "category": "Islamic Studies",
   "source": "Internet Archive",
@@ -4092,13 +3826,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/arabic-bangla-quran-pdf-bangla-tafsir-quranul-qareem",
   "origTitle": "Arabic Bangla Quran PDF Bangla Tafsir Quranul Qareem",
+  "origAuthor": "Perdu Mate",
   "featured": false,
-  "addedOrder": 2113
+  "addedOrder": 2103
  },
  {
   "id": "ia-in.ernet.dli.2015.357089",
   "title": "সাহিত্য দীপিকা",
-  "author": "Chakraborty,janhabikumar",
+  "author": "জাহ্নবীকুমার চক্রবর্তী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4128,13 +3863,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357089",
   "origTitle": "Sahitya- Dipika",
+  "origAuthor": "janhabikumar Chakraborty",
   "featured": false,
-  "addedOrder": 2114
+  "addedOrder": 2104
  },
  {
   "id": "ia-in.ernet.dli.2015.299292",
   "title": "দি বার্সিক স্নতোক সরেনির জোন্ন",
-  "author": "Chattapadhayay, Arun Kumar",
+  "author": "অরুণকুমার চাত্তপাধায়ায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4164,13 +3900,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299292",
   "origTitle": "Di Barsik Snatok Srenir Jonna",
+  "origAuthor": "Arun Kumar Chattapadhayay",
   "featured": false,
-  "addedOrder": 2115
+  "addedOrder": 2105
  },
  {
   "id": "ia-in.ernet.dli.2015.298493",
   "title": "বাংলা কাভ্য সাহিত্যের কোথা ২য়",
-  "author": "Bondhyopadhyay, Kanak.",
+  "author": "কানাক বোন্ধ্যোপাধ্যয়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4200,13 +3937,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298493",
   "origTitle": "Bangla Kavya-sahityer Kotha,ed.2nd",
+  "origAuthor": "Kanak Bondhyopadhyay",
   "featured": false,
-  "addedOrder": 2116
+  "addedOrder": 2106
  },
  {
   "id": "ia-in.ernet.dli.2015.266478",
   "title": "বাঙ্কুরা সংস্কৃতি পরিক্রমা",
-  "author": "Samanta, Rabindranath",
+  "author": "রবীন্দ্রনাথ সামান্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4236,13 +3974,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266478",
   "origTitle": "Bankura Sanskriti Parikrama",
+  "origAuthor": "Rabindranath Samanta",
   "featured": false,
-  "addedOrder": 2117
+  "addedOrder": 2107
  },
  {
   "id": "ia-in.ernet.dli.2015.299431",
-  "title": "শারাত প্রসঙ্গ",
-  "author": "Ghosh, Amarendra Kumar",
+  "title": "শরৎ প্রসঙ্গ",
+  "author": "আমারেন্দ্রকুমার ঘোষ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4272,13 +4011,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299431",
   "origTitle": "Sharat Prasanga",
+  "origAuthor": "Amarendra Kumar Ghosh",
   "featured": false,
-  "addedOrder": 2118
+  "addedOrder": 2108
  },
  {
   "id": "ia-in.ernet.dli.2015.457214",
   "title": "বারো ঘর এক উথোন",
-  "author": "Nandy, Jyotirindra",
+  "author": "জ্যোতিরিন্দ্র নান্দ্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4308,13 +4048,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457214",
   "origTitle": "Baro Ghar Ek Uthon",
+  "origAuthor": "Jyotirindra Nandy",
   "featured": false,
-  "addedOrder": 2119
+  "addedOrder": 2109
  },
  {
   "id": "ia-in.ernet.dli.2015.456276",
   "title": "স্যম্বোলিক পলায়স রবীন্দ্রনাথ ঠাকুর",
-  "author": "Dasgupta, Shantikumar",
+  "author": "শান্তিকুমার দাশগুপ্ত",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -4344,13 +4085,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456276",
   "origTitle": "Symbolic Plays Of Rabindranath Tagore",
+  "origAuthor": "Shantikumar Dasgupta",
   "featured": false,
-  "addedOrder": 2120
+  "addedOrder": 2110
  },
  {
   "id": "ia-in.ernet.dli.2015.357375",
   "title": "নারির নিতি",
-  "author": "Sarkar,panchanan Comp.",
+  "author": "পঞ্চানন সরকার",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4380,13 +4122,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357375",
   "origTitle": "Narir Niti",
+  "origAuthor": "panchanan Sarkar",
   "featured": false,
-  "addedOrder": 2121
+  "addedOrder": 2111
  },
  {
   "id": "ia-in.ernet.dli.2015.265308",
   "title": "বাংলার লোকসানস্কৃতি সমাজতত্ত্ব",
-  "author": "Ghosh, Binay",
+  "author": "বিনয় ঘোষ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4416,13 +4159,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265308",
   "origTitle": "Banglar Loksanskriti Samajtattwa",
+  "origAuthor": "Binay Ghosh",
   "featured": false,
-  "addedOrder": 2122
+  "addedOrder": 2112
  },
  {
   "id": "ia-in.ernet.dli.2015.299131",
-  "title": "কথাশিল্পি শারাদিন্দু মন ও শিল্প",
-  "author": "Bhattacharjya, Pramila",
+  "title": "কথাশিল্পি শরদিন্দু মন ও শিল্প",
+  "author": "প্রমিলা ভট্টাচার্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4452,13 +4196,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299131",
   "origTitle": "Kathashilpi Sharadindu Mon O Shilpa",
+  "origAuthor": "Pramila Bhattacharjya",
   "featured": false,
-  "addedOrder": 2123
+  "addedOrder": 2113
  },
  {
   "id": "ia-in.ernet.dli.2015.315910",
   "title": "রবীন্দ্র রচনাবলী খণ্ড ৬",
-  "author": "Tagore, Rabindranath",
+  "author": "রবীন্দ্রনাথ ঠাকুর",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -4488,13 +4233,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.315910",
   "origTitle": "Rabindra Rachanabali Vol.6",
+  "origAuthor": "Rabindranath Tagore",
   "featured": false,
-  "addedOrder": 2124
+  "addedOrder": 2114
  },
  {
   "id": "ia-in.ernet.dli.2015.456285",
   "title": "হিন্দুস্থনি সংগীত পদ্ধতি খণ্ড ২",
-  "author": "Saha, Manika Tr.",
+  "author": "মানিকা সাহা",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4524,13 +4270,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456285",
   "origTitle": "Hindusthani Sangeet-paddhati Vol. 2",
+  "origAuthor": "Manika Saha",
   "featured": false,
-  "addedOrder": 2125
+  "addedOrder": 2115
  },
  {
   "id": "ia-dli.bengal.10689.1592",
-  "title": "বিশ্বকোষ খন্ড ১৬",
-  "author": "Basu, Nagendranath, ed.",
+  "title": "বিশ্বকোষ খণ্ড ১৬",
+  "author": "নগেন্দ্রনাথ বসু",
   "language": "Bengali",
   "category": "Reference Books",
   "source": "Internet Archive",
@@ -4560,13 +4307,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.1592",
   "origTitle": "Bishwakosh - Vol.16 বিশ্বকোষ - খন্ড ১৬",
+  "origAuthor": "Nagendranath Basu",
   "featured": false,
-  "addedOrder": 2126
+  "addedOrder": 2116
  },
  {
   "id": "ia-in.ernet.dli.2015.358069",
   "title": "প্রবন্ধ সংগ্রহ খণ্ড ১-২",
-  "author": "Choudhury, Pramatha",
+  "author": "প্রমথ চৌধুরী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4596,13 +4344,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.358069",
   "origTitle": "Prabandha Sangraha Khanda.1-2",
+  "origAuthor": "Pramatha Choudhury",
   "featured": false,
-  "addedOrder": 2127
+  "addedOrder": 2117
  },
  {
   "id": "ia-in.ernet.dli.2015.301224",
   "title": "সামালোচানার কথা",
-  "author": "Bandyopadhyay, Amitkumar",
+  "author": "অমিতকুমার বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4632,13 +4381,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.301224",
   "origTitle": "Samalochanar Katha",
+  "origAuthor": "Amitkumar Bandyopadhyay",
   "featured": false,
-  "addedOrder": 2128
+  "addedOrder": 2118
  },
  {
   "id": "ia-in.ernet.dli.2015.456808",
   "title": "কুরআনের আলোকে হজরত মহাম্মদ এর জীবনী",
-  "author": "Ghani, Osman",
+  "author": "ওস্মন গনি",
   "language": "Bengali",
   "category": "Islamic Studies",
   "source": "Internet Archive",
@@ -4668,13 +4418,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456808",
   "origTitle": "Quraner Aloke Hazrat Mahammad Er Jibani",
+  "origAuthor": "Osman Ghani",
   "featured": false,
-  "addedOrder": 2129
+  "addedOrder": 2119
  },
  {
   "id": "ia-in.ernet.dli.2015.265077",
   "title": "সরীহাত্ত পরিচয় ২য়",
-  "author": "Deb, Ranendranath",
+  "author": "রানেন্দ্রনাথ দেব",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4704,13 +4455,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265077",
   "origTitle": "Sreehatta Parichay Ed. 2nd",
+  "origAuthor": "Ranendranath Deb",
   "featured": false,
-  "addedOrder": 2130
+  "addedOrder": 2120
  },
  {
   "id": "ia-in.ernet.dli.2015.298601",
   "title": "ফারাসি বিপ্লব",
-  "author": "Chakraborty, Praphullakumar",
+  "author": "প্রফুল্লকুমার চক্রবর্তী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4740,13 +4492,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298601",
   "origTitle": "Pharasi Biplab",
+  "origAuthor": "Praphullakumar Chakraborty",
   "featured": false,
-  "addedOrder": 2131
+  "addedOrder": 2121
  },
  {
   "id": "ia-in.ernet.dli.2015.454632",
   "title": "প্রচ্য ও প্রসচাত্য দর্শনের ইতিহাস খণ্ড ২",
-  "author": "Kabir, Humayun Ed.",
+  "author": "হুমায়ুন কবির",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4776,13 +4529,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454632",
   "origTitle": "Prachya O Praschatya Darshaner Itihas Vol. 2",
+  "origAuthor": "Humayun Kabir",
   "featured": false,
-  "addedOrder": 2132
+  "addedOrder": 2122
  },
  {
   "id": "ia-in.ernet.dli.2015.453971",
   "title": "স্বপনা দেখার অধিকার",
-  "author": "Mahasweta Devi",
+  "author": "মহাস্বেতা দেবী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4812,13 +4566,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453971",
   "origTitle": "Swapna Dekhar Adhikar",
+  "origAuthor": "Mahasweta Devi",
   "featured": false,
-  "addedOrder": 2133
+  "addedOrder": 2123
  },
  {
   "id": "ia-in.ernet.dli.2015.454503",
   "title": "আবাভাস বিজ্ঞান ও আস্তিত্ববাদ",
-  "author": "Sarkar, Sunil Kumar",
+  "author": "সুনীলকুমার সরকার",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4848,13 +4603,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454503",
   "origTitle": "Ababhas-bigyan O Astitwabad",
+  "origAuthor": "Sunil Kumar Sarkar",
   "featured": false,
-  "addedOrder": 2134
+  "addedOrder": 2124
  },
  {
   "id": "ia-in.ernet.dli.2015.354953",
   "title": "বিশ্বভারতী পত্রিকা বর্ষা ২ সংখ্যা ১-৪ শ্রবান আশ্বৈন ১৩৫০",
-  "author": "Tagore,rathindranath Ed.",
+  "author": "রথিন্দ্রনাথ ঠাকুর",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -4884,13 +4640,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.354953",
   "origTitle": "Visvabharati Patrika,barsha.2,sankhya.1-4,shraban-ashwain,1350",
+  "origAuthor": "rathindranath Tagore",
   "featured": false,
-  "addedOrder": 2135
+  "addedOrder": 2125
  },
  {
   "id": "ia-in.ernet.dli.2015.456977",
   "title": "সিরাতে রাসুল",
-  "author": "Akhand, Shahid Tr.",
+  "author": "শাহিদ আখান্দ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4920,13 +4677,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456977",
   "origTitle": "Sirate Rasul",
+  "origAuthor": "Shahid Akhand",
   "featured": false,
-  "addedOrder": 2136
+  "addedOrder": 2126
  },
  {
   "id": "ia-dli.bengal.10689.2654",
-  "title": "মানসী ও মর্ম্মবাণী বর্ষ ৮ খন্ড ১",
-  "author": "Mukhopadhyay, Prabhatkumar, ed.",
+  "title": "মানসী ও মর্ম্মবাণী বর্ষ ৮ খণ্ড ১",
+  "author": "প্রভাতকুমার মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4956,13 +4714,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.2654",
   "origTitle": "Manasi O Marmabani - Year 8; Vol.1 মানসী ও মর্ম্মবাণী -  বর্ষ ৮; খন্ড ১",
+  "origAuthor": "Prabhatkumar Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2137
+  "addedOrder": 2127
  },
  {
   "id": "ia-in.ernet.dli.2015.266643",
   "title": "চর্যাগীতি পাঞ্চশিকা",
-  "author": "Rana, Sumangal",
+  "author": "সুমাঙাল রানা",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -4992,13 +4751,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266643",
   "origTitle": "Charjyagiti Panchashika",
+  "origAuthor": "Sumangal Rana",
   "featured": false,
-  "addedOrder": 2138
+  "addedOrder": 2128
  },
  {
   "id": "ia-in.ernet.dli.2015.297692",
   "title": "কাজী নজরুল ২য়",
-  "author": "Chattopadhyay, Pranatosh",
+  "author": "প্রাণাতোশ চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -5028,13 +4788,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.297692",
   "origTitle": "Kazi Nazrul Ed. 2nd",
+  "origAuthor": "Pranatosh Chattopadhyay",
   "featured": false,
-  "addedOrder": 2139
+  "addedOrder": 2129
  },
  {
   "id": "ia-in.ernet.dli.2015.456526",
   "title": "গল্প সমগ্র খণ্ড ২",
-  "author": "Ashapurna Devi",
+  "author": "আশাপূর্ণা দেবী",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -5064,12 +4825,13 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456526",
   "origTitle": "Galpa Samagra Vol. 2",
+  "origAuthor": "Ashapurna Devi",
   "featured": false,
-  "addedOrder": 2140
+  "addedOrder": 2130
  },
  {
   "id": "ia-satkriyasaradipika_and_samskaradipika",
-  "title": "সাত ক্রিয়া সারা দীপিকা আন্দ সামস্করা দীপিকা বাংলা",
+  "title": "সাত ক্রিয়া সারা দীপিকা ও সামস্করা দীপিকা বাংলা",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -5101,12 +4863,12 @@
   "coverUrl": "https://archive.org/services/img/satkriyasaradipika_and_samskaradipika",
   "origTitle": "Sat Kriya Sara Dipika and Samskara Dipika (Bengali)",
   "featured": false,
-  "addedOrder": 2141
+  "addedOrder": 2131
  },
  {
   "id": "ia-in.ernet.dli.2015.265287",
   "title": "বাংলা গানের সন্ধানে",
-  "author": "Chakraborty, Sudhir",
+  "author": "সুধীর চক্রবর্তী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5136,13 +4898,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265287",
   "origTitle": "Bangla Ganer Sandhane",
+  "origAuthor": "Sudhir Chakraborty",
   "featured": false,
-  "addedOrder": 2142
+  "addedOrder": 2132
  },
  {
   "id": "ia-in.ernet.dli.2015.456053",
   "title": "লিত্তলে মাগাজিনের বাছায় গল্প",
-  "author": "Rudra, Tanmoy Ed.",
+  "author": "তান্মোয় রুদ্র",
   "language": "Bengali",
   "category": "Reference Books",
   "source": "Internet Archive",
@@ -5172,8 +4935,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456053",
   "origTitle": "Little Magaziner Bachhai Galpo",
+  "origAuthor": "Tanmoy Rudra",
   "featured": false,
-  "addedOrder": 2143
+  "addedOrder": 2133
  },
  {
   "id": "ia-in.ernet.dli.2015.299266",
@@ -5209,12 +4973,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299266",
   "origTitle": "Pashimbanga Bhraman O Darshan, Vol.1(part.1,2)",
   "featured": false,
-  "addedOrder": 2144
+  "addedOrder": 2134
  },
  {
   "id": "ia-in.ernet.dli.2015.290230",
   "title": "চিত্রাঙ্গদা ১৯০৪",
-  "author": "Tagore, Rabindranath",
+  "author": "রবীন্দ্রনাথ ঠাকুর",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -5244,13 +5008,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.290230",
   "origTitle": "Chitrangada (1904)",
+  "origAuthor": "Rabindranath Tagore",
   "featured": false,
-  "addedOrder": 2145
+  "addedOrder": 2135
  },
  {
   "id": "ia-Bashikaran-Abadhut",
   "title": "বশীকরণ অবধূত",
-  "author": "Bangla Rare Books",
+  "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5281,7 +5046,7 @@
   "coverUrl": "https://archive.org/services/img/Bashikaran-Abadhut",
   "origTitle": "Bashikaran Abadhut / বশীকরণ - অবধূত",
   "featured": false,
-  "addedOrder": 2146
+  "addedOrder": 2136
  },
  {
   "id": "ia-20211127_20211127_2107",
@@ -5316,12 +5081,12 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20211127_20211127_2107",
   "featured": false,
-  "addedOrder": 2147
+  "addedOrder": 2137
  },
  {
   "id": "ia-in.ernet.dli.2015.300833",
   "title": "নাবিঞ্চন্দ্র সেনের পালাশির যুদ্ধ ১ম",
-  "author": "Banerjee, A. L.",
+  "author": "এ. এল. বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5351,13 +5116,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300833",
   "origTitle": "Nabinchandra Sener Palashir Yuddha Ed. 1st",
+  "origAuthor": "A L Banerjee",
   "featured": false,
-  "addedOrder": 2148
+  "addedOrder": 2138
  },
  {
   "id": "ia-in.ernet.dli.2015.299961",
-  "title": "বাংলার সামায়িক পত্র ২য়",
-  "author": "Bandyopadhyay, Brajendranath",
+  "title": "বাংলার সাময়িক পত্র ২য়",
+  "author": "ব্রজেন্দ্রনাথ বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5387,13 +5153,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299961",
   "origTitle": "Banglar Samayik-patra Ed. 2nd",
+  "origAuthor": "Brajendranath Bandyopadhyay",
   "featured": false,
-  "addedOrder": 2149
+  "addedOrder": 2139
  },
  {
   "id": "ia-in.ernet.dli.2015.265223",
   "title": "আধুনিক বাংলা সাহিত্যের সাঙ্কহিপতা ইতিবৃত্য",
-  "author": "Bandapadhayay, Asit Kumar",
+  "author": "অসিতকুমার বান্দপাধায়ায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5423,13 +5190,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265223",
   "origTitle": "Adhunik Bangla Sahityer Sankhipta Itibritya",
+  "origAuthor": "Asit Kumar Bandapadhayay",
   "featured": false,
-  "addedOrder": 2150
+  "addedOrder": 2140
  },
  {
   "id": "ia-in.ernet.dli.2015.352867",
   "title": "জায়াশ্রি বর্ষা ৫ বৈশাখ আশ্বিন ১৩৪২",
-  "author": "Ray,binapani Ed.",
+  "author": "বিনাপানি রায়",
   "language": "Bengali",
   "category": "Islamic Studies",
   "source": "Internet Archive",
@@ -5459,13 +5227,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.352867",
   "origTitle": "Jayashri,barsha.5,baishakh-ashwin 1342",
+  "origAuthor": "binapani Ray",
   "featured": false,
-  "addedOrder": 2151
+  "addedOrder": 2141
  },
  {
   "id": "ia-in.ernet.dli.2015.457852",
   "title": "সিমান্ত বাংলার লোকায়ানা ১ম",
-  "author": "Karan, Sudhir Kumar",
+  "author": "সুধীরকুমার কারান",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5495,13 +5264,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457852",
   "origTitle": "Simanta Banglar Lokayana Ed. 1st",
+  "origAuthor": "Sudhir Kumar Karan",
   "featured": false,
-  "addedOrder": 2152
+  "addedOrder": 2142
  },
  {
   "id": "ia-in.ernet.dli.2015.456687",
-  "title": "সৃমাদ ভাগাবাত সাঙ্কশিপতা আখ্যনভাগ ৩য়",
-  "author": "Sen, Gunada Charan",
+  "title": "শ্রীমদ্ ভাগাবাত সাঙ্কশিপতা আখ্যনভাগ ৩য়",
+  "author": "গুনাদাচরণ সেন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5531,13 +5301,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456687",
   "origTitle": "Srimad Bhagavat(sankshipta Akhyanbhag) Ed. 3rd",
+  "origAuthor": "Gunada Charan Sen",
   "featured": false,
-  "addedOrder": 2153
+  "addedOrder": 2143
  },
  {
   "id": "ia-in.ernet.dli.2015.477858",
   "title": "শ্রীকৃষ্ণ বিজায়",
-  "author": "Mitra, Khagendra Nath, Ed.",
+  "author": "খাগেন্দ্রনাথ মিত্র",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5567,8 +5338,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.477858",
   "origTitle": "Shrikrishna Bijay",
+  "origAuthor": "Khagendra Nath Mitra",
   "featured": false,
-  "addedOrder": 2154
+  "addedOrder": 2144
  },
  {
   "id": "ia-dli.ministry.00776",
@@ -5603,12 +5375,12 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.ministry.00776",
   "featured": false,
-  "addedOrder": 2155
+  "addedOrder": 2145
  },
  {
   "id": "ia-in.ernet.dli.2015.336622",
   "title": "শ্রীকৃষ্ণ বিজায়",
-  "author": "Mitra, Khagendra Nath, Ed.",
+  "author": "খাগেন্দ্রনাথ মিত্র",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5638,13 +5410,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.336622",
   "origTitle": "Shrikrishna Bijay",
+  "origAuthor": "Khagendra Nath Mitra",
   "featured": false,
-  "addedOrder": 2156
+  "addedOrder": 2146
  },
  {
   "id": "ia-in.ernet.dli.2015.453375",
-  "title": "চিন্তানায়াক বঙ্কিমচন্দ্র ২য়",
-  "author": "Dutta, Bhabatosh",
+  "title": "চিন্তানায়ক বঙ্কিমচন্দ্র ২য়",
+  "author": "ভাবাতোশ দত্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5674,13 +5447,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453375",
   "origTitle": "Chintanayak Bankimchandra Ed. 2nd",
+  "origAuthor": "Bhabatosh Dutta",
   "featured": false,
-  "addedOrder": 2157
+  "addedOrder": 2147
  },
  {
   "id": "ia-in.ernet.dli.2015.339938",
   "title": "রবীন্দ্রনাথ ও শান্তিনিকেতান",
-  "author": "Bishi, Pramathanath",
+  "author": "প্রমথনাথ বিশী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5710,13 +5484,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.339938",
   "origTitle": "Rabindranath O Shantiniketan",
+  "origAuthor": "Pramathanath Bishi",
   "featured": false,
-  "addedOrder": 2158
+  "addedOrder": 2148
  },
  {
   "id": "ia-in.ernet.dli.2015.455996",
   "title": "মানিক বন্দ্যোপাধ্যায় রচনাসমগ্র খণ্ড ১ ২য়",
-  "author": "Ray, Alok Ed.",
+  "author": "আলোক রায়",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -5746,13 +5521,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455996",
   "origTitle": "Manik Bandyopadhyay Rachanasamagra Vol. 1 Ed. 2nd",
+  "origAuthor": "Alok Ray",
   "featured": false,
-  "addedOrder": 2159
+  "addedOrder": 2149
  },
  {
   "id": "ia-in.ernet.dli.2015.458386",
-  "title": "কালিদাসাসমগ্র",
-  "author": "Chaki, Jyotibhushan Ed.",
+  "title": "কালিদাসসমগ্র",
+  "author": "জ্যোতিভুশান চাকি",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -5782,13 +5558,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.458386",
   "origTitle": "Kalidasasamagra",
+  "origAuthor": "Jyotibhushan Chaki",
   "featured": false,
-  "addedOrder": 2160
+  "addedOrder": 2150
  },
  {
   "id": "ia-in.ernet.dli.2015.303015",
   "title": "পুরানো বোই ১ম",
-  "author": "Sen, Nikhil",
+  "author": "নিখিল সেন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5818,13 +5595,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.303015",
   "origTitle": "Purano Boi, Ed.1st",
+  "origAuthor": "Nikhil Sen",
   "featured": false,
-  "addedOrder": 2161
+  "addedOrder": 2151
  },
  {
   "id": "ia-in.ernet.dli.2015.297710",
   "title": "লালকেল্ল খণ্ড ১",
-  "author": "Bishi, Pramathnath",
+  "author": "প্রমথনাথ বিশী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5854,13 +5632,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.297710",
   "origTitle": "Lalkella Vol.1",
+  "origAuthor": "Pramathnath Bishi",
   "featured": false,
-  "addedOrder": 2162
+  "addedOrder": 2152
  },
  {
   "id": "ia-in.ernet.dli.2015.477687",
   "title": "মাধ্যন্দিন শাতাপাথ ব্রহমান",
-  "author": "Bhattachrya, Bidhushekhar, Tr.",
+  "author": "বিধুশেখার ভাত্তচর্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5890,13 +5669,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.477687",
   "origTitle": "Madhyandin Shatapath Brahman",
+  "origAuthor": "Bidhushekhar Bhattachrya",
   "featured": false,
-  "addedOrder": 2163
+  "addedOrder": 2153
  },
  {
   "id": "ia-in.ernet.dli.2015.338722",
-  "title": "আতোমিক আন্দ নুকলেয়ার ফ্যসিকস",
-  "author": "Bandyopadhyay, Debdas",
+  "title": "আতোমিক ও নুকলেয়ার ফ্যসিকস",
+  "author": "দেবদাস বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "Science",
   "source": "Internet Archive",
@@ -5926,13 +5706,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.338722",
   "origTitle": "Atomic And Nuclear Physics",
+  "origAuthor": "Debdas Bandyopadhyay",
   "featured": false,
-  "addedOrder": 2164
+  "addedOrder": 2154
  },
  {
   "id": "ia-in.ernet.dli.2015.454708",
   "title": "ঋকবেদা সংহিতা খণ্ড ২য়",
-  "author": "Dutta, Rameshchandra Tr.",
+  "author": "রমেশচন্দ্র দত্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5962,13 +5743,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454708",
   "origTitle": "Rikveda Samhita Vol. 2nd",
+  "origAuthor": "Rameshchandra Dutta",
   "featured": false,
-  "addedOrder": 2165
+  "addedOrder": 2155
  },
  {
   "id": "ia-in.ernet.dli.2015.454950",
   "title": "হান্যমান",
-  "author": "Mitra, Jaya",
+  "author": "জায়া মিত্র",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -5998,13 +5780,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454950",
   "origTitle": "Hanyaman",
+  "origAuthor": "Jaya Mitra",
   "featured": false,
-  "addedOrder": 2166
+  "addedOrder": 2156
  },
  {
   "id": "ia-UnityOfUmmahSystemsAndMethods",
   "title": "উম্মাহর ঐক্য পথ ও পন্থা",
-  "author": "Muhammad Abdul Malek",
+  "author": "মুহাম্মদ আবদুল মালেক",
   "language": "Bengali",
   "category": "Islamic Studies",
   "source": "Internet Archive",
@@ -6034,13 +5817,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/UnityOfUmmahSystemsAndMethods",
   "origTitle": "উম্মাহর ঐক্য: পথ ও পন্থা (Unity of Muslim Ummah:Systems and Methods)",
+  "origAuthor": "Muhammad Abdul Malek",
   "featured": false,
-  "addedOrder": 2167
+  "addedOrder": 2157
  },
  {
   "id": "ia-dli.bengal.10689.8602",
-  "title": "সঙ্গীত সার সংগ্রহ খন্ড ১ ২য় সং",
-  "author": "Mukhopadhyay, Harimohan, ed.",
+  "title": "সঙ্গীত সার সংগ্রহ খণ্ড ১ ২য় সং",
+  "author": "হারিমোহান মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "Arts & Culture",
   "source": "Internet Archive",
@@ -6070,13 +5854,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8602",
   "origTitle": "Sangit-Sar-Sangraha - Vol.1 - 2nd ed. সঙ্গীত-সার-সংগ্রহ - খন্ড ১ - ২য় সং",
+  "origAuthor": "Harimohan Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2168
+  "addedOrder": 2158
  },
  {
   "id": "ia-in.ernet.dli.2015.454048",
   "title": "গাঁরবাধারিনি",
-  "author": "Majumder, Samaresh",
+  "author": "সমরেশ মজুমদার",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6106,13 +5891,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454048",
   "origTitle": "Garvadharini",
+  "origAuthor": "Samaresh Majumder",
   "featured": false,
-  "addedOrder": 2169
+  "addedOrder": 2159
  },
  {
   "id": "ia-in.ernet.dli.2015.265432",
   "title": "দক্ষিন চাব্বিশ পার্গানার পুরাকাথা",
-  "author": "Mondal, Krishnakali",
+  "author": "কৃষ্ণকালী মণ্ডল",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6142,13 +5928,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265432",
   "origTitle": "Dakshin Chabbish Parganar Purakatha",
+  "origAuthor": "Krishnakali Mondal",
   "featured": false,
-  "addedOrder": 2170
+  "addedOrder": 2160
  },
  {
   "id": "ia-in.ernet.dli.2015.298369",
   "title": "বসুমতী গ্রন্থাবলী সিরিজ কালিদাসের গ্রন্থাবলী খণ্ড ২",
-  "author": "Kalidas",
+  "author": "কালিদাস",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6178,8 +5965,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298369",
   "origTitle": "Basumati-granthabali-series Kalidaser Granthabali Part.2",
+  "origAuthor": "Kalidas",
   "featured": false,
-  "addedOrder": 2171
+  "addedOrder": 2161
  },
  {
   "id": "ia-fpquran-ben",
@@ -6215,12 +6003,12 @@
   "coverUrl": "https://archive.org/services/img/fpquran-ben",
   "origTitle": "FPQuran Ben",
   "featured": false,
-  "addedOrder": 2172
+  "addedOrder": 2162
  },
  {
   "id": "ia-in.ernet.dli.2015.267124",
   "title": "পারাশুরাম গ্রন্থাবলী খণ্ড ৩ ২য়",
-  "author": "Basu, Rajshekhar",
+  "author": "রাজশেখর বসু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6250,13 +6038,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.267124",
   "origTitle": "Parashuram Granthabali Vol. 3 Ed. 2nd",
+  "origAuthor": "Rajshekhar Basu",
   "featured": false,
-  "addedOrder": 2173
+  "addedOrder": 2163
  },
  {
   "id": "ia-in.ernet.dli.2015.457716",
   "title": "সৌরা পুরাণ",
-  "author": "Chakraborty, Subodhkumar Tr.",
+  "author": "সুবোধকুমার চক্রবর্তী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6286,13 +6075,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457716",
   "origTitle": "Soura Puran",
+  "origAuthor": "Subodhkumar Chakraborty",
   "featured": false,
-  "addedOrder": 2174
+  "addedOrder": 2164
  },
  {
   "id": "ia-in.ernet.dli.2015.266615",
   "title": "আলকাপ",
-  "author": "Islam, Md. Nurul",
+  "author": "মো. নুরুল ইসলাম",
   "language": "Bengali",
   "category": "Islamic Studies",
   "source": "Internet Archive",
@@ -6322,13 +6112,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266615",
   "origTitle": "Alkap",
+  "origAuthor": "Md Nurul Islam",
   "featured": false,
-  "addedOrder": 2175
+  "addedOrder": 2165
  },
  {
   "id": "ia-in.ernet.dli.2015.353750",
   "title": "চিরান্তনি",
-  "author": "Bhattacharya, Bidhayak",
+  "author": "বিধায়াক ভট্টাচার্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6358,13 +6149,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.353750",
   "origTitle": "Chirantani",
+  "origAuthor": "Bidhayak Bhattacharya",
   "featured": false,
-  "addedOrder": 2176
+  "addedOrder": 2166
  },
  {
   "id": "ia-in.ernet.dli.2015.352582",
   "title": "বাঙালি জাতির সারাঋক ইতিহাস",
-  "author": "Acharya,rajendralal",
+  "author": "রাজেন্দ্রলাল আচার্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6394,13 +6186,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.352582",
   "origTitle": "Bangali Jatir Sararik Itihas",
+  "origAuthor": "rajendralal Acharya",
   "featured": false,
-  "addedOrder": 2177
+  "addedOrder": 2167
  },
  {
   "id": "ia-in.ernet.dli.2015.339234",
   "title": "১৩১৭ নং ১-৪",
-  "author": "Basu, Nagendra Nath, Ed.",
+  "author": "নাগেন্দ্রনাথ বসু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6430,13 +6223,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.339234",
   "origTitle": "1317 ; No.1-4",
+  "origAuthor": "Nagendra Nath Basu",
   "featured": false,
-  "addedOrder": 2178
+  "addedOrder": 2168
  },
  {
   "id": "ia-in.ernet.dli.2015.267154",
-  "title": "প্রাচীন বাংলা সাহিত্যে মুসালমানের আবাদান",
-  "author": "Sen, Dineshchandra",
+  "title": "প্রাচীন বাংলা সাহিত্যে মুসালমানের অবদান",
+  "author": "দিনেশচন্দ্র সেন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6466,13 +6260,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.267154",
   "origTitle": "Prachin Bangla Sahitye Musalmaner Abadan",
+  "origAuthor": "Dineshchandra Sen",
   "featured": false,
-  "addedOrder": 2179
+  "addedOrder": 2169
  },
  {
   "id": "ia-in.ernet.dli.2015.289133",
   "title": "শ্রী শ্রী কালী কুলা কুন্দলিনি খণ্ড ১",
-  "author": "Baba, Sri Jukta Bhulua",
+  "author": "শ্রী জুকতাভুলুয়া বাবা",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6502,13 +6297,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.289133",
   "origTitle": "Sri Sri Kali Kula - Kundalini  Vol. 1",
+  "origAuthor": "Sri Jukta Bhulua Baba",
   "featured": false,
-  "addedOrder": 2180
+  "addedOrder": 2170
  },
  {
   "id": "ia-in.ernet.dli.2015.352878",
   "title": "কাব্য সাঞ্চয়ান",
-  "author": "Dutta, Satyendranath",
+  "author": "সত্যেন্দ্রনাথ দত্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6538,8 +6334,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.352878",
   "origTitle": "Kabya Sanchayan",
+  "origAuthor": "Satyendranath Dutta",
   "featured": false,
-  "addedOrder": 2181
+  "addedOrder": 2171
  },
  {
   "id": "ia-in.ernet.dli.2015.289808",
@@ -6575,12 +6372,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.289808",
   "origTitle": "Kaler Gaan",
   "featured": false,
-  "addedOrder": 2182
+  "addedOrder": 2172
  },
  {
   "id": "ia-in.ernet.dli.2015.357380",
-  "title": "সংগীত বিগান প্রবেশিকা বর্ষা ২ কার্তিক ১৩৩২ বার্ষিক সুচিপাত্র",
-  "author": "Bandopadhyay,gopeshwar",
+  "title": "সংগীত বিগান প্রবেশিকা বর্ষা ২ কার্তিক ১৩৩২ বার্ষিক সূচিপত্র",
+  "author": "গোপেশ্বর বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "World History",
   "source": "Internet Archive",
@@ -6610,13 +6407,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357380",
   "origTitle": "Sangit Bigan Prabeshika.barsha.2,kartik,1332, Barshik Suchipatra",
+  "origAuthor": "gopeshwar Bandopadhyay",
   "featured": false,
-  "addedOrder": 2183
+  "addedOrder": 2173
  },
  {
   "id": "ia-in.ernet.dli.2015.266718",
   "title": "একাবিংশা শতাব্দীতে রবীন্দ্রচর্চা ও অন্যান্য প্রবন্ধ",
-  "author": "Dyson, Ketaki Kushari",
+  "author": "কেতাকিকুশারি দ্যসোন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6646,13 +6444,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266718",
   "origTitle": "Ekabingsha Shatabdite Rabindracharcha O Anyanya Prabandha",
+  "origAuthor": "Ketaki Kushari Dyson",
   "featured": false,
-  "addedOrder": 2184
+  "addedOrder": 2174
  },
  {
   "id": "ia-in.ernet.dli.2015.299279",
   "title": "ফিরে ফিরে চায়",
-  "author": "Mukhopadhyay, Probhatkumar",
+  "author": "প্রোভাতকুমার মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6682,13 +6481,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299279",
   "origTitle": "Phire Phire Chai",
+  "origAuthor": "Probhatkumar Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2185
+  "addedOrder": 2175
  },
  {
   "id": "ia-in.ernet.dli.2015.302969",
-  "title": "সামার্থাপাঞ্চম তারাশঙ্কর বান্ধোপাধ্যয়ের হানসুলিবাঙ্কের উপাকাথা",
-  "author": "Bandhopadhyay, Tarashankar",
+  "title": "সামর্থাপাঞ্চম তারাশঙ্কর বন্দ্যোপাধ্যায়ের হানসুলিবাঙ্কের উপাকাথা",
+  "author": "তারাশঙ্কর বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6718,12 +6518,13 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302969",
   "origTitle": "Samarthapancham Tarashankar Bandhopadhyayer Hansulibanker Upakatha",
+  "origAuthor": "Tarashankar Bandhopadhyay",
   "featured": false,
-  "addedOrder": 2186
+  "addedOrder": 2176
  },
  {
   "id": "ia-in.ernet.dli.2015.300264",
-  "title": "দুশো বাছারের বাংলা প্রবন্ধসাহিত্য খণ্ড ১",
+  "title": "দুশো বছরের বাংলা প্রবন্ধসাহিত্য খণ্ড ১",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -6755,12 +6556,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300264",
   "origTitle": "Dusho Bachharer Bangla Prabandhasahitya, Vol.1",
   "featured": false,
-  "addedOrder": 2187
+  "addedOrder": 2177
  },
  {
   "id": "ia-in.ernet.dli.2015.457808",
   "title": "শিক্ষা",
-  "author": "Sen, Satyendranath Ed.",
+  "author": "সত্যেন্দ্রনাথ সেন",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6790,13 +6591,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457808",
   "origTitle": "Shiksha",
+  "origAuthor": "Satyendranath Sen",
   "featured": false,
-  "addedOrder": 2188
+  "addedOrder": 2178
  },
  {
   "id": "ia-in.ernet.dli.2015.315766",
   "title": "গল্প গুচছা খণ্ড ১",
-  "author": "Tagore, Rabindranath",
+  "author": "রবীন্দ্রনাথ ঠাকুর",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -6826,8 +6628,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.315766",
   "origTitle": "Galpa Guchchha  Vol. 1",
+  "origAuthor": "Rabindranath Tagore",
   "featured": false,
-  "addedOrder": 2189
+  "addedOrder": 2179
  },
  {
   "id": "ia-dli.ministry.26449",
@@ -6862,12 +6665,12 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.ministry.26449",
   "featured": false,
-  "addedOrder": 2190
+  "addedOrder": 2180
  },
  {
   "id": "ia-in.ernet.dli.2015.267213",
   "title": "রজনীকান্ত কাভ্যগুচছা",
-  "author": "Mukhopadhyay, Biswanath Ed.",
+  "author": "বিশ্বনাথ মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6897,13 +6700,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.267213",
   "origTitle": "Rajanikanta Kavyaguchchha",
+  "origAuthor": "Biswanath Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2191
+  "addedOrder": 2181
  },
  {
   "id": "ia-in.ernet.dli.2015.297752",
   "title": "নব প্রবেশিকা রচনা ও অনুবাদ ৩য়",
-  "author": "Bagchi,shashankashekhar",
+  "author": "শাশাঙ্কশেখার বাগচী",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -6933,13 +6737,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.297752",
   "origTitle": "Naba-prabeshika Rachana O Anubad Ed.3rd",
+  "origAuthor": "shashankashekhar Bagchi",
   "featured": false,
-  "addedOrder": 2192
+  "addedOrder": 2182
  },
  {
   "id": "ia-dli.bengal.10689.7413",
-  "title": "ফলিত জ্যোতিষ খন্ড ২",
-  "author": "Chattopadhyay, Rasikmohan",
+  "title": "ফলিত জ্যোতিষ খণ্ড ২",
+  "author": "রসিকমোহন চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -6969,12 +6774,13 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.7413",
   "origTitle": "Falit Jyotish - Vol.2 ফলিত জ্যোতিষ - খন্ড ২",
+  "origAuthor": "Rasikmohan Chattopadhyay",
   "featured": false,
-  "addedOrder": 2193
+  "addedOrder": 2183
  },
  {
   "id": "ia-dli.bengal.10689.8340",
-  "title": "মুর্শিদাবাদের ইতিহাস খন্ড ২ ২য় সং",
+  "title": "মুর্শিদাবাদের ইতিহাস খণ্ড ২ ২য় সং",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "World History",
@@ -7006,12 +6812,12 @@
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8340",
   "origTitle": "Murshidabader Itihas - Vol.2 - 2nd ed. মুর্শিদাবাদের ইতিহাস - খন্ড ২ - ২য় সং",
   "featured": false,
-  "addedOrder": 2194
+  "addedOrder": 2184
  },
  {
   "id": "ia-in.ernet.dli.2015.457448",
   "title": "আশানি সাঙ্কেত",
-  "author": "Bandyopadhyay, Bibhutibhushan",
+  "author": "বিভূতিভূষণ বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7041,13 +6847,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457448",
   "origTitle": "Ashani-sanket",
+  "origAuthor": "Bibhutibhushan Bandyopadhyay",
   "featured": false,
-  "addedOrder": 2195
+  "addedOrder": 2185
  },
  {
   "id": "ia-in.ernet.dli.2015.456788",
   "title": "পুজা পার্বান খণ্ড ১-২",
-  "author": "Ray, Jogeshchandra",
+  "author": "জোগেশচান্দ্র রায়",
   "language": "Bengali",
   "category": "Religion & Philosophy",
   "source": "Internet Archive",
@@ -7077,13 +6884,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456788",
   "origTitle": "Puja-parban Vol. 1-2",
+  "origAuthor": "Jogeshchandra Ray",
   "featured": false,
-  "addedOrder": 2196
+  "addedOrder": 2186
  },
  {
   "id": "ia-in.ernet.dli.2015.316071",
   "title": "১৫৬৮ পান্তঞ্জল যোগদার্শান",
-  "author": "Aarnya, Hariharanand",
+  "author": "হারিহারানান্দ আর্ন্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7113,8 +6921,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.316071",
   "origTitle": "1568  Pantanjal Yogdarshan",
+  "origAuthor": "Hariharanand Aarnya",
   "featured": false,
-  "addedOrder": 2197
+  "addedOrder": 2187
  },
  {
   "id": "ia-in.ernet.dli.2015.286945",
@@ -7150,12 +6959,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.286945",
   "origTitle": "Bangala Adhunik Saras Kabita",
   "featured": false,
-  "addedOrder": 2198
+  "addedOrder": 2188
  },
  {
   "id": "ia-in.ernet.dli.2015.267234",
   "title": "রামনাথের প্রিথিবি",
-  "author": "Basu, Shyamsundar",
+  "author": "শ্যমসুন্দর বসু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7185,8 +6994,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.267234",
   "origTitle": "Ramnather Prithibi",
+  "origAuthor": "Shyamsundar Basu",
   "featured": false,
-  "addedOrder": 2199
+  "addedOrder": 2189
  },
  {
   "id": "ia-in.ernet.dli.2015.267019",
@@ -7222,12 +7032,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.267019",
   "origTitle": "Mathematics",
   "featured": false,
-  "addedOrder": 2200
+  "addedOrder": 2190
  },
  {
   "id": "ia-in.ernet.dli.2015.456264",
   "title": "আসান",
-  "author": "Swami Jagadishwarananda",
+  "author": "স্বামী জগদীশ্বরানন্দ",
   "language": "Bengali",
   "category": "World History",
   "source": "Internet Archive",
@@ -7257,44 +7067,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456264",
   "origTitle": "Aasan",
+  "origAuthor": "Swami Jagadishwarananda",
   "featured": false,
-  "addedOrder": 2201
- },
- {
-  "id": "ia-in.ernet.dli.2015.339332",
-  "title": "৩",
-  "author": "Tagore, Rabindranath",
-  "language": "Bengali",
-  "category": "Literature",
-  "source": "Internet Archive",
-  "readUrl": "https://archive.org/details/in.ernet.dli.2015.339332",
-  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.339332/2015.339332.Ed3.pdf",
-  "year": 1942,
-  "copyright": "public-domain",
-  "buyLink": null,
-  "sourceId": "in.ernet.dli.2015.339332",
-  "altTitle": null,
-  "editor": null,
-  "translator": null,
-  "publisher": null,
-  "isbn": null,
-  "country": null,
-  "subject": "C-DAK",
-  "subcategory": "C-DAK",
-  "description": null,
-  "pageCount": null,
-  "edition": null,
-  "price": null,
-  "priceValue": null,
-  "priceCurrency": null,
-  "topRank": null,
-  "availability": "free-download",
-  "downloadSize": 4546995,
-  "downloadFormat": "PDF",
-  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.339332",
-  "origTitle": "Ed.3",
-  "featured": false,
-  "addedOrder": 2202
+  "addedOrder": 2191
  },
  {
   "id": "ia-in.ernet.dli.2015.266060",
@@ -7330,12 +7105,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266060",
   "origTitle": "Sukanta Samagra",
   "featured": false,
-  "addedOrder": 2203
+  "addedOrder": 2192
  },
  {
   "id": "ia-in.ernet.dli.2015.266765",
   "title": "গুরু প্রদীপ",
-  "author": "Nath, Soumyananda Ed.",
+  "author": "সৌম্যনান্দ নাথ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7365,13 +7140,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266765",
   "origTitle": "Guru-pradip",
+  "origAuthor": "Soumyananda Nath",
   "featured": false,
-  "addedOrder": 2204
+  "addedOrder": 2193
  },
  {
   "id": "ia-in.ernet.dli.2015.266574",
   "title": "ভুদেব মুখোপাধ্যায় ও বাংলা সাহিত্য",
-  "author": "Lahiri, Shipra",
+  "author": "শিপ্র লাহিড়ী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7401,13 +7177,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266574",
   "origTitle": "Bhudeb Mukhopadhyay O Bangla Sahitya",
+  "origAuthor": "Shipra Lahiri",
   "featured": false,
-  "addedOrder": 2205
+  "addedOrder": 2194
  },
  {
   "id": "ia-in.ernet.dli.2015.340072",
   "title": "বঙ্গীয় শাবদা কোষ খণ্ড ২",
-  "author": "Bandyopadhyay, Haricharan, Comp.",
+  "author": "হরিচরণ বন্দ্যোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7437,13 +7214,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.340072",
   "origTitle": "Bangiya Shabda Kosh   Vol. 2",
+  "origAuthor": "Haricharan Bandyopadhyay",
   "featured": false,
-  "addedOrder": 2206
+  "addedOrder": 2195
  },
  {
   "id": "ia-in.ernet.dli.2015.357062",
-  "title": "কবিশেখার কালিদাস রায়ের শ্রেষ্ঠ কবিতা",
-  "author": "Ray,kalidas",
+  "title": "কবিশেখর কালিদাস রায়ের শ্রেষ্ঠ কবিতা",
+  "author": "কালিদাস রায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7473,8 +7251,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357062",
   "origTitle": "Kabishekhar Kalidas Rayer Shreshtha Kabita",
+  "origAuthor": "kalidas Ray",
   "featured": false,
-  "addedOrder": 2207
+  "addedOrder": 2196
  },
  {
   "id": "ia-musarrafhussain_hotmail",
@@ -7509,12 +7288,12 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/musarrafhussain_hotmail",
   "featured": false,
-  "addedOrder": 2208
+  "addedOrder": 2197
  },
  {
   "id": "ia-in.ernet.dli.2015.453069",
   "title": "কালিদাস রচনাসমগ্র",
-  "author": "Kalidas",
+  "author": "কালিদাস",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -7544,13 +7323,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453069",
   "origTitle": "Kalidas Rachanasamagra",
+  "origAuthor": "Kalidas",
   "featured": false,
-  "addedOrder": 2209
+  "addedOrder": 2198
  },
  {
   "id": "ia-dli.bengal.10689.1636",
   "title": "দাশরথি রায়ের পাঁচালী",
-  "author": "Mukhopadhyay, Harimohan, ed.",
+  "author": "হারিমোহান মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7580,13 +7360,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.1636",
   "origTitle": "Dasharathi Ray-er Pachali দাশরথি রায়ের পাঁচালী",
+  "origAuthor": "Harimohan Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2210
+  "addedOrder": 2199
  },
  {
   "id": "ia-dli.bengal.10689.2290",
-  "title": "প্রবাসী খন্ড ২ পর্ব ৩২",
-  "author": "Chattopadhyay, Ramananda, ed",
+  "title": "প্রবাসী খণ্ড ২ পর্ব ৩২",
+  "author": "রামানন্দ চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7616,13 +7397,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.2290",
   "origTitle": "Prabasi - Vol.2; Pt.32 প্রবাসী - খন্ড ২ ; পর্ব ৩২",
+  "origAuthor": "Ramananda Chattopadhyay",
   "featured": false,
-  "addedOrder": 2211
+  "addedOrder": 2200
  },
  {
   "id": "ia-dli.ministry.26702",
   "title": "রবীন্দ্র-রচনাবলি",
-  "author": "Ṭhākur, Rabīndra Nāth; ঠাকুর, রবীন্দ্রনাথ",
+  "author": "ঠাকুর রবীন্দ্রনাথ",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -7651,13 +7433,14 @@
   "downloadSize": 74409642,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.ministry.26702",
+  "origAuthor": "h kur Rab ndra N th",
   "featured": false,
-  "addedOrder": 2212
+  "addedOrder": 2201
  },
  {
   "id": "ia-in.ernet.dli.2015.300787",
   "title": "মেয়েদের কথা বর্ষা ১ নং ১-১২ বৈশাখ চৈত্র",
-  "author": "Sen, Kalyani Ed.",
+  "author": "কালযানি সেন",
   "language": "Bengali",
   "category": "Islamic Studies",
   "source": "Internet Archive",
@@ -7687,13 +7470,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300787",
   "origTitle": "Meyeder Katha Barsha.1 No.1-12(baishakh-chaitra)",
+  "origAuthor": "Kalyani Sen",
   "featured": false,
-  "addedOrder": 2213
+  "addedOrder": 2202
  },
  {
   "id": "ia-in.ernet.dli.2015.317016",
   "title": "রামকৃশনের কথা ও গল্প ২য়",
-  "author": "Premghanananda, Swami",
+  "author": "স্বামী প্রেমঘানানান্দ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7723,13 +7507,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.317016",
   "origTitle": "Ramkrishner Katha O Galpo Ed. 2nd",
+  "origAuthor": "Swami Premghanananda",
   "featured": false,
-  "addedOrder": 2214
+  "addedOrder": 2203
  },
  {
   "id": "ia-in.ernet.dli.2015.458211",
   "title": "বাংলার চালচিত্র",
-  "author": "Jabbar, Abdul",
+  "author": "আবদুল জাব্বর",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7759,13 +7544,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.458211",
   "origTitle": "Banglar Chalchitra",
+  "origAuthor": "Abdul Jabbar",
   "featured": false,
-  "addedOrder": 2215
+  "addedOrder": 2204
  },
  {
   "id": "ia-dli.bengal.10689.4712",
   "title": "গীতার বাণী",
-  "author": "Ray, Anil Baran",
+  "author": "অনিলবারান রায়",
   "language": "Bengali",
   "category": "Religion & Philosophy",
   "source": "Internet Archive",
@@ -7795,13 +7581,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4712",
   "origTitle": "Gitar Bani গীতার বাণী",
+  "origAuthor": "Anil Baran Ray",
   "featured": false,
-  "addedOrder": 2216
+  "addedOrder": 2205
  },
  {
   "id": "ia-dli.bengal.10689.4579",
   "title": "লিঙ্গ পুরাণ",
-  "author": "Tarkaratna, Panchnan, tr.",
+  "author": "পাঞ্চনান তর্করত্ন",
   "language": "Bengali",
   "category": "Religion & Philosophy",
   "source": "Internet Archive",
@@ -7831,13 +7618,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4579",
   "origTitle": "Linga Puran লিঙ্গ পুরাণ",
+  "origAuthor": "Panchnan Tarkaratna",
   "featured": false,
-  "addedOrder": 2217
+  "addedOrder": 2206
  },
  {
   "id": "ia-in.ernet.dli.2015.303539",
   "title": "ঐকচিক উকচা মাধ্যমিক গানিত",
-  "author": "Raychawdhury, Upendra Nath",
+  "author": "উপেন্দ্রনাথ রায়চাওধুর্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7867,13 +7655,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.303539",
   "origTitle": "Aicchik Uccha Madhyamik Ganit",
+  "origAuthor": "Upendra Nath Raychawdhury",
   "featured": false,
-  "addedOrder": 2218
+  "addedOrder": 2207
  },
  {
   "id": "ia-in.ernet.dli.2015.315708",
   "title": "বাঙ্কুরা জেলার পুরাকির্তি",
-  "author": "Bandyopadhaya, Amiya K.",
+  "author": "আমিয়া কে. বান্দ্যোপাধায়া",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7903,13 +7692,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.315708",
   "origTitle": "Bankura Jelar Purakirti",
+  "origAuthor": "Amiya K Bandyopadhaya",
   "featured": false,
-  "addedOrder": 2219
+  "addedOrder": 2208
  },
  {
   "id": "ia-KlpatOrJahlt",
-  "title": "ক্লপাতজাহলত",
-  "author": "ISB PUB",
+  "title": "খিলাফত নাকি জাহালত",
+  "author": "আইএসবি পিইউবি",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -7939,12 +7729,13 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/KlpatOrJahlt",
   "origTitle": "KlpatJahlt",
+  "origAuthor": "ISB PUB",
   "featured": false,
-  "addedOrder": 2220
+  "addedOrder": 2209
  },
  {
   "id": "ia-dli.ministry.07688",
-  "title": "কালকুত্ত গেজেট",
+  "title": "কলকাতা গেজেট",
   "author": "তথ্য নেই",
   "language": "Bengali",
   "category": "অন্যান্য",
@@ -7976,12 +7767,12 @@
   "coverUrl": "https://archive.org/services/img/dli.ministry.07688",
   "origTitle": "The Calcutta Gazette",
   "featured": false,
-  "addedOrder": 2221
+  "addedOrder": 2210
  },
  {
   "id": "ia-in.ernet.dli.2015.352760",
   "title": "দৃশতিপাত ২য়",
-  "author": "Jajabar",
+  "author": "জাজাবার",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8011,13 +7802,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.352760",
   "origTitle": "Drishtipat  Ed. 2nd",
+  "origAuthor": "Jajabar",
   "featured": false,
-  "addedOrder": 2222
+  "addedOrder": 2211
  },
  {
   "id": "ia-in.ernet.dli.2015.302445",
   "title": "কোলকাতার বাবু বৃত্তান্ত",
-  "author": "Ghosh, Loknath",
+  "author": "লোকনাথ ঘোষ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8047,13 +7839,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302445",
   "origTitle": "Kolkatar Babu Brittanta",
+  "origAuthor": "Loknath Ghosh",
   "featured": false,
-  "addedOrder": 2223
+  "addedOrder": 2212
  },
  {
   "id": "ia-in.ernet.dli.2015.458216",
   "title": "মায়ামৃদঙ্গ",
-  "author": "Siraj, Syed Mustafa",
+  "author": "সৈয়দ মোস্তফা সিরাজ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8083,13 +7876,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.458216",
   "origTitle": "Mayamridanga",
+  "origAuthor": "Syed Mustafa Siraj",
   "featured": false,
-  "addedOrder": 2224
+  "addedOrder": 2213
  },
  {
   "id": "ia-in.ernet.dli.2015.355158",
   "title": "গল্পসংগ্রহ",
-  "author": "Chowdhury,pramatha",
+  "author": "প্রমথ চৌধুরী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8119,13 +7913,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.355158",
   "origTitle": "Galposangraha",
+  "origAuthor": "pramatha Chowdhury",
   "featured": false,
-  "addedOrder": 2225
+  "addedOrder": 2214
  },
  {
   "id": "ia-in.ernet.dli.2015.457790",
   "title": "মাধ্যজুগের বাংলা সাহিত্যের তাথ্য ও কালাক্রম",
-  "author": "Mukhopadhyay, Sukhamay",
+  "author": "সুখামায় মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8155,13 +7950,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457790",
   "origTitle": "Madhyajuger Bangla Sahityer Tathya O Kalakram",
+  "origAuthor": "Sukhamay Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2226
+  "addedOrder": 2215
  },
  {
   "id": "ia-in.ernet.dli.2015.453248",
   "title": "বেতাল পাঞ্চবিংশাতি ১ম",
-  "author": "Vidyasagar, Iswarchandra",
+  "author": "ঈশ্বরচন্দ্র বিদ্যাসাগর",
   "language": "Bengali",
   "category": "World History",
   "source": "Internet Archive",
@@ -8191,13 +7987,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453248",
   "origTitle": "Betal Panchabingshati Ed. 1st",
+  "origAuthor": "Iswarchandra Vidyasagar",
   "featured": false,
-  "addedOrder": 2227
+  "addedOrder": 2216
  },
  {
   "id": "ia-in.ernet.dli.2015.303522",
   "title": "আধুনিক বিশ্বের ইতিহাস ২য়",
-  "author": "Ray, Atul Chandra",
+  "author": "অতুলচন্দ্র রায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8227,13 +8024,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.303522",
   "origTitle": "Adhunik Bishwer Itihas Ed. 2nd",
+  "origAuthor": "Atul Chandra Ray",
   "featured": false,
-  "addedOrder": 2228
+  "addedOrder": 2217
  },
  {
   "id": "ia-in.ernet.dli.2015.356264",
-  "title": "জাগাদিশ গুপ্ত রচনাবলী খণ্ড ২",
-  "author": "Gupta, Jagadishchandra",
+  "title": "জগদীশ গুপ্ত রচনাবলী খণ্ড ২",
+  "author": "জগদীশচন্দ্র গুপ্ত",
   "language": "Bengali",
   "category": "Literature",
   "source": "Internet Archive",
@@ -8263,8 +8061,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356264",
   "origTitle": "Jagadish Gupta Rachanabali Vol. 2",
+  "origAuthor": "Jagadishchandra Gupta",
   "featured": false,
-  "addedOrder": 2229
+  "addedOrder": 2218
  },
  {
   "id": "ia-in.ernet.dli.2015.339460",
@@ -8300,12 +8099,12 @@
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.339460",
   "origTitle": "Rigved Sanghita",
   "featured": false,
-  "addedOrder": 2230
+  "addedOrder": 2219
  },
  {
   "id": "ia-in.ernet.dli.2015.457699",
   "title": "মানোবিদ্যর রূপরেখা",
-  "author": "Ghosh, Sunanda",
+  "author": "সুনান্দ ঘোষ",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8335,13 +8134,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457699",
   "origTitle": "Manovidyar Ruprekha",
+  "origAuthor": "Sunanda Ghosh",
   "featured": false,
-  "addedOrder": 2231
+  "addedOrder": 2220
  },
  {
   "id": "ia-in.ernet.dli.2015.265955",
   "title": "সাতাবার্শের আলোকে রামকৃষ্ণ মিশন",
-  "author": "Basu, Tapas",
+  "author": "তাপাস বসু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8371,13 +8171,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265955",
   "origTitle": "Satabarsher Aloke Ramkrishna Mission",
+  "origAuthor": "Tapas Basu",
   "featured": false,
-  "addedOrder": 2232
+  "addedOrder": 2221
  },
  {
   "id": "ia-in.ernet.dli.2015.355916",
   "title": "বাংলা চারিতা গ্রন্তহে শ্রী চৈতন্য",
-  "author": "Ray Chowdhury ,girijashankar",
+  "author": "গিরিজাশাঙ্কর রায়চৌধুরী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8407,8 +8208,9 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.355916",
   "origTitle": "Bangla Charita Granthe Shri Chaitanya",
+  "origAuthor": "girijashankar Ray Chowdhury",
   "featured": false,
-  "addedOrder": 2233
+  "addedOrder": 2222
  },
  {
   "id": "ia-20210610_20210610_0236",
@@ -8443,12 +8245,12 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/20210610_20210610_0236",
   "featured": false,
-  "addedOrder": 2234
+  "addedOrder": 2223
  },
  {
   "id": "ia-dli.bengal.10689.6363",
-  "title": "আর্য্যকায়স্থ প্রতিভা খন্ড ৮",
-  "author": "Sarkar, Kaliprasanna, ed",
+  "title": "আর্য্যকায়স্থ প্রতিভা খণ্ড ৮",
+  "author": "কালীপ্রসন্ন সরকার",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8478,13 +8280,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.6363",
   "origTitle": "Arya Kayastha Pratibha - Vol.8 আর্য্যকায়স্থ প্রতিভা – খন্ড ৮",
+  "origAuthor": "Kaliprasanna Sarkar",
   "featured": false,
-  "addedOrder": 2235
+  "addedOrder": 2224
  },
  {
   "id": "ia-dli.bengal.10689.6408",
   "title": "শ্রী শ্রী চৈতন্য চরিতামৃত",
-  "author": "Goswami, Krishnadas Kabiraj",
+  "author": "কৃষ্ণদাসকবিরাজ গোস্বামী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8514,13 +8317,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.6408",
   "origTitle": "Shri Shri Chaitanya Charitamrita শ্রী শ্রী চৈতন্য চরিতামৃত",
+  "origAuthor": "Krishnadas Kabiraj Goswami",
   "featured": false,
-  "addedOrder": 2236
+  "addedOrder": 2225
  },
  {
   "id": "ia-in.ernet.dli.2015.302252",
   "title": "গ্রীক পুরাণের গল্প",
-  "author": "Gangopadhyay, Nirmalchandra",
+  "author": "নির্মালচান্দ্র গঙ্গোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8550,13 +8354,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302252",
   "origTitle": "Greek Puraner Galpa",
+  "origAuthor": "Nirmalchandra Gangopadhyay",
   "featured": false,
-  "addedOrder": 2237
+  "addedOrder": 2226
  },
  {
   "id": "ia-in.ernet.dli.2015.300234",
   "title": "লোচান",
-  "author": "Bhattacharya, Kalipada, Tr.",
+  "author": "কালীপাদা ভট্টাচার্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8586,13 +8391,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300234",
   "origTitle": "Lochan",
+  "origAuthor": "Kalipada Bhattacharya",
   "featured": false,
-  "addedOrder": 2238
+  "addedOrder": 2227
  },
  {
   "id": "ia-in.ernet.dli.2015.301027",
   "title": "রবীন্দ্র সমকালীন বাংলা কবিতার ধারা",
-  "author": "Mitra, Haraprasad",
+  "author": "হরপ্রসাদ মিত্র",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8622,13 +8428,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.301027",
   "origTitle": "Rabindra Samakalin Bangla Kabitar Dhara",
+  "origAuthor": "Haraprasad Mitra",
   "featured": false,
-  "addedOrder": 2239
+  "addedOrder": 2228
  },
  {
   "id": "ia-in.ernet.dli.2015.356674",
   "title": "বাংলার লোক সাহিত্য খণ্ড ৪ ১ম",
-  "author": "Bhattacharjya,  Ashutosh",
+  "author": "আশুতোষ ভট্টাচার্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8658,13 +8465,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356674",
   "origTitle": "Banglar Lok-sahitya Vol.4, Ed. 1st",
+  "origAuthor": "Ashutosh Bhattacharjya",
   "featured": false,
-  "addedOrder": 2240
+  "addedOrder": 2229
  },
  {
   "id": "ia-in.ernet.dli.2015.457066",
-  "title": "মান্দল সামস্করান",
-  "author": "Chattopadhyay, Saratchandra",
+  "title": "মণ্ডল সামস্করান",
+  "author": "শরৎচন্দ্র চট্টোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8694,13 +8502,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457066",
   "origTitle": "Mandal Samskaran",
+  "origAuthor": "Saratchandra Chattopadhyay",
   "featured": false,
-  "addedOrder": 2241
+  "addedOrder": 2230
  },
  {
   "id": "ia-in.ernet.dli.2015.357810",
   "title": "ব্রম্বহান্দ পুরাণ ৬ম",
-  "author": "Bhattachariya, Nandakumar Kabiratna",
+  "author": "নান্দকুমারকবিরত্ন ভট্টাচার্য",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8730,13 +8539,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357810",
   "origTitle": "Brambhanda-puran  Ed. 6th",
+  "origAuthor": "Nandakumar Kabiratna Bhattachariya",
   "featured": false,
-  "addedOrder": 2242
+  "addedOrder": 2231
  },
  {
   "id": "ia-in.ernet.dli.2015.457110",
-  "title": "পুজা পর্বনের উতসাকাথা",
-  "author": "Sengupta, Pallab",
+  "title": "পুজা পর্বনের উৎসকথা",
+  "author": "পাল্লব সেনগুপ্ত",
   "language": "Bengali",
   "category": "Religion & Philosophy",
   "source": "Internet Archive",
@@ -8766,13 +8576,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457110",
   "origTitle": "Puja-parbaner Utsakatha",
+  "origAuthor": "Pallab Sengupta",
   "featured": false,
-  "addedOrder": 2243
+  "addedOrder": 2232
  },
  {
   "id": "ia-in.ernet.dli.2015.355124",
   "title": "ধর্মমঙ্গল",
-  "author": "Dutta,sunanda Ed.",
+  "author": "সুনান্দ দত্ত",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8802,13 +8613,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.355124",
   "origTitle": "Dharmamangal",
+  "origAuthor": "sunanda Dutta",
   "featured": false,
-  "addedOrder": 2244
+  "addedOrder": 2233
  },
  {
   "id": "ia-Bangla_Academy_English-Bengali_Dictionary_2015",
   "title": "বাংলা একাডেমি ইংরেজি বাংলা অভিধান ২০১৫",
-  "author": "Zillur Rahman Siddiqui, বাংলা একাডেমি (Bangla Academy)",
+  "author": "বাংলা একাডেমি",
   "language": "Bengali",
   "category": "Reference Books",
   "source": "Internet Archive",
@@ -8838,13 +8650,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/Bangla_Academy_English-Bengali_Dictionary_2015",
   "origTitle": "Bangla Academy English Bengali Dictionary (2015)",
+  "origAuthor": "Zillur Rahman Siddiqui Bangla Academy",
   "featured": false,
-  "addedOrder": 2245
+  "addedOrder": 2234
  },
  {
   "id": "ia-in.ernet.dli.2015.338102",
   "title": "শ্রী সুর্জ্য সিদ্ধান্তকৌমুদী",
-  "author": "Swami, Bigyanananda, Comp.",
+  "author": "বিজ্ঞানানান্দ স্বামী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8874,13 +8687,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.338102",
   "origTitle": "Shri Surjya Siddhanta",
+  "origAuthor": "Bigyanananda Swami",
   "featured": false,
-  "addedOrder": 2246
+  "addedOrder": 2235
  },
  {
   "id": "ia-in.ernet.dli.2015.266563",
   "title": "Historical And Critical Studies In Indian Dance",
-  "author": "Mukhopadhyay, Shankarlal",
+  "author": "শঙ্করলাল মুখোপাধ্যায়",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8909,13 +8723,14 @@
   "downloadSize": 96061388,
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266563",
+  "origAuthor": "Shankarlal Mukhopadhyay",
   "featured": false,
-  "addedOrder": 2247
+  "addedOrder": 2236
  },
  {
   "id": "ia-in.ernet.dli.2015.299448",
-  "title": "শিশুসাহিত্যভাগিরাথ জোগিন্দ্রনাথ সরকার খণ্ড ১-২ ১ম",
-  "author": "Kundu, Ranjita",
+  "title": "শিশুসাহিত্যভাগিরাথ যোগীন্দ্রনাথ সরকার খণ্ড ১-২ ১ম",
+  "author": "রাঞ্জিতা কুণ্ডু",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8945,13 +8760,14 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299448",
   "origTitle": "Shishusahityabhagirath Jogindranath Sarkar Vol.1-2 Ed.1st",
+  "origAuthor": "Ranjita Kundu",
   "featured": false,
-  "addedOrder": 2248
+  "addedOrder": 2237
  },
  {
   "id": "ia-in.ernet.dli.2015.315645",
   "title": "হাজার বাচোরের পুরানো বাংলা ভাষায় বৌদ্ধ গান ও দোহা",
-  "author": "Shastri, Haraprasad  Ed.",
+  "author": "হরপ্রসাদ শাস্ত্রী",
   "language": "Bengali",
   "category": "অন্যান্য",
   "source": "Internet Archive",
@@ -8981,6 +8797,413 @@
   "downloadFormat": "PDF",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.315645",
   "origTitle": "Hajar Bachorer Purano Bangla Bhashay Bouddha Gan O Doha",
+  "origAuthor": "Haraprasad Shastri",
+  "featured": false,
+  "addedOrder": 2238
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.302270",
+  "title": "হিমালয়ের পথে পথে",
+  "author": "উমাপ্রসাদ মুখোপাধ্যায়",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.302270",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.302270/2015.302270.Himalayer-Pathe.pdf",
+  "year": 1956,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.302270",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "North",
+  "subcategory": "North",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 17716628,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302270",
+  "origTitle": "Himalayer Pathe Pathe",
+  "origAuthor": "Umaprasad Mukhopadhyay",
+  "featured": false,
+  "addedOrder": 2239
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.298842",
+  "title": "বঙ্গ সংস্কৃতি কথা",
+  "author": "প্রসিতকুমার রায়চৌধুরী",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.298842",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.298842/2015.298842.Banga-sanskriti-Katha.pdf",
+  "year": 1960,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.298842",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "North",
+  "subcategory": "North",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 74500296,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298842",
+  "origTitle": "Banga-sanskriti Katha",
+  "origAuthor": "Prasitkumar Raychowdhury",
+  "featured": false,
+  "addedOrder": 2240
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.302256",
+  "title": "জ্ঞানদাস ও তাহার পদাবলী",
+  "author": "বিমানবিহারি মজুমদার",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.302256",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.302256/2015.302256.Gyandas-O.pdf",
+  "year": 1958,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.302256",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "North",
+  "subcategory": "North",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 25913472,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302256",
+  "origTitle": "Gyandas O Tahar Padabali",
+  "origAuthor": "Bimanbihari Majumder",
+  "featured": false,
+  "addedOrder": 2241
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.454692",
+  "title": "নিতিবিজ্ঞান ও ভারতীয় দর্শন ৭ম খণ্ড ১ম",
+  "author": "প্রমোদবন্ধু সেনগুপ্ত",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.454692",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.454692/2015.454692.Nitibigyan-O.pdf",
+  "year": 1950,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.454692",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "North",
+  "subcategory": "North",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 36560097,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454692",
+  "origTitle": "Nitibigyan O Bharatiya Darshan Ed. 7th Part 1st",
+  "origAuthor": "Pramodbandhu Sengupta",
+  "featured": false,
+  "addedOrder": 2242
+ },
+ {
+  "id": "ia-dli.bengal.10689.3567",
+  "title": "মাসিক বসুমতী বর্ষ ২৩ খণ্ড ২",
+  "author": "সতীশচন্দ্র মুখোপাধ্যায়",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/dli.bengal.10689.3567",
+  "downloadUrl": "https://archive.org/download/dli.bengal.10689.3567/10689.3567.pdf",
+  "year": 1944,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "dli.bengal.10689.3567",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "West Bengal Public Library",
+  "subcategory": "West Bengal Public Library",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 44247376,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/dli.bengal.10689.3567",
+  "origTitle": "Masik Basumati - Year 23; Vol.2 মাসিক বসুমতী - বর্ষ ২৩; খন্ড ২",
+  "origAuthor": "Satish Chandra Mukhopadhaya",
+  "featured": false,
+  "addedOrder": 2243
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.356418",
+  "title": "পরিচয় বর্ষা ৫১ নং ১-১২",
+  "author": "তথ্য নেই",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.356418",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.356418/2015.356418.Parichay-.pdf",
+  "year": 1981,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.356418",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "C-DAK",
+  "subcategory": "C-DAK",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 50605199,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356418",
+  "origTitle": "Parichay  Barsha.51, No. 1-12",
+  "featured": false,
+  "addedOrder": 2244
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.456741",
+  "title": "তান্ত্রিক সাধনা ও সিদ্ধান্তকৌমুদী খণ্ড ২য় ২য়",
+  "author": "গোপিনাথ কবিরাজ",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.456741",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.456741/2015.456741.Tantrik-Sadhana.pdf",
+  "year": 1960,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.456741",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "North",
+  "subcategory": "North",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 12784483,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456741",
+  "origTitle": "Tantrik Sadhana O Siddhanta Vol. 2nd Ed. 2nd",
+  "origAuthor": "Gopinath Kabiraj",
+  "featured": false,
+  "addedOrder": 2245
+ },
+ {
+  "id": "ia-SB10SCMathA",
+  "title": "শ্রীমদ্ ভাগবতম তেন্তহ কাণ্ড",
+  "author": "বেদ ভ্যসা",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/SB10SCMathA",
+  "downloadUrl": "https://archive.org/download/SB10SCMathA/SB-10-SCMath_a.pdf",
+  "year": 1975,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "SB10SCMathA",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": null,
+  "subcategory": null,
+  "description": "Srimad Bhagavatam Tenth Canto with Bangla translation and Sanskrit commentary by Srila Visvanath Chakravarty. Script: Bangla Publisher: Sri Chaitanya Math, Mayapur, West Bengal, India.",
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 20684781,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/SB10SCMathA",
+  "origTitle": "Srimad Bhagavatam Tenth Canto",
+  "origAuthor": "Veda Vyasa",
+  "featured": false,
+  "addedOrder": 2246
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.453945",
+  "title": "এই আমি রেনু",
+  "author": "সমরেশ মজুমদার",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.453945",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.453945/2015.453945.Ei-Ami.pdf",
+  "year": 1951,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.453945",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "North",
+  "subcategory": "North",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 10339631,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453945",
+  "origTitle": "Ei Ami Renu",
+  "origAuthor": "Samaresh Majumdar",
+  "featured": false,
+  "addedOrder": 2247
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.356906",
+  "title": "প্রফুল্ল",
+  "author": "গিরীশচন্দ্র ঘোষ",
+  "language": "Bengali",
+  "category": "অন্যান্য",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.356906",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.356906/2015.356906.Prafulla.pdf",
+  "year": 1962,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.356906",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "C-DAK",
+  "subcategory": "C-DAK",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 12438647,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356906",
+  "origTitle": "Prafulla",
+  "origAuthor": "Girish Chandra Ghosh",
+  "featured": false,
+  "addedOrder": 2248
+ },
+ {
+  "id": "ia-in.ernet.dli.2015.357387",
+  "title": "ওম সাত্যর্থা প্রকাশ ৫ম",
+  "author": "মাদায়ানান্দ স্বরাস্বতি",
+  "language": "Bengali",
+  "category": "World History",
+  "source": "Internet Archive",
+  "readUrl": "https://archive.org/details/in.ernet.dli.2015.357387",
+  "downloadUrl": "https://archive.org/download/in.ernet.dli.2015.357387/2015.357387.Om-Satyartha.pdf",
+  "year": 1946,
+  "copyright": "public-domain",
+  "buyLink": null,
+  "sourceId": "in.ernet.dli.2015.357387",
+  "altTitle": null,
+  "editor": null,
+  "translator": null,
+  "publisher": null,
+  "isbn": null,
+  "country": null,
+  "subject": "C-DAK",
+  "subcategory": "C-DAK",
+  "description": null,
+  "pageCount": null,
+  "edition": null,
+  "price": null,
+  "priceValue": null,
+  "priceCurrency": null,
+  "topRank": null,
+  "availability": "free-download",
+  "downloadSize": 60580935,
+  "downloadFormat": "PDF",
+  "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.357387",
+  "origTitle": "Om Satyartha Prakash  Ed. 5th",
+  "origAuthor": "madayananda Swaraswati",
   "featured": false,
   "addedOrder": 2249
  }
