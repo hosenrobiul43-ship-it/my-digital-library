@@ -346,6 +346,32 @@
     });
     var authors = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; }).slice(0, 10);
     var cats = categoryCounts();
+    var byCat = {};
+    BOOKS.forEach(function (b) {
+      var c = b.category || "অন্যান্য";
+      var cur = byCat[c];
+      if (!cur) { byCat[c] = b; return; }
+      var cr = cur.topRank || 999999, br = b.topRank || 999999;
+      if (br < cr || (br === cr && b.addedOrder < cur.addedOrder)) byCat[c] = b;
+    });
+    var CAT_PICK = {
+      "Science": "ia-perelman-physics-for-entertainment-1-bengali-mir-1987",
+      "Environment": "ia-story-of-a-naturalist-prokritibider-kahini-piotr-manteifel_202512",
+      "Political Science": "ia-rajnitikosh",
+      "Law": "ia-beng-1-1872",
+      "Business & Management": "ia-dli.bengal.10689.2209",
+      "Economics": "ia-hsc-economy-1st-paper-chapter-1",
+      "Education": "ia-ghore-boshe-spoken-english-munzereen-shahid",
+      "Geography": "ia-nctb_2010_class-9-10_secondary-geography"
+    };
+    var onePerCat = cats.map(function (c) {
+      var id = CAT_PICK[c.name];
+      if (id) {
+        var f = BOOKS.filter(function (b) { return b.id === id; })[0];
+        if (f) return f;
+      }
+      return byCat[c.name];
+    }).filter(function (b) { return !!b; });
 
     var h = heroHtml() + adSlotHtml();
     h += '<section class="block"><div class="stats">' +
@@ -355,6 +381,9 @@
       '<div class="stat"><b>' + free.toLocaleString("bn-BD") + '</b><span>ফ্রি ডাউনলোডযোগ্য</span></div>' +
       "</div></section>";
 
+    if (onePerCat.length) {
+      h += '<section class="block"><div class="section-head"><h2>সব বিষয় থেকে একটি করে</h2><a class="link" href="#/categories">সব বিভাগ →</a></div><p class="muted">প্রতিটি বিষয় থেকে একটি করে বাছাই করা বই — এক নজরে সব ধরণের বই দেখে নিন।</p>' + gridHtml(onePerCat) + "</section>";
+    }
     h += '<section class="block"><div class="section-head"><h2>টপ বই</h2><a class="link" href="#/books?sort=top">সব দেখুন →</a></div><p class="muted">সবচেয়ে বেশি ডাউনলোড হওয়া বই — ১ নম্বর সবচেয়ে জনপ্রিয়।</p>' + gridHtml(top) + "</section>";
     var editors = BOOKS.filter(function (b) { return b.editorsChoice; }).slice(0, 12);
     if (editors.length) {
@@ -412,7 +441,7 @@
       "Science", "Technology", "Computer Science", "Mathematics", "Physics", "Chemistry",
       "Biology", "Geography", "Environment", "Education", "Psychology", "Law",
       "Business & Management", "Agriculture", "Arts & Culture", "Travel & Exploration",
-      "Children's Books", "Reference Books", "Research Papers", "Academic Textbooks", "অন্যান্য"];
+      "Children's Books", "Reference Books", "Research Papers", "Academic Textbooks", "চাকরির প্রস্তুতি", "অনার্স ১ম বর্ষ", "অন্যান্য"];
     var counts = {};
     BOOKS.forEach(function (b) { var c = b.category || "অন্যান্য"; counts[c] = (counts[c] || 0) + 1; });
     return order.filter(function (c) { return counts[c]; })
@@ -1039,15 +1068,18 @@
   }
   function renderAbout() {
     infoPage("আমাদের সম্পর্কে",
-      "<div class=\"owner-card\"><img class=\"owner-photo\" src=\"assets/robiul-hosen.jpg\" alt=\"রবিউল হোসেন\">" +
-      "<div class=\"owner-info\"><h3>রবিউল হোসেন</h3>" +
-      "<p class=\"owner-role\">BSS (Hons.) in Political Science, Chattogram College<br>Instructor, Propel Coaching Center</p>" +
-      "<p>এই ডিজিটাল লাইব্রেরির প্রতিষ্ঠাতা ও সম্পাদক। বই পড়তে ভালোবাসেন এবং শিক্ষার্থীদের কাছে বিনামূল্যে বই পৌঁছে দিতে এই লাইব্রেরি তৈরি করেছেন।</p>" +
-      "<p><b>শিক্ষা:</b> BSS (Hons.) রাষ্ট্রবিজ্ঞান, চট্টগ্রাম কলেজ (চলমান)</p>" +
-      "<p><b>যোগাযোগ:</b> <a href=\"mailto:hosenrobiul43@gmail.com\">hosenrobiul43@gmail.com</a> · <a href=\"https://www.facebook.com/61564301917226\" target=\"_blank\" rel=\"noopener\">Facebook: রবিউল</a> · <a href=\"https://github.com/hosenrobiul43-ship-it\" target=\"_blank\" rel=\"noopener\">GitHub</a></p></div></div>" +
       "<p><b>My Digital Library by Robiul Hosen</b> — সবার জন্য উন্মুক্ত একটি ডিজিটাল লাইব্রেরি। এখানে বাংলা ও বিশ্বের বইয়ের তথ্য, বৈধ পড়া ও ডাউনলোডের লিংক এক জায়গায় পাওয়া যায়।</p>" +
       "<p>আমাদের লক্ষ্য: ধাপে ধাপে বাংলাদেশের নামকরা বই, বিশ্বসাহিত্য, ইতিহাস, দর্শন, বিজ্ঞান, ধর্ম ও গবেষণার বইয়ের একটি বড় সংগ্রহ তৈরি করা — সব বই বাংলায়, যাতে সবাই পড়তে পারে।</p>" +
-      "<p>বইয়ের তথ্য সংগ্রহ করা হয় Internet Archive, Project Gutenberg ও Standard Ebooks-এর মতো বৈধ উন্মুক্ত উৎস থেকে। কপিরাইটযুক্ত বইয়ের PDF এখানে দেওয়া হয় না।</p>");
+      "<p>বইয়ের তথ্য সংগ্রহ করা হয় Internet Archive, Project Gutenberg ও Standard Ebooks-এর মতো বৈধ উন্মুক্ত উৎস থেকে। কপিরাইটযুক্ত বইয়ের PDF এখানে দেওয়া হয় না।</p>" +
+      "<h3>About Robiul Hosen</h3>" +
+      "<div class=\"owner-card\"><img class=\"owner-photo\" src=\"assets/robiul-hosen.jpg\" alt=\"রবিউল হোসেন\">" +
+      "<div class=\"owner-info\"><h3>রবিউল হোসেন</h3>" +
+      "<p class=\"owner-titles\">Student | Educator | Content Writer | Digital Enthusiast</p>" +
+      "<p class=\"owner-intro\">I am a Political Science student, educator, and aspiring professional passionate about education, knowledge sharing, writing, and digital innovation.</p>" +
+      "<p class=\"owner-tagline\">“Learning Today, Leading Tomorrow.”</p>" +
+      "<p class=\"owner-role\">Founder &amp; Editor, My Digital Library<br>BSS (Hons.) in Political Science, Chattogram College<br>Instructor, Propel Coaching Center</p>" +
+      "<p><b>শিক্ষা:</b> BSS (Hons.) রাষ্ট্রবিজ্ঞান, চট্টগ্রাম কলেজ (চলমান)</p>" +
+      "<p><b>যোগাযোগ:</b> <a href=\"mailto:hosenrobiul43@gmail.com\">hosenrobiul43@gmail.com</a> · <a href=\"https://www.facebook.com/61564301917226\" target=\"_blank\" rel=\"noopener\">Facebook: রবিউল</a> · <a href=\"https://github.com/hosenrobiul43-ship-it\" target=\"_blank\" rel=\"noopener\">GitHub</a></p><p><a class=\"btn btn-primary\" href=\"https://muse.ai/s/robiul-hosen-xwn6xkxzxqhxqyxsxu/RklTWRtsi3EoMw2QEzEOfyKPql_4cEKMzuHi2DZePME\" target=\"_blank\" rel=\"noopener\">" + "\u09aa\u09c1\u09b0\u09cb \u09aa\u09cb\u09b0\u09cd\u099f\u09ab\u09cb\u09b2\u09bf\u0993 \u09a6\u09c7\u0996\u09c1\u09a8" + "</a></p>" + "</div></div>");
   }
   function renderPrivacy() {
     infoPage("গোপনীয়তা নীতি",
@@ -1065,6 +1097,54 @@
       "<p>এই সাইটে শুধু পাবলিক ডোমেইন বা বিনামূল্যে বৈধভাবে পাওয়া যায় এমন বইয়ের ডাউনলোড লিংক দেওয়া হয়।</p>" +
       "<p>কপিরাইটযুক্ত বইয়ের ক্ষেত্রে ডাউনলোড বোতাম দেখানো হয় না — শুধু অনুমোদিত পড়া, ধার বা কেনার লিংক দেওয়া হয়।</p>" +
       "<p>কোনো বইয়ের কপিরাইট নিয়ে আপত্তি থাকলে যোগাযোগ পাতা থেকে জানান — যাচাই করে লিংক সরিয়ে নেওয়া হবে।</p>");
+  }
+  function renderRequest() {
+    var T = "\u09ac\u0987\u09df\u09c7\u09b0 \u0985\u09a8\u09c1\u09b0\u09cb\u09a7";
+    var D = "\u09af\u09c7 \u09ac\u0987\u099f\u09bf \u09b2\u09be\u0987\u09ac\u09cd\u09b0\u09c7\u09b0\u09bf\u09a4\u09c7 \u099a\u09be\u09a8, \u09a4\u09be\u09b0 \u09a8\u09be\u09ae \u099c\u09be\u09a8\u09be\u09a8 \u2014 \u0986\u09ae\u09b0\u09be \u0996\u09c1\u0981\u099c\u09c7 \u09af\u09c1\u0995\u09cd\u09a4 \u0995\u09b0\u09be\u09b0 \u099a\u09c7\u09b7\u09cd\u099f\u09be \u0995\u09b0\u09ac\u0964";
+    var L_BOOK = "\u09ac\u0987\u09af\u09bc\u09c7\u09b0 \u09a8\u09be\u09ae";
+    var L_AUTHOR = "\u09b2\u09c7\u0996\u0995\u09c7\u09b0 \u09a8\u09be\u09ae";
+    var L_NAME = "\u0986\u09aa\u09a8\u09be\u09b0 \u09a8\u09be\u09ae";
+    var L_GMAIL = "\u0986\u09aa\u09a8\u09be\u09b0 Gmail (\u0990\u099a\u09cd\u099b\u09bf\u0995)";
+    var L_MORE = "\u0986\u09b0\u0993 \u0995\u09bf\u099b\u09c1 \u099c\u09be\u09a8\u09be\u09a4\u09c7 \u099a\u09be\u09a8?";
+    view.innerHTML = '<section class="block"><h2>' + T + '</h2>' +
+      '<p class="muted">' + D + '</p>' +
+      '<form id="reqForm" class="req-form">' +
+      '<label>' + L_BOOK + ' <span class="req-star">*</span><input name="book" required placeholder="' + "\u09af\u09c7\u09ae\u09a8: \u09aa\u09a5\u09c7\u09b0 \u09aa\u09be\u0981\u099a\u09be\u09b2\u09c0" + '"></label>' +
+      '<label>' + L_AUTHOR + '<input name="author" placeholder="' + "\u099c\u09be\u09a8\u09be \u09a5\u09be\u0995\u09b2\u09c7 \u09b2\u09bf\u0996\u09c1\u09a8" + '"></label>' +
+      '<label>' + L_NAME + '<input name="name" placeholder="' + L_NAME + '"></label>' +
+      '<label>' + L_GMAIL + '<input name="gmail" type="email" placeholder="example@gmail.com"></label>' +
+      '<label>' + L_MORE + '<textarea name="more" rows="3" placeholder="' + "\u09ac\u0987\u099f\u09bf \u09b8\u09ae\u09cd\u09aa\u09b0\u09cd\u0995\u09c7 \u0986\u09b0 \u0995\u09bf\u099b\u09c1 \u099c\u09be\u09a8\u09be\u09a4\u09c7 \u099a\u09be\u0987\u09b2\u09c7 \u09b2\u09bf\u0996\u09c1\u09a8" + '"></textarea></label>' +
+      '<button class="btn btn-primary" type="submit">' + "\u0985\u09a8\u09c1\u09b0\u09cb\u09a7 \u09aa\u09be\u09a0\u09be\u09a8" + '</button>' +
+      '<p class="muted small">' + "\u0986\u09aa\u09a8\u09be\u09b0 \u0985\u09a8\u09c1\u09b0\u09cb\u09a7 \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u09b2\u09be\u0987\u09ac\u09cd\u09b0\u09c7\u09b0\u09bf\u09b0 \u09a4\u09be\u09b2\u09bf\u0995\u09be\u09df \u09af\u09be\u09ac\u09c7\u0964" + '</p>' +
+      '</form><div id="reqMsg"></div></section>';
+    var f = document.getElementById("reqForm");
+    var msg = document.getElementById("reqMsg");
+    var btn = f.querySelector("button[type=submit]");
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var fd = new FormData(f);
+      var body = new URLSearchParams();
+      body.set("entry.1454025096", fd.get("book") || "");
+      body.set("entry.737359454", fd.get("author") || "");
+      body.set("entry.1902805564", fd.get("name") || "");
+      body.set("entry.100932459", fd.get("gmail") || "");
+      body.set("entry.1438929822", fd.get("more") || "");
+      btn.disabled = true;
+      msg.innerHTML = '<p class="muted">' + "\u09aa\u09be\u09a0\u09be\u09a8\u09cb \u09b9\u099a\u09cd\u099b\u09c7\u2026" + '</p>';
+      fetch("https://docs.google.com/forms/d/e/1FAIpQLSeTKSSGgF-CFoPenX0WCYOlqJKv8SJgIyeeh4-fs73ljH4MXg/formResponse", { method: "POST", mode: "no-cors", body: body })
+        .then(function () {
+          f.style.display = "none";
+          msg.innerHTML = '<div class="req-ok"><b>' + "\u09a7\u09a8\u09cd\u09af\u09ac\u09be\u09a6! \u0986\u09aa\u09a8\u09be\u09b0 \u0985\u09a8\u09c1\u09b0\u09cb\u09a7 \u09aa\u09c7\u09df\u09c7\u099b\u09bf \u2014 \u09ac\u0987\u099f\u09bf \u0996\u09c1\u0981\u099c\u09c7 \u09af\u09c1\u0995\u09cd\u09a4 \u0995\u09b0\u09be\u09b0 \u099a\u09c7\u09b7\u09cd\u099f\u09be \u0995\u09b0\u09ac\u0964" + '</b><p><button class="btn btn-ghost" data-req-again>' + "\u0986\u09b0\u09c7\u0995\u099f\u09bf \u0985\u09a8\u09c1\u09b0\u09cb\u09a7 \u0995\u09b0\u09c1\u09a8" + '</button> <a class="btn btn-primary" href="#/books">' + "\u09b8\u09ac \u09ac\u0987 \u09a6\u09c7\u0996\u09c1\u09a8" + '</a></p></div>';
+          var ag = msg.querySelector("[data-req-again]");
+          if (ag) ag.addEventListener("click", function () { renderRequest(); });
+          window.scrollTo(0, 0);
+        })
+        .catch(function () {
+          btn.disabled = false;
+          msg.innerHTML = '<div class="req-err">' + "\u09aa\u09be\u09a0\u09be\u09a8\u09cb \u09af\u09be\u09df\u09a8\u09bf\u0964 \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u09ab\u09cb\u09b0\u09cd\u09ae\u09c7 \u09b2\u09bf\u0996\u09c1\u09a8\u0964" + ' <a href="https://forms.gle/gZtvVqZdGpMn6WEh7" target="_blank" rel="noopener">' + "\u0997\u09c1\u0997\u09b2 \u09ab\u09cb\u09b0\u09cd\u09ae \u0996\u09c1\u09b2\u09c1\u09a8" + '</a></div>';
+        });
+    });
+    window.scrollTo(0, 0);
   }
   function renderContact() {
     infoPage("যোগাযোগ",
@@ -1106,6 +1186,7 @@
     else if (page === "terms") renderTerms();
     else if (page === "copyright") renderCopyright();
     else if (page === "contact") renderContact();
+    else if (page === "request") renderRequest();
     else renderHome();
     var nav = document.getElementById("topnav");
     if (nav) nav.classList.remove("open");

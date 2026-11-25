@@ -224,6 +224,8 @@ html[data-theme="dark"] .notice { background: #2b2305; color: #f0d9a8; border-co
 .owner-info h3 { margin: 0 0 4px; color: var(--navy); font-size: 1.4em; }
 html[data-theme="dark"] .owner-info h3 { color: var(--gold); }
 .owner-role { color: var(--muted); margin: 0 0 10px; }
+.owner-titles { color: var(--gold); font-weight: 700; margin: 0 0 8px; }
+.owner-tagline { font-style: italic; border-left: 3px solid var(--gold); padding-left: 10px; }
 .owner-info p { margin: 6px 0; }
 @media (max-width: 560px) { .owner-card { flex-direction: column; align-items: center; text-align: center; } .owner-photo { width: 130px; height: 130px; } }
 .info-page h2 { color: var(--navy); }
@@ -296,3 +298,18 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 .cover-viewer-img { max-width: 94vw; max-height: 76vh; object-fit: contain; border-radius: 8px; background: #fff; }
 .cover-viewer-cap { color: #fff; margin: 0; text-align: center; }
 .cover-hint { margin: 6px 0 0; }
+
+.req-form { display: grid; gap: 14px; max-width: 560px; }
+.req-form label { display: grid; gap: 6px; font-weight: 600; }
+.req-form input, .req-form textarea { padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font: inherit; background: var(--surface); color: var(--text); width: 100%; box-sizing: border-box; }
+.req-form input:focus, .req-form textarea:focus { outline: 2px solid var(--gold); border-color: var(--gold); }
+.req-star { color: #d33; }
+.req-ok { background: #e8f5e9; border: 1px solid #a5d6a7; color: #1a2433; padding: 16px; border-radius: 8px; }
+.req-err { background: #fdecea; border: 1px solid #f5c6cb; color: #1a2433; padding: 16px; border-radius: 8px; }
+
+.app-splash { min-height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 10px; padding: 32px 16px; }
+.app-splash img { width: 120px; height: 120px; border-radius: 24px; }
+.app-splash h1 { font-size: 1.4em; margin: 6px 0 0; }
+.app-splash .tagline { color: var(--gold); font-weight: 600; margin: 0; }
+.app-splash .spinner { width: 28px; height: 28px; border: 3px solid var(--border); border-top-color: var(--gold); border-radius: 50%; animation: spin 1s linear infinite; margin-top: 8px; }
+@keyframes spin { to { transform: rotate(360deg); } }
