@@ -50,6 +50,30 @@
   function langLabel(l) {
     return l === "Bengali" ? "বাংলা" : l === "English" ? "English" : l === "Arabic" ? "আরবি" : l === "Urdu" ? "উর্দু" : (l || NA);
   }
+  /* ---------- no-suggest rule (owner, 2026-11-25) ----------
+     Qawmi and Awami League books stay on the site as normal books and
+     are always findable by search, but they are NEVER promoted: not in
+     Top Books, not in any home suggestion section (one-per-category,
+     Editor's Choice, Featured, Recently Added, Series chips, Popular
+     Authors), not in the no-results recommendations, and not in the
+     top-rank sort. Search results, category/author browse, series pages
+     and book detail pages show them normally. */
+  var NO_SUGGEST = ["কওমি", "qawmi", "পটিয়া", "patiya", "হাটহাজারী", "hathazari",
+    "দেওবন্দ", "deoband", "দারুল উলূম", "দারুল উলুম", "darul uloom",
+    "মাসিক আত-তাওহীদ", "মাসিক আত-তাওহিদ", "monthly at-tawheed",
+    "আওয়ামী লীগ", "আওয়ামীলীগ", "আওয়ামী লিগ", "awami league", "আওয়ামী", "awami",
+    "শেখ হাসিনা", "sheikh hasina", "বঙ্গবন্ধু", "bangabandhu"];
+  function isNoSuggest(b) {
+    if (!b) return false;
+    var s = ((b.title || "") + " " + (b.author || "") + " " + (b.series || "")).toLowerCase();
+    for (var i = 0; i < NO_SUGGEST.length; i++) {
+      if (s.indexOf(NO_SUGGEST[i]) !== -1) return true;
+    }
+    return false;
+  }
+  function topRankOf(b) {
+    return (b.topRank && !isNoSuggest(b)) ? b.topRank : 999;
+  }
   function byId(id) { return BOOKS.find(function (b) { return b.id === id; }); }
 
   /* ---------- direct download via the Cloudflare Worker ----------
@@ -310,11 +334,11 @@
       "<h1>জ্ঞান অন্বেষণের<br><em>নতুন ঠিকানা</em></h1>" +
       "<p>বাংলা থেকে বিশ্বসাহিত্য — বই খুঁজুন, বই সম্পর্কে জানুন এবং বৈধ উৎস থেকে পড়ুন বা ডাউনলোড করুন।</p>" +
       '<form class="search-big" id="heroSearch">' +
-      '<input id="heroQ" type="search" placeholder="বইয়ের নাম, লেখক বা বিষয় লিখুন..." autocomplete="off">' +
+      '<div class="search-box"><span class="search-icon" aria-hidden="true">🔍</span><input id="heroQ" type="search" placeholder="বইয়ের নাম, লেখক বা বিষয় লিখুন..." autocomplete="off"></div>' +
       '<button class="btn btn-primary" type="submit">খুঁজুন</button></form>' +
       '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">লাইব্রেরি শেয়ার করুন ↗</button>' +
       ' <button class="btn btn-ghost" id="followBtn" type="button">🔔 নতুন বইয়ের খবর পান</button>' +
-      ' <button class="btn btn-ghost" id="siteLikeBtn" type="button">♥ <span id="siteLikeLabel">পছন্দ করুন</span> · <span id="siteLikeCount">…</span> জন</button>' +
+      ' <button class="btn btn-ghost" id="siteLikeBtn" type="button">♥ <span id="siteLikeLabel">ফলো করুন</span> · <span id="siteLikeCount">…</span> জন</button>' +
       ' <button class="btn btn-ghost" id="installBtn" type="button" hidden>📲 অ্যাপ ইনস্টল করুন</button></div>' +
       '<div id="siteSharePanel"></div>' +
       '<div id="installPanel" class="share-panel" hidden></div>' +
@@ -337,11 +361,12 @@
     var ar = BOOKS.filter(function (b) { return b.language === "Arabic"; }).length;
     var ur = BOOKS.filter(function (b) { return b.language === "Urdu"; }).length;
     var free = BOOKS.filter(function (b) { return b.downloadUrl; }).length;
-    var top = BOOKS.filter(function (b) { return b.topRank; }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 12);
-    var featured = BOOKS.filter(function (b) { return b.featured; }).slice(0, 12);
-    var recent = BOOKS.slice().sort(function (a, b) { return b.addedOrder - a.addedOrder; }).slice(0, 12);
+    var top = BOOKS.filter(function (b) { return b.topRank && !isNoSuggest(b); }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 12);
+    var featured = BOOKS.filter(function (b) { return b.featured && !isNoSuggest(b); }).slice(0, 12);
+    var recent = BOOKS.filter(function (b) { return !isNoSuggest(b); }).sort(function (a, b) { return b.addedOrder - a.addedOrder; }).slice(0, 12);
     var counts = {};
     BOOKS.forEach(function (b) {
+      if (isNoSuggest(b)) return;
       var a = (b.author || "").trim();
       if (a && a !== NA) counts[a] = (counts[a] || 0) + 1;
     });
@@ -349,6 +374,7 @@
     var cats = categoryCounts();
     var byCat = {};
     BOOKS.forEach(function (b) {
+      if (isNoSuggest(b)) return;
       var c = b.category || "অন্যান্য";
       var cur = byCat[c];
       if (!cur) { byCat[c] = b; return; }
@@ -369,7 +395,7 @@
       var id = CAT_PICK[c.name];
       if (id) {
         var f = BOOKS.filter(function (b) { return b.id === id; })[0];
-        if (f) return f;
+        if (f && !isNoSuggest(f)) return f;
       }
       return byCat[c.name];
     }).filter(function (b) { return !!b; });
@@ -386,7 +412,7 @@
       h += '<section class="block"><div class="section-head"><h2>সব বিষয় থেকে একটি করে</h2><a class="link" href="#/categories">সব বিভাগ →</a></div><p class="muted">প্রতিটি বিষয় থেকে একটি করে বাছাই করা বই — এক নজরে সব ধরণের বই দেখে নিন।</p>' + gridHtml(onePerCat) + "</section>";
     }
     h += '<section class="block"><div class="section-head"><h2>টপ বই</h2><a class="link" href="#/books?sort=top">সব দেখুন →</a></div><p class="muted">সবচেয়ে বেশি ডাউনলোড হওয়া বই — ১ নম্বর সবচেয়ে জনপ্রিয়।</p>' + gridHtml(top) + "</section>";
-    var editors = BOOKS.filter(function (b) { return b.editorsChoice; }).slice(0, 12);
+    var editors = BOOKS.filter(function (b) { return b.editorsChoice && !isNoSuggest(b); }).slice(0, 12);
     if (editors.length) {
       h += '<section class="block"><div class="section-head"><h2>সম্পাদকের পছন্দ</h2><a class="link" href="#/books">সব বই দেখুন →</a></div><p class="muted">লাইব্রেরির পক্ষ থেকে বাছাই করা সেরা বই।</p>' + gridHtml(editors) + "</section>";
     }
@@ -427,7 +453,7 @@
   function seriesCounts() {
     var counts = {};
     BOOKS.forEach(function (b) {
-      if (b.series) counts[b.series] = (counts[b.series] || 0) + 1;
+      if (b.series && !isNoSuggest(b)) counts[b.series] = (counts[b.series] || 0) + 1;
     });
     return Object.keys(counts).filter(function (s) { return counts[s] >= 2; })
       .map(function (s) { return { name: s, n: counts[s] }; })
@@ -678,7 +704,7 @@
       if (s === "newest") return (b.year || 0) - (a.year || 0) || (b.addedOrder - a.addedOrder);
       if (s === "oldest") return (a.year || 99999) - (b.year || 99999) || (a.addedOrder - b.addedOrder);
       if (s === "author") return (a.author || "").localeCompare(b.author || "", "bn");
-      if (s === "top") return (a.topRank || 999) - (b.topRank || 999) || (a.title || "").localeCompare(b.title || "", "bn");
+      if (s === "top") return topRankOf(a) - topRankOf(b) || (a.title || "").localeCompare(b.title || "", "bn");
       if (s === "language") return (a.language || "").localeCompare(b.language || "");
       if (s === "category") return (a.category || "").localeCompare(b.category || "", "bn");
       return 0;
@@ -695,7 +721,7 @@
     return '<section class="block"><h2>সব বই</h2>' +
       '<p class="muted">মোট ' + BOOKS.length.toLocaleString("bn-BD") + 'টি বই — নাম, লেখক, বিভাগ, ভাষা বা বছর দিয়ে খুঁজুন।</p>' +
       '<div class="filters">' +
-      '<div class="full"><label>খুঁজুন (নাম / লেখক / বিষয় — বাংলায় বা Banglish-এ)</label><input id="bQ" type="search" value="' + esc(state.q) + '" placeholder="যেমন: রবীন্দ্রনাথ, কুরআন — বা Banglish-এ: poddoja, hamlet"></div>' +
+      '<div class="full"><label>খুঁজুন (নাম / লেখক / বিষয় — বাংলায় বা Banglish-এ)</label><div class="search-box"><span class="search-icon" aria-hidden="true">🔍</span><input id="bQ" type="search" value="' + esc(state.q) + '" placeholder="যেমন: রবীন্দ্রনাথ, কুরআন — বা Banglish-এ: poddoja, hamlet"></div></div>' +
       '<div><label>বিভাগ</label><select id="bCat"></select></div>' +
       '<div><label>ভাষা</label><select id="bLang"></select></div>' +
       '<div><label>সাজান</label><select id="bSort">' +
@@ -758,7 +784,7 @@
     // No results: recommend the top books instead of leaving an empty page.
     var recHtml = "";
     if (state.q && !list.length) {
-      var recs = BOOKS.filter(function (b) { return b.topRank; }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 6);
+      var recs = BOOKS.filter(function (b) { return b.topRank && !isNoSuggest(b); }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 6);
       if (recs.length) recHtml = '<div class="block"><h3>খুঁজে পাওয়া যায়নি — এই জনপ্রিয় বইগুলো দেখতে পারেন</h3><p class="muted">নামটি বাংলায় বা Banglish-এ লিখে আবার চেষ্টা করুন (যেমন: poddoja, hamlet, tirmizi)।</p>' + gridHtml(recs) + "</div>";
     }
     var h = '<p class="result-info">' + list.length.toLocaleString("bn-BD") + 'টি বই পাওয়া গেছে · পৃষ্ঠা ' + state.page.toLocaleString("bn-BD") + " / " + pages.toLocaleString("bn-BD") + "</p>" +
@@ -842,14 +868,18 @@
   function renderSiteStats() {
     var vc = document.getElementById("visitCount");
     if (vc) vc.textContent = siteStats ? bnNum(siteStats.visits || 0) : "…";
+    var hv = document.getElementById("headerVisitCount");
+    if (hv) hv.textContent = siteStats ? bnNum(siteStats.visits || 0) : "…";
     var btn = document.getElementById("siteLikeBtn");
     if (btn) {
       var liked = !!(siteStats && siteStats.likers && siteStats.likers.indexOf(browserId()) !== -1);
       btn.classList.toggle("liked", liked);
       var c = document.getElementById("siteLikeCount");
       if (c) c.textContent = bnNum(siteStats ? (siteStats.likes || 0) : 0);
+      var hc = document.getElementById("headerLikeCount");
+      if (hc) hc.textContent = bnNum(siteStats ? (siteStats.likes || 0) : 0);
       var lbl = document.getElementById("siteLikeLabel");
-      if (lbl) lbl.textContent = liked ? "পছন্দ করেছেন" : "পছন্দ করুন";
+      if (lbl) lbl.textContent = liked ? "ফলো করেছেন" : "ফলো করুন";
     }
   }
   function initSiteStats() {
@@ -1118,7 +1148,7 @@
     ];
     var seriesHtml = "";
     if (b.series) {
-      var sibs = BOOKS.filter(function (x) { return x.series === b.series && x.id !== b.id; });
+      var sibs = BOOKS.filter(function (x) { return x.series === b.series && x.id !== b.id && (!isNoSuggest(x) || isNoSuggest(b)); });
       if (sibs.length) {
         seriesHtml = '<div class="reviews"><h3>' + esc(b.series) + ' সিরিজের আরও বই</h3>' + gridHtml(sibs.slice(0, 12)) + "</div>";
       }

@@ -324,3 +324,19 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 .fb-row { display: flex; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
 .fb-row input { flex: 1; min-width: 160px; }
 .fb-msg { margin: 8px 0 0; color: var(--gold); font-weight: 600; }
+
+/* ---------- header stats (follow + visit counts, owner 2026-11-25) ---------- */
+.header-stats { display: flex; gap: 14px; align-items: center; font-size: .85rem; color: #d9c98a; white-space: nowrap; }
+.header-stats b { color: #fff; }
+/* ---------- hero buttons side by side (owner 2026-11-25) ---------- */
+.hero-share { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.hero-share .btn { flex: 1 1 auto; text-align: center; }
+/* ---------- search icon inside the search box ---------- */
+.search-box { position: relative; flex: 1; display: flex; min-width: 0; }
+.search-box input { flex: 1; width: 100%; }
+.filters .search-box input, .search-big .search-box input { padding-left: 42px; }
+.search-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); pointer-events: none; font-size: 1.1rem; z-index: 1; }
+@media (max-width: 560px) {
+  .hero-share .btn { flex: 1 1 calc(50% - 4px); }
+  .header-stats { font-size: .8rem; gap: 10px; }
+}
