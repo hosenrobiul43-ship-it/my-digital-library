@@ -106,6 +106,20 @@
         </ul>
       </div>
     </div>
+    <div class="footer-stats">
+      <p class="visit-counter">মোট ভিজিট: <b id="visitCount">…</b></p>
+      <div class="footer-feedback">
+        <h4>সাইট সম্পর্কে মতামত দিন</h4>
+        <form id="siteFeedbackForm">
+          <textarea id="siteFeedbackText" rows="2" maxlength="1000" placeholder="এই সাইটটা কেমন লাগলো? কী ভালো, কী বদলানো দরকার — লিখে জানান।" required></textarea>
+          <div class="fb-row">
+            <input id="siteFeedbackName" type="text" maxlength="60" placeholder="আপনার নাম (ঐচ্ছিক)">
+            <button class="btn btn-primary btn-sm" type="submit">মতামত পাঠান</button>
+          </div>
+        </form>
+        <p id="siteFeedbackMsg" class="fb-msg" hidden></p>
+      </div>
+    </div>
     <p class="copy">© <span id="year"></span> My Digital Library by Robiul Hosen. বইয়ের তথ্য ও ডাউনলোডের শর্ত সংশ্লিষ্ট উৎসে (Internet Archive / Standard Ebooks) যাচাই করুন।</p>
   </div>
 </footer>

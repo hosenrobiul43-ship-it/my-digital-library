@@ -314,6 +314,7 @@
       '<button class="btn btn-primary" type="submit">খুঁজুন</button></form>' +
       '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">লাইব্রেরি শেয়ার করুন ↗</button>' +
       ' <button class="btn btn-ghost" id="followBtn" type="button">🔔 নতুন বইয়ের খবর পান</button>' +
+      ' <button class="btn btn-ghost" id="siteLikeBtn" type="button">♥ <span id="siteLikeLabel">পছন্দ করুন</span> · <span id="siteLikeCount">…</span> জন</button>' +
       ' <button class="btn btn-ghost" id="installBtn" type="button" hidden>📲 অ্যাপ ইনস্টল করুন</button></div>' +
       '<div id="siteSharePanel"></div>' +
       '<div id="installPanel" class="share-panel" hidden></div>' +
@@ -490,6 +491,11 @@
       if (isInstalled) ib.hidden = true;
       else if (deferredInstall || isIOS) ib.hidden = false;
       ib.addEventListener("click", onInstallClick);
+    }
+    var slb = document.getElementById("siteLikeBtn");
+    if (slb) {
+      slb.addEventListener("click", toggleSiteLike);
+      renderSiteStats();
     }
     var t = document.getElementById("advToggle");
     var p = document.getElementById("advPanel");
@@ -805,6 +811,126 @@
   function fsdb() {
     if (typeof firebase === "undefined" || !firebase.firestore) return null;
     try { return firebase.firestore(); } catch (e) { return null; }
+  }
+
+  /* ---------- site stats: visits + likes + feedback (Firestore, free Spark) ----------
+     Counter counts every visit (same person re-entering counts again); one
+     increment per browser session so in-site navigation does not inflate it.
+     Likes: one per browser (localStorage browser id), no login needed.
+     Feedback: public create-only; only the owner reads it in the console. */
+  var SITE_STATS_DOC = "main";
+  var SITE_BROWSER_KEY = "mdl-browser-id";
+  var SITE_VISIT_KEY = "mdl-visit-counted";
+  var siteStats = null;
+  function bnNum(n) {
+    return String(n == null ? 0 : n).replace(/[0-9]/g, function (d) { return "০১২৩৪৫৬৭৮৯"[+d]; });
+  }
+  function browserId() {
+    try {
+      var id = localStorage.getItem(SITE_BROWSER_KEY);
+      if (!id) {
+        id = "b-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 10);
+        localStorage.setItem(SITE_BROWSER_KEY, id);
+      }
+      return id;
+    } catch (e) { return "b-anon"; }
+  }
+  function siteStatsRef() {
+    var db = fsdb();
+    return db ? db.collection("site_stats").doc(SITE_STATS_DOC) : null;
+  }
+  function renderSiteStats() {
+    var vc = document.getElementById("visitCount");
+    if (vc) vc.textContent = siteStats ? bnNum(siteStats.visits || 0) : "…";
+    var btn = document.getElementById("siteLikeBtn");
+    if (btn) {
+      var liked = !!(siteStats && siteStats.likers && siteStats.likers.indexOf(browserId()) !== -1);
+      btn.classList.toggle("liked", liked);
+      var c = document.getElementById("siteLikeCount");
+      if (c) c.textContent = bnNum(siteStats ? (siteStats.likes || 0) : 0);
+      var lbl = document.getElementById("siteLikeLabel");
+      if (lbl) lbl.textContent = liked ? "পছন্দ করেছেন" : "পছন্দ করুন";
+    }
+  }
+  function initSiteStats() {
+    var form = document.getElementById("siteFeedbackForm");
+    if (form) form.addEventListener("submit", submitSiteFeedback);
+    var ref = siteStatsRef();
+    if (!ref) { renderSiteStats(); return; }
+    ref.get().then(function (snap) {
+      siteStats = snap.exists ? snap.data() : { visits: 0, likes: 0, likers: [] };
+      renderSiteStats();
+      var counted = false;
+      try { counted = sessionStorage.getItem(SITE_VISIT_KEY) === "1"; } catch (e) {}
+      if (counted) return;
+      try { sessionStorage.setItem(SITE_VISIT_KEY, "1"); } catch (e) {}
+      var FV = firebase.firestore.FieldValue;
+      if (snap.exists) {
+        ref.update({ visits: FV.increment(1) }).then(function () {
+          siteStats.visits = (siteStats.visits || 0) + 1;
+          renderSiteStats();
+        }).catch(function () {});
+      } else {
+        ref.set({ visits: 1, likes: 0, likers: [] }).then(function () {
+          siteStats.visits = 1;
+          renderSiteStats();
+        }).catch(function () {});
+      }
+    }).catch(function () { renderSiteStats(); });
+  }
+  function toggleSiteLike() {
+    var ref = siteStatsRef();
+    if (!ref || typeof firebase === "undefined" || !firebase.firestore) return;
+    var id = browserId();
+    var FV = firebase.firestore.FieldValue;
+    function likedNow() {
+      return !!(siteStats && siteStats.likers && siteStats.likers.indexOf(id) !== -1);
+    }
+    if (!siteStats) {
+      siteStats = { visits: 1, likes: 1, likers: [id] };
+      renderSiteStats();
+      ref.set({ visits: 1, likes: 1, likers: [id] }).then(function () {
+        siteStats = { visits: 1, likes: 1, likers: [id] };
+        renderSiteStats();
+      }).catch(function () { initSiteStats(); });
+      return;
+    }
+    if (likedNow()) {
+      siteStats.likes = Math.max(0, (siteStats.likes || 0) - 1);
+      siteStats.likers = siteStats.likers.filter(function (x) { return x !== id; });
+      renderSiteStats();
+      ref.update({ likes: FV.increment(-1), likers: FV.arrayRemove(id) }).catch(function () { initSiteStats(); });
+    } else {
+      siteStats.likes = (siteStats.likes || 0) + 1;
+      siteStats.likers = (siteStats.likers || []).concat([id]);
+      renderSiteStats();
+      ref.update({ likes: FV.increment(1), likers: FV.arrayUnion(id) }).catch(function () { initSiteStats(); });
+    }
+  }
+  function submitSiteFeedback(e) {
+    e.preventDefault();
+    var textEl = document.getElementById("siteFeedbackText");
+    var nameEl = document.getElementById("siteFeedbackName");
+    var msg = document.getElementById("siteFeedbackMsg");
+    var text = textEl ? textEl.value.trim() : "";
+    if (!text) return;
+    if (text.length > 1000) text = text.slice(0, 1000);
+    var db = fsdb();
+    function done(ok) {
+      if (!msg) return;
+      msg.hidden = false;
+      msg.textContent = ok ? "ধন্যবাদ! আপনার মতামত পৌঁছে গেছে।" : "মতামত পাঠানো যায়নি — পরে আবার চেষ্টা করুন।";
+      if (ok) {
+        if (textEl) textEl.value = "";
+        if (nameEl) nameEl.value = "";
+      }
+    }
+    if (!db) { done(false); return; }
+    db.collection("site_feedback").add({
+      text: text,
+      name: nameEl ? nameEl.value.trim().slice(0, 60) : "",
+      createdAt: firebase.firestore.FieldValue.serverTimestamp()
+    }).then(function () { done(true); }).catch(function () { done(false); });
   }
   function starsHtml(n) {
     n = Math.max(0, Math.min(5, Math.round(n || 0)));
@@ -1287,4 +1413,5 @@
   window.addEventListener("hashchange", route);
 
   loadBooks();
+  initSiteStats();
 })();

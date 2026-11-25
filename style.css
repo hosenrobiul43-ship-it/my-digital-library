@@ -313,3 +313,14 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 .app-splash .tagline { color: var(--gold); font-weight: 600; margin: 0; }
 .app-splash .spinner { width: 28px; height: 28px; border: 3px solid var(--border); border-top-color: var(--gold); border-radius: 50%; animation: spin 1s linear infinite; margin-top: 8px; }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- site stats: like button + visits + feedback ---------- */
+#siteLikeBtn.liked { border-color: var(--gold); color: var(--gold); }
+.footer-stats { border-top: 1px solid var(--border); margin-top: 20px; padding-top: 16px; display: grid; gap: 14px; }
+.visit-counter { margin: 0; }
+.footer-feedback h4 { margin: 0 0 8px; }
+.footer-feedback textarea, .footer-feedback input { width: 100%; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; font: inherit; background: var(--surface); color: var(--text); }
+.footer-feedback textarea:focus, .footer-feedback input:focus { outline: 2px solid var(--gold); border-color: var(--gold); }
+.fb-row { display: flex; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+.fb-row input { flex: 1; min-width: 160px; }
+.fb-msg { margin: 8px 0 0; color: var(--gold); font-weight: 600; }
