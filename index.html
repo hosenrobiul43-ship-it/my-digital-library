@@ -47,16 +47,17 @@
       <img class="brand-logo" src="logo.webp" alt="My Digital Library লোগো">
       <span><b>My Digital Library</b><small>BY ROBIUL HOSEN</small></span>
     </a>
-    <div class="header-stats" id="headerStats"><span class="hs-item">♥ <b id="headerLikeCount">…</b> জন ফলো করেছেন</span><span class="hs-item">👁 <b id="headerVisitCount">…</b> ভিজিট</span></div>
+    <div class="header-stats" id="headerStats"><span class="hs-item">♥ <b id="headerLikeCount">…</b> <span data-i18n="header.followers">জন ফলো করেছেন</span></span><span class="hs-item">👁 <b id="headerVisitCount">…</b> <span data-i18n="header.visits">ভিজিট</span></span></div>
     <button class="icon-btn menu-btn" id="menuBtn" aria-label="মেনু">☰</button>
     <nav class="topnav" id="topnav">
-      <a href="#/" data-nav="home">হোম</a>
-      <a href="#/books" data-nav="books">সব বই</a>
-      <a href="#/categories" data-nav="categories">বিভাগ</a>
-      <a href="#/authors" data-nav="authors">লেখক</a>
-      <a href="#/about" data-nav="about">আমাদের সম্পর্কে</a>
+      <a href="#/" data-nav="home" data-i18n="nav.home">হোম</a>
+      <a href="#/books" data-nav="books" data-i18n="nav.books">সব বই</a>
+      <a href="#/categories" data-nav="categories" data-i18n="nav.categories">বিভাগ</a>
+      <a href="#/authors" data-nav="authors" data-i18n="nav.authors">লেখক</a>
+      <a href="#/about" data-nav="about" data-i18n="nav.about">আমাদের সম্পর্কে</a>
     </nav>
     <button class="icon-btn" id="themeBtn" aria-label="ডার্ক মোড">🌙 ডার্ক</button>
+    <button class="icon-btn" id="langBtn" aria-label="ভাষা / Language">EN</button>
     <span id="authBox"><button class="btn btn-ghost btn-sm" id="loginBtn" type="button">Google দিয়ে লগইন</button></span>
   </div>
 </header>
@@ -67,7 +68,7 @@
     <h1>ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন</h1>
     <p class="tagline">A World of Knowledge, One Library.</p>
     <div class="spinner" aria-hidden="true"></div>
-    <p class="muted">লাইব্রেরি লোড হচ্ছে…</p>
+    <p class="muted" data-i18n="app.loading">লাইব্রেরি লোড হচ্ছে…</p>
   </div>
 </main>
 
@@ -80,26 +81,26 @@
         <p class="small">সবার জন্য উন্মুক্ত একটি ডিজিটাল লাইব্রেরি — বাংলা ও বিশ্বের বইয়ের তথ্য, বৈধ পড়া ও ডাউনলোডের লিংক এক জায়গায়।</p>
       </div>
       <div>
-        <h4>লাইব্রেরি</h4>
+        <h4 data-i18n="footer.library">লাইব্রেরি</h4>
         <ul>
-          <li><a href="#/books">সব বই</a></li>
-          <li><a href="#/categories">বিভাগ</a></li>
-          <li><a href="#/authors">লেখক</a></li>
-          <li><a href="#/request">বইয়ের অনুরোধ করুন</a></li>
-          <li><a href="#/about">আমাদের সম্পর্কে</a></li>
+          <li><a href="#/books" data-i18n="nav.books">সব বই</a></li>
+          <li><a href="#/categories" data-i18n="nav.categories">বিভাগ</a></li>
+          <li><a href="#/authors" data-i18n="nav.authors">লেখক</a></li>
+          <li><a href="#/request" data-i18n="footer.request">বইয়ের অনুরোধ করুন</a></li>
+          <li><a href="#/about" data-i18n="nav.about">আমাদের সম্পর্কে</a></li>
         </ul>
       </div>
       <div>
-        <h4>নীতিমালা</h4>
+        <h4 data-i18n="footer.policy">নীতিমালা</h4>
         <ul>
-          <li><a href="#/privacy">গোপনীয়তা নীতি</a></li>
-          <li><a href="#/terms">ব্যবহারের শর্তাবলি</a></li>
-          <li><a href="#/copyright">কপিরাইট নীতি</a></li>
-          <li><a href="#/contact">যোগাযোগ</a></li>
+          <li><a href="#/privacy" data-i18n="footer.privacy">গোপনীয়তা নীতি</a></li>
+          <li><a href="#/terms" data-i18n="footer.terms">ব্যবহারের শর্তাবলি</a></li>
+          <li><a href="#/copyright" data-i18n="footer.copyright">কপিরাইট নীতি</a></li>
+          <li><a href="#/contact" data-i18n="footer.contact">যোগাযোগ</a></li>
         </ul>
       </div>
       <div>
-        <h4>যোগাযোগ</h4>
+        <h4 data-i18n="footer.contact">যোগাযোগ</h4>
         <ul>
           <li><a href="mailto:hosenrobiul43@gmail.com">hosenrobiul43@gmail.com</a></li>
           <li><a href="https://www.facebook.com/61564301917226" target="_blank" rel="noopener">Facebook — রবিউল</a></li>
@@ -108,14 +109,14 @@
       </div>
     </div>
     <div class="footer-stats">
-      <p class="visit-counter">মোট ভিজিট: <b id="visitCount">…</b></p>
+      <p class="visit-counter"><span data-i18n="footer.visits">মোট ভিজিট:</span> <b id="visitCount">…</b></p>
       <div class="footer-feedback">
-        <h4>সাইট সম্পর্কে মতামত দিন</h4>
+        <h4 data-i18n="footer.fbTitle">সাইট সম্পর্কে মতামত দিন</h4>
         <form id="siteFeedbackForm">
-          <textarea id="siteFeedbackText" rows="2" maxlength="1000" placeholder="এই সাইটটা কেমন লাগলো? কী ভালো, কী বদলানো দরকার — লিখে জানান।" required></textarea>
+          <textarea id="siteFeedbackText" rows="2" maxlength="1000" placeholder="এই সাইটটা কেমন লাগলো? কী ভালো, কী বদলানো দরকার — লিখে জানান।" data-i18n-ph="footer.fbPh" required></textarea>
           <div class="fb-row">
-            <input id="siteFeedbackName" type="text" maxlength="60" placeholder="আপনার নাম (ঐচ্ছিক)">
-            <button class="btn btn-primary btn-sm" type="submit">মতামত পাঠান</button>
+            <input id="siteFeedbackName" type="text" maxlength="60" placeholder="আপনার নাম (ঐচ্ছিক)" data-i18n-ph="footer.fbName">
+            <button class="btn btn-primary btn-sm" type="submit" data-i18n="footer.fbSend">মতামত পাঠান</button>
           </div>
         </form>
         <p id="siteFeedbackMsg" class="fb-msg" hidden></p>

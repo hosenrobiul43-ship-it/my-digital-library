@@ -14,6 +14,298 @@
   var state = { q: "", title: "", author: "", category: "", language: "", year: "",
                 sort: "az", page: 1 };
   var NA = "তথ্য নেই";
+  /* ---------- language: Bangla / English UI toggle (owner, 2026-11-25) ----------
+     The site UI (menus, buttons, headings, labels) switches between Bangla
+     and English; book titles, authors and descriptions are content and
+     stay exactly as they are. The choice is saved on the phone. */
+  var LANG_KEY = "mdl-lang";
+  var LANG = "bn";
+  try {
+    var _sl = localStorage.getItem(LANG_KEY);
+    if (_sl === "en" || _sl === "bn") LANG = _sl;
+  } catch (e) {}
+  var STR = {
+    "na": { bn: "তথ্য নেই", en: "No info" },
+    "now": { bn: "এখনই", en: "Just now" },
+    "theme.light": { bn: "লাইট", en: "Light" },
+    "theme.dark": { bn: "ডার্ক", en: "Dark" },
+    "user": { bn: "ব্যবহারকারী", en: "User" },
+    "auth.login": { bn: "Google দিয়ে লগইন", en: "Sign in with Google" },
+    "auth.logout": { bn: "লগআউট", en: "Sign out" },
+    "nav.home": { bn: "হোম", en: "Home" },
+    "nav.books": { bn: "সব বই", en: "All Books" },
+    "nav.categories": { bn: "বিভাগ", en: "Categories" },
+    "nav.authors": { bn: "লেখক", en: "Authors" },
+    "nav.about": { bn: "আমাদের সম্পর্কে", en: "About Us" },
+    "header.followers": { bn: "জন ফলো করেছেন", en: "followers" },
+    "header.visits": { bn: "ভিজিট", en: "visits" },
+    "footer.about": { bn: "ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন — সবার জন্য উন্মুক্ত একটি অনলাইন লাইব্রেরি।", en: "Digital Library by Robiul Hosen — an open online library for everyone." },
+    "footer.library": { bn: "লাইব্রেরি", en: "Library" },
+    "footer.policy": { bn: "নীতিমালা", en: "Policies" },
+    "footer.contact": { bn: "যোগাযোগ", en: "Contact" },
+    "footer.request": { bn: "বইয়ের অনুরোধ করুন", en: "Request a Book" },
+    "footer.privacy": { bn: "গোপনীয়তা নীতি", en: "Privacy Policy" },
+    "footer.terms": { bn: "ব্যবহারের শর্তাবলি", en: "Terms of Use" },
+    "footer.copyright": { bn: "কপিরাইট নীতি", en: "Copyright Policy" },
+    "footer.copy": { bn: "ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন। সর্বস্বত্ব সংরক্ষিত।", en: "Digital Library by Robiul Hosen. All rights reserved." },
+    "footer.fbTitle": { bn: "সাইট সম্পর্কে মতামত দিন", en: "Share Your Feedback About the Site" },
+    "footer.fbPh": { bn: "আপনার মতামত লিখুন...", en: "Write your feedback..." },
+    "footer.fbName": { bn: "আপনার নাম (ঐচ্ছিক)", en: "Your name (optional)" },
+    "footer.fbSend": { bn: "মতামত পাঠান", en: "Send Feedback" },
+    "footer.visits": { bn: "মোট ভিজিট:", en: "Total visits:" },
+    "hero.h1": { bn: "জ্ঞান অন্বেষণের<br><em>নতুন ঠিকানা</em>", en: "A <em>New Home</em> for Exploring Knowledge" },
+    "hero.sub": { bn: "বাংলা থেকে বিশ্বসাহিত্য — বই খুঁজুন, বই সম্পর্কে জানুন এবং বৈধ উৎস থেকে পড়ুন বা ডাউনলোড করুন।", en: "From Bangla to world literature — search books, learn about them, and read or download from legal sources." },
+    "hero.ph": { bn: "বইয়ের নাম, লেখক বা বিষয় লিখুন...", en: "Write a book name, author or topic..." },
+    "hero.search": { bn: "খুঁজুন", en: "Search" },
+    "hero.share": { bn: "লাইব্রেরি শেয়ার করুন ↗", en: "Share Library ↗" },
+    "hero.followNews": { bn: "🔔 নতুন বইয়ের খবর পান", en: "🔔 Get New Book Updates" },
+    "hero.followedNews": { bn: "🔔 ফলো করা হয়েছে ✓ — বন্ধ করতে চাপুন", en: "🔔 Following ✓ — tap to stop" },
+    "hero.follow": { bn: "ফলো করুন", en: "Follow" },
+    "hero.followed": { bn: "ফলো করেছেন", en: "Following" },
+    "hero.install": { bn: "📲 অ্যাপ ইনস্টল করুন", en: "📲 Install App" },
+    "hero.adv": { bn: "উন্নত অনুসন্ধান (Advanced Search) ⌄", en: "Advanced Search ⌄" },
+    "adv.title": { bn: "বইয়ের নাম", en: "Book Name" },
+    "adv.author": { bn: "লেখক", en: "Author" },
+    "adv.category": { bn: "বিভাগ", en: "Category" },
+    "adv.language": { bn: "ভাষা", en: "Language" },
+    "adv.year": { bn: "প্রকাশের বছর", en: "Publication Year" },
+    "adv.phTitle": { bn: "শিরোনাম", en: "Title" },
+    "adv.phAuthor": { bn: "লেখকের নাম", en: "Author name" },
+    "adv.phYear": { bn: "যেমন ১৯৪১", en: "e.g. 1941" },
+    "adv.allCat": { bn: "সব বিভাগ", en: "All Categories" },
+    "adv.allLang": { bn: "সব ভাষা", en: "All Languages" },
+    "adv.go": { bn: "অনুসন্ধান করুন", en: "Search" },
+    "stats.total": { bn: "মোট বই", en: "Total Books" },
+    "stats.bn": { bn: "বাংলা বই", en: "Bangla Books" },
+    "stats.en": { bn: "ইংরেজি বই", en: "English Books" },
+    "stats.free": { bn: "ফ্রি ডাউনলোডযোগ্য", en: "Free to Download" },
+    "sec.onePerCat": { bn: "সব বিষয় থেকে একটি করে", en: "One from Every Subject" },
+    "sec.onePerCatSub": { bn: "প্রতিটি বিষয় থেকে একটি করে বাছাই করা বই — এক নজরে সব ধরণের বই দেখে নিন।", en: "One picked book from every subject — see all kinds of books at a glance." },
+    "sec.top": { bn: "টপ বই", en: "Top Books" },
+    "sec.topSub": { bn: "সবচেয়ে বেশি ডাউনলোড হওয়া বই — ১ নম্বর সবচেয়ে জনপ্রিয়।", en: "The most downloaded books — #1 is the most popular." },
+    "sec.editors": { bn: "সম্পাদকের পছন্দ", en: "Editor's Choice" },
+    "sec.editorsSub": { bn: "লাইব্রেরির পক্ষ থেকে বাছাই করা সেরা বই।", en: "The best books picked by the library." },
+    "sec.series": { bn: "সিরিজ", en: "Series" },
+    "sec.seriesSub": { bn: "একই সিরিজের বইগুলো একসাথে — একটা পড়লে বাকিগুলোও পাবেন।", en: "Books of the same series together — read one, find the rest." },
+    "sec.featured": { bn: "বিশেষভাবে নির্বাচিত বই", en: "Featured Books" },
+    "sec.recent": { bn: "সম্প্রতি যুক্ত বই", en: "Recently Added Books" },
+    "sec.favs": { bn: "পছন্দের বই", en: "Saved Books" },
+    "sec.favsSub": { bn: "আপনার ফোনে সংরক্ষিত — লগইন লাগে না।", en: "Saved on your phone — no login needed." },
+    "sec.authors": { bn: "জনপ্রিয় লেখক", en: "Popular Authors" },
+    "sec.categories": { bn: "বিভাগ", en: "Categories" },
+    "sec.languages": { bn: "ভাষা", en: "Languages" },
+    "sec.freeLegal": { bn: "ফ্রি ও বৈধ বই", en: "Free and Legal Books" },
+    "sec.freeLegalBody": { bn: "এই লাইব্রেরির <b>{n}টি</b> বই Internet Archive ও Standard Ebooks থেকে বৈধভাবে ফ্রি ডাউনলোড করা যায়। কপিরাইটযুক্ত বইয়ের ক্ষেত্রে শুধু অনুমোদিত পড়া, ধার বা কেনার লিংক দেওয়া হয় — PDF দেওয়া হয় না।", en: "The library's <b>{n}</b> books can be legally downloaded for free from Internet Archive and Standard Ebooks. For copyrighted books, only approved reading, borrowing or buying links are given — no PDF." },
+    "see.allCats": { bn: "সব বিভাগ →", en: "All Categories →" },
+    "see.all": { bn: "সব দেখুন →", en: "See All →" },
+    "see.allBooks": { bn: "সব বই দেখুন →", en: "See All Books →" },
+    "see.allAuthors": { bn: "সব লেখক →", en: "All Authors →" },
+    "author.books": { bn: "টি বই", en: " books" },
+    "lang.bengali": { bn: "বাংলা", en: "Bengali" },
+    "lang.arabic": { bn: "আরবি", en: "Arabic" },
+    "lang.urdu": { bn: "উর্দু", en: "Urdu" },
+    "books.title": { bn: "সব বই", en: "All Books" },
+    "books.sub": { bn: "মোট {n}টি বই — নাম, লেখক, বিভাগ, ভাষা বা বছর দিয়ে খুঁজুন।", en: "Total {n} books — search by name, author, category, language or year." },
+    "books.qLabel": { bn: "খুঁজুন (নাম / লেখক / বিষয় — বাংলায় বা Banglish-এ)", en: "Search (name / author / topic — in Bangla or Banglish)" },
+    "books.qPh": { bn: "যেমন: রবীন্দ্রনাথ, কুরআন — বা Banglish-এ: poddoja, hamlet", en: "e.g. Rabindranath, Quran — or in Banglish: poddoja, hamlet" },
+    "books.catLabel": { bn: "বিভাগ", en: "Category" },
+    "books.langLabel": { bn: "ভাষা", en: "Language" },
+    "books.sortLabel": { bn: "সাজান", en: "Sort" },
+    "books.yearLabel": { bn: "বছর", en: "Year" },
+    "books.yearPh": { bn: "যেমন ১৯৪১", en: "e.g. 1941" },
+    "sort.az": { bn: "A–Z (নাম অনুযায়ী)", en: "A–Z (by Name)" },
+    "sort.za": { bn: "Z–A", en: "Z–A" },
+    "sort.newest": { bn: "নতুন আগে", en: "Newest First" },
+    "sort.oldest": { bn: "পুরনো আগে", en: "Oldest First" },
+    "sort.author": { bn: "লেখক অনুযায়ী", en: "By Author" },
+    "sort.top": { bn: "টপ র‍্যাংকিং অনুযায়ী", en: "By Top Rank" },
+    "sort.language": { bn: "ভাষা অনুযায়ী", en: "By Language" },
+    "sort.category": { bn: "বিভাগ অনুযায়ী", en: "By Category" },
+    "books.allCat": { bn: "সব বিভাগ", en: "All Categories" },
+    "books.allLang": { bn: "সব ভাষা", en: "All Languages" },
+    "results.info": { bn: "{n}টি বই পাওয়া গেছে · পৃষ্ঠা {p} / {t}", en: "{n} books found · Page {p} / {t}" },
+    "results.prev": { bn: "← আগের পৃষ্ঠা", en: "← Previous Page" },
+    "results.next": { bn: "পরের পৃষ্ঠা →", en: "Next Page →" },
+    "results.page": { bn: "পৃষ্ঠা {p} / {t}", en: "Page {p} / {t}" },
+    "results.none": { bn: "খুঁজে পাওয়া যায়নি — এই জনপ্রিয় বইগুলো দেখতে পারেন", en: "Not found — you may like these popular books" },
+    "results.noneSub": { bn: "নামটি বাংলায় বা Banglish-এ লিখে আবার চেষ্টা করুন (যেমন: poddoja, hamlet, tirmizi)।", en: "Try writing the name in Bangla or Banglish (e.g. poddoja, hamlet, tirmizi)." },
+    "grid.empty": { bn: "কোনো বই পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।", en: "No books found. Try another word." },
+    "tag.buy": { bn: "কিনে পড়ুন", en: "Buy to Read" },
+    "tag.free": { bn: "ফ্রি ডাউনলোড", en: "Free Download" },
+    "tag.nodl": { bn: "শুধু অনলাইনে পড়ুন", en: "Read Online Only" },
+    "card.fav": { bn: "পছন্দের বই", en: "Saved Book" },
+    "cover.altSuffix": { bn: "বইয়ের প্রচ্ছদ", en: "book cover" },
+    "cover.view": { bn: "প্রচ্ছদ বড় করে দেখুন", en: "View cover in full size" },
+    "cover.tap": { bn: "বড় করে দেখতে চাপ দিন", en: "Tap to view larger" },
+    "cover.hint": { bn: "বড় করে দেখতে প্রচ্ছদে চাপ দিন", en: "Tap the cover to view it larger" },
+    "cover.close": { bn: "✕ বন্ধ করুন", en: "✕ Close" },
+    "cover.aria": { bn: "বইয়ের প্রচ্ছদ", en: "Book cover" },
+    "dl.pdf": { bn: "PDF ডাউনলোড ⬇", en: "Download PDF ⬇" },
+    "dl.epub": { bn: "EPUB ডাউনলোড ⬇", en: "Download EPUB ⬇" },
+    "dl.txt": { bn: "টেক্সট পড়ুন ↗", en: "Read Text ↗" },
+    "dl.any": { bn: "PDF / টেক্সট ডাউনলোড ⬇", en: "Download PDF / Text ⬇" },
+    "share.copy": { bn: "লিংক কপি করুন", en: "Copy Link" },
+    "share.igNote": { bn: "ইনস্টাগ্রামে শেয়ার করতে লিংক কপি করে ইনস্টাগ্রাম অ্যাপে পেস্ট করুন, অথবা ফোনের শেয়ার মেনু থেকে ইনস্টাগ্রাম বেছে নিন।", en: "To share on Instagram, copy the link and paste it in the Instagram app, or choose Instagram from your phone's share menu." },
+    "ad.tib": { bn: "<b>খাঁটি আতর — Tīb Perfumes</b><br>৩ মিলি আতর মাত্র ১২০৳ থেকে · অর্ডার করতে ক্লিক করুন", en: "<b>Pure Attar — Tīb Perfumes</b><br>3 ml attar from only ৳120 · Click to order" },
+    "book.notFound": { bn: "এই বইটি পাওয়া যায়নি।", en: "This book was not found." },
+    "book.loading": { bn: "বইয়ের বিস্তারিত তথ্য লোড হচ্ছে…", en: "Loading book details…" },
+    "book.availFree": { bn: "অনলাইনে পড়া ও ফ্রি ডাউনলোড করা যায়", en: "Can be read online and downloaded for free" },
+    "book.availBuy": { bn: "এই বইয়ের ফ্রি PDF নেই — কিনে পড়া যায় (নিচে কেনার লিংক দেওয়া আছে)", en: "No free PDF for this book — it can be bought (buy link below)" },
+    "book.availRead": { bn: "অনলাইনে পড়া যায় (উৎসের নিয়ম অনুযায়ী)", en: "Can be read online (as per the source's rules)" },
+    "row.id": { bn: "বইয়ের আইডি", en: "Book ID" },
+    "row.title": { bn: "বইয়ের নাম", en: "Book Name" },
+    "row.altTitle": { bn: "বিকল্প শিরোনাম", en: "Alternative Title" },
+    "row.author": { bn: "লেখক", en: "Author" },
+    "row.editor": { bn: "সম্পাদক", en: "Editor" },
+    "row.translator": { bn: "অনুবাদক", en: "Translator" },
+    "row.publisher": { bn: "প্রকাশক", en: "Publisher" },
+    "row.year": { bn: "প্রকাশের বছর", en: "Publication Year" },
+    "row.isbn": { bn: "ISBN", en: "ISBN" },
+    "row.language": { bn: "ভাষা", en: "Language" },
+    "row.country": { bn: "দেশ", en: "Country" },
+    "row.subject": { bn: "বিষয়", en: "Subject" },
+    "row.category": { bn: "বিভাগ", en: "Category" },
+    "row.subcategory": { bn: "উপবিভাগ", en: "Subcategory" },
+    "row.description": { bn: "বিবরণ", en: "Description" },
+    "row.pages": { bn: "পৃষ্ঠা সংখ্যা", en: "Page Count" },
+    "row.edition": { bn: "সংস্করণ", en: "Edition" },
+    "row.source": { bn: "মূল উৎস", en: "Original Source" },
+    "row.read": { bn: "পড়ার লিংক", en: "Read Link" },
+    "row.download": { bn: "ডাউনলোড লিংক", en: "Download Link" },
+    "row.buy": { bn: "কেনার লিংক", en: "Buy Link" },
+    "row.copyright": { bn: "কপিরাইট অবস্থা", en: "Copyright Status" },
+    "row.avail": { bn: "প্রাপ্যতা", en: "Availability" },
+    "row.pagesUnit": { bn: " পৃষ্ঠা", en: " pages" },
+    "row.readLabel": { bn: "অনলাইনে পড়ুন ↗", en: "Read Online ↗" },
+    "row.dlLabel": { bn: "ডাউনলোড করুন ⬇", en: "Download ⬇" },
+    "row.buyLabel": { bn: "কিনুন ↗", en: "Buy ↗" },
+    "row.copyrightPd": { bn: "পাবলিক ডোমেইন / বিনামূল্যে পাওয়া যায়", en: "Public domain / freely available" },
+    "row.dlNone": { bn: "ফ্রি ডাউনলোড ফাইল যাচাই করা যায়নি", en: "Free download file could not be verified" },
+    "book.authorLine": { bn: "লেখক: ", en: "Author: " },
+    "book.back": { bn: "← ফিরে যান", en: "← Go Back" },
+    "book.read": { bn: "অনলাইনে পড়ুন ↗", en: "Read Online ↗" },
+    "book.buy": { bn: "কিনুন ↗", en: "Buy ↗" },
+    "book.source": { bn: "মূল উৎস দেখুন ↗", en: "View Original Source ↗" },
+    "book.share": { bn: "শেয়ার করুন ↗", en: "Share ↗" },
+    "book.favOn": { bn: "★ পছন্দের বইয়ে আছে", en: "★ Saved" },
+    "book.favOff": { bn: "☆ পছন্দের বইয়ে রাখুন", en: "☆ Save This Book" },
+    "book.buyNotice": { bn: "এই বইটি নতুন ও কপিরাইটযুক্ত, তাই এর ফ্রি PDF এখানে দেওয়া হয় না। উপরের “কিনুন” বোতাম থেকে আসল বইটি কিনে পড়তে পারবেন।", en: "This book is new and copyrighted, so its free PDF is not given here. You can buy the real book using the “Buy” button above." },
+    "book.dlNotice": { bn: "এই বইয়ের ফ্রি ডাউনলোড ফাইল এই মুহূর্তে যাচাই করা যায়নি, তাই ডাউনলোড বোতাম দেখানো হয়নি। উপরের “অনলাইনে পড়ুন” লিংক থেকে উৎসের নিয়ম অনুযায়ী পড়তে পারবেন।", en: "This book's free download file could not be verified right now, so no download button is shown. You can read it through the “Read Online” link above, as per the source's rules." },
+    "book.seriesMore": { bn: " সিরিজের আরও বই", en: " — More Books in This Series" },
+    "book.reviews": { bn: "পাঠকের মতামত (রিভিউ)", en: "Reader Reviews" },
+    "book.reviewsNote": { bn: "রিভিউ লিখতে ও লাইক দিতে Google দিয়ে লগইন করুন। আপনার নাম ও মতামত সবার দেখার জন্য প্রকাশ্যে থাকবে।", en: "Sign in with Google to write a review or like one. Your name and opinion will be publicly visible." },
+    "rev.loadFail": { bn: "রিভিউ লোড করা যায়নি — ইন্টারনেট চেক করে পেজটি রিফ্রেশ করুন।", en: "Reviews could not be loaded — check the internet and refresh the page." },
+    "rev.loadFail2": { bn: "রিভিউ লোড করা যায়নি — পরে আবার চেষ্টা করুন।", en: "Reviews could not be loaded — try again later." },
+    "rev.loading": { bn: "রিভিউ লোড হচ্ছে…", en: "Loading reviews…" },
+    "rev.noRating": { bn: "এখনো কেউ রেটিং দেয়নি — প্রথম রেটিং আপনিই দিন।", en: "No one has rated yet — be the first to rate." },
+    "rev.ratings": { bn: "টি রেটিং", en: " ratings" },
+    "rev.none": { bn: "এই বইয়ে এখনো কোনো রিভিউ নেই — প্রথম রিভিউ আপনিই লিখুন।", en: "No reviews for this book yet — write the first review." },
+    "rev.reader": { bn: "পাঠক", en: "Reader" },
+    "rev.reply": { bn: "উত্তর দিন", en: "Reply" },
+    "rev.delete": { bn: "মুছুন", en: "Delete" },
+    "rev.replyPh": { bn: "উত্তর লিখুন...", en: "Write a reply..." },
+    "rev.replySend": { bn: "উত্তর পাঠান", en: "Send Reply" },
+    "rev.loginNote": { bn: "রিভিউ লিখতে Google দিয়ে লগইন করুন — উপরের “Google দিয়ে লগইন” বোতামে চাপ দিন।", en: "Sign in with Google to write a review — tap the “Sign in with Google” button above." },
+    "rev.writePh": { bn: "বইটি কেমন লেগেছে? আপনার মতামত লিখুন...", en: "How did you like the book? Write your opinion..." },
+    "rev.send": { bn: "রিভিউ পাঠান", en: "Send Review" },
+    "rev.sendFail": { bn: "রিভিউ পাঠানো যায়নি — পরে আবার চেষ্টা করুন।", en: "Review could not be sent — try again later." },
+    "rev.likeLogin": { bn: "লাইক দিতে Google দিয়ে লগইন করুন।", en: "Sign in with Google to like." },
+    "rev.replyLogin": { bn: "উত্তর দিতে Google দিয়ে লগইন করুন।", en: "Sign in with Google to reply." },
+    "rev.delConfirm": { bn: "এই রিভিউটি মুছে ফেলবেন?", en: "Delete this review?" },
+    "series.title": { bn: " সিরিজ", en: " Series" },
+    "series.books": { bn: "টি বই", en: " books" },
+    "cats.title": { bn: "বিভাগ", en: "Categories" },
+    "cats.sub": { bn: "বিভাগে ক্লিক করলে ওই বিভাগের বই দেখতে পাবেন।", en: "Tap a category to see its books." },
+    "authors.title": { bn: "লেখক", en: "Authors" },
+    "authors.sub": { bn: " জন লেখক — নামে ক্লিক করলে তাঁদের বই দেখতে পাবেন।", en: " authors — tap a name to see their books." },
+    "about.title": { bn: "আমাদের সম্পর্কে", en: "About Us" },
+    "about.p1": { bn: "<b>My Digital Library by Robiul Hosen</b> — সবার জন্য উন্মুক্ত একটি ডিজিটাল লাইব্রেরি। এখানে বাংলা ও বিশ্বের বইয়ের তথ্য, বৈধ পড়া ও ডাউনলোডের লিংক এক জায়গায় পাওয়া যায়।", en: "<b>My Digital Library by Robiul Hosen</b> — an open digital library for everyone. Here you will find information about Bangla and world books, plus legal reading and download links, all in one place." },
+    "about.p2": { bn: "আমাদের লক্ষ্য: ধাপে ধাপে বাংলাদেশের নামকরা বই, বিশ্বসাহিত্য, ইতিহাস, দর্শন, বিজ্ঞান, ধর্ম ও গবেষণার বইয়ের একটি বড় সংগ্রহ তৈরি করা — সব বই বাংলায়, যাতে সবাই পড়তে পারে।", en: "Our goal: to gradually build a large collection of Bangladesh's famous books, world literature, history, philosophy, science, religion and research — all books in Bangla, so everyone can read them." },
+    "about.p3": { bn: "বইয়ের তথ্য সংগ্রহ করা হয় Internet Archive, Project Gutenberg ও Standard Ebooks-এর মতো বৈধ উন্মুক্ত উৎস থেকে। কপিরাইটযুক্ত বইয়ের PDF এখানে দেওয়া হয় না।", en: "Book information is collected from legal open sources such as Internet Archive, Project Gutenberg and Standard Ebooks. Download links for copyrighted books are not given here." },
+    "about.edu": { bn: "শিক্ষা:", en: "Education:" },
+    "about.contact": { bn: "যোগাযোগ:", en: "Contact:" },
+    "about.portfolio": { bn: "পুরো পোর্টফোলিও দেখুন", en: "See Full Portfolio" },
+    "privacy.title": { bn: "গোপনীয়তা নীতি", en: "Privacy Policy" },
+    "privacy.p1": { bn: "এই ওয়েবসাইট আপনার কোনো অ্যাকাউন্ট, পাসওয়ার্ড বা ব্যক্তিগত তথ্য সংগ্রহ করে না।", en: "This website does not collect any of your accounts, passwords or personal information." },
+    "privacy.p2": { bn: "রিভিউ লেখার সময় আপনি যে নাম ও মতামত দেন, তা সবার দেখার জন্য প্রকাশ্যে থাকে। রিভিউ দিতে Google দিয়ে লগইন করতে হয় — আপনার Gmail ঠিকানা অন্য পাঠকদের দেখানো হয় না, শুধু আপনার নাম ও ছবি দেখা যায়।", en: "The name and opinion you give when writing a review are publicly visible to everyone. Writing a review needs Google sign-in — your Gmail address is not shown to other readers, only your name and photo." },
+    "terms.title": { bn: "ব্যবহারের শর্তাবলি", en: "Terms of Use" },
+    "terms.p1": { bn: "এই লাইব্রেরির বইয়ের তথ্য ও লিংক শুধু পড়া ও শেখার জন্য। বইয়ের ফাইলগুলো সংশ্লিষ্ট উৎসের (Internet Archive / Standard Ebooks) নিয়ম মেনে ব্যবহার করবেন।", en: "The book information and links in this library are only for reading and learning. Use the book files according to the rules of their source (Internet Archive / Standard Ebooks)." },
+    "terms.p2": { bn: "এখান থেকে পাওয়া কোনো বই বাণিজ্যিকভাবে বিক্রি বা পুনঃপ্রকাশ করা যাবে না।", en: "No book found here may be sold commercially or republished." },
+    "terms.p3": { bn: "রিভিউ লেখার সময় ভদ্র ভাষা ব্যবহার করুন; আপত্তিকর মন্তব্য মুছে ফেলা হতে পারে।", en: "Use polite language when writing reviews; offensive comments may be removed." },
+    "copyright.title": { bn: "কপিরাইট নীতি", en: "Copyright Policy" },
+    "copyright.p1": { bn: "এই সাইটে শুধু পাবলিক ডোমেইন বা বিনামূল্যে বৈধভাবে পাওয়া যায় এমন বইয়ের ডাউনলোড লিংক দেওয়া হয়।", en: "This site only gives download links for public-domain books or books legally available for free." },
+    "copyright.p2": { bn: "কপিরাইটযুক্ত বইয়ের ক্ষেত্রে ডাউনলোড বোতাম দেখানো হয় না — শুধু অনুমোদিত পড়া, ধার বা কেনার লিংক দেওয়া হয়।", en: "For copyrighted books, no download button is shown — only approved reading, borrowing or buying links are given." },
+    "copyright.p3": { bn: "কোনো বইয়ের কপিরাইট নিয়ে আপত্তি থাকলে যোগাযোগ পাতা থেকে জানান — যাচাই করে লিংক সরিয়ে নেওয়া হবে।", en: "If you object to any book's copyright, let us know from the Contact page — the link will be removed after verification." },
+    "contact.title": { bn: "যোগাযোগ", en: "Contact" },
+    "contact.p1": { bn: "লাইব্রেরি সম্পর্কে মতামত, বইয়ের অনুরোধ বা ভুল তথ্য জানাতে Facebook পেজে বার্তা পাঠান।", en: "To share feedback about the library, request a book or report wrong information, send a message to the Facebook page." },
+    "contact.p2": { bn: "Facebook: <b>রবিউল</b> (facebook.com — Robiul Hosen)", en: "Facebook: <b>রবিউল</b> (facebook.com — Robiul Hosen)" },
+    "contact.p3": { bn: "নতুন বইয়ের অনুরোধ করলে আমরা বৈধ উৎস যাচাই করে তালিকায় যুক্ত করার চেষ্টা করব।", en: "When you request a new book, we will check a legal source and try to add it to the list." },
+    "req.title": { bn: "বইয়ের অনুরোধ", en: "Request a Book" },
+    "req.desc": { bn: "যে বইটি লাইব্রেরিতে চান, তার নাম জানান — আমরা খুঁজে যুক্ত করার চেষ্টা করব।", en: "Tell us the name of the book you want in the library — we will try to find it and add it." },
+    "req.book": { bn: "বইয়ের নাম", en: "Book Name" },
+    "req.author": { bn: "লেখকের নাম", en: "Author Name" },
+    "req.name": { bn: "আপনার নাম", en: "Your Name" },
+    "req.gmail": { bn: "আপনার Gmail (ঐচ্ছিক)", en: "Your Gmail (optional)" },
+    "req.more": { bn: "আরও কিছু জানাতে চান?", en: "Anything else to tell us?" },
+    "req.phBook": { bn: "যেমন: পথের পাঁচালী", en: "e.g. Pather Panchali" },
+    "req.phAuthor": { bn: "জানা থাকলে লিখুন", en: "Write if you know it" },
+    "req.phMore": { bn: "বইটি সম্পর্কে আর কিছু জানাতে চাইলে লিখুন", en: "Write anything else about the book" },
+    "req.send": { bn: "অনুরোধ পাঠান", en: "Send Request" },
+    "req.note": { bn: "আপনার অনুরোধ সরাসরি লাইব্রেরির তালিকায় যাবে।", en: "Your request will go directly to the library's list." },
+    "req.sending": { bn: "পাঠানো হচ্ছে…", en: "Sending…" },
+    "req.ok": { bn: "ধন্যবাদ! আপনার অনুরোধ পেয়েছি — বইটি খুঁজে যুক্ত করার চেষ্টা করব।", en: "Thank you! We received your request — we will try to find the book and add it." },
+    "req.again": { bn: "আরেকটি অনুরোধ করুন", en: "Request Another Book" },
+    "req.allBooks": { bn: "সব বই দেখুন", en: "See All Books" },
+    "req.err": { bn: "পাঠানো যায়নি। সরাসরি ফর্মে লিখুন।", en: "Could not be sent. Write directly in the form." },
+    "req.formOpen": { bn: "গুগল ফর্ম খুলুন", en: "Open Google Form" },
+    "app.loadFail": { bn: "দুঃখিত, বইয়ের তালিকা লোড করা যায়নি।", en: "Sorry, the book list could not be loaded." },
+    "app.retry": { bn: "আবার চেষ্টা করুন", en: "Try Again" },
+    "app.loading": { bn: "লাইব্রেরি লোড হচ্ছে…", en: "Loading library…" },
+    "app.copyDone": { bn: "কপি হয়েছে ✓", en: "Copied ✓" },
+    "app.copyLink": { bn: "লিংক কপি করুন", en: "Copy Link" },
+    "app.favOn": { bn: "★ পছন্দের বইয়ে আছে", en: "★ Saved" },
+    "app.favOff": { bn: "☆ পছন্দের বইয়ে রাখুন", en: "☆ Save This Book" },
+    "fb.ok": { bn: "ধন্যবাদ! আপনার মতামত পৌঁছে গেছে।", en: "Thank you! Your feedback has been received." },
+    "fb.fail": { bn: "মতামত পাঠানো যায়নি — পরে আবার চেষ্টা করুন।", en: "Feedback could not be sent — try again later." },
+    "install.dismissed": { bn: "আপনি ইনস্টল বাতিল করেছেন, তাই Chrome সরাসরি বোতাম আর দেখাবে না। মেনু (⋮) → “Add to Home screen” চাপ দিয়ে বসান।", en: "You cancelled the install, so Chrome will not show the direct button again. Use Menu (⋮) → “Add to Home screen” to install." },
+    "install.ios": { bn: "<b>iPhone-এ অ্যাপ বসাতে:</b><br>১. নিচের Share (⬆️) বোতামে চাপ দিন<br>২. “Add to Home Screen” বেছে নিন<br>৩. Add চাপ দিন — অ্যাপ হোম স্ক্রিনে চলে আসবে।", en: "<b>To install the app on iPhone:</b><br>1. Tap the Share (⬆️) button below<br>2. Choose “Add to Home Screen”<br>3. Tap Add — the app will appear on your Home Screen." },
+    "install.manual": { bn: "<b>সরাসরি ইনস্টল বোতাম না এলে</b> (আগে বসানো থাকলে বা একবার বাতিল করলে Chrome আর দেখায় না):<br>Chrome মেনু (⋮) → “Add to Home screen” / “Install app” চাপ দিন।", en: "<b>If the direct install button does not appear</b> (Chrome hides it if the app is already installed or was cancelled once):<br>Chrome Menu (⋮) → “Add to Home screen” / “Install app”." }
+  };
+
+  function t(k) { var e = STR[k]; return e ? (e[LANG] || e.bn) : k; }
+  function fmt(n, opts) {
+    try { return Number(n == null ? 0 : n).toLocaleString(LANG === "en" ? "en-US" : "bn-BD", opts || {}); }
+    catch (e) { return String(n); }
+  }
+  function tf(k, map) {
+    var s = t(k);
+    for (var key in map) s = s.split("{" + key + "}").join(map[key]);
+    return s;
+  }
+  function setLang(l) {
+    if (l !== "bn" && l !== "en") return;
+    LANG = l;
+    try { localStorage.setItem(LANG_KEY, l); } catch (e) {}
+    NA = t("na");
+    applyStaticI18n();
+    try { setTheme(document.documentElement.getAttribute("data-theme") || "light"); } catch (e) {}
+    route();
+  }
+  function applyStaticI18n() {
+    document.documentElement.setAttribute("lang", LANG);
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var v = t(el.getAttribute("data-i18n"));
+      if (v) el.textContent = v;
+    });
+    document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
+      var v = t(el.getAttribute("data-i18n-ph"));
+      if (v) el.setAttribute("placeholder", v);
+    });
+    var lb = document.getElementById("langBtn");
+    if (lb) lb.textContent = LANG === "bn" ? "EN" : "বাংলা";
+  }
+
+  NA = t("na");
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -27,16 +319,16 @@
     if (!bytes) return "";
     var mb = bytes / 1048576;
     var txt = mb >= 1
-      ? mb.toLocaleString("bn-BD", { maximumFractionDigits: 1 }) + " MB"
-      : Math.max(1, Math.round(bytes / 1024)).toLocaleString("bn-BD") + " KB";
+      ? fmt(mb, { maximumFractionDigits: 1 }) + " MB"
+      : fmt(Math.max(1, Math.round(bytes / 1024))) + " KB";
     return " (" + txt + ")";
   }
   function dlLabel(b) {
     var fmt = b.downloadFormat || "";
-    if (fmt === "PDF") return "PDF ডাউনলোড ⬇" + fmtSize(b.downloadSize);
-    if (fmt === "EPUB") return "EPUB ডাউনলোড ⬇" + fmtSize(b.downloadSize);
-    if (fmt === "TXT") return "টেক্সট পড়ুন ↗";
-    return "PDF / টেক্সট ডাউনলোড ⬇";
+    if (fmt === "PDF") return t("dl.pdf") + fmtSize(b.downloadSize);
+    if (fmt === "EPUB") return t("dl.epub") + fmtSize(b.downloadSize);
+    if (fmt === "TXT") return t("dl.txt");
+    return t("dl.any");
   }
   /* Card price: removed 2026-11-21 at the owner's request — the OCR-extracted
      printed prices were mostly wrong, so no price is shown anywhere. */
@@ -48,7 +340,7 @@
     return t ? t.charAt(0) : "?";
   }
   function langLabel(l) {
-    return l === "Bengali" ? "বাংলা" : l === "English" ? "English" : l === "Arabic" ? "আরবি" : l === "Urdu" ? "উর্দু" : (l || NA);
+    return l === "Bengali" ? t("lang.bengali") : l === "English" ? "English" : l === "Arabic" ? t("lang.arabic") : l === "Urdu" ? t("lang.urdu") : (l || NA);
   }
   /* ---------- no-suggest rule (owner, 2026-11-25) ----------
      Qawmi and Awami League books stay on the site as normal books and
@@ -98,14 +390,14 @@
   function bookUrl(b) { return location.origin + location.pathname + "#/book/" + encodeURIComponent(b.id); }
   function sharePanelHtml(title, text, url) {
     var u = encodeURIComponent(url);
-    var t = encodeURIComponent(title + " — " + text);
+    var txt = encodeURIComponent(title + " — " + text);
     return '<div class="share-panel" hidden>' +
-      '<a class="share-opt" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '" target="_blank" rel="noopener">ফেসবুক</a>' +
-      '<a class="share-opt" href="https://wa.me/?text=' + t + "%20" + u + '" target="_blank" rel="noopener">হোয়াটসঅ্যাপ</a>' +
-      '<a class="share-opt" href="https://t.me/share/url?url=' + u + "&text=" + t + '" target="_blank" rel="noopener">টেলিগ্রাম</a>' +
-      '<a class="share-opt" href="https://twitter.com/intent/tweet?text=' + t + "&url=" + u + '" target="_blank" rel="noopener">এক্স (X)</a>' +
-      '<button class="share-opt" type="button" data-copy="' + esc(url) + '">লিংক কপি করুন</button>' +
-      '<p class="small muted">ইনস্টাগ্রামে শেয়ার করতে লিংক কপি করে ইনস্টাগ্রাম অ্যাপে পেস্ট করুন, অথবা ফোনের শেয়ার মেনু থেকে ইনস্টাগ্রাম বেছে নিন।</p></div>';
+      '<a class="share-opt" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '" target="_blank" rel="noopener">Facebook</a>' +
+      '<a class="share-opt" href="https://wa.me/?text=' + txt + "%20" + u + '" target="_blank" rel="noopener">WhatsApp</a>' +
+      '<a class="share-opt" href="https://t.me/share/url?url=' + u + "&text=" + txt + '" target="_blank" rel="noopener">Telegram</a>' +
+      '<a class="share-opt" href="https://twitter.com/intent/tweet?text=' + txt + "&url=" + u + '" target="_blank" rel="noopener">X</a>' +
+      '<button class="share-opt" type="button" data-copy="' + esc(url) + '">' + t("share.copy") + '</button>' +
+      '<p class="small muted">' + t("share.igNote") + '</p></div>';
   }
   function doShare(title, text, url, panel) {
     if (navigator.share) {
@@ -156,7 +448,7 @@
       p.prompt();
       p.userChoice.then(function (choice) {
         if (choice && choice.outcome === "dismissed" && panel) {
-          panel.innerHTML = "<p>আপনি ইনস্টল বাতিল করেছেন, তাই Chrome সরাসরি বোতাম আর দেখাবে না। মেনু (⋮) → “Add to Home screen” চাপ দিয়ে বসান।</p>";
+          panel.innerHTML = "<p>" + t("install.dismissed") + "</p>";
           panel.hidden = false;
         }
       });
@@ -164,9 +456,9 @@
     }
     if (!panel) return;
     if (isIOS) {
-      panel.innerHTML = "<p><b>iPhone-এ অ্যাপ বসাতে:</b><br>১. নিচের Share (⬆️) বোতামে চাপ দিন<br>২. “Add to Home Screen” বেছে নিন<br>৩. Add চাপ দিন — অ্যাপ হোম স্ক্রিনে চলে আসবে।</p>";
+      panel.innerHTML = "<p>" + t("install.ios") + "</p>";
     } else {
-      panel.innerHTML = "<p><b>সরাসরি ইনস্টল বোতাম না এলে</b> (আগে বসানো থাকলে বা একবার বাতিল করলে Chrome আর দেখায় না):<br>Chrome মেনু (⋮) → “Add to Home screen” / “Install app” চাপ দিন।</p>";
+      panel.innerHTML = "<p>" + t("install.manual") + "</p>";
     }
     panel.hidden = !panel.hidden;
   }
@@ -176,7 +468,7 @@
   function setTheme(t) {
     document.documentElement.setAttribute("data-theme", t);
     try { localStorage.setItem("mdl-theme", t); } catch (e) {}
-    themeBtn.textContent = t === "dark" ? "☀️ লাইট" : "🌙 ডার্ক";
+    themeBtn.textContent = t === "dark" ? "☀️ " + STR["theme.light"][LANG] : "🌙 " + STR["theme.dark"][LANG];
   }
   try {
     var saved = localStorage.getItem("mdl-theme");
@@ -184,6 +476,10 @@
   } catch (e) { setTheme("light"); }
   themeBtn.addEventListener("click", function () {
     setTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+  });
+  var langBtn = document.getElementById("langBtn");
+  if (langBtn) langBtn.addEventListener("click", function () {
+    setLang(LANG === "bn" ? "en" : "bn");
   });
   document.getElementById("menuBtn").addEventListener("click", function () {
     document.getElementById("topnav").classList.toggle("open");
@@ -198,13 +494,13 @@
     function renderUser(user) {
       currentUser = user || null;
       if (user) {
-        var name = user.displayName || user.email || "ব্যবহারকারী";
+        var name = user.displayName || user.email || t("user");
         var photo = user.photoURL ? '<img class="auth-avatar" src="' + esc(user.photoURL) + '" alt="" onerror="this.style.display=\'none\'">' : "";
-        box.innerHTML = photo + '<span class="auth-name">' + esc(name) + '</span> <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">লগআউট</button>';
+        box.innerHTML = photo + '<span class="auth-name">' + esc(name) + '</span> <button class="btn btn-ghost btn-sm" id="logoutBtn" type="button">' + t("auth.logout") + '</button>';
         var lo = document.getElementById("logoutBtn");
         if (lo) lo.addEventListener("click", function () { auth.signOut(); });
       } else {
-        box.innerHTML = '<button class="btn btn-ghost btn-sm" id="loginBtn" type="button">Google দিয়ে লগইন</button>';
+        box.innerHTML = '<button class="btn btn-ghost btn-sm" id="loginBtn" type="button">' + t("auth.login") + '</button>';
         var li = document.getElementById("loginBtn");
         if (li) li.addEventListener("click", function () { auth.signInWithPopup(provider).catch(function () {}); });
       }
@@ -223,7 +519,7 @@
       BOOKS = data;
       route();
     }).catch(function () {
-      view.innerHTML = '<p class="empty">দুঃখিত, বইয়ের তালিকা লোড করা যায়নি।</p><p style="text-align:center"><button class="btn" type="button" data-retry="1">আবার চেষ্টা করুন</button></p>';
+      view.innerHTML = '<p class="empty">' + t("app.loadFail") + '</p><p style="text-align:center"><button class="btn" type="button" data-retry="1">' + t("app.retry") + '</button></p>';
     });
   }
   /* Full A–Z record for one book: from the chunk file its index record
@@ -246,12 +542,12 @@
   function coverHtml(b, big) {
     var cls = "cover" + (big ? " big" : "") + (b.coverUrl ? " has-img" : "");
     var img = b.coverUrl
-      ? '<img class="cover-img" src="' + esc(b.coverUrl) + '" alt="' + esc(b.title) + ' বইয়ের প্রচ্ছদ" loading="lazy" onerror="this.remove()">'
+      ? '<img class="cover-img" src="' + esc(b.coverUrl) + '" alt="' + esc(b.title) + ' ' + t("cover.altSuffix") + '" loading="lazy" onerror="this.remove()">'
       : "";
     /* Detail page only: the big cover opens the fullscreen viewer.
        Card covers stay plain — cards navigate to the detail page. */
     var viewAttr = (big && b.coverUrl)
-      ? ' data-cover-view="' + esc(b.coverUrl) + '" data-cover-title="' + esc(b.title) + '" role="button" tabindex="0" aria-label="প্রচ্ছদ বড় করে দেখুন" title="বড় করে দেখতে চাপ দিন"'
+      ? ' data-cover-view="' + esc(b.coverUrl) + '" data-cover-title="' + esc(b.title) + '" role="button" tabindex="0" aria-label="' + t("cover.view") + '" title="' + t("cover.tap") + '"'
       : "";
     return '<div class="' + cls + '"' + viewAttr + '>' + img +
       '<span class="letter">' + esc(firstLetter(b.title)) + "</span>" +
@@ -271,10 +567,10 @@
       coverViewer.className = "cover-viewer";
       coverViewer.id = "coverViewer";
       coverViewer.hidden = true;
-      coverViewer.innerHTML = '<div class="cover-viewer-box" role="dialog" aria-modal="true" aria-label="বইয়ের প্রচ্ছদ">' +
+      coverViewer.innerHTML = '<div class="cover-viewer-box" role="dialog" aria-modal="true" aria-label="' + t("cover.aria") + '">' +
         '<img class="cover-viewer-img" alt="">' +
         '<p class="cover-viewer-cap"></p>' +
-        '<button class="btn btn-primary cover-viewer-close" type="button">✕ বন্ধ করুন</button></div>';
+        '<button class="btn btn-primary cover-viewer-close" type="button">' + t("cover.close") + '</button></div>';
       document.body.appendChild(coverViewer);
       coverViewer.addEventListener("click", function (e) {
         if (e.target === coverViewer || e.target.closest(".cover-viewer-close")) closeCover();
@@ -282,7 +578,7 @@
     }
     var img = coverViewer.querySelector(".cover-viewer-img");
     img.src = url;
-    img.alt = (title || "") + " বইয়ের প্রচ্ছদ";
+    img.alt = (title || "") + " " + t("cover.altSuffix");
     coverViewer.querySelector(".cover-viewer-cap").textContent = title || "";
     coverViewer.hidden = false;
     document.body.style.overflow = "hidden";
@@ -304,13 +600,13 @@
     var tags = '<span class="tag">' + esc(langLabel(b.language)) + "</span>" +
       '<span class="tag">' + esc(b.category || "অন্যান্য") + "</span>" +
       (b.buyLink
-        ? '<span class="tag buy">কিনে পড়ুন</span>'
+        ? '<span class="tag buy">' + t("tag.buy") + '</span>'
         : (b.downloadUrl
-          ? '<span class="tag free">ফ্রি ডাউনলোড</span>'
-          : '<span class="tag nodl">শুধু অনলাইনে পড়ুন</span>'));
+          ? '<span class="tag free">' + t("tag.free") + '</span>'
+          : '<span class="tag nodl">' + t("tag.nodl") + '</span>'));
     return '<article class="book-card" data-book="' + esc(b.id) + '">' +
-      (b.topRank ? '<span class="rank-badge">' + b.topRank.toLocaleString("bn-BD") + "</span>" : "") +
-      '<button class="fav-btn' + (isFav(b.id) ? " on" : "") + '" data-fav="' + esc(b.id) + '" aria-label="পছন্দের বই">' + (isFav(b.id) ? "★" : "☆") + "</button>" +
+      (b.topRank ? '<span class="rank-badge">' + fmt(b.topRank) + "</span>" : "") +
+      '<button class="fav-btn' + (isFav(b.id) ? " on" : "") + '" data-fav="' + esc(b.id) + '" aria-label="' + t("card.fav") + '">' + (isFav(b.id) ? "★" : "☆") + "</button>" +
       coverHtml(b) +
       '<div class="book-body"><h3>' + esc(b.title) + "</h3>" +
       '<p class="author">' + esc(b.author || NA) + "</p>" +
@@ -318,38 +614,37 @@
       '<div class="book-meta">' + tags + "</div></div></article>";
   }
   function gridHtml(list) {
-    if (!list.length) return '<p class="empty">কোনো বই পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।</p>';
+    if (!list.length) return '<p class="empty">' + t("grid.empty") + '</p>';
     return '<div class="book-grid">' + list.map(cardHtml).join("") + "</div>";
   }
   function adSlotHtml() {
     return '<div class="ad-slot ad-tib"><span>ADVERTISEMENT</span>' +
       '<a href="https://www.facebook.com/61560391032591" target="_blank" rel="noopener">' +
       '<img src="assets/tib-perfumes-logo.png" alt="Tīb Perfumes">' +
-      '<span class="ad-tib-text"><b>খাঁটি আতর — Tīb Perfumes</b>' +
-      '<br>৩ মিলি আতর মাত্র ১২০৳ থেকে · অর্ডার করতে ক্লিক করুন</span></a></div>';
+      '<span class="ad-tib-text">' + t("ad.tib") + '</span></a></div>';
   }
   function heroHtml() {
     return '<section class="hero" style="margin:0 -16px;padding-left:16px;padding-right:16px;">' +
       '<span class="eyebrow">A WORLD OF KNOWLEDGE, ONE LIBRARY</span>' +
-      "<h1>জ্ঞান অন্বেষণের<br><em>নতুন ঠিকানা</em></h1>" +
-      "<p>বাংলা থেকে বিশ্বসাহিত্য — বই খুঁজুন, বই সম্পর্কে জানুন এবং বৈধ উৎস থেকে পড়ুন বা ডাউনলোড করুন।</p>" +
+      "<h1>" + t("hero.h1") + "</h1>" +
+      "<p>" + t("hero.sub") + "</p>" +
       '<form class="search-big" id="heroSearch">' +
-      '<div class="search-box"><span class="search-icon" aria-hidden="true">🔍</span><input id="heroQ" type="search" placeholder="বইয়ের নাম, লেখক বা বিষয় লিখুন..." autocomplete="off"></div>' +
-      '<button class="btn btn-primary" type="submit">খুঁজুন</button></form>' +
-      '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">লাইব্রেরি শেয়ার করুন ↗</button>' +
-      ' <button class="btn btn-ghost" id="followBtn" type="button">🔔 নতুন বইয়ের খবর পান</button>' +
-      ' <button class="btn btn-ghost" id="siteLikeBtn" type="button">♥ <span id="siteLikeLabel">ফলো করুন</span> · <span id="siteLikeCount">…</span> জন</button>' +
-      ' <button class="btn btn-ghost" id="installBtn" type="button" hidden>📲 অ্যাপ ইনস্টল করুন</button></div>' +
+      '<div class="search-box"><span class="search-icon" aria-hidden="true">🔍</span><input id="heroQ" type="search" placeholder="' + t("hero.ph") + '" autocomplete="off"></div>' +
+      '<button class="btn btn-primary" type="submit">' + t("hero.search") + '</button></form>' +
+      '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">' + t("hero.share") + '</button>' +
+      ' <button class="btn btn-ghost" id="followBtn" type="button">' + t("hero.followNews") + '</button>' +
+      ' <button class="btn btn-ghost" id="siteLikeBtn" type="button">♥ <span id="siteLikeLabel">' + t("hero.follow") + '</span> · <span id="siteLikeCount">…</span> জন</button>' +
+      ' <button class="btn btn-ghost" id="installBtn" type="button" hidden>' + t("hero.install") + '</button></div>' +
       '<div id="siteSharePanel"></div>' +
       '<div id="installPanel" class="share-panel" hidden></div>' +
-      '<button class="adv-toggle" id="advToggle" type="button">উন্নত অনুসন্ধান (Advanced Search) ⌄</button>' +
+      '<button class="adv-toggle" id="advToggle" type="button">' + t("hero.adv") + '</button>' +
       '<div class="filters adv-panel" id="advPanel">' +
-      '<div><label>বইয়ের নাম</label><input id="fTitle" type="text" placeholder="শিরোনাম"></div>' +
-      '<div><label>লেখক</label><input id="fAuthor" type="text" placeholder="লেখকের নাম"></div>' +
-      '<div><label>বিভাগ</label><select id="fCategory"></select></div>' +
-      '<div><label>ভাষা</label><select id="fLanguage"></select></div>' +
-      '<div><label>প্রকাশের বছর</label><input id="fYear" type="number" min="1000" max="2026" placeholder="যেমন ১৯৪১"></div>' +
-      '<div><label>&nbsp;</label><button class="btn btn-navy" id="advGo" type="button">অনুসন্ধান করুন</button></div>' +
+      '<div><label>' + t("adv.title") + '</label><input id="fTitle" type="text" placeholder="' + t("adv.phTitle") + '"></div>' +
+      '<div><label>' + t("adv.author") + '</label><input id="fAuthor" type="text" placeholder="' + t("adv.phAuthor") + '"></div>' +
+      '<div><label>' + t("adv.category") + '</label><select id="fCategory"></select></div>' +
+      '<div><label>' + t("adv.language") + '</label><select id="fLanguage"></select></div>' +
+      '<div><label>' + t("adv.year") + '</label><input id="fYear" type="number" min="1000" max="2026" placeholder="' + t("adv.phYear") + '"></div>' +
+      '<div><label>&nbsp;</label><button class="btn btn-navy" id="advGo" type="button">' + t("adv.go") + '</button></div>' +
       "</div></section>";
   }
 
@@ -402,49 +697,49 @@
 
     var h = heroHtml() + adSlotHtml();
     h += '<section class="block"><div class="stats">' +
-      '<div class="stat"><b>' + total.toLocaleString("bn-BD") + '</b><span>মোট বই</span></div>' +
-      '<div class="stat"><b>' + bn.toLocaleString("bn-BD") + '</b><span>বাংলা বই</span></div>' +
-      '<div class="stat"><b>' + en.toLocaleString("bn-BD") + '</b><span>ইংরেজি বই</span></div>' +
-      '<div class="stat"><b>' + free.toLocaleString("bn-BD") + '</b><span>ফ্রি ডাউনলোডযোগ্য</span></div>' +
+      '<div class="stat"><b>' + fmt(total) + '</b><span>' + t("stats.total") + '</span></div>' +
+      '<div class="stat"><b>' + fmt(bn) + '</b><span>' + t("stats.bn") + '</span></div>' +
+      '<div class="stat"><b>' + fmt(en) + '</b><span>' + t("stats.en") + '</span></div>' +
+      '<div class="stat"><b>' + fmt(free) + '</b><span>' + t("stats.free") + '</span></div>' +
       "</div></section>";
 
     if (onePerCat.length) {
-      h += '<section class="block"><div class="section-head"><h2>সব বিষয় থেকে একটি করে</h2><a class="link" href="#/categories">সব বিভাগ →</a></div><p class="muted">প্রতিটি বিষয় থেকে একটি করে বাছাই করা বই — এক নজরে সব ধরণের বই দেখে নিন।</p>' + gridHtml(onePerCat) + "</section>";
+      h += '<section class="block"><div class="section-head"><h2>' + t("sec.onePerCat") + '</h2><a class="link" href="#/categories">' + t("see.allCats") + '</a></div><p class="muted">' + t("sec.onePerCatSub") + '</p>' + gridHtml(onePerCat) + "</section>";
     }
-    h += '<section class="block"><div class="section-head"><h2>টপ বই</h2><a class="link" href="#/books?sort=top">সব দেখুন →</a></div><p class="muted">সবচেয়ে বেশি ডাউনলোড হওয়া বই — ১ নম্বর সবচেয়ে জনপ্রিয়।</p>' + gridHtml(top) + "</section>";
+    h += '<section class="block"><div class="section-head"><h2>' + t("sec.top") + '</h2><a class="link" href="#/books?sort=top">' + t("see.all") + '</a></div><p class="muted">' + t("sec.topSub") + '</p>' + gridHtml(top) + "</section>";
     var editors = BOOKS.filter(function (b) { return b.editorsChoice && !isNoSuggest(b); }).slice(0, 12);
     if (editors.length) {
-      h += '<section class="block"><div class="section-head"><h2>সম্পাদকের পছন্দ</h2><a class="link" href="#/books">সব বই দেখুন →</a></div><p class="muted">লাইব্রেরির পক্ষ থেকে বাছাই করা সেরা বই।</p>' + gridHtml(editors) + "</section>";
+      h += '<section class="block"><div class="section-head"><h2>' + t("sec.editors") + '</h2><a class="link" href="#/books">' + t("see.allBooks") + '</a></div><p class="muted">' + t("sec.editorsSub") + '</p>' + gridHtml(editors) + "</section>";
     }
     var series = seriesCounts();
     if (series.length) {
-      h += '<section class="block"><div class="section-head"><h2>সিরিজ</h2></div><p class="muted">একই সিরিজের বইগুলো একসাথে — একটা পড়লে বাকিগুলোও পাবেন।</p><div class="chip-grid">' +
+      h += '<section class="block"><div class="section-head"><h2>' + t("sec.series") + '</h2></div><p class="muted">' + t("sec.seriesSub") + '</p><div class="chip-grid">' +
         series.map(function (s) {
-          return '<button class="chip" data-series="' + esc(s.name) + '">' + esc(s.name) + " <small>(" + s.n.toLocaleString("bn-BD") + ")</small></button>";
+          return '<button class="chip" data-series="' + esc(s.name) + '">' + esc(s.name) + " <small>(" + fmt(s.n) + ")</small></button>";
         }).join("") + "</div></section>";
     }
-    h += '<section class="block"><div class="section-head"><h2>বিশেষভাবে নির্বাচিত বই</h2><a class="link" href="#/books">সব বই দেখুন →</a></div>' + gridHtml(featured) + "</section>";
-    h += '<section class="block"><div class="section-head"><h2>সম্প্রতি যুক্ত বই</h2><a class="link" href="#/books?sort=newest">সব দেখুন →</a></div>' + gridHtml(recent) + "</section>";
+    h += '<section class="block"><div class="section-head"><h2>' + t("sec.featured") + '</h2><a class="link" href="#/books">' + t("see.allBooks") + '</a></div>' + gridHtml(featured) + "</section>";
+    h += '<section class="block"><div class="section-head"><h2>' + t("sec.recent") + '</h2><a class="link" href="#/books?sort=newest">' + t("see.all") + '</a></div>' + gridHtml(recent) + "</section>";
     var favs = BOOKS.filter(function (b) { return isFav(b.id); });
     if (favs.length) {
-      h += '<section class="block"><div class="section-head"><h2>পছন্দের বই</h2></div><p class="muted">আপনার ফোনে সংরক্ষিত — লগইন লাগে না।</p>' + gridHtml(favs) + "</section>";
+      h += '<section class="block"><div class="section-head"><h2>' + t("sec.favs") + '</h2></div><p class="muted">' + t("sec.favsSub") + '</p>' + gridHtml(favs) + "</section>";
     }
-    h += '<section class="block"><div class="section-head"><h2>জনপ্রিয় লেখক</h2><a class="link" href="#/authors">সব লেখক →</a></div><div class="author-list">' +
+    h += '<section class="block"><div class="section-head"><h2>' + t("sec.authors") + '</h2><a class="link" href="#/authors">' + t("see.allAuthors") + '</a></div><div class="author-list">' +
       authors.map(function (a) {
-        return '<div class="author-item" data-author="' + esc(a) + '"><b>' + esc(a) + "</b><span>" + counts[a].toLocaleString("bn-BD") + "টি বই</span></div>";
+        return '<div class="author-item" data-author="' + esc(a) + '"><b>' + esc(a) + "</b><span>" + fmt(counts[a]) + t("author.books") + "</span></div>";
       }).join("") + "</div></section>";
-    h += '<section class="block"><div class="section-head"><h2>বিভাগ</h2><a class="link" href="#/categories">সব বিভাগ →</a></div><div class="chip-grid">' +
+    h += '<section class="block"><div class="section-head"><h2>' + t("sec.categories") + '</h2><a class="link" href="#/categories">' + t("see.allCats") + '</a></div><div class="chip-grid">' +
       cats.map(function (c) {
-        return '<button class="chip" data-cat="' + esc(c.name) + '">' + esc(c.name) + " <small>(" + c.n.toLocaleString("bn-BD") + ")</small></button>";
+        return '<button class="chip" data-cat="' + esc(c.name) + '">' + esc(c.name) + " <small>(" + fmt(c.n) + ")</small></button>";
       }).join("") + "</div></section>";
-    h += '<section class="block"><div class="section-head"><h2>ভাষা</h2></div><div class="chip-grid">' +
-      '<button class="chip" data-lang="Bengali">বাংলা <small>(' + bn.toLocaleString("bn-BD") + ")</small></button>" +
-      '<button class="chip" data-lang="English">English <small>(' + en.toLocaleString("bn-BD") + ")</small></button>" +
-      '<button class="chip" data-lang="Arabic">আরবি <small>(' + ar.toLocaleString("bn-BD") + ")</small></button>" +
-      '<button class="chip" data-lang="Urdu">উর্দু <small>(' + ur.toLocaleString("bn-BD") + ")</small></button>" +
+    h += '<section class="block"><div class="section-head"><h2>' + t("sec.languages") + '</h2></div><div class="chip-grid">' +
+      '<button class="chip" data-lang="Bengali">' + t("lang.bengali") + " <small>(" + fmt(bn) + ")</small></button>" +
+      '<button class="chip" data-lang="English">English <small>(' + fmt(en) + ")</small></button>" +
+      '<button class="chip" data-lang="Arabic">' + t("lang.arabic") + " <small>(" + fmt(ar) + ")</small></button>" +
+      '<button class="chip" data-lang="Urdu">' + t("lang.urdu") + " <small>(" + fmt(ur) + ")</small></button>" +
       "</div></section>";
-    h += '<section class="block"><div class="section-head"><h2>ফ্রি ও বৈধ বই</h2></div>' +
-      "<p>এই লাইব্রেরির <b>" + free.toLocaleString("bn-BD") + "টি</b> বই Internet Archive ও Standard Ebooks থেকে বৈধভাবে ফ্রি ডাউনলোড করা যায়। কপিরাইটযুক্ত বইয়ের ক্ষেত্রে শুধু অনুমোদিত পড়া, ধার বা কেনার লিংক দেওয়া হয় — PDF দেওয়া হয় না।</p></section>";
+    h += '<section class="block"><div class="section-head"><h2>' + t("sec.freeLegal") + '</h2></div>' +
+      "<p>" + tf("sec.freeLegalBody", { n: fmt(free) }) + "</p></section>";
 
     view.innerHTML = h;
     bindHome();
@@ -500,7 +795,7 @@
         function refreshFollow() {
           var on = false;
           try { on = OneSignal.User.PushSubscription.optedIn; } catch (e) {}
-          fb.textContent = on ? "🔔 ফলো করা হয়েছে ✓ — বন্ধ করতে চাপুন" : "🔔 নতুন বইয়ের খবর পান";
+          fb.textContent = on ? t("hero.followedNews") : t("hero.followNews");
         }
         refreshFollow();
         fb.addEventListener("click", async function () {
@@ -523,12 +818,12 @@
       slb.addEventListener("click", toggleSiteLike);
       renderSiteStats();
     }
-    var t = document.getElementById("advToggle");
+    var advT = document.getElementById("advToggle");
     var p = document.getElementById("advPanel");
-    if (t && p) {
-      fillSelect(document.getElementById("fCategory"), categoryCounts().map(function (c) { return c.name; }), "সব বিভাগ");
-      fillSelect(document.getElementById("fLanguage"), ["Bengali", "English", "Arabic", "Urdu"], "সব ভাষা");
-      t.addEventListener("click", function () { p.classList.toggle("open"); });
+    if (advT && p) {
+      fillSelect(document.getElementById("fCategory"), categoryCounts().map(function (c) { return c.name; }), t("adv.allCat"));
+      fillSelect(document.getElementById("fLanguage"), ["Bengali", "English", "Arabic", "Urdu"], t("adv.allLang"));
+      advT.addEventListener("click", function () { p.classList.toggle("open"); });
       document.getElementById("advGo").addEventListener("click", function () {
         state = { q: "", title: document.getElementById("fTitle").value.trim(),
                   author: document.getElementById("fAuthor").value.trim(),
@@ -718,23 +1013,23 @@
   }
 
   function booksShellHtml() {
-    return '<section class="block"><h2>সব বই</h2>' +
-      '<p class="muted">মোট ' + BOOKS.length.toLocaleString("bn-BD") + 'টি বই — নাম, লেখক, বিভাগ, ভাষা বা বছর দিয়ে খুঁজুন।</p>' +
+    return '<section class="block"><h2>' + t("books.title") + '</h2>' +
+      '<p class="muted">' + tf("books.sub", { n: fmt(BOOKS.length) }) + '</p>' +
       '<div class="filters">' +
-      '<div class="full"><label>খুঁজুন (নাম / লেখক / বিষয় — বাংলায় বা Banglish-এ)</label><div class="search-box"><span class="search-icon" aria-hidden="true">🔍</span><input id="bQ" type="search" value="' + esc(state.q) + '" placeholder="যেমন: রবীন্দ্রনাথ, কুরআন — বা Banglish-এ: poddoja, hamlet"></div></div>' +
-      '<div><label>বিভাগ</label><select id="bCat"></select></div>' +
-      '<div><label>ভাষা</label><select id="bLang"></select></div>' +
-      '<div><label>সাজান</label><select id="bSort">' +
-        '<option value="az">A–Z (নাম অনুযায়ী)</option>' +
-        '<option value="za">Z–A</option>' +
-        '<option value="newest">নতুন আগে</option>' +
-        '<option value="oldest">পুরনো আগে</option>' +
-        '<option value="author">লেখক অনুযায়ী</option>' +
-        '<option value="top">টপ র‍্যাংকিং অনুযায়ী</option>' +
-        '<option value="language">ভাষা অনুযায়ী</option>' +
-        '<option value="category">বিভাগ অনুযায়ী</option>' +
+      '<div class="full"><label>' + t("books.qLabel") + '</label><div class="search-box"><span class="search-icon" aria-hidden="true">🔍</span><input id="bQ" type="search" value="' + esc(state.q) + '" placeholder="' + t("books.qPh") + '"></div></div>' +
+      '<div><label>' + t("books.catLabel") + '</label><select id="bCat"></select></div>' +
+      '<div><label>' + t("books.langLabel") + '</label><select id="bLang"></select></div>' +
+      '<div><label>' + t("books.sortLabel") + '</label><select id="bSort">' +
+        '<option value="az">' + t("sort.az") + '</option>' +
+        '<option value="za">' + t("sort.za") + '</option>' +
+        '<option value="newest">' + t("sort.newest") + '</option>' +
+        '<option value="oldest">' + t("sort.oldest") + '</option>' +
+        '<option value="author">' + t("sort.author") + '</option>' +
+        '<option value="top">' + t("sort.top") + '</option>' +
+        '<option value="language">' + t("sort.language") + '</option>' +
+        '<option value="category">' + t("sort.category") + '</option>' +
       "</select></div>" +
-      '<div><label>বছর</label><input id="bYear" type="number" min="1000" max="2026" value="' + esc(state.year) + '" placeholder="যেমন ১৯৪১"></div>' +
+      '<div><label>' + t("books.yearLabel") + '</label><input id="bYear" type="number" min="1000" max="2026" value="' + esc(state.year) + '" placeholder="' + t("books.yearPh") + '"></div>' +
       "</div>" +
       '<div id="bookResults"></div>' +
       "</section>";
@@ -747,8 +1042,8 @@
   function renderBooks() {
     if (!document.getElementById("bQ")) {
       view.innerHTML = booksShellHtml();
-      fillSelect(document.getElementById("bCat"), categoryCounts().map(function (c) { return c.name; }), "সব বিভাগ");
-      fillSelect(document.getElementById("bLang"), ["Bengali", "English", "Arabic", "Urdu"], "সব ভাষা");
+      fillSelect(document.getElementById("bCat"), categoryCounts().map(function (c) { return c.name; }), t("books.allCat"));
+      fillSelect(document.getElementById("bLang"), ["Bengali", "English", "Arabic", "Urdu"], t("books.allLang"));
       document.getElementById("bCat").value = state.category;
       document.getElementById("bLang").value = state.language;
       document.getElementById("bSort").value = state.sort;
@@ -785,15 +1080,15 @@
     var recHtml = "";
     if (state.q && !list.length) {
       var recs = BOOKS.filter(function (b) { return b.topRank && !isNoSuggest(b); }).sort(function (a, b) { return a.topRank - b.topRank; }).slice(0, 6);
-      if (recs.length) recHtml = '<div class="block"><h3>খুঁজে পাওয়া যায়নি — এই জনপ্রিয় বইগুলো দেখতে পারেন</h3><p class="muted">নামটি বাংলায় বা Banglish-এ লিখে আবার চেষ্টা করুন (যেমন: poddoja, hamlet, tirmizi)।</p>' + gridHtml(recs) + "</div>";
+      if (recs.length) recHtml = '<div class="block"><h3>' + t("results.none") + '</h3><p class="muted">' + t("results.noneSub") + '</p>' + gridHtml(recs) + "</div>";
     }
-    var h = '<p class="result-info">' + list.length.toLocaleString("bn-BD") + 'টি বই পাওয়া গেছে · পৃষ্ঠা ' + state.page.toLocaleString("bn-BD") + " / " + pages.toLocaleString("bn-BD") + "</p>" +
+    var h = '<p class="result-info">' + tf("results.info", { n: fmt(list.length), p: fmt(state.page), t: fmt(pages) }) + "</p>" +
       gridHtml(slice) +
       recHtml +
       '<div class="pagination">' +
-      '<button class="btn btn-ghost btn-sm" id="prevPg" ' + (state.page <= 1 ? "disabled" : "") + ">← আগের পৃষ্ঠা</button>" +
-      "<span>পৃষ্ঠা " + state.page + " / " + pages + "</span>" +
-      '<button class="btn btn-ghost btn-sm" id="nextPg" ' + (state.page >= pages ? "disabled" : "") + ">পরের পৃষ্ঠা →</button>" +
+      '<button class="btn btn-ghost btn-sm" id="prevPg" ' + (state.page <= 1 ? "disabled" : "") + ">" + t("results.prev") + "</button>" +
+      "<span>" + tf("results.page", { p: fmt(state.page), t: fmt(pages) }) + "</span>" +
+      '<button class="btn btn-ghost btn-sm" id="nextPg" ' + (state.page >= pages ? "disabled" : "") + ">" + t("results.next") + "</button>" +
       "</div>" +
       adSlotHtml();
     var box = document.getElementById("bookResults");
@@ -849,7 +1144,9 @@
   var SITE_VISIT_KEY = "mdl-visit-counted";
   var siteStats = null;
   function bnNum(n) {
-    return String(n == null ? 0 : n).replace(/[0-9]/g, function (d) { return "০১২৩৪৫৬৭৮৯"[+d]; });
+    var s = String(n == null ? 0 : n);
+    if (LANG === "en") return s;
+    return s.replace(/[0-9]/g, function (d) { return "০১২৩৪৫৬৭৮৯"[+d]; });
   }
   function browserId() {
     try {
@@ -879,7 +1176,7 @@
       var hc = document.getElementById("headerLikeCount");
       if (hc) hc.textContent = bnNum(siteStats ? (siteStats.likes || 0) : 0);
       var lbl = document.getElementById("siteLikeLabel");
-      if (lbl) lbl.textContent = liked ? "ফলো করেছেন" : "ফলো করুন";
+      if (lbl) lbl.textContent = liked ? t("hero.followed") : t("hero.follow");
     }
   }
   function initSiteStats() {
@@ -949,7 +1246,7 @@
     function done(ok) {
       if (!msg) return;
       msg.hidden = false;
-      msg.textContent = ok ? "ধন্যবাদ! আপনার মতামত পৌঁছে গেছে।" : "মতামত পাঠানো যায়নি — পরে আবার চেষ্টা করুন।";
+      msg.textContent = ok ? t("fb.ok") : t("fb.fail");
       if (ok) {
         if (textEl) textEl.value = "";
         if (nameEl) nameEl.value = "";
@@ -967,7 +1264,7 @@
     return "★★★★★".slice(0, n) + "☆☆☆☆☆".slice(0, 5 - n);
   }
   function reviewTime(ts) {
-    if (!ts || !ts.toDate) return "এখনই";
+    if (!ts || !ts.toDate) return t("now");
     try { return ts.toDate().toLocaleDateString("bn-BD", { day: "numeric", month: "long", year: "numeric" }); }
     catch (e) { return ""; }
   }
@@ -984,10 +1281,10 @@
     var db = fsdb();
     if (!box) return;
     if (!db) {
-      box.innerHTML = '<p class="muted">রিভিউ লোড করা যায়নি — ইন্টারনেট চেক করে পেজটি রিফ্রেশ করুন।</p>';
+      box.innerHTML = '<p class="muted">' + t("rev.loadFail") + '</p>';
       return;
     }
-    box.innerHTML = '<p class="muted">রিভিউ লোড হচ্ছে…</p>';
+    box.innerHTML = '<p class="muted">' + t("rev.loading") + '</p>';
     db.collection("reviews").where("bookId", "==", bookId).get()
       .then(function (snap) {
         var list = [];
@@ -1003,7 +1300,7 @@
         renderReviews();
       })
       .catch(function () {
-        box.innerHTML = '<p class="muted">রিভিউ লোড করা যায়নি — পরে আবার চেষ্টা করুন।</p>';
+        box.innerHTML = '<p class="muted">' + t("rev.loadFail2") + '</p>';
       });
   }
   function renderReviews() {
@@ -1016,14 +1313,14 @@
       if (rated.length) {
         var mean = rated.reduce(function (s, r) { return s + r.rating; }, 0) / rated.length;
         avg.innerHTML = '<span class="rev-stars">' + starsHtml(mean) + '</span> <b>' +
-          mean.toLocaleString("bn-BD", { maximumFractionDigits: 1 }) + "</b> (" +
-          rated.length.toLocaleString("bn-BD") + "টি রেটিং)";
+          fmt(mean, { maximumFractionDigits: 1 }) + "</b> (" +
+          fmt(rated.length) + t("rev.ratings") + ")";
       } else {
-        avg.innerHTML = '<span class="muted">এখনো কেউ রেটিং দেয়নি — প্রথম রেটিং আপনিই দিন।</span>';
+        avg.innerHTML = '<span class="muted">' + t("rev.noRating") + '</span>';
       }
     }
     if (!reviewState.list.length) {
-      box.innerHTML = '<p class="muted">এই বইয়ে এখনো কোনো রিভিউ নেই — প্রথম রিভিউ আপনিই লিখুন।</p>';
+      box.innerHTML = '<p class="muted">' + t("rev.none") + '</p>';
     } else {
       box.innerHTML = top.map(reviewHtml).join("");
     }
@@ -1036,19 +1333,19 @@
     var replies = reviewState.list.filter(function (x) { return x.parentId === r._id; });
     var h = '<div class="review" data-rev="' + esc(r._id) + '">' +
       '<div class="rev-head">' + reviewAvatar(r) +
-      '<b>' + esc(r.name || "পাঠক") + "</b>" +
+      '<b>' + esc(r.name || t("rev.reader")) + "</b>" +
       (r.rating ? '<span class="rev-stars">' + starsHtml(r.rating) + "</span>" : "") +
       '<span class="muted small">' + esc(reviewTime(r.createdAt)) + "</span></div>" +
       '<p class="rev-text">' + esc(r.text) + "</p>" +
       '<div class="rev-actions">' +
       '<button class="btn btn-ghost btn-sm' + (liked ? " liked" : "") + '" data-like="' + esc(r._id) + '" type="button">' +
-      (liked ? "❤️" : "🤍") + " " + n.toLocaleString("bn-BD") + "</button>" +
-      '<button class="btn btn-ghost btn-sm" data-reply="' + esc(r._id) + '" type="button">উত্তর দিন</button>' +
-      (me ? '<button class="btn btn-ghost btn-sm" data-del-review="' + esc(r._id) + '" type="button">মুছুন</button>' : "") +
+      (liked ? "❤️" : "🤍") + " " + fmt(n) + "</button>" +
+      '<button class="btn btn-ghost btn-sm" data-reply="' + esc(r._id) + '" type="button">' + t("rev.reply") + '</button>' +
+      (me ? '<button class="btn btn-ghost btn-sm" data-del-review="' + esc(r._id) + '" type="button">' + t("rev.delete") + '</button>' : "") +
       "</div>";
     if (reviewState.replyTo === r._id) {
-      h += '<div class="rev-reply-form"><textarea id="replyText" rows="2" placeholder="উত্তর লিখুন..."></textarea>' +
-        '<button class="btn btn-navy btn-sm" id="replySend" type="button">উত্তর পাঠান</button></div>';
+      h += '<div class="rev-reply-form"><textarea id="replyText" rows="2" placeholder="' + t("rev.replyPh") + '"></textarea>' +
+        '<button class="btn btn-navy btn-sm" id="replySend" type="button">' + t("rev.replySend") + '</button></div>';
     }
     if (replies.length) {
       h += '<div class="rev-replies">' + replies.map(reviewHtml).join("") + "</div>";
@@ -1059,15 +1356,15 @@
     var f = document.getElementById("reviewForm");
     if (!f) return;
     if (!currentUser) {
-      f.innerHTML = '<p class="muted">রিভিউ লিখতে Google দিয়ে লগইন করুন — উপরের "Google দিয়ে লগইন" বোতামে চাপ দিন।</p>';
+      f.innerHTML = '<p class="muted">' + t("rev.loginNote") + '</p>';
       return;
     }
     f.innerHTML = '<div class="rev-form"><div class="rev-stars-pick">' +
       [1, 2, 3, 4, 5].map(function (n) {
         return '<button class="star-pick' + (n <= reviewState.rating ? " on" : "") + '" data-star="' + n + '" type="button">★</button>';
       }).join("") + '</div>' +
-      '<textarea id="reviewText" rows="3" placeholder="বইটি কেমন লেগেছে? আপনার মতামত লিখুন..."></textarea>' +
-      '<button class="btn btn-primary btn-sm" id="reviewSend" type="button">রিভিউ পাঠান</button></div>';
+      '<textarea id="reviewText" rows="3" placeholder="' + t("rev.writePh") + '"></textarea>' +
+      '<button class="btn btn-primary btn-sm" id="reviewSend" type="button">' + t("rev.send") + '</button></div>';
     var send = document.getElementById("reviewSend");
     if (send) send.addEventListener("click", function () { submitReview(null); });
     var rs = document.getElementById("replySend");
@@ -1083,7 +1380,7 @@
     var data = {
       bookId: reviewState.bookId,
       uid: currentUser.uid,
-      name: currentUser.displayName || currentUser.email || "পাঠক",
+      name: currentUser.displayName || currentUser.email || t("rev.reader"),
       photo: currentUser.photoURL || "",
       text: text,
       rating: parentId ? 0 : (reviewState.rating || 5),
@@ -1095,14 +1392,14 @@
       reviewState.replyTo = null;
       loadReviews(reviewState.bookId);
     }).catch(function () {
-      alert("রিভিউ পাঠানো যায়নি — পরে আবার চেষ্টা করুন।");
+      alert(t("rev.sendFail"));
     });
   }
 
   function renderBook(id) {
     var light = byId(id);
-    if (!light) { view.innerHTML = '<p class="empty">এই বইটি পাওয়া যায়নি।</p>'; return; }
-    view.innerHTML = '<p class="empty">বইয়ের বিস্তারিত তথ্য লোড হচ্ছে…</p>';
+    if (!light) { view.innerHTML = '<p class="empty">' + t("book.notFound") + '</p>'; return; }
+    view.innerHTML = '<p class="empty">' + t("book.loading") + '</p>';
     window.scrollTo(0, 0);
     getFull(id).then(function (b) { renderBookFull(b || light); });
   }
@@ -1113,73 +1410,73 @@
         : NA;
     }
     var avail = b.availability === "free-download"
-      ? "অনলাইনে পড়া ও ফ্রি ডাউনলোড করা যায়"
+      ? t("book.availFree")
       : (b.availability === "buy-only"
-        ? "এই বইয়ের ফ্রি PDF নেই — কিনে পড়া যায় (নিচে কেনার লিংক দেওয়া আছে)"
-        : "অনলাইনে পড়া যায় (উৎসের নিয়ম অনুযায়ী)");
+        ? t("book.availBuy")
+        : t("book.availRead"));
     /* Full A–Z details. Every value is real data from the source; anything
        unknown shows "তথ্য নেই" — nothing is guessed. No price is shown:
        the OCR-extracted printed prices were mostly wrong, so prices were
        removed entirely on 2026-11-21. */
     var rows = [
-      ["বইয়ের আইডি", esc(b.sourceId || b.id)],
-      ["বইয়ের নাম", esc(b.title)],
-      ["বিকল্প শিরোনাম", esc(b.altTitle) || NA],
-      ["লেখক", esc(b.author) || NA],
-      ["সম্পাদক", esc(b.editor) || NA],
-      ["অনুবাদক", esc(b.translator) || NA],
-      ["প্রকাশক", esc(b.publisher) || NA],
-      ["প্রকাশের বছর", b.year ? String(b.year) : NA],
-      ["ISBN", esc(b.isbn) || NA],
-      ["ভাষা", esc(langLabel(b.language))],
-      ["দেশ", esc(b.country) || NA],
-      ["বিষয়", esc(b.subject) || NA],
-      ["বিভাগ", esc(b.category || "অন্যান্য")],
-      ["উপবিভাগ", esc(b.subcategory) || NA],
-      ["বিবরণ", esc(b.description) || NA],
-      ["পৃষ্ঠা সংখ্যা", b.pageCount ? b.pageCount.toLocaleString("bn-BD") + " পৃষ্ঠা" : NA],
-      ["সংস্করণ", esc(b.edition) || NA],
-      ["মূল উৎস", esc(b.source) || NA],
-      ["পড়ার লিংক", linkOrNA(b.readUrl, "অনলাইনে পড়ুন ↗")],
-      ["ডাউনলোড লিংক", b.downloadUrl ? linkOrNA(b.downloadUrl, "ডাউনলোড করুন ⬇") : "ফ্রি ডাউনলোড ফাইল যাচাই করা যায়নি"],
-      ["কেনার লিংক", b.buyLink ? linkOrNA(b.buyLink, "কিনুন ↗") : NA],
-      ["কপিরাইট অবস্থা", b.copyright === "public-domain" ? "পাবলিক ডোমেইন / বিনামূল্যে পাওয়া যায়" : NA],
-      ["প্রাপ্যতা", avail]
+      [t("row.id"), esc(b.sourceId || b.id)],
+      [t("row.title"), esc(b.title)],
+      [t("row.altTitle"), esc(b.altTitle) || NA],
+      [t("row.author"), esc(b.author) || NA],
+      [t("row.editor"), esc(b.editor) || NA],
+      [t("row.translator"), esc(b.translator) || NA],
+      [t("row.publisher"), esc(b.publisher) || NA],
+      [t("row.year"), b.year ? String(b.year) : NA],
+      [t("row.isbn"), esc(b.isbn) || NA],
+      [t("row.language"), esc(langLabel(b.language))],
+      [t("row.country"), esc(b.country) || NA],
+      [t("row.subject"), esc(b.subject) || NA],
+      [t("row.category"), esc(b.category || "অন্যান্য")],
+      [t("row.subcategory"), esc(b.subcategory) || NA],
+      [t("row.description"), esc(b.description) || NA],
+      [t("row.pages"), b.pageCount ? fmt(b.pageCount) + t("row.pagesUnit") : NA],
+      [t("row.edition"), esc(b.edition) || NA],
+      [t("row.source"), esc(b.source) || NA],
+      [t("row.read"), linkOrNA(b.readUrl, t("row.readLabel"))],
+      [t("row.download"), b.downloadUrl ? linkOrNA(b.downloadUrl, t("row.dlLabel")) : t("row.dlNone")],
+      [t("row.buy"), b.buyLink ? linkOrNA(b.buyLink, t("row.buyLabel")) : NA],
+      [t("row.copyright"), b.copyright === "public-domain" ? t("row.copyrightPd") : NA],
+      [t("row.avail"), avail]
     ];
     var seriesHtml = "";
     if (b.series) {
       var sibs = BOOKS.filter(function (x) { return x.series === b.series && x.id !== b.id && (!isNoSuggest(x) || isNoSuggest(b)); });
       if (sibs.length) {
-        seriesHtml = '<div class="reviews"><h3>' + esc(b.series) + ' সিরিজের আরও বই</h3>' + gridHtml(sibs.slice(0, 12)) + "</div>";
+        seriesHtml = '<div class="reviews"><h3>' + esc(b.series) + t("book.seriesMore") + '</h3>' + gridHtml(sibs.slice(0, 12)) + "</div>";
       }
     }
-    var h = '<button class="back-link" id="backBtn">← ফিরে যান</button>' +
+    var h = '<button class="back-link" id="backBtn">' + t("book.back") + '</button>' +
       '<div class="details">' + coverHtml(b, true) +
-      (b.coverUrl ? '<p class="small muted cover-hint">বড় করে দেখতে প্রচ্ছদে চাপ দিন</p>' : "") +
+      (b.coverUrl ? '<p class="small muted cover-hint">' + t("cover.hint") + '</p>' : "") +
       "<h2>" + esc(b.title) + "</h2>" +
-      '<p class="muted">লেখক: ' + esc(b.author || NA) + "</p>" +
+      '<p class="muted">' + t("book.authorLine") + esc(b.author || NA) + "</p>" +
       "<dl>" + rows.map(function (r) {
         return "<dt>" + esc(r[0]) + "</dt><dd>" + r[1] + "</dd>";
       }).join("") + "</dl>" +
       '<div class="actions">' +
-      '<a class="btn btn-navy" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">অনলাইনে পড়ুন ↗</a>' +
+      '<a class="btn btn-navy" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">' + t("book.read") + '</a>' +
       (b.downloadUrl
         ? '<a class="btn btn-primary" href="' + esc(dlUrl(b)) + '" download>' + esc(dlLabel(b)) + "</a>"
         : "") +
       (b.buyLink
-        ? '<a class="btn btn-primary" href="' + esc(b.buyLink) + '" target="_blank" rel="noopener">কিনুন ↗</a>'
+        ? '<a class="btn btn-primary" href="' + esc(b.buyLink) + '" target="_blank" rel="noopener">' + t("book.buy") + '</a>'
         : "") +
-      '<a class="btn btn-ghost" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">মূল উৎস দেখুন ↗</a>' +
-      '<button class="btn btn-ghost" id="shareBtn" type="button">শেয়ার করুন ↗</button>' +
-      '<button class="btn btn-ghost" id="favBtn" data-fav="' + esc(b.id) + '" type="button">' + (isFav(b.id) ? "★ পছন্দের বইয়ে আছে" : "☆ পছন্দের বইয়ে রাখুন") + "</button>" +
+      '<a class="btn btn-ghost" href="' + esc(b.readUrl) + '" target="_blank" rel="noopener">' + t("book.source") + '</a>' +
+      '<button class="btn btn-ghost" id="shareBtn" type="button">' + t("book.share") + '</button>' +
+      '<button class="btn btn-ghost" id="favBtn" data-fav="' + esc(b.id) + '" type="button">' + (isFav(b.id) ? t("book.favOn") : t("book.favOff")) + "</button>" +
       "</div>" +
       sharePanelHtml(b.title, "ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", bookUrl(b)) +
       (b.buyLink
-        ? '<div class="notice">এই বইটি নতুন ও কপিরাইটযুক্ত, তাই এর ফ্রি PDF এখানে দেওয়া হয় না। উপরের “কিনুন” বোতাম থেকে আসল বইটি কিনে পড়তে পারবেন।</div>'
+        ? '<div class="notice">' + t("book.buyNotice") + '</div>' 
         : (b.downloadUrl ? "" :
-        '<div class="notice">এই বইয়ের ফ্রি ডাউনলোড ফাইল এই মুহূর্তে যাচাই করা যায়নি, তাই ডাউনলোড বোতাম দেখানো হয়নি। উপরের “অনলাইনে পড়ুন” লিংক থেকে উৎসের নিয়ম অনুযায়ী পড়তে পারবেন।</div>')) +
-      '<div class="reviews"><h3>পাঠকের মতামত (রিভিউ)</h3>' +
-      '<p class="small muted">রিভিউ লিখতে ও লাইক দিতে Google দিয়ে লগইন করুন। আপনার নাম ও মতামত সবার দেখার জন্য প্রকাশ্যে থাকবে।</p>' +
+        '<div class="notice">' + t("book.dlNotice") + '</div>')) +
+      '<div class="reviews"><h3>' + t("book.reviews") + '</h3>' +
+      '<p class="small muted">' + t("book.reviewsNote") + '</p>' +
       '<div id="reviewAvg"></div><div id="reviewForm"></div><div id="reviewsBox"></div></div>' +
       seriesHtml + "</div>";
     view.innerHTML = h;
@@ -1193,17 +1490,17 @@
 
   function renderSeries(name) {
     var list = BOOKS.filter(function (b) { return b.series === name; });
-    view.innerHTML = '<section class="block"><h2>' + esc(name) + ' সিরিজ</h2>' +
-      '<p class="muted">' + list.length.toLocaleString("bn-BD") + 'টি বই</p>' + gridHtml(list) + "</section>";
+    view.innerHTML = '<section class="block"><h2>' + esc(name) + t("series.title") + '</h2>' +
+      '<p class="muted">' + fmt(list.length) + t("series.books") + '</p>' + gridHtml(list) + "</section>";
     window.scrollTo(0, 0);
   }
 
   /* ---------- simple pages ---------- */
   function renderCategories() {
     var cats = categoryCounts();
-    view.innerHTML = '<section class="block"><h2>বিভাগ</h2><p class="muted">বিভাগে ক্লিক করলে ওই বিভাগের বই দেখতে পাবেন।</p><div class="chip-grid">' +
+    view.innerHTML = '<section class="block"><h2>' + t("cats.title") + '</h2><p class="muted">' + t("cats.sub") + '</p><div class="chip-grid">' +
       cats.map(function (c) {
-        return '<button class="chip" data-cat="' + esc(c.name) + '">' + esc(c.name) + " <small>(" + c.n.toLocaleString("bn-BD") + ")</small></button>";
+        return '<button class="chip" data-cat="' + esc(c.name) + '">' + esc(c.name) + " <small>(" + fmt(c.n) + ")</small></button>";
       }).join("") + "</div></section>";
   }
   function renderAuthors() {
@@ -1213,9 +1510,9 @@
       if (a && a !== NA) counts[a] = (counts[a] || 0) + 1;
     });
     var authors = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
-    view.innerHTML = '<section class="block"><h2>লেখক</h2><p class="muted">' + authors.length.toLocaleString("bn-BD") + " জন লেখক — নামে ক্লিক করলে তাঁদের বই দেখতে পাবেন।</p><div class=\"author-list\">" +
+    view.innerHTML = '<section class="block"><h2>' + t("authors.title") + '</h2><p class="muted">' + fmt(authors.length) + t("authors.sub") + '</p><div class="author-list">' +
       authors.map(function (a) {
-        return '<div class="author-item" data-author="' + esc(a) + '"><b>' + esc(a) + "</b><span>" + counts[a].toLocaleString("bn-BD") + "টি বই</span></div>";
+        return '<div class="author-item" data-author="' + esc(a) + '"><b>' + esc(a) + "</b><span>" + fmt(counts[a]) + t("author.books") + "</span></div>";
       }).join("") + "</div></section>";
   }
   function infoPage(title, bodyHtml) {
@@ -1223,55 +1520,55 @@
     window.scrollTo(0, 0);
   }
   function renderAbout() {
-    infoPage("আমাদের সম্পর্কে",
-      "<p><b>My Digital Library by Robiul Hosen</b> — সবার জন্য উন্মুক্ত একটি ডিজিটাল লাইব্রেরি। এখানে বাংলা ও বিশ্বের বইয়ের তথ্য, বৈধ পড়া ও ডাউনলোডের লিংক এক জায়গায় পাওয়া যায়।</p>" +
-      "<p>আমাদের লক্ষ্য: ধাপে ধাপে বাংলাদেশের নামকরা বই, বিশ্বসাহিত্য, ইতিহাস, দর্শন, বিজ্ঞান, ধর্ম ও গবেষণার বইয়ের একটি বড় সংগ্রহ তৈরি করা — সব বই বাংলায়, যাতে সবাই পড়তে পারে।</p>" +
-      "<p>বইয়ের তথ্য সংগ্রহ করা হয় Internet Archive, Project Gutenberg ও Standard Ebooks-এর মতো বৈধ উন্মুক্ত উৎস থেকে। কপিরাইটযুক্ত বইয়ের PDF এখানে দেওয়া হয় না।</p>" +
+    infoPage(t("about.title"),
+      "<p>" + t("about.p1") + "</p>" +
+      "<p>" + t("about.p2") + "</p>" +
+      "<p>" + t("about.p3") + "</p>" +
       "<h3>About Robiul Hosen</h3>" +
-      "<div class=\"owner-card\"><img class=\"owner-photo\" src=\"assets/robiul-hosen.jpg\" alt=\"রবিউল হোসেন\">" +
-      "<div class=\"owner-info\"><h3>রবিউল হোসেন</h3>" +
-      "<p class=\"owner-titles\">Student | Educator | Content Writer | Digital Enthusiast</p>" +
-      "<p class=\"owner-intro\">I am a Political Science student, educator, and aspiring professional passionate about education, knowledge sharing, writing, and digital innovation.</p>" +
-      "<p class=\"owner-tagline\">“Learning Today, Leading Tomorrow.”</p>" +
-      "<p class=\"owner-role\">Founder &amp; Editor, My Digital Library<br>BSS (Hons.) in Political Science, Chattogram College<br>Instructor, Propel Coaching Center</p>" +
-      "<p><b>শিক্ষা:</b> BSS (Hons.) রাষ্ট্রবিজ্ঞান, চট্টগ্রাম কলেজ (চলমান)</p>" +
-      "<p><b>যোগাযোগ:</b> <a href=\"mailto:hosenrobiul43@gmail.com\">hosenrobiul43@gmail.com</a> · <a href=\"https://www.facebook.com/61564301917226\" target=\"_blank\" rel=\"noopener\">Facebook: রবিউল</a> · <a href=\"https://github.com/hosenrobiul43-ship-it\" target=\"_blank\" rel=\"noopener\">GitHub</a></p><p><a class=\"btn btn-primary\" href=\"https://muse.ai/s/robiul-hosen-xwn6xkxzxqhxqyxsxu/RklTWRtsi3EoMw2QEzEOfyKPql_4cEKMzuHi2DZePME\" target=\"_blank\" rel=\"noopener\">" + "\u09aa\u09c1\u09b0\u09cb \u09aa\u09cb\u09b0\u09cd\u099f\u09ab\u09cb\u09b2\u09bf\u0993 \u09a6\u09c7\u0996\u09c1\u09a8" + "</a></p>" + "</div></div>");
+      '<div class="owner-card"><img class="owner-photo" src="assets/robiul-hosen.jpg" alt="রবিউল হোসেন">' +
+      '<div class="owner-info"><h3>রবিউল হোসেন</h3>' +
+      '<p class="owner-titles">Student | Educator | Content Writer | Digital Enthusiast</p>' +
+      '<p class="owner-intro">I am a Political Science student, educator, and aspiring professional passionate about education, knowledge sharing, writing, and digital innovation.</p>' +
+      '<p class="owner-tagline">“Learning Today, Leading Tomorrow.”</p>' +
+      '<p class="owner-role">Founder &amp; Editor, My Digital Library<br>BSS (Hons.) in Political Science, Chattogram College<br>Instructor, Propel Coaching Center</p>' +
+      "<p><b>" + t("about.edu") + "</b> BSS (Hons.) রাষ্ট্রবিজ্ঞান, চট্টগ্রাম কলেজ (চলমান)</p>" +
+      '<p><b>' + t("about.contact") + '</b> <a href="mailto:hosenrobiul43@gmail.com">hosenrobiul43@gmail.com</a> · <a href="https://www.facebook.com/61564301917226" target="_blank" rel="noopener">Facebook: রবিউল</a> · <a href="https://github.com/hosenrobiul43-ship-it" target="_blank" rel="noopener">GitHub</a></p><p><a class="btn btn-primary" href="https://muse.ai/s/robiul-hosen-xwn6xkxzxqhxqyxsxu/RklTWRtsi3EoMw2QEzEOfyKPql_4cEKMzuHi2DZePME" target="_blank" rel="noopener">' + t("about.portfolio") + '</a></p>' + '</div></div>');
   }
   function renderPrivacy() {
-    infoPage("গোপনীয়তা নীতি",
-      "<p>এই ওয়েবসাইট আপনার কোনো অ্যাকাউন্ট, পাসওয়ার্ড বা ব্যক্তিগত তথ্য সংগ্রহ করে না।</p>" +
-      "<p>রিভিউ লেখার সময় আপনি যে নাম ও মতামত দেন, তা সবার দেখার জন্য প্রকাশ্যে থাকে। রিভিউ দিতে Google দিয়ে লগইন করতে হয় — আপনার Gmail ঠিকানা অন্য পাঠকদের দেখানো হয় না, শুধু আপনার নাম ও ছবি দেখা যায়।</p>");
+    infoPage(t("privacy.title"),
+      "<p>" + t("privacy.p1") + "</p>" +
+      "<p>" + t("privacy.p2") + "</p>");
   }
   function renderTerms() {
-    infoPage("ব্যবহারের শর্তাবলি",
-      "<p>এই লাইব্রেরির বইয়ের তথ্য ও লিংক শুধু পড়া ও শেখার জন্য। বইয়ের ফাইলগুলো সংশ্লিষ্ট উৎসের (Internet Archive / Standard Ebooks) নিয়ম মেনে ব্যবহার করবেন।</p>" +
-      "<p>এখান থেকে পাওয়া কোনো বই বাণিজ্যিকভাবে বিক্রি বা পুনঃপ্রকাশ করা যাবে না।</p>" +
-      "<p>রিভিউ লেখার সময় ভদ্র ভাষা ব্যবহার করুন; আপত্তিকর মন্তব্য মুছে ফেলা হতে পারে।</p>");
+    infoPage(t("terms.title"),
+      "<p>" + t("terms.p1") + "</p>" +
+      "<p>" + t("terms.p2") + "</p>" +
+      "<p>" + t("terms.p3") + "</p>");
   }
   function renderCopyright() {
-    infoPage("কপিরাইট নীতি",
-      "<p>এই সাইটে শুধু পাবলিক ডোমেইন বা বিনামূল্যে বৈধভাবে পাওয়া যায় এমন বইয়ের ডাউনলোড লিংক দেওয়া হয়।</p>" +
-      "<p>কপিরাইটযুক্ত বইয়ের ক্ষেত্রে ডাউনলোড বোতাম দেখানো হয় না — শুধু অনুমোদিত পড়া, ধার বা কেনার লিংক দেওয়া হয়।</p>" +
-      "<p>কোনো বইয়ের কপিরাইট নিয়ে আপত্তি থাকলে যোগাযোগ পাতা থেকে জানান — যাচাই করে লিংক সরিয়ে নেওয়া হবে।</p>");
+    infoPage(t("copyright.title"),
+      "<p>" + t("copyright.p1") + "</p>" +
+      "<p>" + t("copyright.p2") + "</p>" +
+      "<p>" + t("copyright.p3") + "</p>");
   }
   function renderRequest() {
-    var T = "\u09ac\u0987\u09df\u09c7\u09b0 \u0985\u09a8\u09c1\u09b0\u09cb\u09a7";
-    var D = "\u09af\u09c7 \u09ac\u0987\u099f\u09bf \u09b2\u09be\u0987\u09ac\u09cd\u09b0\u09c7\u09b0\u09bf\u09a4\u09c7 \u099a\u09be\u09a8, \u09a4\u09be\u09b0 \u09a8\u09be\u09ae \u099c\u09be\u09a8\u09be\u09a8 \u2014 \u0986\u09ae\u09b0\u09be \u0996\u09c1\u0981\u099c\u09c7 \u09af\u09c1\u0995\u09cd\u09a4 \u0995\u09b0\u09be\u09b0 \u099a\u09c7\u09b7\u09cd\u099f\u09be \u0995\u09b0\u09ac\u0964";
-    var L_BOOK = "\u09ac\u0987\u09af\u09bc\u09c7\u09b0 \u09a8\u09be\u09ae";
-    var L_AUTHOR = "\u09b2\u09c7\u0996\u0995\u09c7\u09b0 \u09a8\u09be\u09ae";
-    var L_NAME = "\u0986\u09aa\u09a8\u09be\u09b0 \u09a8\u09be\u09ae";
-    var L_GMAIL = "\u0986\u09aa\u09a8\u09be\u09b0 Gmail (\u0990\u099a\u09cd\u099b\u09bf\u0995)";
-    var L_MORE = "\u0986\u09b0\u0993 \u0995\u09bf\u099b\u09c1 \u099c\u09be\u09a8\u09be\u09a4\u09c7 \u099a\u09be\u09a8?";
+    var T = t("req.title");
+    var D = t("req.desc");
+    var L_BOOK = t("req.book");
+    var L_AUTHOR = t("req.author");
+    var L_NAME = t("req.name");
+    var L_GMAIL = t("req.gmail");
+    var L_MORE = t("req.more");
     view.innerHTML = '<section class="block"><h2>' + T + '</h2>' +
       '<p class="muted">' + D + '</p>' +
       '<form id="reqForm" class="req-form">' +
-      '<label>' + L_BOOK + ' <span class="req-star">*</span><input name="book" required placeholder="' + "\u09af\u09c7\u09ae\u09a8: \u09aa\u09a5\u09c7\u09b0 \u09aa\u09be\u0981\u099a\u09be\u09b2\u09c0" + '"></label>' +
-      '<label>' + L_AUTHOR + '<input name="author" placeholder="' + "\u099c\u09be\u09a8\u09be \u09a5\u09be\u0995\u09b2\u09c7 \u09b2\u09bf\u0996\u09c1\u09a8" + '"></label>' +
+      '<label>' + L_BOOK + ' <span class="req-star">*</span><input name="book" required placeholder="' + t("req.phBook") + '"></label>' +
+      '<label>' + L_AUTHOR + '<input name="author" placeholder="' + t("req.phAuthor") + '"></label>' +
       '<label>' + L_NAME + '<input name="name" placeholder="' + L_NAME + '"></label>' +
       '<label>' + L_GMAIL + '<input name="gmail" type="email" placeholder="example@gmail.com"></label>' +
-      '<label>' + L_MORE + '<textarea name="more" rows="3" placeholder="' + "\u09ac\u0987\u099f\u09bf \u09b8\u09ae\u09cd\u09aa\u09b0\u09cd\u0995\u09c7 \u0986\u09b0 \u0995\u09bf\u099b\u09c1 \u099c\u09be\u09a8\u09be\u09a4\u09c7 \u099a\u09be\u0987\u09b2\u09c7 \u09b2\u09bf\u0996\u09c1\u09a8" + '"></textarea></label>' +
-      '<button class="btn btn-primary" type="submit">' + "\u0985\u09a8\u09c1\u09b0\u09cb\u09a7 \u09aa\u09be\u09a0\u09be\u09a8" + '</button>' +
-      '<p class="muted small">' + "\u0986\u09aa\u09a8\u09be\u09b0 \u0985\u09a8\u09c1\u09b0\u09cb\u09a7 \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u09b2\u09be\u0987\u09ac\u09cd\u09b0\u09c7\u09b0\u09bf\u09b0 \u09a4\u09be\u09b2\u09bf\u0995\u09be\u09df \u09af\u09be\u09ac\u09c7\u0964" + '</p>' +
+      '<label>' + L_MORE + '<textarea name="more" rows="3" placeholder="' + t("req.phMore") + '"></textarea></label>' +
+      '<button class="btn btn-primary" type="submit">' + t("req.send") + '</button>' +
+      '<p class="muted small">' + t("req.note") + '</p>' +
       '</form><div id="reqMsg"></div></section>';
     var f = document.getElementById("reqForm");
     var msg = document.getElementById("reqMsg");
@@ -1303,10 +1600,10 @@
     window.scrollTo(0, 0);
   }
   function renderContact() {
-    infoPage("যোগাযোগ",
-      "<p>লাইব্রেরি সম্পর্কে মতামত, বইয়ের অনুরোধ বা ভুল তথ্য জানাতে Facebook পেজে বার্তা পাঠান।</p>" +
-      "<p>Facebook: <b>রবিউল</b> (facebook.com — Robiul Hosen)</p>" +
-      "<p>নতুন বইয়ের অনুরোধ করলে আমরা বৈধ উৎস যাচাই করে তালিকায় যুক্ত করার চেষ্টা করব।</p>");
+    infoPage(t("contact.title"),
+      "<p>" + t("contact.p1") + "</p>" +
+      "<p>" + t("contact.p2") + "</p>" +
+      "<p>" + t("contact.p3") + "</p>");
   }
 
   /* ---------- router ---------- */
@@ -1352,7 +1649,7 @@
   document.addEventListener("click", function (e) {
     var rt = e.target.closest("[data-retry]");
     if (rt) {
-      view.innerHTML = '<p class="empty">লাইব্রেরি লোড হচ্ছে…</p>';
+    view.innerHTML = '<p class="empty">' + t("app.loading") + '</p>';
       loadBooks();
       return;
     }
@@ -1360,8 +1657,8 @@
     if (cp) {
       var url = cp.getAttribute("data-copy");
       var done = function () {
-        cp.textContent = "কপি হয়েছে ✓";
-        setTimeout(function () { cp.textContent = "লিংক কপি করুন"; }, 2000);
+    cp.textContent = t("app.copyDone");
+    setTimeout(function () { cp.textContent = t("app.copyLink"); }, 2000);
       };
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, done);
       else {
@@ -1375,7 +1672,7 @@
     var fv = e.target.closest("[data-fav]");
     if (fv) {
       var added = toggleFav(fv.getAttribute("data-fav"));
-      if (fv.id === "favBtn") fv.textContent = added ? "★ পছন্দের বইয়ে আছে" : "☆ পছন্দের বইয়ে রাখুন";
+      if (fv.id === "favBtn") fv.textContent = added ? t("app.favOn") : t("app.favOff");
       else { fv.textContent = added ? "★" : "☆"; fv.classList.toggle("on", added); }
       return;
     }
@@ -1403,7 +1700,7 @@
     }
     var lk = e.target.closest("[data-like]");
     if (lk) {
-      if (!currentUser) { alert("লাইক দিতে Google দিয়ে লগইন করুন।"); return; }
+      if (!currentUser) { alert(t("rev.likeLogin")); return; }
       var db = fsdb();
       if (!db) return;
       var rid = lk.getAttribute("data-like");
@@ -1422,7 +1719,7 @@
     }
     var rp = e.target.closest("[data-reply]");
     if (rp) {
-      if (!currentUser) { alert("উত্তর দিতে Google দিয়ে লগইন করুন।"); return; }
+      if (!currentUser) { alert(t("rev.replyLogin")); return; }
       reviewState.replyTo = rp.getAttribute("data-reply");
       renderReviews();
       var rt = document.getElementById("replyText");
@@ -1433,7 +1730,7 @@
     if (dl) {
       var db2 = fsdb();
       if (!db2 || !currentUser) return;
-      if (!confirm("এই রিভিউটি মুছে ফেলবেন?")) return;
+      if (!confirm(t("rev.delConfirm"))) return;
       db2.collection("reviews").doc(dl.getAttribute("data-del-review")).delete()
         .then(function () { loadReviews(reviewState.bookId); })
         .catch(function () {});
@@ -1444,4 +1741,5 @@
 
   loadBooks();
   initSiteStats();
+  applyStaticI18n();
 })();
