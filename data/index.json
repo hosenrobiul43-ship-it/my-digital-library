@@ -2351,7 +2351,7 @@
   "title": "গুপ্ত মন্ত্র",
   "author": "তথ্য নেই",
   "coverUrl": "https://archive.org/services/img/dli.ministry.02248",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.ministry.02248/564.182.KC.907.2.pdf",
   "downloadFormat": "PDF",
@@ -4797,7 +4797,7 @@
   "title": "মনু সংহিতা চতুর্থ সং",
   "author": "উপেন্দ্রনাথ মুখোপাধ্যায়",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.1573",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.bengal.10689.1573/10689.1573.pdf",
   "downloadFormat": "PDF",
@@ -6333,7 +6333,7 @@
   "title": "১ মনুস্মৃতি বা অনুশাসনসংহিতা",
   "author": "মনু ঋষি",
   "coverUrl": "https://archive.org/services/img/ajoymondol297_gmail_20160623_1852",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/ajoymondol297_gmail_20160623_1852/%E0%A7%A7%20%E0%A6%AE%E0%A6%A8%E0%A7%81%E0%A6%B8%E0%A7%8D%E0%A6%AE%E0%A7%83%E0%A6%A4%E0%A6%BF%20%E0%A6%AC%E0%A6%BE%20%E0%A6%85%E0%A6%A8%E0%A7%81%E0%A6%B6%E0%A6%BE%E0%A6%B8%E0%A6%A8%E0%A6%B8%E0%A6%82%E0%A6%B9%E0%A6%BF%E0%A6%A4%E0%A6%BE.pdf",
   "downloadFormat": "PDF",
@@ -12253,7 +12253,7 @@
   "title": "নরক গুলজার",
   "author": "মনোজ মিত্র",
   "coverUrl": "https://archive.org/services/img/NorokGuljar",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/NorokGuljar/Norok%20Guljar.pdf",
   "downloadFormat": "PDF",
@@ -12803,7 +12803,7 @@
  {
   "id": "ia-in.ernet.dli.2015.265505",
   "title": "গোপভুমের স্বরুপ ঐতিঝ্য ও সংস্কৃতি",
-  "author": "শিবশাঙ্কর ঘোষ",
+  "author": "শিবশঙ্কর ঘোষ",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.265505",
   "category": "World History",
   "language": "Bengali",
@@ -12815,7 +12815,7 @@
   "year": 2000,
   "ci": 3,
   "rt": "gopbhumershrupoitijhyosngskriti gopbhumerswarupaitijhyaosanskriti",
-  "ra": "shibshankrghosh shibshankarghosh"
+  "ra": "shibshnkrghosh shibshankarghosh"
  },
  {
   "id": "ia-vidyasagar_201909",
@@ -16940,7 +16940,7 @@
  {
   "id": "ia-in.ernet.dli.2015.455138",
   "title": "বঙ্গানুবাদ ও আলোচনা সাহিত",
-  "author": "তাপানশাঙ্কর ভট্টাচার্য",
+  "author": "তপনশঙ্কর ভট্টাচার্য",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455138",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -16951,7 +16951,7 @@
   "addedOrder": 1006,
   "ci": 4,
   "rt": "bnganubadoalochnasahit banganubadoalochanasahit",
-  "ra": "tapanshankrbhtachary tapanshankarbhatacharjya"
+  "ra": "tpnshnkrbhtachary tapanshankarbhatacharjya"
  },
  {
   "id": "ia-parshuram-golpo-samagra",
@@ -17005,7 +17005,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.299298",
-  "title": "প্রথম আলো পার্বো ২",
+  "title": "প্রথম আলো পর্ব ২",
   "author": "সুনীল গঙ্গোপাধ্যায়",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299298",
   "category": "অন্যান্য",
@@ -17016,7 +17016,7 @@
   "featured": false,
   "addedOrder": 1010,
   "ci": 4,
-  "rt": "prthmaloparbo2 prathamaloparbo2",
+  "rt": "prthmaloprb2 prathamaloparbo2",
   "ra": "sunilgngopadhyay sunilgangopadhyay"
  },
  {
@@ -18974,7 +18974,7 @@
  {
   "id": "ia-in.ernet.dli.2015.454364",
   "title": "বিবেকানন্দ ও সমকালীন ভারতবর্ষ খণ্ড ৫",
-  "author": "শাঙ্করিপ্রসাদ বসু",
+  "author": "শঙ্করীপ্রসাদ বসু",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454364",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -18986,7 +18986,7 @@
   "year": 1965,
   "ci": 4,
   "rt": "bibekandosmkalinbhartbrshkhnd5 bibekanandaosamakalinbharatbarshabol5",
-  "ra": "shankriprsadbsu shankariprasadbasu"
+  "ra": "shnkriprsadbsu shankariprasadbasu"
  },
  {
   "id": "ia-in.ernet.dli.2015.456897",
@@ -20351,7 +20351,7 @@
   "title": "ভারতী : সচিত্র মাসিক পত্রিকা",
   "author": "গঙ্গোপাধ্যায়, মনিলাল; মুখোপাধ্যায়, সৌরীন্দ্রমোহন",
   "coverUrl": "https://archive.org/services/img/dli.ministry.00785",
-  "category": "Psychology",
+  "category": "Reference Books",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.ministry.00785/1152.182%2520Qb%2520878.57%25281%2529.pdf",
   "downloadFormat": "PDF",
@@ -20857,7 +20857,7 @@
  {
   "id": "ia-in.ernet.dli.2015.266080",
   "title": "স্বামী বিবেকানন্দ নাতুন তাথ্য নাতুন আলো",
-  "author": "শাঙ্করিপ্রসাদ বসু",
+  "author": "শঙ্করীপ্রসাদ বসু",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266080",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -20869,7 +20869,7 @@
   "year": 2000,
   "ci": 4,
   "rt": "shamibibekandnatuntathynatunalo swamibibekanandanatuntathyanatunalo",
-  "ra": "shankriprsadbsu shankariprasadbasu"
+  "ra": "shnkriprsadbsu shankariprasadbasu"
  },
  {
   "id": "ia-in.ernet.dli.2015.265515",
@@ -23289,7 +23289,7 @@
   "title": "সাজানো বাগান",
   "author": "মনোজ মিত্র",
   "coverUrl": "https://archive.org/services/img/SajanoBagan",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/SajanoBagan/Sajano%20Bagan.pdf",
   "downloadFormat": "PDF",
@@ -23424,7 +23424,7 @@
   "title": "ভারতী : সচিত্র মাসিক পত্রিকা",
   "author": "গঙ্গোপাধ্যায়, মনিলাল; মুখোপাধ্যায়, সৌরীন্দ্রমোহন",
   "coverUrl": "https://archive.org/services/img/dli.ministry.00783",
-  "category": "Psychology",
+  "category": "Reference Books",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.ministry.00783/1135.182%2520Qb%2520878.55.pdf",
   "downloadFormat": "PDF",
@@ -25293,7 +25293,7 @@
  {
   "id": "ia-in.ernet.dli.2015.299923",
   "title": "বাংলা লোকানাত্য সামিক্ষা",
-  "author": "গৌরিশাঙ্কর ভট্টাচার্য",
+  "author": "গৌরীশঙ্কর ভট্টাচার্য",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299923",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -25305,7 +25305,7 @@
   "year": 1960,
   "ci": 6,
   "rt": "banglalokanatysamikha banglalokanatyasamiksha",
-  "ra": "gourishankrbhtachary gourishankarbhatacharjya"
+  "ra": "gourishnkrbhtachary gourishankarbhatacharjya"
  },
  {
   "id": "ia-in.ernet.dli.2015.453192",
@@ -31358,7 +31358,7 @@
  {
   "id": "ia-in.ernet.dli.2015.298924",
   "title": "ভ্রমণ ও সাধসাঙা খণ্ড ২ ২য়",
-  "author": "শিপশাঙ্কর ভারতী",
+  "author": "শিবশঙ্কর ভারতী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298924",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -31370,7 +31370,7 @@
   "year": 1959,
   "ci": 7,
   "rt": "bhrmnosadhsangakhnd2y bhramanosadhsangabol2ed2nd",
-  "ra": "shipshankrbharti shipshankarbharati"
+  "ra": "shibshnkrbharti shipshankarbharati"
  },
  {
   "id": "ia-in.ernet.dli.2015.290467",
@@ -31426,7 +31426,7 @@
  {
   "id": "ia-in.ernet.dli.2015.266066",
   "title": "সুন্দরবন সমগ্র ১ম",
-  "author": "শিবশাঙ্কর মিত্র",
+  "author": "শিবশঙ্কর মিত্র",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266066",
   "category": "Literature",
   "language": "Bengali",
@@ -31438,7 +31438,7 @@
   "year": 1960,
   "ci": 7,
   "rt": "sundrbnsmgr1m sundarbansamagraed1st",
-  "ra": "shibshankrmitr shibshankarmitra"
+  "ra": "shibshnkrmitr shibshankarmitra"
  },
  {
   "id": "ia-in.ernet.dli.2015.454611",
@@ -32424,7 +32424,7 @@
  {
   "id": "ia-in.ernet.dli.2015.455188",
   "title": "সুন্দরবন সমগ্র",
-  "author": "শিবশাঙ্কর মিত্র",
+  "author": "শিবশঙ্কর মিত্র",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455188",
   "category": "Literature",
   "language": "Bengali",
@@ -32436,7 +32436,7 @@
   "year": 1964,
   "ci": 7,
   "rt": "sundrbnsmgr sundarbansamagra",
-  "ra": "shibshankrmitr shibshankarmitra"
+  "ra": "shibshnkrmitr shibshankarmitra"
  },
  {
   "id": "ia-in.ernet.dli.2015.338782",
@@ -37431,7 +37431,7 @@
  {
   "id": "ia-in.ernet.dli.2015.355916",
   "title": "বাংলা চারিতা গ্রন্তহে শ্রী চৈতন্য",
-  "author": "গিরিজাশাঙ্কর রায়চৌধুরী",
+  "author": "গিরিজাশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.355916",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -37443,7 +37443,7 @@
   "year": 1946,
   "ci": 8,
   "rt": "banglacharitagrntheshrichoitny banglacharitagrantheshrichaitanya",
-  "ra": "girijashankraychoudhuri girijashankaraychowdhury"
+  "ra": "girijashnkraychoudhuri girijashankaraychowdhury"
  },
  {
   "id": "ia-20210610_20210610_0236",
@@ -43448,7 +43448,7 @@
   "title": "মনুসংহিতা প্রথম খণ্ড",
   "author": "কেইউএলইউকে বিএইচএটিটিএ",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.16725",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.bengal.10689.16725/10689.16725.pdf",
   "downloadFormat": "PDF",
@@ -50463,7 +50463,7 @@
  {
   "id": "ia-in.ernet.dli.2015.457769",
   "title": "জেস্সোরে খুলনার ইতিহাস খণ্ড ২ ২য়",
-  "author": "সিবেশাঙ্কর মিত্র",
+  "author": "শিবশঙ্কর মিত্র",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.457769",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -50475,7 +50475,7 @@
   "year": 1965,
   "ci": 11,
   "rt": "jesorekhulnaritihaskhnd2y jesorekhulnaritihasbol2ed2nd",
-  "ra": "sibeshankrmitr sibeshankarmitra"
+  "ra": "shibshnkrmitr sibeshankarmitra"
  },
  {
   "id": "ia-in.ernet.dli.2015.457248",
@@ -50938,7 +50938,7 @@
   "title": "রাজাকারের মন - ১ম খণ্ড - মুনতাসীর মামুন",
   "author": "মুনতাসীর মামুন",
   "coverUrl": "https://archive.org/services/img/rajakarer-mon-part-1",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/rajakarer-mon-part-1/%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0%20%E0%A6%AE%E0%A6%A8%20-%20%E0%A6%AE%E0%A7%81%E0%A6%A8%E0%A6%A4%E0%A6%BE%E0%A6%B8%E0%A7%80%E0%A6%B0%20%E0%A6%AE%E0%A6%BE%E0%A6%AE%E0%A7%81%E0%A6%A8%20-%20%E0%A7%A7%E0%A6%AE%20%E0%A6%96%E0%A6%A3%E0%A7%8D%E0%A6%A1.pdf",
   "downloadFormat": "PDF",
@@ -57123,7 +57123,7 @@
  {
   "id": "ia-in.ernet.dli.2015.302503",
   "title": "মাধ্যজুগের কবি ও কাব্য খণ্ড ১",
-  "author": "শাঙ্করিপ্রসাদ বসু",
+  "author": "শঙ্করীপ্রসাদ বসু",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302503",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -57135,7 +57135,7 @@
   "year": 1955,
   "ci": 13,
   "rt": "madhyjugerkbiokabykhnd1 madhyajugerkabiokabyabol1",
-  "ra": "shankriprsadbsu shankariprasadbasu"
+  "ra": "shnkriprsadbsu shankariprasadbasu"
  },
  {
   "id": "ia-in.ernet.dli.2015.454308",
@@ -58557,7 +58557,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.355498",
-  "title": "নিশিকুতুম্ব পার্বো ১ ২",
+  "title": "নিশিকুটুম্ব পর্ব ১ ২",
   "author": "মানোজ বসু",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.355498",
   "category": "অন্যান্য",
@@ -58569,7 +58569,7 @@
   "addedOrder": 3473,
   "year": 1960,
   "ci": 13,
-  "rt": "nishikutumbparbo12 nishikutumbaparbo12",
+  "rt": "nishikutumbprb12 nishikutumbaparbo12",
   "ra": "manojbsu manojbasu"
  },
  {
@@ -61476,7 +61476,7 @@
   "title": "সমন্ধ নির্নয়",
   "author": "ভট্টাচার্য, লালমোহন বিদ্যানিধি",
   "coverUrl": "https://archive.org/services/img/dli.ministry.30359",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.ministry.30359/14319.1391-Samban%2520Dhanirnaya%2520or%2520A%2520Social%2520History%2520Of%2520The%2520Hindu%2520Cates%2520In%2520Bengal.pdf",
   "downloadFormat": "PDF",
@@ -63175,7 +63175,7 @@
  {
   "id": "ia-in.ernet.dli.2015.453409",
   "title": "ভারতের অর্থনীতি ৩য়",
-  "author": "হারাশাঙ্কর ভট্টাচার্য",
+  "author": "হরশঙ্কর ভট্টাচার্য",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.453409",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -63187,7 +63187,7 @@
   "year": 1964,
   "ci": 14,
   "rt": "bharterorthniti3y bharaterarthanitied3rd",
-  "ra": "harashankrbhtachary harashankarbhatacharya"
+  "ra": "hrshnkrbhtachary harashankarbhatacharya"
  },
  {
   "id": "ia-anuvab-e-tumi",
@@ -64590,7 +64590,7 @@
   "title": "ভারতী : সচিত্র মাসিক পত্রিকা",
   "author": "মুখোপাধ্যায়, সৌরীন্দ্রমোহন; গঙ্গোপাধ্যায়, মনিলাল",
   "coverUrl": "https://archive.org/services/img/dli.ministry.00786",
-  "category": "Psychology",
+  "category": "Reference Books",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.ministry.00786/1158.182%2520Qb%2520878.59.pdf",
   "downloadFormat": "PDF",
@@ -68079,7 +68079,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.301626",
-  "title": "মহাস্থবির জাতক পার্বো ১ ১ম",
+  "title": "মহাস্থবির জাতক পর্ব ১ ১ম",
   "author": "মহাস্থবির",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.301626",
   "category": "অন্যান্য",
@@ -68091,7 +68091,7 @@
   "addedOrder": 4038,
   "year": 1944,
   "ci": 16,
-  "rt": "mhasthbirjatkparbo1m mahasthabirjatakparbo1ed1st",
+  "rt": "mhasthbirjatkprb1m mahasthabirjatakparbo1ed1st",
   "ra": "mhasthbir mahasthabir"
  },
  {
@@ -71879,7 +71879,7 @@
  {
   "id": "ia-in.ernet.dli.2015.454798",
   "title": "সুন্দরবনে আর্জান সার্দার",
-  "author": "শিবশাঙ্কর মিত্র",
+  "author": "শিবশঙ্কর মিত্র",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.454798",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -71891,7 +71891,7 @@
   "year": 1961,
   "ci": 17,
   "rt": "sundrbnearjansardar sundarbanearjansardar",
-  "ra": "shibshankrmitr shibshankarmitra"
+  "ra": "shibshnkrmitr shibshankarmitra"
  },
  {
   "id": "ia-in.ernet.dli.2015.355405",
@@ -74037,7 +74037,7 @@
  {
   "id": "ia-in.ernet.dli.2015.456106",
   "title": "সাত্যি ভুতের গল্প",
-  "author": "মালায়শাঙ্কর দাশগুপ্ত",
+  "author": "মলয়শঙ্কর দাশগুপ্ত",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456106",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -74049,7 +74049,7 @@
   "year": 1959,
   "ci": 17,
   "rt": "satyibhuterglp satyibhutergalpa",
-  "ra": "malayshankrdashgupt malayshankardasgupta"
+  "ra": "mlyshnkrdashgupt malayshankardasgupta"
  },
  {
   "id": "ia-in.ernet.dli.2015.301729",
@@ -74121,7 +74121,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.300843",
-  "title": "নকশা সেকাল একাল পার্বো ১",
+  "title": "নকশা সেকাল একাল পর্ব ১",
   "author": "প্রদ্যোথ সেনগুপ্ত",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300843",
   "category": "অন্যান্য",
@@ -74133,7 +74133,7 @@
   "addedOrder": 4396,
   "year": 1959,
   "ci": 17,
-  "rt": "nkshasekalekalparbo1 nakshasekalekalparbo1",
+  "rt": "nkshasekalekalprb1 nakshasekalekalparbo1",
   "ra": "prdyothsengupt pradyothsengupta"
  },
  {
@@ -75996,7 +75996,7 @@
   "title": "মনুসংহিতা",
   "author": "তথ্য নেই",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8044",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.bengal.10689.8044/10689.8044.pdf",
   "downloadFormat": "PDF",
@@ -77813,7 +77813,7 @@
  {
   "id": "ia-in.ernet.dli.2015.298300",
   "title": "সরী ঔরোবিন্দো ও বাংলায় স্বদেশী যুগ ১ম",
-  "author": "গিরিজাশাঙ্কর রায়চৌধুরী",
+  "author": "গিরিজাশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298300",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -77825,7 +77825,7 @@
   "year": 1956,
   "ci": 18,
   "rt": "sriourobindobanglayshdeshijug1m sreaurobindobanglayswadeshiyuged1st",
-  "ra": "girijashankraychoudhuri girijashankaraychowdhury"
+  "ra": "girijashnkraychoudhuri girijashankaraychowdhury"
  },
  {
   "id": "ia-in.ernet.dli.2015.357085",
@@ -77998,7 +77998,7 @@
  {
   "id": "ia-in.ernet.dli.2015.266455",
   "title": "সুন্দরবনে আর্জান সার্দার",
-  "author": "শিবশাঙ্কর মিত্র",
+  "author": "শিবশঙ্কর মিত্র",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266455",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -78010,7 +78010,7 @@
   "year": 1955,
   "ci": 18,
   "rt": "sundrbnearjansardar sundarbanearjansardar",
-  "ra": "shibshankrmitr shibshankarmitra"
+  "ra": "shibshnkrmitr shibshankarmitra"
  },
  {
   "id": "ia-in.ernet.dli.2015.454645",
@@ -78367,7 +78367,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.299185",
-  "title": "উত্তোর পার্বো",
+  "title": "উত্তর পর্ব",
   "author": "ভুদেব চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299185",
   "category": "অন্যান্য",
@@ -78378,7 +78378,7 @@
   "featured": false,
   "addedOrder": 4648,
   "ci": 18,
-  "rt": "utorparbo utorparbo",
+  "rt": "utrprb utorparbo",
   "ra": "bhudebchoudhuri bhudebchowdhury"
  },
  {
@@ -80662,7 +80662,7 @@
   "title": "আগমনী",
   "author": "সুরেশচন্দ্র সমাজপতি",
   "coverUrl": "https://archive.org/services/img/182.-qc.-919.61",
-  "category": "Psychology",
+  "category": "Sociology",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/182.-qc.-919.61/182.QC.919.61.pdf",
   "downloadFormat": "PDF",
@@ -83261,7 +83261,7 @@
  {
   "id": "ia-in.ernet.dli.2015.290830",
   "title": "আনা কারেনিনা",
-  "author": "গৌরিশাঙ্কর ভট্টাচার্য",
+  "author": "গৌরীশঙ্কর ভট্টাচার্য",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.290830",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -83272,7 +83272,7 @@
   "addedOrder": 4938,
   "ci": 19,
   "rt": "anakarenina anakarenina",
-  "ra": "gourishankrbhtachary gourishankarbhatacharjya"
+  "ra": "gourishnkrbhtachary gourishankarbhatacharjya"
  },
  {
   "id": "ia-dli.bengal.10689.2976",
@@ -83310,7 +83310,7 @@
  {
   "id": "ia-in.ernet.dli.2015.355042",
   "title": "বিপ্লবী বাংলা ১৭৫৭-১৯১২",
-  "author": "তারিনিশাঙ্কর চক্রবর্তী",
+  "author": "তারিণীশঙ্কর চক্রবর্তী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.355042",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -83322,7 +83322,7 @@
   "year": 1942,
   "ci": 19,
   "rt": "biplbibangla17571912 biplabibangla17571912",
-  "ra": "tarinishankrchkrbrti tarinishankarchakraborty"
+  "ra": "tarinishnkrchkrbrti tarinishankarchakraborty"
  },
  {
   "id": "ia-in.ernet.dli.2015.303209",
@@ -85996,7 +85996,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.302725",
-  "title": "পশ্চিমবঙ্গ ভ্রমণ ও দর্শন খণ্ড ১ পার্বো ১-২ ২য়",
+  "title": "পশ্চিমবঙ্গ ভ্রমণ ও দর্শন খণ্ড ১ পর্ব ১-২ ২য়",
   "author": "ভুপাতিরাঞ্জন দাস",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302725",
   "category": "অন্যান্য",
@@ -86007,7 +86007,7 @@
   "featured": false,
   "addedOrder": 5100,
   "ci": 20,
-  "rt": "pshchimbngbhrmnodrshnkhnd1parbo12y paschimbangabhramanodarshanbol1parbo12ed2nd",
+  "rt": "pshchimbngbhrmnodrshnkhnd1prb12y paschimbangabhramanodarshanbol1parbo12ed2nd",
   "ra": "bhupatiranjndas bhupatiranjandas"
  },
  {
@@ -86504,7 +86504,7 @@
  {
   "id": "ia-in.ernet.dli.2015.298737",
   "title": "ভাগিনি নিবেদিতা ও বাংলায় বিপ্লববাদ",
-  "author": "গিরিজাশাঙ্কর রায়চৌধুরী",
+  "author": "গিরিজাশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298737",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -86516,7 +86516,7 @@
   "year": 1960,
   "ci": 20,
   "rt": "bhagininibeditaobanglaybiplbad bhagininibeditaobanglaybiplabad",
-  "ra": "girijashankraychoudhuri girijashankaroychowdhury"
+  "ra": "girijashnkraychoudhuri girijashankaroychowdhury"
  },
  {
   "id": "ia-in.ernet.dli.2015.336675",
@@ -90507,7 +90507,7 @@
   "title": "এঞ্জেলস এন্ড ডেমনস ড্যান ব্রাউন",
   "author": "ড্যান ব্রাউন",
   "coverUrl": "https://archive.org/services/img/angels-and-demons-dan-brown",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/angels-and-demons-dan-brown/%E0%A6%8F%E0%A6%9E%E0%A7%8D%E0%A6%9C%E0%A7%87%E0%A6%B2%E0%A6%B8%20%E0%A6%8F%E0%A6%A8%E0%A7%8D%E0%A6%A1%20%E0%A6%A1%E0%A7%87%E0%A6%AE%E0%A6%A8%E0%A6%B8%20Angels%20%26%20Demons%20-%20%E0%A6%A1%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%20%E0%A6%AC%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%89%E0%A6%A8%20Dan%20Brown.pdf",
   "downloadFormat": "PDF",
@@ -94829,7 +94829,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.356833",
-  "title": "লৌহাকাপাত পার্বো ১",
+  "title": "লৌহকপাট পর্ব ১",
   "author": "জারাসান্ধ",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.356833",
   "category": "অন্যান্য",
@@ -94841,7 +94841,7 @@
   "addedOrder": 5623,
   "year": 1953,
   "ci": 22,
-  "rt": "louhakapatparbo1 louhakapatparbo1",
+  "rt": "louhkpatprb1 louhakapatparbo1",
   "ra": "jarasandh jarasandha"
  },
  {
@@ -97736,7 +97736,7 @@
   "title": "ভারতী : সচিত্র মাসিক পত্রিকা",
   "author": "গঙ্গোপাধ্যায়, মনিলাল; মুখোপাধ্যায়, সৌরীন্দ্রমোহন",
   "coverUrl": "https://archive.org/services/img/dli.ministry.00782",
-  "category": "Psychology",
+  "category": "Reference Books",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.ministry.00782/1093.182%2520Qb%2520878.47.pdf",
   "downloadFormat": "PDF",
@@ -97834,7 +97834,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.303388",
-  "title": "শাহার কোলকাতার আদিপার্বো ১ম",
+  "title": "শহর কলকাতার আদিপর্ব ১ম",
   "author": "সমুদ্র গুপ্ত",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.303388",
   "category": "অন্যান্য",
@@ -97846,7 +97846,7 @@
   "addedOrder": 5801,
   "year": 1956,
   "ci": 23,
-  "rt": "shaharkolkataradiparbo1m shaharkolkataradiparboed1st",
+  "rt": "shrklkataradiprb1m shaharkolkataradiparboed1st",
   "ra": "smudrgupt samudragupta"
  },
  {
@@ -99590,7 +99590,7 @@
  {
   "id": "ia-in.ernet.dli.2015.456602",
   "title": "নজরুল সঙ্গ প্রসঙ্গ",
-  "author": "গৌরিশাঙ্কর ভট্টাচার্য",
+  "author": "গৌরীশঙ্কর ভট্টাচার্য",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456602",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -99601,7 +99601,7 @@
   "addedOrder": 5905,
   "ci": 23,
   "rt": "njrulsngprsng najrulsangaprasanga",
-  "ra": "gourishankrbhtachary gourishankarbhatacharjya"
+  "ra": "gourishnkrbhtachary gourishankarbhatacharjya"
  },
  {
   "id": "ia-in.ernet.dli.2015.457450",
@@ -99691,7 +99691,7 @@
  {
   "id": "ia-in.ernet.dli.2015.266979",
   "title": "বৈষ্ণব কবি ও কাব্য",
-  "author": "শাঙ্করিপ্রসাদ বসু",
+  "author": "শঙ্করীপ্রসাদ বসু",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.266979",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -99703,7 +99703,7 @@
   "year": 1972,
   "ci": 23,
   "rt": "boishnbkbiokaby baishnabkabiokabya",
-  "ra": "shankriprsadbsu shankariprasadbasu"
+  "ra": "shnkriprsadbsu shankariprasadbasu"
  },
  {
   "id": "ia-in.ernet.dli.2015.456763",
@@ -101754,7 +101754,7 @@
   "title": "ভারত ভ্রমন",
   "author": "ধারানিকান্ত লাহিড়ী চৌধুরী",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.5433",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.bengal.10689.5433/10689.5433.pdf",
   "downloadFormat": "PDF",
@@ -104353,7 +104353,7 @@
  {
   "id": "ia-in.ernet.dli.2015.355811",
   "title": "শ্রী আরাবিন্দ ও বাংলায় স্বদেশী যুগ ১ম",
-  "author": "গিরিজাশাঙ্কর রায়চৌধুরী",
+  "author": "গিরিজাশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.355811",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -104365,7 +104365,7 @@
   "year": 1956,
   "ci": 24,
   "rt": "shriarabindobanglayshdeshijug1m sriarabindaobanglayswadeshijuged1st",
-  "ra": "girijashankraychoudhuri girijashankaraychowdhury"
+  "ra": "girijashnkraychoudhuri girijashankaraychowdhury"
  },
  {
   "id": "ia-in.ernet.dli.2015.356987",
@@ -111178,7 +111178,7 @@
  {
   "id": "ia-in.ernet.dli.2015.290360",
   "title": "ভূগোল শার",
-  "author": "গৌরিশাঙ্কর ভট্টাচার্য",
+  "author": "গৌরীশঙ্কর ভট্টাচার্য",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.290360",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -111190,7 +111190,7 @@
   "year": 1853,
   "ci": 26,
   "rt": "bhugolshar bhugolshar",
-  "ra": "gourishankrbhtachary gaurishankarbhatacharya"
+  "ra": "gourishnkrbhtachary gaurishankarbhatacharya"
  },
  {
   "id": "ia-in.ernet.dli.2015.455255",
@@ -111855,7 +111855,7 @@
   "title": "মনসার ভাসান",
   "author": "ক্ষেমানান্দ দাস",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.8042",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.bengal.10689.8042/10689.8042.pdf",
   "downloadFormat": "PDF",
@@ -113994,7 +113994,7 @@
   "title": "রুদ্রদমনের অভিযান ময়ূখ চৌধুরী",
   "author": "তথ্য নেই",
   "coverUrl": "https://archive.org/services/img/Rudradamaner-Abhijan-Mayukh-Chowdhury",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/Rudradamaner-Abhijan-Mayukh-Chowdhury/Rudradamaner%20Abhijan%20-%20Mayukh%20Chowdhury.pdf",
   "downloadFormat": "PDF",
@@ -124912,7 +124912,7 @@
   "title": "মাতৃ মন্দির বর্ষ ২",
   "author": "অক্ষয়কুমার নন্দী",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.2043",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.bengal.10689.2043/10689.2043.pdf",
   "downloadFormat": "PDF",
@@ -127467,7 +127467,7 @@
   "title": "অষ্টধাতু",
   "author": "মনোজ মিত্র",
   "coverUrl": "https://archive.org/services/img/Oshtodhatu",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/Oshtodhatu/Oshtodhatu%20%E0%A6%85%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%A7%E0%A6%BE%E0%A6%A4%E0%A7%81.pdf",
   "downloadFormat": "PDF",
@@ -128867,7 +128867,7 @@
  {
   "id": "ia-in.ernet.dli.2015.290806",
   "title": "Adisura And Ballala Sena An Historical Investigation",
-  "author": "পার্বোতিশাঙ্কর রায়চৌধুরী",
+  "author": "পার্বতীশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.290806",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -128878,7 +128878,7 @@
   "addedOrder": 7638,
   "year": 1877,
   "ci": 30,
-  "ra": "parbotishankraychoudhuri parbotishankaroychowdhury"
+  "ra": "parbtishnkraychoudhuri parbotishankaroychowdhury"
  },
  {
   "id": "ia-in.ernet.dli.2015.302109",
@@ -134266,7 +134266,7 @@
  {
   "id": "ia-in.ernet.dli.2015.299703",
   "title": "আধুনিক ধানা বিজ্ঞান",
-  "author": "হারাশাঙ্কর ভট্টাচার্য",
+  "author": "হরশঙ্কর ভট্টাচার্য",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.299703",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -134278,7 +134278,7 @@
   "year": 1956,
   "ci": 31,
   "rt": "adhunikdhanabigan adhunikdhanabigyan",
-  "ra": "harashankrbhtachary harashankarbhatacharjya"
+  "ra": "hrshnkrbhtachary harashankarbhatacharjya"
  },
  {
   "id": "ia-in.ernet.dli.2015.299168",
@@ -134808,7 +134808,7 @@
  {
   "id": "ia-in.ernet.dli.2015.456838",
   "title": "বিবেকানন্দ শারানে বিদেশিনি",
-  "author": "শাঙ্করিপ্রসাদ বসু",
+  "author": "শঙ্করীপ্রসাদ বসু",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.456838",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -134820,7 +134820,7 @@
   "year": 1957,
   "ci": 31,
   "rt": "bibekandsharanebideshini bibekanandasharanebideshini",
-  "ra": "shankriprsadbsu shankariprasadbasu"
+  "ra": "shnkriprsadbsu shankariprasadbasu"
  },
  {
   "id": "ia-in.ernet.dli.2015.290516",
@@ -139339,7 +139339,7 @@
   "title": "আশ্চৌর্য ফান্টুসি ওই চাঁদ দেবী সর্পমস্তা",
   "author": "মনোজ মিত্র",
   "coverUrl": "https://archive.org/services/img/AschourjoFantushiOiChandDebiSorpomosta",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/AschourjoFantushiOiChandDebiSorpomosta/Aschourjo%20Fantushi%20Oi%20Chand%20Debi%20Sorpomosta.pdf",
   "downloadFormat": "PDF",
@@ -140633,7 +140633,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.302159",
-  "title": "এই নারাদেহা পার্বো ২ ৩",
+  "title": "এই নরদেহ পর্ব ২ ৩",
   "author": "বিমল মিত্র",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.302159",
   "category": "অন্যান্য",
@@ -140645,7 +140645,7 @@
   "addedOrder": 8335,
   "year": 1960,
   "ci": 33,
-  "rt": "einaradehaparbo23 einaradehaparbo23",
+  "rt": "einrdehprb23 einaradehaparbo23",
   "ra": "bimlmitr bimalmitra"
  },
  {
@@ -141090,7 +141090,7 @@
  {
   "id": "ia-in.ernet.dli.2015.455918",
   "title": "কান্যরুপে",
-  "author": "শিবানিশাঙ্কর",
+  "author": "শিবানীশঙ্কর",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.455918",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -141102,7 +141102,7 @@
   "year": 1964,
   "ci": 33,
   "rt": "kanyrupe kanyarupe",
-  "ra": "shibanishankr shibanishankar"
+  "ra": "shibanishnkr shibanishankar"
  },
  {
   "id": "ia-ekattorer-diary-Sufia-Kamal",
@@ -143896,7 +143896,7 @@
   "title": "ব্রাহ্মন সমাজ বর্ষ ৭",
   "author": "পঞ্চানন মুখোপাধায়",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.1478",
-  "category": "Psychology",
+  "category": "Sociology",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.bengal.10689.1478/10689.1478.pdf",
   "downloadFormat": "PDF",
@@ -144483,7 +144483,7 @@
  {
   "id": "ia-NewDoc2019012513.11.59",
   "title": "নিবেদিতা লোকমাতা",
-  "author": "শাঙ্করিপ্রসাদ বসু",
+  "author": "শঙ্করীপ্রসাদ বসু",
   "coverUrl": "https://archive.org/services/img/NewDoc2019012513.11.59",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -144494,7 +144494,7 @@
   "addedOrder": 8563,
   "ci": 34,
   "rt": "nibeditalokmata nibeditalokmata",
-  "ra": "shankriprsadbsu shankariprasadbasu"
+  "ra": "shnkriprsadbsu shankariprasadbasu"
  },
  {
   "id": "ia-in.ernet.dli.2015.340201",
@@ -151407,7 +151407,7 @@
  {
   "id": "ia-in.ernet.dli.2015.352588",
   "title": "বাংলা চরিত গ্রন্তহে শ্রী চৈতন্য",
-  "author": "গিরিজাশাঙ্কর রায়চৌধুরী",
+  "author": "গিরিজাশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.352588",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -151419,7 +151419,7 @@
   "year": 1949,
   "ci": 35,
   "rt": "banglachritgrntheshrichoitny banglacharitgrantheshrichaitanya",
-  "ra": "girijashankraychoudhuri girijashankaraychowdhury"
+  "ra": "girijashnkraychoudhuri girijashankaraychowdhury"
  },
  {
   "id": "ia-in.ernet.dli.2015.357519",
@@ -152993,7 +152993,7 @@
  {
   "id": "ia-in.ernet.dli.2015.289295",
   "title": "On The Ambastha Kings Of Bengal",
-  "author": "পর্বতিশাঙ্কর রায়চৌধুরী",
+  "author": "পার্বতীশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.289295",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -153004,7 +153004,7 @@
   "addedOrder": 9067,
   "year": 1877,
   "ci": 36,
-  "ra": "prbtishankraychoudhuri parbatishankaroychowdhuri"
+  "ra": "parbtishnkraychoudhuri parbatishankaroychowdhuri"
  },
  {
   "id": "ia-in.ernet.dli.2015.297935",
@@ -154851,7 +154851,7 @@
   "title": "ভারতী : সচিত্র মাসিক পত্রিকা",
   "author": "গঙ্গোপাধ্যায়, মনিলাল; মুখোপাধ্যায়, সৌরীন্দ্রমোহন",
   "coverUrl": "https://archive.org/services/img/dli.ministry.00780",
-  "category": "Psychology",
+  "category": "Reference Books",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.ministry.00780/1097.182%2520Qb%2520878.49.pdf",
   "downloadFormat": "PDF",
@@ -155625,7 +155625,7 @@
  {
   "id": "ia-in.ernet.dli.2015.355813",
   "title": "শ্রী চৈতন্যদেব ও তাহার পার্শাদগান",
-  "author": "গিরিজাশাঙ্কর রায়চৌধুরী",
+  "author": "গিরিজাশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.355813",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -155637,7 +155637,7 @@
   "year": 1957,
   "ci": 36,
   "rt": "shrichoitnydebotaharparshadgan srichaitanyadebotaharparshadgan",
-  "ra": "girijashankraychoudhuri girijashankaraychowdhury"
+  "ra": "girijashnkraychoudhuri girijashankaraychowdhury"
  },
  {
   "id": "ia-in.ernet.dli.2015.265034",
@@ -157585,7 +157585,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.300634",
-  "title": "কোমল গানধর পার্বো ১",
+  "title": "কোমল গান্ধার পর্ব ১",
   "author": "নীহাররঞ্জন গুপ্ত",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.300634",
   "category": "অন্যান্য",
@@ -157597,7 +157597,7 @@
   "addedOrder": 9339,
   "year": 1973,
   "ci": 37,
-  "rt": "komlgandhrparbo1 komalgandharparbo1",
+  "rt": "komlgandharprb1 komalgandharparbo1",
   "ra": "niharnjngupt niharanjangupta"
  },
  {
@@ -158349,7 +158349,7 @@
  {
   "id": "ia-dli.bengal.10689.2798",
   "title": "স্বামী বিবেকানন্দ ও বাঙ্গলায় ঊনবিংশ শতাব্দী",
-  "author": "গিরিজাশাঙ্কর রায়চৌধুরী",
+  "author": "গিরিজাশঙ্কর রায়চৌধুরী",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.2798",
   "category": "Religion & Philosophy",
   "language": "Bengali",
@@ -158361,7 +158361,7 @@
   "year": 1927,
   "ci": 37,
   "rt": "shamibibekandobanglayunbingshshtabdi swamibibekanandaobanglayunabingshashatabdishamibibekandobanglayunbingshshtabdi",
-  "ra": "girijashankraychoudhuri girijashankaraychowdhury"
+  "ra": "girijashnkraychoudhuri girijashankaraychowdhury"
  },
  {
   "id": "ia-in.ernet.dli.2015.353176",
@@ -160174,7 +160174,7 @@
  },
  {
   "id": "ia-in.ernet.dli.2015.298527",
-  "title": "উত্তর ভাগ পার্বো ১",
+  "title": "উত্তর ভাগ পর্ব ১",
   "author": "প্রফুল্লচন্দ্র পাল",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.298527",
   "category": "অন্যান্য",
@@ -160186,7 +160186,7 @@
   "addedOrder": 9492,
   "year": 1956,
   "ci": 37,
-  "rt": "utrbhagparbo1 utarbhagparbo1",
+  "rt": "utrbhagprb1 utarbhagparbo1",
   "ra": "prfulchndrpal prafulachandrapaul"
  },
  {
@@ -163838,7 +163838,7 @@
  {
   "id": "ia-in.ernet.dli.2015.338637",
   "title": "ফ্যসিকাল ওপতিকস",
-  "author": "বিজায়শাঙ্কর বসাক",
+  "author": "বিজয়শঙ্কর বসাক",
   "coverUrl": "https://archive.org/services/img/in.ernet.dli.2015.338637",
   "category": "অন্যান্য",
   "language": "Bengali",
@@ -163850,7 +163850,7 @@
   "year": 1980,
   "ci": 38,
   "rt": "fysikaloptiks fysicaloptics",
-  "ra": "bijayshankrbsak bijayshankarbasak"
+  "ra": "bijyshnkrbsak bijayshankarbasak"
  },
  {
   "id": "ia-in.ernet.dli.2015.338993",
@@ -165142,7 +165142,7 @@
   "title": "ত্ৰিফোনভ রাসায়নিক মৌল কেমন করে সেগুলি আবিষ্কৃত হয়েছিল",
   "author": "দ ন ত্ৰিফোনভ ভ দ ত্ৰিফোনভ",
   "coverUrl": "https://archive.org/services/img/trifonov-trifonov-chemical-elements-how-they-were-discovered-bangla-mir-manisha-1988",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/trifonov-trifonov-chemical-elements-how-they-were-discovered-bangla-mir-manisha-1988/Trifonov%2C%20Trifonov%20-%20Chemical%20Elements%20How%20they%20were%20discovered%20%28Bangla%29%20-%20Mir%20-%20Manisha%20-%201988%20.pdf",
   "downloadFormat": "PDF",
@@ -170673,7 +170673,7 @@
   "title": "চেষ্টার জিমনেসিয়াম ফিউচারের ক্যালসিয়াম",
   "author": "ঝংকার মাহবুব",
   "coverUrl": "https://archive.org/services/img/20230509_20230509_2114",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/20230509_20230509_2114/%E0%A6%9A%E0%A7%87%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0%20%E0%A6%9C%E0%A6%BF%E0%A6%AE%E0%A6%A8%E0%A7%87%E0%A6%B8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE%20%E0%A6%AB%E0%A6%BF%E0%A6%89%E0%A6%9A%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%B0%20%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A6%B8%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%AE.pdf",
   "downloadFormat": "PDF",
@@ -172909,7 +172909,7 @@
   "title": "কিতাবুত তাহরীদ ‘আলাল ক্বিতাল, পর্ব-০৫: আর কতকাল আমরা নিজেদেরকে এমনিভাবে ধোঁকা দিব?",
   "author": "মুস‘আব ইলদিরিম",
   "coverUrl": "https://archive.org/services/img/k-5_20231113",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/k-5_20231113/k%205.pdf",
   "downloadFormat": "PDF",
@@ -189997,7 +189997,7 @@
   "title": "বাচারার কি বা মনে",
   "author": "স্যামুয়েল মার্শাক",
   "coverUrl": "https://archive.org/services/img/what-is-a-year-bachharer-ki-ba-mane-samuil-marshak_202309",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/what-is-a-year-bachharer-ki-ba-mane-samuil-marshak_202309/WHAT%20IS%20A%20YEAR%20-%20Bachharer%20ki%20Ba%20mane%20-%20Samuil%20Marshak.pdf",
   "downloadFormat": "PDF",
@@ -190217,7 +190217,7 @@
   "title": "পিঁপড়া এবং বায়োমনাবিক",
   "author": "আনাতোলি মিতিয়ায়েভ",
   "coverUrl": "https://archive.org/services/img/ant-and-the-cosmonaut-pnipre-ar-byomnabik-anatoly-mityayev-compressed_202309",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/ant-and-the-cosmonaut-pnipre-ar-byomnabik-anatoly-mityayev-compressed_202309/ANT%20AND%20THE%20COSMONAUT%20-%20PNipre%20Ar%20Byomnabik%20-%20Anatoly%20Mityayev_compressed.pdf",
   "downloadFormat": "PDF",
@@ -191211,7 +191211,7 @@
   "title": "রোমিও এবং জুলিয়েটের মনোহর উপাখ্যান",
   "author": "উইলিয়াম শেক্সপিয়র",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.4704",
-  "category": "Psychology",
+  "category": "অন্যান্য",
   "language": "Bengali",
   "downloadUrl": "https://archive.org/download/dli.bengal.10689.4704/10689.4704.pdf",
   "downloadFormat": "PDF",
@@ -191390,7 +191390,7 @@
  {
   "id": "ia-dli.bengal.10689.3631",
   "title": "আনা কারেনিনা",
-  "author": "গৌরিশাঙ্কর ভট্টাচার্য",
+  "author": "গৌরীশঙ্কর ভট্টাচার্য",
   "coverUrl": "https://archive.org/services/img/dli.bengal.10689.3631",
   "category": "Islamic Studies",
   "language": "Bengali",
@@ -191401,7 +191401,7 @@
   "addedOrder": 11423,
   "ci": 45,
   "rt": "anakarenina anakareninanakarenina",
-  "ra": "gourishankrbhtachary gourishankarbhatacharjya"
+  "ra": "gourishnkrbhtachary gourishankarbhatacharjya"
  },
  {
   "id": "ia-20241009_20241009_0633",
