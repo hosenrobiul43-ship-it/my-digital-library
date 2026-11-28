@@ -399,6 +399,26 @@
       '<button class="share-opt" type="button" data-copy="' + esc(url) + '">' + t("share.copy") + '</button>' +
       '<p class="small muted">' + t("share.igNote") + '</p></div>';
   }
+  /* Row of social share icons under the hero share button, so visitors can
+     see at a glance where they can share (Facebook, Instagram, WhatsApp,
+     Messenger). Facebook + WhatsApp open their web share links directly;
+     Instagram + Messenger open the phone's native share sheet (they have no
+     web share link), falling back to the share panel on desktop. */
+  function shareIconsHtml() {
+    var url = siteUrl();
+    var u = encodeURIComponent(url);
+    var txt = encodeURIComponent("ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন — বাংলা ও বিশ্বের বই, ফ্রি পড়ুন ও ডাউনলোড করুন");
+    var fbSvg = '<svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#1877F2"/><text x="24" y="34" text-anchor="middle" font-size="30" font-weight="bold" fill="#fff" font-family="Arial, Helvetica, sans-serif">f</text></svg>';
+    var igSvg = '<svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><defs><linearGradient id="mdlIgGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#feda75"/><stop offset=".5" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><rect x="2" y="2" width="44" height="44" rx="13" fill="url(#mdlIgGrad)"/><rect x="13" y="13" width="22" height="22" rx="6" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="24" cy="24" r="5" fill="none" stroke="#fff" stroke-width="2.6"/><circle cx="32.5" cy="15.5" r="2" fill="#fff"/></svg>';
+    var waSvg = '<svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#25D366"/><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="#fff" transform="translate(6,6) scale(1.5)"/></svg>';
+    var msSvg = '<svg viewBox="0 0 48 48" width="48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#0084FF"/><path d="M27 8 L15 26 h7 L21 40 L34 21 h-7 z" fill="#fff"/></svg>';
+    return '<div class="share-icons" id="siteShareIcons">' +
+      '<a class="share-ic" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '" target="_blank" rel="noopener" aria-label="Facebook">' + fbSvg + '</a>' +
+      '<button class="share-ic" type="button" data-native-share="1" aria-label="Instagram">' + igSvg + '</button>' +
+      '<a class="share-ic" href="https://wa.me/?text=' + txt + '%20' + u + '" target="_blank" rel="noopener" aria-label="WhatsApp">' + waSvg + '</a>' +
+      '<button class="share-ic" type="button" data-native-share="1" aria-label="Messenger">' + msSvg + '</button>' +
+      '</div>';
+  }
   function doShare(title, text, url, panel) {
     if (navigator.share) {
       navigator.share({ title: title, text: text, url: url }).catch(function () {});
@@ -635,6 +655,7 @@
       ' <button class="btn btn-ghost" id="followBtn" type="button">' + t("hero.followNews") + '</button>' +
       ' <button class="btn btn-follow" id="siteLikeBtn" type="button"><span id="siteLikeLabel">' + t("hero.follow") + '</span></button>' +
       ' <button class="btn btn-ghost" id="installBtn" type="button" hidden>' + t("hero.install") + '</button></div>' +
+      shareIconsHtml() +
       '<div id="siteSharePanel"></div>' +
       '<div id="installPanel" class="share-panel" hidden></div>' +
       '<button class="adv-toggle" id="advToggle" type="button">' + t("hero.adv") + '</button>' +
@@ -785,6 +806,15 @@
       shareBtn.addEventListener("click", function () {
         doShare("ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", "বাংলা ও বিশ্বের বই — ফ্রি পড়ুন ও ডাউনলোড করুন", siteUrl(), shareBox.querySelector(".share-panel"));
       });
+      /* Instagram + Messenger icons: no web share link, so open the phone's
+         native share sheet (it lists Instagram, Messenger and the rest);
+         on desktop fall back to the share panel with links + copy. */
+      var nativeBtns = document.querySelectorAll("#siteShareIcons [data-native-share]");
+      for (var ni = 0; ni < nativeBtns.length; ni++) {
+        nativeBtns[ni].addEventListener("click", function () {
+          doShare("ডিজিটাল লাইব্রেরি বাই রবিউল হোসেন", "বাংলা ও বিশ্বের বই — ফ্রি পড়ুন ও ডাউনলোড করুন", siteUrl(), shareBox.querySelector(".share-panel"));
+        });
+      }
     }
     /* Follow button: the prompt appears ONLY when the visitor taps it —
        never automatically, so readers are not annoyed. */
