@@ -108,11 +108,11 @@ section.block { padding: 26px 0 6px; }
 .section-head h2 { font-size: 1.35rem; color: var(--navy); }
 html[data-theme="dark"] .section-head h2 { color: #e8edf3; }
 .section-head .link { margin-left: auto; font-size: .9rem; }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 18px 0; }
-.stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; text-align: center; box-shadow: var(--shadow); }
-.stat b { display: block; font-size: 1.7rem; color: var(--navy); }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 12px 0; }
+.stat { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 10px; text-align: center; box-shadow: var(--shadow); }
+.stat b { display: block; font-size: 1.35rem; color: var(--navy); }
 html[data-theme="dark"] .stat b { color: var(--gold); }
-.stat span { color: var(--muted); font-size: .88rem; }
+.stat span { color: var(--muted); font-size: .8rem; }
 
 /* ---------- book cards ---------- */
 .book-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
@@ -287,9 +287,9 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 .share-panel p { width: 100%; margin: 4px 0 0; }
 
 /* ---------- social share icons under the hero share button ---------- */
-.share-icons { display: flex; gap: 10px; justify-content: center; margin: 10px 0 2px; }
-.share-ic { width: 36px; height: 36px; border-radius: 50%; border: none; padding: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; background: transparent; text-decoration: none; }
-.share-ic svg { width: 36px; height: 36px; display: block; border-radius: 50%; }
+.share-icons { display: flex; gap: 8px; justify-content: center; margin: 8px 0 2px; }
+.share-ic { width: 28px; height: 28px; border-radius: 50%; border: none; padding: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; background: transparent; text-decoration: none; }
+.share-ic svg { width: 28px; height: 28px; display: block; border-radius: 50%; }
 .share-ic:hover { transform: scale(1.08); }
 .share-ic:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
