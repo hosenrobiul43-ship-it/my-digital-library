@@ -56,14 +56,14 @@ p { margin: 0 0 12px; }
 .menu-btn { display: none; }
 
 /* ---------- hero ---------- */
-.hero { background: linear-gradient(160deg, var(--navy), var(--navy-2)); color: #fff; padding: 44px 0 36px; }
+.hero { background: linear-gradient(160deg, var(--navy), var(--navy-2)); color: #fff; padding: 28px 0 22px; }
 .hero .eyebrow { color: var(--gold); letter-spacing: .18em; font-size: .75rem; font-weight: 700; }
-.hero h1 { font-size: clamp(1.7rem, 5vw, 2.6rem); margin: 8px 0; }
+.hero h1 { font-size: clamp(1.5rem, 4.5vw, 2.2rem); margin: 6px 0; }
 .hero h1 em { color: var(--gold); font-style: normal; }
 .hero p { color: #cdd8e6; max-width: 640px; }
-.search-big { display: flex; gap: 8px; margin-top: 18px; max-width: 720px; }
+.search-big { display: flex; gap: 8px; margin-top: 12px; max-width: 720px; }
 .search-big input {
-  flex: 1; padding: 14px 16px; font-size: 1.05rem; border: 2px solid transparent;
+  flex: 1; padding: 11px 14px; font-size: 1.02rem; border: 2px solid transparent;
   border-radius: 10px; font-family: var(--font); background: #fff; color: #1a2433; min-width: 0;
 }
 .search-big input:focus { outline: 3px solid var(--gold); }
@@ -84,7 +84,9 @@ p { margin: 0 0 12px; }
 .topbar .btn-ghost, .hero .btn-ghost { color: #fff; border-color: rgba(255,255,255,.55); }
 .topbar .btn-ghost:hover, .hero .btn-ghost:hover { border-color: var(--gold); color: #fff; }
 .btn-sm { padding: 8px 14px; font-size: .9rem; }
-.adv-toggle { background: none; border: 0; color: #9db4d0; cursor: pointer; font-family: var(--font); margin-top: 10px; text-decoration: underline; }
+.adv-toggle { background: none; border: 0; color: #9db4d0; cursor: pointer; font-family: var(--font); margin-top: 6px; text-decoration: underline; }
+/* Compact hero action buttons so the book list appears sooner. */
+.hero-share .btn { padding: 9px 14px; font-size: .95rem; }
 
 /* ---------- ad slot ---------- */
 .ad-slot {
@@ -287,9 +289,9 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 .share-panel p { width: 100%; margin: 4px 0 0; }
 
 /* ---------- social share icons under the hero share button ---------- */
-.share-icons { display: flex; gap: 8px; justify-content: center; margin: 8px 0 2px; }
-.share-ic { width: 28px; height: 28px; border-radius: 50%; border: none; padding: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; background: transparent; text-decoration: none; }
-.share-ic svg { width: 28px; height: 28px; display: block; border-radius: 50%; }
+.share-icons { display: flex; gap: 8px; justify-content: center; margin: 6px 0 2px; }
+.share-ic { width: 24px; height: 24px; border-radius: 50%; border: none; padding: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; background: transparent; text-decoration: none; }
+.share-ic svg { width: 24px; height: 24px; display: block; border-radius: 50%; }
 .share-ic:hover { transform: scale(1.08); }
 .share-ic:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
