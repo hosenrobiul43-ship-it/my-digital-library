@@ -317,7 +317,10 @@ footer .copy { border-top: 1px solid rgba(255,255,255,.15); margin-top: 20px; pa
 @keyframes spin { to { transform: rotate(360deg); } }
 
 /* ---------- site stats: like button + visits + feedback ---------- */
-#siteLikeBtn.liked { border-color: var(--gold); color: var(--gold); }
+/* Facebook-style Follow button: blue "Follow", grey "Following" once followed. */
+.btn-follow { background: #1877F2; color: #fff; border: none; }
+.btn-follow:hover { background: #166FE5; }
+#siteLikeBtn.liked { background: #E4E6EB; color: #050505; border-color: transparent; }
 .footer-stats { border-top: 1px solid var(--border); margin-top: 20px; padding-top: 16px; display: grid; gap: 14px; }
 .visit-counter { margin: 0; }
 .footer-feedback h4 { margin: 0 0 8px; }

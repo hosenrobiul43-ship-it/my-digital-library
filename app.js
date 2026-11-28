@@ -60,8 +60,8 @@
     "hero.share": { bn: "লাইব্রেরি শেয়ার করুন ↗", en: "Share Library ↗" },
     "hero.followNews": { bn: "🔔 নতুন বইয়ের খবর পান", en: "🔔 Get New Book Updates" },
     "hero.followedNews": { bn: "🔔 ফলো করা হয়েছে ✓ — বন্ধ করতে চাপুন", en: "🔔 Following ✓ — tap to stop" },
-    "hero.follow": { bn: "ফলো করুন", en: "Follow" },
-    "hero.followed": { bn: "ফলো করেছেন", en: "Following" },
+    "hero.follow": { bn: "Follow", en: "Follow" },
+    "hero.followed": { bn: "Following", en: "Following" },
     "hero.install": { bn: "📲 অ্যাপ ইনস্টল করুন", en: "📲 Install App" },
     "hero.adv": { bn: "উন্নত অনুসন্ধান (Advanced Search) ⌄", en: "Advanced Search ⌄" },
     "adv.title": { bn: "বইয়ের নাম", en: "Book Name" },
@@ -633,7 +633,7 @@
       '<button class="btn btn-primary" type="submit">' + t("hero.search") + '</button></form>' +
       '<div class="hero-share"><button class="btn btn-ghost" id="shareSiteBtn" type="button">' + t("hero.share") + '</button>' +
       ' <button class="btn btn-ghost" id="followBtn" type="button">' + t("hero.followNews") + '</button>' +
-      ' <button class="btn btn-ghost" id="siteLikeBtn" type="button">♥ <span id="siteLikeLabel">' + t("hero.follow") + '</span> · <span id="siteLikeCount">…</span> জন</button>' +
+      ' <button class="btn btn-follow" id="siteLikeBtn" type="button"><span id="siteLikeLabel">' + t("hero.follow") + '</span></button>' +
       ' <button class="btn btn-ghost" id="installBtn" type="button" hidden>' + t("hero.install") + '</button></div>' +
       '<div id="siteSharePanel"></div>' +
       '<div id="installPanel" class="share-panel" hidden></div>' +
